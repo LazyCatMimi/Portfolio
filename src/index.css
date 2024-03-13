@@ -26,6 +26,7 @@ h4 {
   font-family: "Kaisei Decol", serif;
 }
 
+/* Button */
 button {
   background: linear-gradient(90deg, #000000 0%, #666666 100%);
   border: 1px solid #979797;
@@ -34,4 +35,8 @@ button {
   border-radius: 4px;
   font-family: "Julius Sans One", sans-serif;
   color: white;
+  transition: ease-in 1s;
+}
+button:hover {
+  background: linear-gradient(98.87deg, #ff4fed -11.99%, #414eca 115.02%);
 }
