@@ -1,8 +1,10 @@
-import ContactForm from "../Components/ContactForm";
+import ContactForm from "./Components/ContactForm";
+import NavBar from "./Components/NavBar";
 
 export default function Home() {
   return (
     <div>
+      <NavBar />
       <header>
         <h1>Hello, I am</h1>
         <h1>Quynh Vo</h1>
