@@ -1,0 +1,58 @@
+.full-page-header {
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  background-color: #333; /* Set your desired background color */
+  color: #fff; /* Set text color */
+  display: flex;
+}
+
+.full-page-header h1 {
+  margin: 0;
+  /* font-size: 2.5rem; */
+}
+
+.full-page-header button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.full-page-header button:hover {
+  background-color: #ddd;
+}
+
+/* Header Title */
+.full-page-header div {
+  margin: 20% 0 0 5%;
+}
+.full-page-header div h1 {
+  margin: 0.2em 0;
+}
+.title-sub-1 {
+  /* Hello, I am */
+
+  font-family: "Julius Sans One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+  color: #ff3d7c;
+}
+.title-name {
+  font-size: 96px;
+}
+.title-sub-2 {
+  font-weight: 400;
+  font-size: 24px;
+
+  letter-spacing: 0.3em;
+
+  color: #ff3d7c;
+}
+.full-page-header button {
+  margin-top: 4em;
+}

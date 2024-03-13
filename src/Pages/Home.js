@@ -1,16 +1,21 @@
 import ContactForm from "./Components/ContactForm";
 import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
+import "../Styles/Home.css";
 
 export default function Home() {
   return (
     <div>
       <NavBar />
-      <header>
-        <h1>Hello, I am</h1>
-        <h1>Quynh Vo</h1>
-        <h1>Artist. Designer. Developer</h1>
-        <button>See Resume</button>
+      <header class="full-page-header">
+        <div>
+          <h1 class="title-sub-1">Hello, I am</h1>
+          <h1 class="title-name">Quynh Vo</h1>
+          <h1 class="title-sub-2">Artist. Designer. Developer</h1>
+          <button>See Resume</button>
+        </div>
       </header>
+
       <div>
         <p>UI/UX</p>
         <p>Full Stack Development</p>
@@ -80,11 +85,6 @@ export default function Home() {
           <ContactForm />
         </div>
       </div>
-      <footer>
-        <p>Quynh Vo</p>
-        <p>icon here</p>
-        <p>icon here</p>
-      </footer>
     </div>
   );
 }

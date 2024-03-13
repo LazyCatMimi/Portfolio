@@ -1,13 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kaisei+Decol&family=Khula:wght@300;400;600;700;800&display=swap");
+/* General */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Khula", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  box-sizing: border-box;
+}
+/* Font stuff */
+h1 {
+  font-family: "Julius Sans One", sans-serif;
+}
+h2,
+h3,
+h4 {
+  font-family: "Kaisei Decol", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  background: linear-gradient(90deg, #000000 0%, #666666 100%);
+  border: 1px solid #979797;
+  box-shadow: 0px 4px 10.2px rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(6.2px);
+  border-radius: 4px;
+  font-family: "Julius Sans One", sans-serif;
+  color: white;
 }
