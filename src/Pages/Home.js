@@ -12,16 +12,16 @@ export default function Home() {
           <h1 class="title-sub-1">Hello, I am</h1>
           <h1 class="title-name">Quynh Vo</h1>
           <h1 class="title-sub-2">Artist. Designer. Developer</h1>
-          <button>See Resume</button>
+          <button  className="primary-button">See Resume</button>
         </div>
       </header>
 
-      <div>
+      <section className="dark-bg" id="focus">
         <p>UI/UX</p>
         <p>Full Stack Development</p>
         <p>Art & Design</p>
-      </div>
-      <div>
+      </section>
+      <section>
         <p>picture here</p>
         <article>
           <h2>About Me</h2>
@@ -37,6 +37,8 @@ export default function Home() {
             such as drawing, which allows me to express my creativity.
           </p>
         </article>
+        </section>
+        <section>
         <div>
           <h1>Latest Projects</h1>
           <p>01</p>
@@ -54,7 +56,7 @@ export default function Home() {
               website allows users to conveniently book appointments, purchase
               items from the shop, and manage their accounts.
             </p>
-            <button>Read More</button>
+            <button className="primary-button">Read More</button>
           </article>
           <p>02</p>
           <article>
@@ -73,18 +75,21 @@ export default function Home() {
               design process was meticulously documented, incorporating user
               testing to refine and enhance the app's design and usability.
             </p>
-            <button>Read More</button>
+            <button  className="primary-button">Read More</button>
           </article>
         </div>
+      </section>
+      <section>
         <h2>Explore More Projects</h2>
-        <button>UI/UX</button>
+        <button >UI/UX</button>
         <button>Development</button>
         <button>Art & Design</button>
-        <div>
+        </section>
+        <section>
           <h2>Contact Me</h2>
           <ContactForm />
-        </div>
-      </div>
+          </section>
+      
     </div>
   );
 }

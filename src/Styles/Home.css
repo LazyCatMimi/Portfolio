@@ -1,7 +1,9 @@
 .full-page-header {
-  height: 100vh; /* Set the height to 100% of the viewport height */
-  background-color: #333; /* Set your desired background color */
-  color: #fff; /* Set text color */
+  height: 100vh;
+  background-image: url('../Assets/header-bg.jpg');
+  background-size: cover; 
+  background-position: center; 
+  color: #fff; 
   display: flex;
 }
 
@@ -10,23 +12,11 @@
   /* font-size: 2.5rem; */
 }
 
-.full-page-header button {
-  padding: 10px 20px;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
-.full-page-header button:hover {
-  background-color: #ddd;
-}
 
 /* Header Title */
 .full-page-header div {
-  margin: 20% 0 0 5%;
+  margin: 15% 0 0 8%;
 }
 .full-page-header div h1 {
   margin: 0.2em 0;
@@ -54,4 +44,12 @@
 }
 .full-page-header button {
   margin-top: 4em;
+}
+
+/* focus stuff */
+#focus{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
 }
