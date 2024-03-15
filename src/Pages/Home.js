@@ -2,6 +2,10 @@ import ContactForm from "./Components/ContactForm";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import "../Styles/Home.css";
+import uiuxIcon from "../Assets/focus-uiux.svg";
+import devIcon from "../Assets/focus-dev.svg";
+import artIcon from "../Assets/focus-art.svg";
+import plImg from "../Assets/test.png"
 
 export default function Home() {
   return (
@@ -12,17 +16,26 @@ export default function Home() {
           <h1 class="title-sub-1">Hello, I am</h1>
           <h1 class="title-name">Quynh Vo</h1>
           <h1 class="title-sub-2">Artist. Designer. Developer</h1>
-          <button  className="primary-button">See Resume</button>
+          <button className="primary-button">See Resume</button>
         </div>
       </header>
 
       <section className="dark-bg" id="focus">
-        <p>UI/UX</p>
-        <p>Full Stack Development</p>
-        <p>Art & Design</p>
+        <div>
+          <img src={uiuxIcon} alt=""></img>
+          <p>UI/UX</p>
+        </div>
+        <div>
+          <img src={devIcon} alt=""></img>
+          <p>Full Stack Development</p>
+        </div>
+        <div>
+          <img src={artIcon} alt=""></img>
+          <p>Art & Design</p>
+        </div>
       </section>
-      <section>
-        <p>picture here</p>
+      <section className="light-bg" id="about">
+       <img src={plImg}></img>
         <article>
           <h2>About Me</h2>
           <p>
@@ -37,12 +50,12 @@ export default function Home() {
             such as drawing, which allows me to express my creativity.
           </p>
         </article>
-        </section>
-        <section>
-        <div>
+      </section>
+      <section className="dark-bg">
+  
           <h1>Latest Projects</h1>
           <p>01</p>
-          <article>
+          <article className="dark-bg2">
             <p>picture here</p>
             <h3>The Suite Spot Salon</h3>
             <p>Web Design & Development</p>
@@ -59,7 +72,7 @@ export default function Home() {
             <button className="primary-button">Read More</button>
           </article>
           <p>02</p>
-          <article>
+          <article className="dark-bg2">
             <p>picture here</p>
             <h3>Noodletopia</h3>
             <p>Mobile App Design</p>
@@ -75,21 +88,20 @@ export default function Home() {
               design process was meticulously documented, incorporating user
               testing to refine and enhance the app's design and usability.
             </p>
-            <button  className="primary-button">Read More</button>
+            <button className="primary-button">Read More</button>
           </article>
-        </div>
+        
       </section>
       <section>
         <h2>Explore More Projects</h2>
-        <button >UI/UX</button>
+        <button>UI/UX</button>
         <button>Development</button>
         <button>Art & Design</button>
-        </section>
-        <section>
-          <h2>Contact Me</h2>
-          <ContactForm />
-          </section>
-      
+      </section>
+      <section>
+        <h2>Contact Me</h2>
+        <ContactForm />
+      </section>
     </div>
   );
 }

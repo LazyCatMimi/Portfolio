@@ -10,7 +10,7 @@
 /* General */
 body {
   margin: 0;
-
+font-size: 1.6rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Khula", sans-serif;
@@ -24,6 +24,11 @@ code {
 * {
   box-sizing: border-box;
 }
+img{
+  max-width: 100%;
+  
+
+}
 /* Font stuff */
 h1 {
   font-family: "Julius Sans One", sans-serif;
@@ -32,6 +37,7 @@ h2,
 h3,
 h4 {
   font-family: "Kaisei Decol", serif;
+  color: var(--magenta);
 }
 
 /* Button */
@@ -64,6 +70,9 @@ background: linear-gradient(90deg, #1b1919 0%, #3e3939 32.5%, #7C6F7B 50%, #ff4f
 .dark-bg{
   background-color: var(--dark-bg);
   color: var(--white-text)
+}
+.dark-bg2{
+  background-color: var(--dark-bg2);
 }
 .light-bg{
   background-color: var(--off-white);
