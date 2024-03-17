@@ -126,7 +126,10 @@ export default function Home() {
               <img src={plImg} alt="The Suite Spot Salon website"></img>
             </button>
             <div>
-              <h3>Noodletopia</h3>
+              <h3>
+                <span className="num off-white-text">01 </span>| The Suite Spot
+                Salon
+              </h3>
               <p>
                 A mobile application designed for noodle enthusiasts, offering a
                 personalized experience for ordering and creating customized
@@ -141,7 +144,7 @@ export default function Home() {
         </div>
       </section>
       <section className="light-bg" id="explore-projects">
-        <h2>Explore More Projects</h2>
+        <h2>Read More on Projects</h2>
         <button>UI/UX</button>
         <button>Development</button>
         <button>Art & Design</button>
