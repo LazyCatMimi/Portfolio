@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kaisei+Decol&family=Khula:wght@300;400;600;700;800&display=swap");
-:root{
-  --dark-bg: #0D0E10;
-  --dark-bg2: #19191D;
-  --off-white: #F5F6F7;
-  --magenta: #FF3D7C;
-  --white-text: #D3CFDC;
-
+:root {
+  --dark-bg: #0d0e10;
+  --dark-bg2: #24242a;
+  --off-white: #f5f6f7;
+  --magenta: #ff3d7c;
+  --white-text: #d3cfdc;
 }
 /* General */
 body {
   margin: 0;
-font-size: 1.6rem;
+  font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Khula", sans-serif;
@@ -24,10 +23,8 @@ code {
 * {
   box-sizing: border-box;
 }
-img{
+img {
   max-width: 100%;
-  
-
 }
 /* Font stuff */
 h1 {
@@ -42,8 +39,14 @@ h4 {
 
 /* Button */
 .primary-button {
-background: linear-gradient(90deg, #1b1919 0%, #3e3939 32.5%, #7C6F7B 50%, #ff4fed 50%, #414eca 97.5%);
-
+  background: linear-gradient(
+    90deg,
+    #1b1919 0%,
+    #3e3939 32.5%,
+    #7c6f7b 50%,
+    #ff4fed 50%,
+    #414eca 97.5%
+  );
 
   background-size: 200% 200%;
   border: 1px solid #979797;
@@ -57,23 +60,22 @@ background: linear-gradient(90deg, #1b1919 0%, #3e3939 32.5%, #7C6F7B 50%, #ff4f
 
   border-radius: 5px;
   font-size: 1.2rem;
-  transition: background-position 0.3s ease-in-out; 
-  
+  transition: background-position 0.3s ease-in-out;
 }
 
 .primary-button:hover {
   /* background: linear-gradient(98.87deg, #ff4fed -11.99%, #414eca 115.02%); */
-  background-position:-100%
+  background-position: -100%;
 }
 
 /* bg */
-.dark-bg{
+.dark-bg {
   background-color: var(--dark-bg);
-  color: var(--white-text)
+  color: var(--white-text);
 }
-.dark-bg2{
+.dark-bg2 {
   background-color: var(--dark-bg2);
 }
-.light-bg{
+.light-bg {
   background-color: var(--off-white);
 }

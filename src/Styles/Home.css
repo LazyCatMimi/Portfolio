@@ -1,9 +1,12 @@
 .full-page-header {
   height: 100vh;
-  background-image: url('../Assets/header-bg.jpg');
-  background-size: cover; 
-  background-position: center; 
-  color: #fff; 
+  background-image: url("../Assets/header-bg2.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #fff;
   display: flex;
 }
 
@@ -11,8 +14,6 @@
   margin: 0;
   /* font-size: 2.5rem; */
 }
-
-
 
 /* Header Title */
 .full-page-header div {
@@ -47,36 +48,53 @@
 }
 
 /* focus stuff */
-#focus{
+#focus {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
   padding: 20px;
-  
 }
-#focus p{
-margin: 0;
+#focus p {
+  margin: 0;
 }
 
 /* aboout me */
-#about{
+#about {
   padding: 5% 0 5% 2%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
 }
-#about article{
+#about article {
   background-color: white;
   padding: 20px 40px;
 
-box-shadow: 2px 2px 22.1px rgba(191, 191, 191, 0.25);
-border-radius: 16px 0 0 16px;
+  box-shadow: 2px 2px 22.1px rgba(191, 191, 191, 0.25);
+  border-radius: 16px 0 0 16px;
 }
-#about img{
+#about img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 16px;
-  margin-right: 30px;
-  margin-left: 50px;
+}
 
+/* latest projects */
+#latest-projects {
+  background-image: url("../Assets/header-bg2.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#latest-projects h2 {
+  margin-top: 0;
+  text-align: center;
+}
+#latest-projects article {
+  width: 90%;
+  margin: auto;
+  padding: 2em;
+  border-radius: 12px;
 }
