@@ -3,6 +3,7 @@
   height: 100vh;
   color: #fff;
   display: flex;
+  overflow: hidden; /* Prevent content overflow */
 }
 
 .background-container {
@@ -145,7 +146,12 @@
 #latest-projects article div {
   padding: 2em;
 }
-
+.project-hover {
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  border: 0;
+}
 .num {
   font-size: 1.4em;
 }

@@ -102,7 +102,7 @@ export default function Home() {
 
         <div className="projects-grid">
           <article className="dark-bg2">
-            <button>
+            <button className="project-hover">
               <img src={plImg} alt="The Suite Spot Salon website"></img>
             </button>
             <div>
@@ -122,7 +122,9 @@ export default function Home() {
             </div>
           </article>
           <article className="dark-bg2">
-            <img src={plImg} alt="Noodletopia app"></img>
+            <button className="project-hover">
+              <img src={plImg} alt="The Suite Spot Salon website"></img>
+            </button>
             <div>
               <h3>Noodletopia</h3>
               <p>
@@ -138,7 +140,7 @@ export default function Home() {
           </article>
         </div>
       </section>
-      <section>
+      <section className="light-bg" id="explore-projects">
         <h2>Explore More Projects</h2>
         <button>UI/UX</button>
         <button>Development</button>
