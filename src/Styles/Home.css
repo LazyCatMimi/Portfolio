@@ -1,30 +1,31 @@
 .full-page-header {
+  position: relative;
   height: 100vh;
+  color: #fff;
+  display: flex;
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../Assets/header-bg2.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  color: #fff;
-  display: flex;
+  z-index: -99;
 }
 
-.full-page-header h1 {
-  margin: 0;
-  /* font-size: 2.5rem; */
+.content {
+  position: relative;
+  z-index: 1;
+  margin: 15% 0 0 8%; /* Adjust as needed */
 }
 
-/* Header Title */
-.full-page-header div {
-  margin: 15% 0 0 8%;
-}
-.full-page-header div h1 {
-  margin: 0.2em 0;
-}
 .title-sub-1 {
-  /* Hello, I am */
-
   font-family: "Julius Sans One";
   font-style: normal;
   font-weight: 400;
@@ -32,17 +33,18 @@
   line-height: 44px;
   color: #ff3d7c;
 }
+
 .title-name {
   font-size: 96px;
 }
+
 .title-sub-2 {
   font-weight: 400;
   font-size: 24px;
-
   letter-spacing: 0.3em;
-
   color: #ff3d7c;
 }
+
 .full-page-header button {
   margin-top: 4em;
 }
@@ -81,20 +83,69 @@
 }
 
 /* latest projects */
+#sort-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sort-projects {
+  /* Rectangle 25 */
+  background: #000000;
+  border: 1px solid #d3cfdc;
+  border-radius: 100px;
+  padding: 1em;
+  margin: 0 1em 4em 1em;
+  width: 200px;
+  font-family: "Khula", sans-serif;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #1b1919 0%,
+    #3e3939 50%,
+    #ff4fed 50%,
+    #414eca 97.5%
+  );
+  background-size: 200% 200%;
+}
+.sort-projects:hover {
+  /* background: linear-gradient(98.87deg, #ff4fed -11.99%, #414eca 115.02%); */
+  background-position: -100%;
+}
 #latest-projects {
-  background-image: url("../Assets/header-bg2.png");
+  padding: 2em;
+  /* background-image: url("../Assets/header-bg2.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 #latest-projects h2 {
   margin-top: 0;
   text-align: center;
 }
+#latest-projects h3 {
+  margin-top: 0;
+}
+#latest-projects img {
+  width: 100%;
+}
+
 #latest-projects article {
   width: 90%;
   margin: auto;
-  padding: 2em;
   border-radius: 12px;
+
+  box-shadow: 0px 4px 5.3px rgba(0, 0, 0, 0.74);
+  border-radius: 12px;
+}
+#latest-projects article div {
+  padding: 2em;
+}
+
+.num {
+  font-size: 1.4em;
 }
