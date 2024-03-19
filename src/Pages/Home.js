@@ -2,10 +2,11 @@ import ContactForm from "./Components/ContactForm";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import "../Styles/Home.css";
-import uiuxIcon from "../Assets/focus-uiux.svg";
-import devIcon from "../Assets/focus-dev.svg";
-import artIcon from "../Assets/focus-art.svg";
+import uiuxIcon from "../Assets/Icons/focus-uiux.svg";
+import devIcon from "../Assets/Icons/focus-dev.svg";
+import artIcon from "../Assets/Icons/focus-art.svg";
 import plImg from "../Assets/test.png";
+import arrRightIcon from "../Assets/Icons/chevron-right.svg";
 import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
@@ -171,8 +172,11 @@ export default function Home() {
       </section>
       <section className="light-bg" id="explore-projects">
         <h2>Read More on Projects</h2>
-        <div>
-          <button>UI/UX</button>
+        <div id="explore-btn-container">
+          <button>
+            UI/UX
+            <img src={arrRightIcon} alt="" />
+          </button>
           <button>Development</button>
           <button>Art & Design</button>
         </div>
