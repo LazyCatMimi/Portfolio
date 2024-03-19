@@ -30,7 +30,8 @@ img {
   color: var(--white-text);
 }
 /* Font stuff */
-h1 {
+h1,
+button {
   font-family: "Julius Sans One", sans-serif;
 }
 h2,

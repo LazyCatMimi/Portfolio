@@ -12,7 +12,18 @@ export default function Home() {
   const [scrollY, setScrollY] = useState(0);
   const [scaleFactor, setScaleFactor] = useState(1);
   const stopScalingRef = useRef(null);
-
+  const [activeSortButton, setActiveSortButton] = useState("all");
+  const sortButtons = [
+    { title: "All", id: "all" },
+    { title: "Web UI/UX", id: "web-ui-ux" },
+    { title: "Mobile UI/UX", id: "mobile-ui-ux" },
+    { title: "Web Dev", id: "web-dev" },
+    { title: "Mobile Dev", id: "mobile-dev" },
+    { title: "Design", id: "design" },
+  ];
+  const handleRadioButtonChange = (event) => {
+    setActiveSortButton(event.target.value); // Update the active button
+  };
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -91,13 +102,28 @@ export default function Home() {
         </article>
       </section>
       <section className="dark-bg" id="latest-projects">
-        <h2>Latest Projects</h2>
+        <h2>Projects Quick View</h2>
         <div id="sort-btn-container">
-          <button className="sort-projects off-white-text">Web UI/UX</button>
-          <button className="sort-projects off-white-text">Mobile UI/UX</button>
-          <button className="sort-projects off-white-text">Web Dev</button>
-          <button className="sort-projects off-white-text">Mobile Dev</button>
-          <button className="sort-projects off-white-text">Design</button>
+          {/* Map over the button data to render each radio button */}
+          {sortButtons.map((button, index) => (
+            <label
+              key={index}
+              className={`sort-projects off-white-text ${
+                activeSortButton === button.id ? "sort-projects-active" : ""
+              }`}
+              tabIndex={0}
+            >
+              <input
+                type="radio"
+                id={button.id}
+                name="sortType"
+                value={button.id}
+                checked={activeSortButton === button.id}
+                onChange={handleRadioButtonChange}
+              />
+              {button.title}
+            </label>
+          ))}
         </div>
 
         <div className="projects-grid">
@@ -145,9 +171,11 @@ export default function Home() {
       </section>
       <section className="light-bg" id="explore-projects">
         <h2>Read More on Projects</h2>
-        <button>UI/UX</button>
-        <button>Development</button>
-        <button>Art & Design</button>
+        <div>
+          <button>UI/UX</button>
+          <button>Development</button>
+          <button>Art & Design</button>
+        </div>
       </section>
       <section>
         <h2>Contact Me</h2>
