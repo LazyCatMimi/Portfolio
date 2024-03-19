@@ -2,4 +2,14 @@ form {
   background: linear-gradient(180deg, #0d0e10 0%, #2a2830 100%);
   box-shadow: 0px 4px 20.1px rgba(0, 0, 0, 0.34);
   border-radius: 31px;
+  padding: 2em;
+  width: 50%;
+}
+form h4 {
+  text-align: center;
+}
+input,
+label {
+  display: block;
+  width: 100%;
 }

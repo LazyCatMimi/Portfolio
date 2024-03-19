@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import "../../Styles/Components/Contact.css";
+import gitIcon from "../../Assets/Icons/contact-github.svg";
+import linkedinIcon from "../../Assets/Icons/contact-linkedin.svg";
+import mailIcon from "../../Assets/Icons/contact-mail.svg";
+import phoneIcon from "../../Assets/Icons/contact-phone.svg";
 
 export default function ContactForm() {
   // State to store form data
@@ -33,7 +38,7 @@ export default function ContactForm() {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <h4>Chat with me. Say hi!</h4>
+        <h4 className="off-white-text">Chat with me. Say hi!</h4>
         <div>
           <label htmlFor="name">Name:</label>
           <input
@@ -42,6 +47,7 @@ export default function ContactForm() {
             name="name"
             value={formData.name}
             onChange={handleInputChange}
+            placeholder="Name"
             required
           />
         </div>
@@ -53,6 +59,7 @@ export default function ContactForm() {
             name="email"
             value={formData.email}
             onChange={handleInputChange}
+            placeholder="Email"
             required
           />
         </div>
@@ -63,6 +70,7 @@ export default function ContactForm() {
             name="message"
             value={formData.message}
             onChange={handleInputChange}
+            placeholder="Message..."
             required
           />
         </div>
