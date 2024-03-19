@@ -181,19 +181,72 @@
 }
 #explore-projects button {
   display: block;
+  color: white;
   width: 100%;
   font-size: 1.3rem;
   height: 6em;
   margin: 1em 0;
+  padding: 0;
+  box-shadow: 2px 2px 22.1px rgba(191, 191, 191, 0.25);
+  border: none;
+  border-radius: 15px;
+}
+#explore-projects button div {
+  /* transition: backdrop-filter 0.5s ease; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  /* filter: drop-shadow(0px 4px 17.7px rgba(0, 0, 0, 0.37)); */
-  box-shadow: 2px 2px 22.1px rgba(191, 191, 191, 0.25);
-}
+  margin: 0;
+  border-radius: 15px;
 
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(93, 93, 93, 0.95) 100%
+  );
+  backdrop-filter: blur(5.15px);
+  width: 100%;
+  height: 100%;
+}
+#explore-projects button div:hover {
+  background: linear-gradient(
+    85.18deg,
+    rgba(229, 111, 232, 0.86) 23.29%,
+    rgba(87, 134, 255, 0.86) 85.02%
+  );
+  backdrop-filter: blur(0);
+  filter: drop-shadow(0px 4px 17.7px rgba(0, 0, 0, 0.37));
+}
+#uiux-btn {
+  background-image: url("../Assets/btn-uiux.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#dev-btn {
+  background-image: url("../Assets/btn-dev.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#artdes-btn {
+  background-image: url("../Assets/btn-art.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #explore-projects img {
   width: 2em;
   stroke: white;
+}
+/* contact me */
+#contact-me {
+  padding: 8%;
+}
+#contact-me h2 {
+  margin-top: 0;
 }

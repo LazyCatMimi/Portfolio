@@ -32,8 +32,8 @@ export default function ContactForm() {
 
   return (
     <div>
-      <h2>Contact Form</h2>
       <form onSubmit={handleSubmit}>
+        <h4>Chat with me. Say hi!</h4>
         <div>
           <label htmlFor="name">Name:</label>
           <input
@@ -66,7 +66,9 @@ export default function ContactForm() {
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="primary-button">
+          Submit
+        </button>
       </form>
     </div>
   );

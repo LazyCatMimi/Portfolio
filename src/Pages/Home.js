@@ -173,18 +173,31 @@ export default function Home() {
       <section className="light-bg" id="explore-projects">
         <h2>Read More on Projects</h2>
         <div id="explore-btn-container">
-          <button>
-            UI/UX
-            <img src={arrRightIcon} alt="" />
+          <button id="uiux-btn">
+            <div>
+              UI/UX
+              <img src={arrRightIcon} alt="" />
+            </div>
           </button>
-          <button>Development</button>
-          <button>Art & Design</button>
+          <button id="dev-btn">
+            <div>
+              Development
+              <img src={arrRightIcon} alt="" />
+            </div>
+          </button>
+          <button id="artdes-btn">
+            <div>
+              Art & Design
+              <img src={arrRightIcon} alt="" />
+            </div>
+          </button>
         </div>
       </section>
-      <section>
+      <section className="dark-bg" id="contact-me">
         <h2>Contact Me</h2>
         <ContactForm />
       </section>
+      <Footer />
     </div>
   );
 }
