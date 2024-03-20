@@ -1,23 +1,24 @@
 import "../../Styles/Components/NavBar.css";
+import logoIcon from "../../Assets/logo.png";
+import menuIcon from "../../Assets/Icons/menu.svg";
+import { useState } from "react";
 export default function NavBar() {
   return (
     <nav className="navbar">
-      {" "}
-      {/* Apply the 'navbar' class for styling */}
       <div className="logo">
-        {" "}
-        {/* Apply the 'logo' class for styling */}
-        {/* <img src="path_to_your_picture" alt="Logo" />  */}
-        <p>picture here</p>
+        <img src={logoIcon} alt="logo" />
       </div>
-      <ul>
-        <li>Home</li>
-        <li>Web Design</li>
-        <li>Web Dev</li>
-        <li>Art & Design</li>
-        <li>Resume</li>
-        <li>Contact</li>
-      </ul>
+      <div className="menu">
+        {/* <img src={menuIcon} alt="menu" /> */}
+        <ul>
+          <li>Home</li>
+          <li>Web Design</li>
+          <li>Web Dev</li>
+          <li>Art & Design</li>
+          <li>Resume</li>
+          <li>Contact</li>
+        </ul>
+      </div>
     </nav>
   );
 }
