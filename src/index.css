@@ -2,6 +2,7 @@
 :root {
   --dark-bg: #0d0e10;
   --dark-bg2: #24242a;
+  --dark-bg3: #19191d;
   --off-white: #f5f6f7;
   --magenta: #ff3d7c;
   --white-text: #d3cfdc;
@@ -36,6 +37,10 @@ img {
 }
 .dark-bg2 {
   background-color: var(--dark-bg2);
+  color: var(--white-text);
+}
+.dark-bg3 {
+  background-color: var(--dark-bg3);
   color: var(--white-text);
 }
 .light-bg {

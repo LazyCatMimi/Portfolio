@@ -36,7 +36,7 @@ export default function Home() {
         : 0;
 
       // Calculate the scaling factor based on the scroll position
-      if (scrollTop <= stopScalingPoint * 0.4) {
+      if (scrollTop <= stopScalingPoint * 0.7) {
         const newScaleFactor = 1 + scrollTop * 0.001; // Adjust the scaling factor as needed
         setScaleFactor(newScaleFactor);
       }
@@ -193,7 +193,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="dark-bg" id="contact-me">
+      <section className="dark-bg3" id="contact-me">
         <h2>Contact Me</h2>
         <ContactForm />
       </section>
