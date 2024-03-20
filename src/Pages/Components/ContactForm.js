@@ -36,11 +36,10 @@ export default function ContactForm() {
   };
 
   return (
-    <div>
+    <div id="contact-form">
       <form onSubmit={handleSubmit}>
-        <h4 className="off-white-text">Chat with me. Say hi!</h4>
+        <h3 className="off-white-text">Chat with me. Say hi!</h3>
         <div>
-          <label htmlFor="name">Name:</label>
           <input
             type="text"
             id="name"
@@ -52,7 +51,6 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="email">Email:</label>
           <input
             type="email"
             id="email"
@@ -64,7 +62,6 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="message">Message:</label>
           <textarea
             id="message"
             name="message"
@@ -74,10 +71,32 @@ export default function ContactForm() {
             required
           />
         </div>
-        <button type="submit" className="primary-button">
-          Submit
-        </button>
+        <div>
+          <button type="submit" className="primary-button">
+            Submit
+          </button>
+        </div>
       </form>
+      <div id="socials">
+        <h3 className="off-white-text">Contact Info</h3>
+        <a>
+          <img src={mailIcon} alt="email" />
+          <p>quynh.vo3314@gmail.com</p>
+        </a>
+        <a>
+          <img src={phoneIcon} alt="phone number" />
+          <p>(407) 797-2019</p>
+        </a>
+        <h3 className="off-white-text">Socials</h3>
+        <a>
+          <img src={linkedinIcon} alt="linkedIn" />
+          <p>Quynh Vo</p>
+        </a>
+        <a>
+          <img src={gitIcon} alt="Github" />
+          <p>LazyCatMimi</p>
+        </a>
+      </div>
     </div>
   );
 }

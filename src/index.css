@@ -29,6 +29,19 @@ img {
 .off-white-text {
   color: var(--white-text);
 }
+/* bg */
+.dark-bg {
+  background-color: var(--dark-bg);
+  color: var(--white-text);
+}
+.dark-bg2 {
+  background-color: var(--dark-bg2);
+  color: var(--white-text);
+}
+.light-bg {
+  background-color: var(--off-white);
+}
+
 /* Font stuff */
 h1,
 button {
@@ -70,16 +83,4 @@ h4 {
 .primary-button:hover {
   /* background: linear-gradient(98.87deg, #ff4fed -11.99%, #414eca 115.02%); */
   background-position: -100%;
-}
-
-/* bg */
-.dark-bg {
-  background-color: var(--dark-bg);
-  color: var(--white-text);
-}
-.dark-bg2 {
-  background-color: var(--dark-bg2);
-}
-.light-bg {
-  background-color: var(--off-white);
 }

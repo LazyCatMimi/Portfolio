@@ -1,15 +1,50 @@
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+/* form */
 form {
   background: linear-gradient(180deg, #0d0e10 0%, #2a2830 100%);
   box-shadow: 0px 4px 20.1px rgba(0, 0, 0, 0.34);
   border-radius: 31px;
   padding: 2em;
-  width: 50%;
+  width: 100%;
 }
-form h4 {
+form h3 {
   text-align: center;
 }
 input,
-label {
+textarea {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  margin: 1em 0;
+  padding: 0.7em;
+  font-family: "Khula", sans-serif;
+}
+
+/* input:focus,
+textarea:focus {
+  border: solid 1px magenta;
+} */
+form div:last-child {
+  display: flex;
+  justify-content: center;
+}
+form .primary-button {
+  width: 50%;
+}
+
+/* socials */
+#socials a {
+  display: flex;
+  align-items: center;
+}
+#socials img {
+  margin-right: 15px;
+}
+#socials h3 {
+  margin-top: 4em;
 }
