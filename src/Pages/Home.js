@@ -12,7 +12,9 @@ import { useState, useEffect, useRef } from "react";
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
   const [scaleFactor, setScaleFactor] = useState(1);
+  const [rotationAngle, setRotationAngle] = useState(0);
   const stopScalingRef = useRef(null);
+
   const [activeSortButton, setActiveSortButton] = useState("all");
   const sortButtons = [
     { title: "All", id: "all" },
@@ -37,8 +39,10 @@ export default function Home() {
 
       // Calculate the scaling factor based on the scroll position
       if (scrollTop <= stopScalingPoint * 0.7) {
-        const newScaleFactor = 1 + scrollTop * 0.001; // Adjust the scaling factor as needed
+        const newScaleFactor = 1 + scrollTop * 0.002;
         setScaleFactor(newScaleFactor);
+        const newRotationAngle = scrollTop * 0.1;
+        setRotationAngle(newRotationAngle);
       }
     };
 
@@ -55,7 +59,9 @@ export default function Home() {
       <header className="full-page-header">
         <div
           className="background-container"
-          style={{ transform: `scale(${scaleFactor})` }}
+          style={{
+            transform: `scale(${scaleFactor}) rotate(${rotationAngle}deg)`,
+          }}
         >
           {/* Background image goes here */}
         </div>
