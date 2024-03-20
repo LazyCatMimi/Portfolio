@@ -142,12 +142,8 @@ export default function Home() {
                 Salon
               </h3>
               <p>
-                The Suite Spot Salon is a fictitious salon suite client
-                developed by our team for our senior design project. This is a
-                2-semester project consisting of both the design and development
-                phases. Our website allows users to conveniently book
-                appointments, purchase items from the shop, and manage their
-                accounts.
+                A salon website where users can conveniently book appointments,
+                purchase items from the shop, and manage their accounts.
               </p>
               <button className="primary-button">Read More</button>
             </div>
@@ -162,12 +158,24 @@ export default function Home() {
                 Salon
               </h3>
               <p>
-                A mobile application designed for noodle enthusiasts, offering a
-                personalized experience for ordering and creating customized
-                noodle bowls with various toppings. Users can add reviews for
-                their noodle creations and share their unique combinations with
-                others. They can save their favorite noodle bowls for easy
-                access.
+                A salon website where users can conveniently book appointments,
+                purchase items from the shop, and manage their accounts.
+              </p>
+              <button className="primary-button">Read More</button>
+            </div>
+          </article>
+          <article className="dark-bg2">
+            <button className="project-hover">
+              <img src={plImg} alt="The Suite Spot Salon website"></img>
+            </button>
+            <div>
+              <h3>
+                <span className="num off-white-text">01 </span>| The Suite Spot
+                Salon
+              </h3>
+              <p>
+                A salon website where users can conveniently book appointments,
+                purchase items from the shop, and manage their accounts.
               </p>
               <button className="primary-button">Read More</button>
             </div>

@@ -128,7 +128,7 @@
 }
 
 #latest-projects {
-  padding: 2em 3em 4em 3em;
+  padding: 2em;
   /* background-image: url("../Assets/header-bg2.png");
   background-attachment: fixed;
   background-position: center;
@@ -137,7 +137,9 @@
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 3em;
 }
 #latest-projects h2 {
   text-align: center;
@@ -147,7 +149,7 @@
 }
 
 #latest-projects article {
-  width: 90%;
+  width: 100%;
   margin: auto;
   border-radius: 12px;
 
@@ -155,7 +157,7 @@
   border-radius: 12px;
 }
 #latest-projects article div {
-  padding: 2em;
+  padding: 1em 1.5em 1.5em 1.5em;
 }
 #latest-projects img {
   width: 100%;
@@ -175,7 +177,7 @@
 
 /* explore more projects */
 #explore-projects {
-  padding: 4em;
+  padding: 4em 2em;
 }
 #explore-projects h2 {
   margin-top: 0;
@@ -254,6 +256,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1070px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 920px) {
   #about {
     padding: 5% 2%;
@@ -269,9 +277,14 @@
   .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 20px;
   }
-  #latest-projects article {
-    width: 90%;
+}
+@media screen and (max-width: 580px) {
+  #focus {
+    display: block;
+  }
+  #focus div {
     margin: 1.4em auto;
   }
 }
