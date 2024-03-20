@@ -1,6 +1,5 @@
 import ContactForm from "./Components/ContactForm";
-import NavBar from "./Components/NavBar";
-import Footer from "./Components/Footer";
+
 import "../Styles/Home.css";
 import uiuxIcon from "../Assets/Icons/focus-uiux.svg";
 import devIcon from "../Assets/Icons/focus-dev.svg";
@@ -55,7 +54,6 @@ export default function Home() {
 
   return (
     <div>
-      <NavBar />
       <header className="full-page-header">
         <div
           className="background-container"
@@ -203,7 +201,6 @@ export default function Home() {
         <h2>Contact Me</h2>
         <ContactForm />
       </section>
-      <Footer />
     </div>
   );
 }
