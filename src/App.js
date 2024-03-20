@@ -2,16 +2,18 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import NavBar from "./Pages/Components/NavBar";
 import Footer from "./Pages/Components/Footer";
+import Contact from "./Pages/Contact";
 function App() {
   return (
     <div className="App">
-      <NavBar />
       <Router>
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

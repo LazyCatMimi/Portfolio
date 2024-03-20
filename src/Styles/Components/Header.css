@@ -1,0 +1,28 @@
+.full-page-header {
+  position: relative;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  overflow: hidden; /* Prevent content overflow */
+  background-color: #000000;
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 106%;
+  background-image: url("../Assets/header-bg2.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* z-index: -99; */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  margin: 8% 0 0 8%; /* Adjust as needed */
+}
