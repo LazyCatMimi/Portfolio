@@ -1,30 +1,10 @@
-.full-page-header {
+#Home .header {
   position: relative;
   height: 100vh;
   color: #fff;
   display: flex;
   overflow: hidden; /* Prevent content overflow */
   background-color: #000000;
-}
-
-.background-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 106%;
-  background-image: url("../Assets/header-bg2.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* z-index: -99; */
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  margin: 8% 0 0 8%; /* Adjust as needed */
 }
 
 .title-sub-1 {
@@ -34,6 +14,7 @@
   font-size: 40px;
   line-height: 44px;
   color: #ff3d7c;
+  margin: 50px 0;
 }
 
 .title-name {
@@ -43,14 +24,25 @@
 .title-sub-2 {
   font-weight: 400;
   font-size: 24px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.4em;
   color: #ff3d7c;
+  margin-bottom: 3em;
 }
 
 .full-page-header button {
-  margin-top: 4em;
+  margin-top: 8%;
 }
 
+#Home .content {
+  position: relative;
+  z-index: 1;
+  margin: 15% 0 0 8%;
+
+  text-align: left;
+  width: auto;
+  height: auto;
+  display: block;
+}
 /* focus stuff */
 #focus {
   display: flex;

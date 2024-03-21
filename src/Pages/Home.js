@@ -1,4 +1,5 @@
 import ContactForm from "./Components/ContactForm";
+import Header from "./Components/Header";
 
 import "../Styles/Home.css";
 import uiuxIcon from "../Assets/Icons/focus-uiux.svg";
@@ -6,14 +7,10 @@ import devIcon from "../Assets/Icons/focus-dev.svg";
 import artIcon from "../Assets/Icons/focus-art.svg";
 import plImg from "../Assets/test.png";
 import arrRightIcon from "../Assets/Icons/chevron-right.svg";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 
 export default function Home() {
-  const [scrollY, setScrollY] = useState(0);
-  const [scaleFactor, setScaleFactor] = useState(1);
-  const [rotationAngle, setRotationAngle] = useState(0);
   const stopScalingRef = useRef(null);
-
   const [activeSortButton, setActiveSortButton] = useState("all");
   const sortButtons = [
     { title: "All", id: "all" },
@@ -24,56 +21,23 @@ export default function Home() {
     { title: "Design", id: "design" },
   ];
   const handleRadioButtonChange = (event) => {
-    setActiveSortButton(event.target.value); // Update the active button
+    setActiveSortButton(event.target.value);
   };
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setScrollY(scrollTop);
-
-      // Get the position of the element with the stopScalingRef ref
-      const stopScalingPoint = stopScalingRef.current
-        ? stopScalingRef.current.offsetTop
-        : 0;
-
-      // Calculate the scaling factor based on the scroll position
-      if (scrollTop <= stopScalingPoint * 0.7) {
-        const newScaleFactor = 1 + scrollTop * 0.002;
-        setScaleFactor(newScaleFactor);
-        const newRotationAngle = scrollTop * 0.1;
-        setRotationAngle(newRotationAngle);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+  const HeaderContent = () => (
+    <>
+      <h1 className="title-sub-1">Hello, I am</h1>
+      <h1 className="title-name">Quynh Vo</h1>
+      <h1 className="title-sub-2">
+        Artist<span style={{ color: "white" }}>.</span> Designer
+        <span style={{ color: "white" }}>.</span> Developer
+        <span style={{ color: "white" }}>.</span>
+      </h1>
+      <button className="primary-button">See Resume</button>
+    </>
+  );
   return (
-    <div>
-      <header className="full-page-header">
-        <div
-          className="background-container"
-          style={{
-            transform: `scale(${scaleFactor}) rotate(${rotationAngle}deg)`,
-          }}
-        >
-          {/* Background image goes here */}
-        </div>
-        <div className="content">
-          <h1 className="title-sub-1">Hello, I am</h1>
-          <h1 className="title-name">Quynh Vo</h1>
-          <h1 className="title-sub-2">
-            Artist<span style={{ color: "white" }}>.</span> Designer
-            <span style={{ color: "white" }}>.</span> Developer
-            <span style={{ color: "white" }}>.</span>
-          </h1>
-          <button className="primary-button">See Resume</button>
-        </div>
-      </header>
+    <div id="Home">
+      <Header stopScalingRef={stopScalingRef} Content={HeaderContent} />
 
       <section ref={stopScalingRef} className="dark-bg" id="focus">
         <div>
