@@ -16,7 +16,7 @@
   background-image: url("../../Assets/header-bg2.png");
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   /* z-index: -99; */
 }

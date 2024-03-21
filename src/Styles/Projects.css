@@ -1,0 +1,25 @@
+:root {
+  --proj-padding: 3em;
+}
+.proj {
+  padding: var(--proj-padding);
+}
+.divider {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+}
+.btn-group {
+  text-align: center;
+}
+.proj button {
+  margin: 0 1em;
+  width: 200px;
+}
+.proj img {
+  grid-column: 2/3;
+}
+.proj article {
+  grid-column: 1/2;
+  grid-row: 1;
+}
