@@ -89,3 +89,14 @@ h4 {
   /* background: linear-gradient(98.87deg, #ff4fed -11.99%, #414eca 115.02%); */
   background-position: -100%;
 }
+
+.info {
+  background-color: var(--dark-bg);
+  color: var(--white-text);
+  text-align: center;
+  padding: 2em;
+}
+.info p {
+  font-family: "Julius Sans One", sans-serif;
+  margin: 0;
+}

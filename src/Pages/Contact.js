@@ -1,4 +1,5 @@
 import Header from "./Components/Header";
+import ContactForm from "./Components/ContactForm";
 import { useRef } from "react"; // Import useRef
 
 export default function Contact() {
@@ -9,26 +10,17 @@ export default function Contact() {
     </>
   );
   return (
-    <div>
+    <main>
       <Header stopScalingRef={stopScalingRef} Content={HeaderContent} />
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <p>this is contact</p>
-      <div className="info" ref={stopScalingRef}></div>
-    </div>
+
+      <div className="info" ref={stopScalingRef}>
+        <p>
+          Interested in my projects or just want to chat? send me a message!
+        </p>
+      </div>
+      <section className="dark-bg3" id="contact-me" style={{ height: "100%" }}>
+        <ContactForm />
+      </section>
+    </main>
   );
 }

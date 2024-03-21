@@ -36,7 +36,7 @@ export default function Home() {
     </>
   );
   return (
-    <div id="Home">
+    <main id="Home">
       <Header stopScalingRef={stopScalingRef} Content={HeaderContent} />
 
       <section ref={stopScalingRef} className="dark-bg" id="focus">
@@ -169,10 +169,10 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="dark-bg3" id="contact-me">
+      <section className="dark-bg3" id="contact-me" style={{ flex: 1 }}>
         <h2>Contact Me</h2>
         <ContactForm />
       </section>
-    </div>
+    </main>
   );
 }
