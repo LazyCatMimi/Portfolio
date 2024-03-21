@@ -1,9 +1,9 @@
 import Header from "./Components/Header";
 import ContactForm from "./Components/ContactForm";
-import { useRef } from "react"; // Import useRef
+import { useRef } from "react";
 
 export default function Contact() {
-  const stopScalingRef = useRef(null); // Define the stopScalingRef
+  const stopScalingRef = useRef(null);
   const HeaderContent = () => (
     <>
       <h1 className="header-title">Contact</h1>
