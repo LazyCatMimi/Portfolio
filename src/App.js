@@ -5,16 +5,28 @@ import Footer from "./Pages/Components/Footer";
 import ProjectsWebDesign from "./Pages/ProjectsWebDesign";
 import Resume from "./Pages/Resume";
 import Contact from "./Pages/Contact";
+
+export const PATHS = {
+  main: {
+    home: "/Portfolio",
+    contact: "/Portfolio/contact",
+    webDesign: "/Portfolio/web-design",
+    webDev: "/Portfolio/web-dev",
+    artDesign: "/Portfolio/art-design",
+    resume: "/Portfolio/resume",
+  },
+};
+
 function App() {
   return (
     <div className="App">
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/Portfolio" element={<Home />} />
-          <Route path="/Portfolio/contact" element={<Contact />} />
-          <Route path="/Portfolio/web-design" element={<ProjectsWebDesign />} />
-          <Route path="/Portfolio/resume" element={<Resume />} />
+          <Route path={PATHS.main.home} element={<Home />} />
+          <Route path={PATHS.main.contact} element={<Contact />} />
+          <Route path={PATHS.main.webDesign} element={<ProjectsWebDesign />} />
+          <Route path={PATHS.main.resume} element={<Resume />} />
         </Routes>
         <Footer />
       </Router>

@@ -19,6 +19,7 @@
 
   box-shadow: 2px 2px 22.1px rgba(191, 191, 191, 0.25);
 }
+
 #resume-content img {
   height: 100%;
   object-fit: cover;
@@ -49,11 +50,71 @@
 }
 @media screen and (max-width: 1040px) {
   #resume-content {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3%;
+  }
+  #resume-content img,
+  #summary,
+  #exp {
+    grid-column: 1/4;
+    grid-row: auto;
+  }
+
+  #edu,
+  #skills {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  #skills {
+    grid-column: 2/4;
+  }
+  #resume-content .center-text {
+    text-align: left;
   }
   #resume-content img {
     height: auto;
     object-fit: cover;
     border-radius: 16px;
+  }
+  #skills {
+    align-items: center;
+    justify-content: center;
+  }
+  #skills-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #skills .center-text,
+  #skills h2,
+  #edu h2,
+  #edu .center-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .exp-sep {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #resume-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #resume-content img,
+  #summary,
+  #exp,
+  #edu,
+  #skills {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  #skills-div {
+    display: block;
   }
 }

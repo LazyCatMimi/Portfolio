@@ -103,3 +103,6 @@ h4 {
 .gray-text {
   color: #979797;
 }
+.center-text {
+  text-align: center;
+}
