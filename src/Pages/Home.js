@@ -7,10 +7,12 @@ import devIcon from "../Assets/Icons/focus-dev.svg";
 import artIcon from "../Assets/Icons/focus-art.svg";
 import plImg from "../Assets/test.png";
 import arrRightIcon from "../Assets/Icons/chevron-right.svg";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function Home() {
   const stopScalingRef = useRef(null);
+  const textRef = useRef(null);
+
   const [activeSortButton, setActiveSortButton] = useState("all");
   const sortButtons = [
     { title: "All", id: "all" },
@@ -57,7 +59,7 @@ export default function Home() {
         <img src={plImg} alt="Quynh smiling"></img>
         <article>
           <h2>About Me</h2>
-          <p>
+          <p ref={textRef}>
             Greetings! My name is Quynh, and I am a student at the University of
             Central Florida, where I am pursuing a bachelor's degree in Digital
             Media: Web Design with a minor in Information Technology. My

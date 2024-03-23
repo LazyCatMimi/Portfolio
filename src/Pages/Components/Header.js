@@ -21,7 +21,7 @@ export default function Header({ stopScalingRef, Content }) {
       if (scrollTop <= stopScalingPoint * 0.7) {
         const newScaleFactor = 1 + scrollTop * 0.002;
         setScaleFactor(newScaleFactor);
-        const newRotationAngle = scrollTop * 0.1;
+        const newRotationAngle = scrollTop * 0.05;
         setRotationAngle(newRotationAngle);
       }
     };

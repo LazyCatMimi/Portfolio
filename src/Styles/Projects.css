@@ -1,12 +1,21 @@
 :root {
   --proj-padding: 3em;
 }
+/* general proj */
 .proj {
   padding: var(--proj-padding);
 }
-.divider {
+.proj article span {
+  font-weight: bold;
+}
+.proj-for .divider {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 2em;
+}
+.proj-rev .divider {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 2em;
 }
 .btn-group {
@@ -16,10 +25,19 @@
   margin: 0 1em;
   width: 200px;
 }
-.proj img {
+.proj-for img {
   grid-column: 2/3;
 }
-.proj article {
+.proj-for article {
   grid-column: 1/2;
   grid-row: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .proj .divider {
+    display: block;
+  }
+  #projects h2 {
+    text-align: center;
+  }
 }
