@@ -3,7 +3,7 @@
   --dark-bg: #0d0e10;
   --dark-bg2: #24242a;
   --dark-bg3: #19191d;
-  --off-white: #f5f6f7;
+  --off-white: #eeeff0;
   --magenta: #ff3d7c;
   --white-text: #d3cfdc;
 }
@@ -99,4 +99,7 @@ h4 {
 .info p {
   font-family: "Julius Sans One", sans-serif;
   margin: 0;
+}
+.gray-text {
+  color: #979797;
 }

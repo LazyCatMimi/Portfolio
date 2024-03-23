@@ -6,7 +6,13 @@
   overflow: hidden; /* Prevent content overflow */
   background-color: #000000;
 }
-
+#Home .light-bg {
+  background-image: url("../Assets/test.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
 .title-sub-1 {
   font-family: "Julius Sans One";
   font-style: normal;
