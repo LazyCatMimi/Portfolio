@@ -14,22 +14,22 @@ export default function NavBar() {
         {/* <img src={menuIcon} alt="menu" /> */}
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/Portfolio">Home</Link>
           </li>
           <li>
-            <Link to="/web-design">Web Design</Link>
+            <Link to="/Portfolio/web-design">Web Design</Link>
           </li>
           <li>
-            <Link to="/web-dev">Web Dev</Link>
+            <Link to="/Portfolio/web-dev">Web Dev</Link>
           </li>
           <li>
-            <Link to="/art-design">Art & Design</Link>
+            <Link to="/Portfolio/art-design">Art & Design</Link>
           </li>
           <li>
-            <Link to="/resume">Resume</Link>
+            <Link to="/Portfolio/resume">Resume</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/Portfolio/contact">Contact</Link>
           </li>{" "}
           {/* Link to the contact page */}
         </ul>
