@@ -1,13 +1,17 @@
 import ContactForm from "./Components/ContactForm";
 import Header from "./Components/Header";
-
 import "../Styles/Home.css";
 import uiuxIcon from "../Assets/Icons/focus-uiux.svg";
 import devIcon from "../Assets/Icons/focus-dev.svg";
 import artIcon from "../Assets/Icons/focus-art.svg";
 import plImg from "../Assets/test.png";
 import arrRightIcon from "../Assets/Icons/chevron-right.svg";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
+
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import React from "react";
+import StaggeredText from "./Components/StaggeredText";
 
 export default function Home() {
   const stopScalingRef = useRef(null);
@@ -28,7 +32,9 @@ export default function Home() {
   const HeaderContent = () => (
     <>
       <h1 className="title-sub-1">Hello, I am</h1>
-      <h1 className="title-name">Quynh Vo</h1>
+      <h1 className="title-name">
+        <StaggeredText text="Quynh Vo" staggerDelay={0.15} />
+      </h1>
       <h1 className="title-sub-2">
         Artist<span style={{ color: "white" }}>.</span> Designer
         <span style={{ color: "white" }}>.</span> Developer
@@ -58,22 +64,21 @@ export default function Home() {
       <section className="light-bg" id="about">
         <img src={plImg} alt="Quynh smiling"></img>
         <article>
-          <h2>About Me</h2>
-          <p ref={textRef}>
-            Greetings! My name is Quynh, and I am a student at the University of
-            Central Florida, where I am pursuing a bachelor's degree in Digital
-            Media: Web Design with a minor in Information Technology. My
-            passions lie in web design, development, and art. Having been born
-            in 2002, I witnessed the rapid evolution of technology firsthand,
-            which inspired me to become a creator of unique web experiences.
-            Technology and art are my favorite subjects to learn about and
-            discuss. In my spare time, I enjoy engaging in artistic activities
-            such as drawing, which allows me to express my creativity.
+          <h2>
+            <StaggeredText text="About Me" staggerDelay={0.1} />
+          </h2>
+          <p>
+            <StaggeredText
+              text="Greetings! My name is Quynh, and I am a student at the University of Central Florida, where I am pursuing a bachelor's degree in Digital Media: Web Design with a minor in Information Technology. My passions lie in web design, development, and art. Having been born in 2002, I witnessed the rapid evolution of technology firsthand, which inspired me to become a creator of unique web experiences. Technology and art are my favorite subjects to learn about and discuss. In my spare time, I enjoy engaging in artistic activities such as drawing, which allows me to express my creativity."
+              staggerDelay={0.006}
+            />
           </p>
         </article>
       </section>
       <section className="dark-bg" id="latest-projects">
-        <h2>Projects Quick View</h2>
+        <h2>
+          <StaggeredText text="Projects Quick View" staggerDelay={0.08} />
+        </h2>
         <div id="sort-btn-container">
           {/* Map over the button data to render each radio button */}
           {sortButtons.map((button, index) => (
@@ -149,7 +154,9 @@ export default function Home() {
         </div>
       </section>
       <section className="light-bg" id="explore-projects">
-        <h2>Read More on Projects</h2>
+        <h2>
+          <StaggeredText text="Read More on Projects" staggerDelay={0.08} />
+        </h2>
         <div id="explore-btn-container">
           <button id="uiux-btn">
             <div>
@@ -172,7 +179,9 @@ export default function Home() {
         </div>
       </section>
       <section className="dark-bg3" id="contact-me" style={{ flex: 1 }}>
-        <h2>Contact Me</h2>
+        <h2>
+          <StaggeredText text="Contact Me" staggerDelay={0.1} />
+        </h2>
         <ContactForm />
       </section>
     </main>
