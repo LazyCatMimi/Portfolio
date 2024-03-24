@@ -1,8 +1,8 @@
 .navbar {
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0.343) 100%
+    rgba(0, 0, 0, 0.911) 0%,
+    rgba(0, 0, 0, 0.715) 100%
   );
   backdrop-filter: blur(11.45px);
   font-family: "Julius Sans One", sans-serif;
@@ -26,26 +26,31 @@
 .navbar ul li {
   display: inline;
 
-  border-bottom: 2px solid #ff3d7a00;
   text-shadow: 1px 1px 17.4px rgba(19, 12, 16, 0.897);
 }
+.navbar ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 14px 23px 10px 23px;
+  border: 2px solid #ff3d7a00;
+}
 .navbar ul a:hover {
-  color: #ff3d7c;
-  border-bottom: 2px solid #ff3d7c;
+  color: transparent; /* Make the text transparent */
+  background-image: linear-gradient(93.51deg, #5786ff 0%, #ff4fed 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
   text-shadow: 1px 1px 17.4px rgba(19, 12, 16, 0.897);
   cursor: pointer;
+
   transition: all 0.5s ease;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(93.51deg, #5786ff 0%, #ff4fed 100%) 0 0 80% 0;
 }
 
 .navbar ul li:last-child {
   margin-right: 0;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  padding: 14px 23px;
 }
 
 .logo img {
