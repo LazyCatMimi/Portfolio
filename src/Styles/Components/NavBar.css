@@ -95,9 +95,6 @@
     backdrop-filter: blur(12.75px);
   }
 
-  .navbar ul {
-    padding: 5rem;
-  }
   .navbar ul li,
   .navbar ul li:last-child {
     display: block;
@@ -106,7 +103,7 @@
   .navbar ul li {
     margin-bottom: 10px;
     text-align: center;
-    width: 100%;
+    width: 70%;
   }
   .navbar ul li a {
     display: block;
@@ -135,6 +132,10 @@
 
   /* Hide menu icon when menu items are shown */
   .menu-items.active {
+    /* display: block; */
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
