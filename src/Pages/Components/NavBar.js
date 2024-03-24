@@ -66,12 +66,14 @@ export default function NavBar({ revealBGRef }) {
         />
         <motion.ul
           className={`menu-items ${menuOpen ? "active" : ""} `}
-          // style={`${ ? { opacity: 1 } : ""}`}
           animate={controls}
           variants={ulVariants}
         >
           {menuItems.map((item, index) => (
-            <motion.li key={index}>
+            <motion.li
+              key={index}
+              style={{ display: `${!menuOpen ? "none" : "block"}` }}
+            >
               <Link to={item.path} onClick={toggleMenu}>
                 {item.text}
               </Link>

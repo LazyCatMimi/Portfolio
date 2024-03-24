@@ -87,8 +87,11 @@
 /* Media query for smaller screens */
 @media (max-width: 980px) {
   .menu-items {
-    display: none;
+    /* display: none; */
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -136,11 +139,11 @@
   }
 
   /* Hide menu icon when menu items are shown */
-  .menu-items.active {
-    /* display: block; */
+  /* .menu-items.active {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  } */
 }
