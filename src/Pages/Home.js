@@ -6,9 +6,11 @@ import devIcon from "../Assets/Icons/focus-dev.svg";
 import artIcon from "../Assets/Icons/focus-art.svg";
 import plImg from "../Assets/test.png";
 import arrRightIcon from "../Assets/Icons/chevron-right.svg";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
-import React from "react";
+// animations
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import StaggeredText from "./Components/StaggeredText";
 import LineRevealText from "./Components/LineRevealText";
 
@@ -41,23 +43,51 @@ export default function Home() {
       <button className="primary-button">See Resume</button>
     </>
   );
+
+  // animation for focus banner
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  const variants = {
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, y: 50 },
+  };
   return (
     <main id="Home">
       <Header stopScalingRef={stopScalingRef} Content={HeaderContent} />
 
       <section ref={stopScalingRef} className="dark-bg" id="focus">
-        <div>
-          <img src={uiuxIcon} alt=""></img>
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={variants}
+        >
+          <img src={uiuxIcon} alt="" />
           <p>UI/UX</p>
-        </div>
-        <div>
-          <img src={devIcon} alt=""></img>
+        </motion.div>
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={variants}
+        >
+          <img src={devIcon} alt="" />
           <p>Full Stack Development</p>
-        </div>
-        <div>
-          <img src={artIcon} alt=""></img>
+        </motion.div>
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={variants}
+        >
+          <img src={artIcon} alt="" />
           <p>Art & Design</p>
-        </div>
+        </motion.div>
       </section>
       <section className="light-bg" id="about">
         <img src={plImg} alt="Quynh smiling"></img>
@@ -72,7 +102,7 @@ export default function Home() {
       </section>
       <section className="dark-bg" id="latest-projects">
         <h2>
-          <StaggeredText text="Projects Quick View" staggerDelay={0.08} />
+          <StaggeredText text="Projects Quick View" staggerDelay={0.05} />
         </h2>
         <div id="sort-btn-container">
           {/* Map over the button data to render each radio button */}
@@ -150,7 +180,7 @@ export default function Home() {
       </section>
       <section className="light-bg" id="explore-projects">
         <h2>
-          <StaggeredText text="Read More on Projects" staggerDelay={0.08} />
+          <StaggeredText text="Read More on Projects" staggerDelay={0.05} />
         </h2>
         <div id="explore-btn-container">
           <button id="uiux-btn">

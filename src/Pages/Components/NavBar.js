@@ -3,7 +3,7 @@ import logoIcon from "../../Assets/logo.png";
 import menuIcon from "../../Assets/Icons/menu.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { PATHS } from "../../App";
+import PATHS from "../../Data/Pages.json";
 export default function NavBar() {
   return (
     <nav className="navbar">

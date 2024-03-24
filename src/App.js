@@ -5,17 +5,7 @@ import Footer from "./Pages/Components/Footer";
 import ProjectsWebDesign from "./Pages/ProjectsWebDesign";
 import Resume from "./Pages/Resume";
 import Contact from "./Pages/Contact";
-
-export const PATHS = {
-  main: {
-    home: "/Portfolio",
-    contact: "/Portfolio/contact",
-    webDesign: "/Portfolio/web-design",
-    webDev: "/Portfolio/web-dev",
-    artDesign: "/Portfolio/art-design",
-    resume: "/Portfolio/resume",
-  },
-};
+import PATHS from "./Data/Pages.json";
 
 function App() {
   return (
