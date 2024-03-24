@@ -24,22 +24,12 @@ export default function NavBar({ revealBGRef }) {
     visible: {
       opacity: 1,
 
-      clipPath: `circle(${1000 * 2 + 200}px at 100% 0%)`,
-      transition: {
-        stiffness: 20,
-        restDelta: 2,
-
-        staggerChildren: 0.5,
-      },
+      // clipPath: `circle(${1000 * 2 + 200}px at 100% 0%)`,
     },
     hidden: {
       opacity: 0,
 
-      clipPath: "circle(30px at 100% 0%)",
-      transition: {
-        stiffness: 400,
-        damping: 40,
-      },
+      // clipPath: "circle(30px at 100% 0%)",
     },
   };
   const liVariants = {
@@ -80,7 +70,7 @@ export default function NavBar({ revealBGRef }) {
           onClick={toggleMenu}
         />
         <motion.ul
-          className="menu-items"
+          className={`menu-items ${menuOpen ? "active" : ""}`}
           animate={controls}
           variants={ulVariants}
         >

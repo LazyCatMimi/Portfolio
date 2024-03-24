@@ -82,6 +82,7 @@
 /* Media query for smaller screens */
 @media (max-width: 980px) {
   .menu-items {
+    display: none;
     flex-direction: column;
     position: fixed;
     top: 0;
