@@ -78,6 +78,11 @@
   display: none; /* Hide menu icon by default */
   z-index: 100;
 }
+@media (min-width: 980px) {
+  ul {
+    opacity: 1 !important;
+  }
+}
 
 /* Media query for smaller screens */
 @media (max-width: 980px) {

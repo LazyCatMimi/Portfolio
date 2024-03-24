@@ -20,14 +20,15 @@ export default function NavBar({ revealBGRef }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const controls = useAnimation(); // Initialize useAnimation
   const ulVariants = {
-    // Define variants for sliding animation
     visible: {
       opacity: 1,
+      y: 0,
 
       // clipPath: `circle(${1000 * 2 + 200}px at 100% 0%)`,
     },
     hidden: {
       opacity: 0,
+      y: "-100%",
 
       // clipPath: "circle(30px at 100% 0%)",
     },
@@ -42,19 +43,13 @@ export default function NavBar({ revealBGRef }) {
     },
     closed: {
       y: 50,
+      delay: 0.5,
       opacity: 0,
-      transition: {
-        y: { stiffness: 1000 },
-      },
     },
   };
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    if (!menuOpen) {
-      controls.start("visible");
-    } else {
-      controls.start("hidden");
-    }
+    controls.start(menuOpen ? "hidden" : "visible");
   };
 
   return (
@@ -70,16 +65,13 @@ export default function NavBar({ revealBGRef }) {
           onClick={toggleMenu}
         />
         <motion.ul
-          className={`menu-items ${menuOpen ? "active" : ""}`}
+          className={`menu-items ${menuOpen ? "active" : ""} `}
+          // style={`${ ? { opacity: 1 } : ""}`}
           animate={controls}
           variants={ulVariants}
         >
           {menuItems.map((item, index) => (
-            <motion.li
-              key={index}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
+            <motion.li key={index}>
               <Link to={item.path} onClick={toggleMenu}>
                 {item.text}
               </Link>
