@@ -37,7 +37,7 @@
 }
 .navbar ul a:hover {
   color: transparent; /* Make the text transparent */
-  background-image: linear-gradient(93.51deg, #5786ff 0%, #ff4fed 100%);
+  background-image: linear-gradient(93.51deg, #7ba1ff 0%, #ff5eef 100%);
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: 1px 1px 17.4px rgba(19, 12, 16, 0.897);
@@ -80,7 +80,7 @@
 }
 
 /* Media query for smaller screens */
-@media (max-width: 960px) {
+@media (max-width: 980px) {
   .menu-items {
     display: none; /* Hide menu items on smaller screens */
     flex-direction: column;
