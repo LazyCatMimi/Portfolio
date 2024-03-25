@@ -43,7 +43,6 @@ export default function NavBar({ revealBGRef }) {
     },
     closed: {
       y: 50,
-      delay: 0.5,
       opacity: 0,
     },
   };
