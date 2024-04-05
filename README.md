@@ -4,7 +4,7 @@ Visit my portfolio site here:
 todo:
 - create projects json
 - load projects using map
-- remove rotate on header
+
 
 current bugs:
 - nav on mobile does not animate the first time

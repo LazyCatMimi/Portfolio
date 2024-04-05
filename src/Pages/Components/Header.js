@@ -19,7 +19,7 @@ export default function Header({ stopScalingRef, Content }) {
 
       // Calculate the scaling factor based on the scroll position
       if (scrollTop <= stopScalingPoint * 0.7) {
-        const newScaleFactor = 1 + scrollTop * 0.002;
+        const newScaleFactor = 1 + scrollTop * 0.001;
         setScaleFactor(newScaleFactor);
         const newRotationAngle = scrollTop * 0.05;
         setRotationAngle(newRotationAngle);
@@ -38,7 +38,7 @@ export default function Header({ stopScalingRef, Content }) {
       <div
         className="background-container"
         style={{
-          transform: `scale(${scaleFactor}) rotate(${rotationAngle}deg)`,
+          transform: `scale(${scaleFactor})`,
         }}
       ></div>
       <div className="content">
