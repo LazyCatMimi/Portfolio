@@ -18,6 +18,9 @@
   grid-template-columns: 1fr 2fr;
   gap: 2em;
 }
+.proj-rev h2{
+text-align: center;
+}
 .btn-group {
   text-align: center;
 }

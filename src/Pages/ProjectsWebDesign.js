@@ -2,6 +2,7 @@ import Header from "./Components/Header";
 import { useRef } from "react";
 import plImg from "../Assets/test.png";
 import "../Styles/Projects.css";
+import projects from "../Data/Projects.json"
 
 export default function ProjectsWebDesign() {
   const stopScalingRef = useRef(null);
