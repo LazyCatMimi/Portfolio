@@ -4,7 +4,7 @@
       "name": "The Suite Spot Salon",
       "tools": "Figma",
       "type": "web",
-      "short-summary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
+      "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
       "summary": "The Suite Spot Salon is a fictitious salon suite client developed by our team for our senior design project. Recognizing the importance of booking features in the salon industry, we aimed to address this gap in the market. Our website allows users to conveniently book appointments, purchase items from the shop, and manage their accounts.",
       "tasks": [
         "Collaborated with a team to create low-fi and hi-fi prototypes",
@@ -35,7 +35,7 @@
       "name": "Noodletopia",
       "tools": "Figma",
       "type": "mobile",
-      "short-summary": "a mobile application designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls with various toppings.",
+      "shortSummary": "a mobile application designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls with various toppings.",
       "summary": "Noodletopia is a mobile application designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls with various toppings. Users have the freedom to add reviews for their noodle creations and share their unique combinations with others. Additionally, they can save their favorite noodle bowls for easy access. ",
       "tasks": [
         "Created hi-fi Prototype",
@@ -59,7 +59,7 @@
       "name": "Book Store App",
       "tools": "Invision, Powerpoint, Photoshop",
       "type": "mobile",
-      "short-summary": "An app based on the Writer's Block Bookstore website with updated visuals and  new social features.",
+      "shortSummary": "An app based on the Writer's Block Bookstore website with updated visuals and  new social features.",
       "summary": "The Writer's Block Bookstore app was derived from the existing Writer's  Block Bookstore website, undergoing a transformation into a more social  and interactive platform. With a diverse array of capabilities, users  can seamlessly share, save, and rate content, along with managing their  accounts. These integrated features significantly enhance user  engagement through fostering social interactions, thereby enriching the  overall user experience.",
       "tasks": [
         "Created hi-fi Prototype",
@@ -77,7 +77,7 @@
       "name": "Flashcard App",
       "tools": "Figma",
       "type": "mobile",
-      "short-summary": "A Simple flash card app where users can create, edit, delete, and learn cards.",
+      "shortSummary": "A Simple flash card app where users can create, edit, delete, and learn cards.",
       "summary": "A Simple flash card app where users can create, edit, delete, and learn cards.",
       "tasks": [
         "Created hi-fi Prototype",
@@ -95,7 +95,7 @@
       "name": "Domino's Accessibility Redesign",
       "tools": "Figma",
       "type": "web",
-      "short-summary": "A redesign of Domino's home page to improve accessibility.",
+      "shortSummary": "A redesign of Domino's home page to improve accessibility.",
       "summary": "The Domino's website appears cluttered, leading to cognitive overload even for those without disabilities. Additionally, visibility issues arise from text blending with images or being too small to read. My redesign of Domino’s homepage focuses on maintaining the same content while reducing cognitive overload and improving visibility.",
       "tasks": [
         "Created hi-fi Prototype",
@@ -113,7 +113,7 @@
       "name": "TO DO App",
       "tools": "Figma",
       "type": "mobile",
-      "short-summary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
+      "shortSummary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
       "summary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
       "tasks": [
         "Created hi-fi Prototype",

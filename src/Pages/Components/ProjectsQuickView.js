@@ -2,11 +2,16 @@ import plImg from "../../Assets/test.png";
 import PROJECTS from "../../Data/Projects.json";
 import StaggeredText from "./StaggeredText";
 import { useState } from "react";
+
 export default function ProjectsQuickView() {
   const [activeSortButton, setActiveSortButton] = useState("all");
   const sortButtons = [
-    { title: "All", id: "all" },
-    { title: "Web UI/UX", id: "web-ui-ux" },
+    {
+      title: "All",
+      id: "all",
+      data: [...PROJECTS["web-design"], ...PROJECTS["web-dev"]],
+    },
+    { title: "Web UI/UX", id: "web-ui-ux", data: PROJECTS["web-design"] },
     { title: "Mobile UI/UX", id: "mobile-ui-ux" },
     { title: "Web Dev", id: "web-dev" },
     { title: "Mobile Dev", id: "mobile-dev" },
@@ -15,6 +20,24 @@ export default function ProjectsQuickView() {
   const handleRadioButtonChange = (event) => {
     setActiveSortButton(event.target.value);
   };
+
+  const Project = ({ name, tools, shortSummary, tasks, actions, i }) => (
+    <article className="dark-bg2">
+      <button className="project-hover">
+        <img src={plImg} alt="The Suite Spot Salon website"></img>
+      </button>
+      <div>
+        <h3>
+          <span className="num off-white-text">
+            {(i + 1).toString().padStart(2, "0")}{" "}
+          </span>
+          | {name}
+        </h3>
+        <p>{shortSummary}</p>
+        <button className="primary-button">Read More</button>
+      </div>
+    </article>
+  );
   return (
     <section className="dark-bg" id="latest-projects">
       <h2>
@@ -42,56 +65,10 @@ export default function ProjectsQuickView() {
           </label>
         ))}
       </div>
-
       <div className="projects-grid">
-        <article className="dark-bg2">
-          <button className="project-hover">
-            <img src={plImg} alt="The Suite Spot Salon website"></img>
-          </button>
-          <div>
-            <h3>
-              <span className="num off-white-text">01 </span>| The Suite Spot
-              Salon
-            </h3>
-            <p>
-              A salon website where users can conveniently book appointments,
-              purchase items from the shop, and manage their accounts.
-            </p>
-            <button className="primary-button">Read More</button>
-          </div>
-        </article>
-        <article className="dark-bg2">
-          <button className="project-hover">
-            <img src={plImg} alt="The Suite Spot Salon website"></img>
-          </button>
-          <div>
-            <h3>
-              <span className="num off-white-text">01 </span>| The Suite Spot
-              Salon
-            </h3>
-            <p>
-              A salon website where users can conveniently book appointments,
-              purchase items from the shop, and manage their accounts.
-            </p>
-            <button className="primary-button">Read More</button>
-          </div>
-        </article>
-        <article className="dark-bg2">
-          <button className="project-hover">
-            <img src={plImg} alt="The Suite Spot Salon website"></img>
-          </button>
-          <div>
-            <h3>
-              <span className="num off-white-text">01 </span>| The Suite Spot
-              Salon
-            </h3>
-            <p>
-              A salon website where users can conveniently book appointments,
-              purchase items from the shop, and manage their accounts.
-            </p>
-            <button className="primary-button">Read More</button>
-          </div>
-        </article>
+        {PROJECTS["web-design"].map((project, index) => (
+          <Project key={index} {...project} i={index} />
+        ))}
       </div>
     </section>
   );
