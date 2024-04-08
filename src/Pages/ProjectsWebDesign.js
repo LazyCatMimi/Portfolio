@@ -3,6 +3,7 @@ import { useRef } from "react";
 import plImg from "../Assets/test.png";
 import "../Styles/Projects.css";
 import PROJECTS from "../Data/Projects.json";
+import StaggeredText from "./Components/StaggeredText";
 
 export default function ProjectsWebDesign() {
   const stopScalingRef = useRef(null);
@@ -16,7 +17,9 @@ export default function ProjectsWebDesign() {
     <section
       className={`proj ${i % 2 === 0 ? "proj-for" : "proj-rev light-bg"}`}
     >
-      <h2>{name}</h2>
+      <h2>
+        <StaggeredText text={name} staggerDelay={0.05} />
+      </h2>
       <div className="divider">
         <img src={plImg} alt="" />
         <article>
