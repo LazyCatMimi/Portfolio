@@ -16,7 +16,7 @@ export default function LineRevealText({ text }) {
           key={index}
           initial={{ opacity: 0, y: 20 }} // Initial hidden state
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }} // Animate when in view
-          transition={{ duration: 0.5, delay: index * 0.2 }} // Adjust the delay for staggered animation
+          transition={{ duration: 0.7, delay: index * 0.2 }} // Adjust the delay for staggered animation
         >
           {line}
           {index < lines.length - 1 && <br />}{" "}

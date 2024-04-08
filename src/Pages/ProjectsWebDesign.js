@@ -2,7 +2,7 @@ import Header from "./Components/Header";
 import { useRef } from "react";
 import plImg from "../Assets/test.png";
 import "../Styles/Projects.css";
-import projects from "../Data/Projects.json"
+import PROJECTS from "../Data/Projects.json";
 
 export default function ProjectsWebDesign() {
   const stopScalingRef = useRef(null);
@@ -11,6 +11,42 @@ export default function ProjectsWebDesign() {
       <h1 className="header-title">Web Design Projects</h1>
     </>
   );
+
+  const Project = ({ name, tools, summary, tasks, actions, i }) => (
+    <section
+      className={`proj ${i % 2 === 0 ? "proj-for" : "proj-rev light-bg"}`}
+    >
+      <h2>{name}</h2>
+      <div className="divider">
+        <img src={plImg} alt="" />
+        <article>
+          <p>
+            <span>Tools:</span> {tools}
+          </p>
+          <p>
+            <span>Project Overview:</span> {summary}
+          </p>
+          <p>
+            <span>Tasks Accomplished:</span>
+          </p>
+          <ul>
+            {tasks.map((task, index) => (
+              <li key={index}>{task}</li>
+            ))}
+          </ul>
+
+          <div className="btn-group">
+            {actions.map((action, index) => (
+              <button key={index} className={"primary-button"}>
+                {action.name}
+              </button>
+            ))}
+          </div>
+        </article>
+      </div>
+    </section>
+  );
+
   return (
     <main id="projects">
       <Header stopScalingRef={stopScalingRef} Content={HeaderContent} />
@@ -19,68 +55,9 @@ export default function ProjectsWebDesign() {
           Interested in my projects or just want to chat? send me a message!
         </p>
       </div>
-      <section className="proj proj-for">
-        <h2>The Suite Spot Salon</h2>
-        <div className="divider">
-          <img src={plImg} alt="" />
-          <article>
-            <p>
-              <span>Tools:</span> Figma
-            </p>
-            <p>
-              <span>Project Overview:</span> The Suite Spot Salon is a
-              fictitious salon suite client developed by our team for our senior
-              design project. Recognizing the importance of booking features in
-              the salon industry, we aimed to address this gap in the market.
-              Our website allows users to conveniently book appointments,
-              purchase items from the shop, and manage their accounts.
-            </p>
-            <p>
-              <span>Tasks Accomplished:</span> Collaborated with a team to
-              create low-fi and hi-fi prototypes Implemented mobile-first design
-              approach with two hi-fi prototypes Generated comprehensive
-              documentation outlining the design process Ensured consistency and
-              accessibility throughout the design phase Conducted user testings
-              to improve design
-            </p>
-            <div className="btn-group">
-              <button className="primary-button"> Stuff</button>
-              <button className="primary-button"> Stuff</button>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section className="proj proj-rev light-bg">
-        <h2>The Suite Spot Salon</h2>
-        <div className="divider">
-          <img src={plImg} alt="" />
-          <article>
-            <p>
-              <span>Tools:</span> Figma
-            </p>
-            <p>
-              <span>Project Overview:</span> The Suite Spot Salon is a
-              fictitious salon suite client developed by our team for our senior
-              design project. Recognizing the importance of booking features in
-              the salon industry, we aimed to address this gap in the market.
-              Our website allows users to conveniently book appointments,
-              purchase items from the shop, and manage their accounts.
-            </p>
-            <p>
-              <span>Tasks Accomplished:</span> Collaborated with a team to
-              create low-fi and hi-fi prototypes Implemented mobile-first design
-              approach with two hi-fi prototypes Generated comprehensive
-              documentation outlining the design process Ensured consistency and
-              accessibility throughout the design phase Conducted user testings
-              to improve design
-            </p>
-            <div className="btn-group">
-              <button className="primary-button"> Stuff</button>
-              <button className="primary-button"> Stuff</button>
-            </div>
-          </article>
-        </div>
-      </section>
+      {PROJECTS["web-design"].map((project, index) => (
+        <Project key={index} {...project} i={index} />
+      ))}
     </main>
   );
 }
