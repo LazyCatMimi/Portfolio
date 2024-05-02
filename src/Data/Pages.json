@@ -1,10 +1,10 @@
 {
   "main": {
-    "home": "/Portfolio",
-    "contact": "/Portfolio/contact",
-    "webDesign": "/Portfolio/web-design",
-    "webDev": "/Portfolio/web-dev",
-    "artDesign": "/Portfolio/art-design",
-    "resume": "/Portfolio/resume"
+    "home": "/",
+    "contact": "/contact",
+    "webDesign": "/web-design",
+    "webDev": "/web-dev",
+    "artDesign": "/art-design",
+    "resume": "/resume"
   }
 }
