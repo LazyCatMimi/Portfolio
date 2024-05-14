@@ -63,7 +63,7 @@
 
 /* aboout me */
 #about {
-  padding: 5% 0 5% 2%;
+  /* padding: 5% 0 5% 2%; */
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
@@ -126,7 +126,7 @@
 }
 
 #latest-projects {
-  padding: 2em;
+  /* padding: 2em; */
   /* background-image: url("../Assets/header-bg2.png");
   background-attachment: fixed;
   background-position: center;
@@ -175,7 +175,7 @@
 
 /* explore more projects */
 #explore-projects {
-  padding: 4em 2em;
+  /* padding: 4em 2em; */
 }
 #explore-projects h2 {
   margin-top: 0;

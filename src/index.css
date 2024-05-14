@@ -106,3 +106,7 @@ h4 {
 .center-text {
   text-align: center;
 }
+
+section {
+  padding: 4em 3em;
+}
