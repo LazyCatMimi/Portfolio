@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function ProjectsQuickView() {
   const [activeSortButton, setActiveSortButton] = useState("all");
+  const [curData, setCurData] = useState();
   const sortButtons = [
     {
       title: "All",
@@ -12,7 +13,7 @@ export default function ProjectsQuickView() {
       data: [...PROJECTS["web-design"], ...PROJECTS["web-dev"]],
     },
     { title: "Web UI/UX", id: "web-ui-ux", data: PROJECTS["web-design"] },
-    { title: "Mobile UI/UX", id: "mobile-ui-ux" },
+    { title: "Mobile UI/UX", id: "mobile-ui-ux", data: PROJECTS["web-dev"] },
     { title: "Web Dev", id: "web-dev" },
     { title: "Mobile Dev", id: "mobile-dev" },
     { title: "Design", id: "design" },

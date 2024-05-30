@@ -128,6 +128,69 @@
       ]
     }
   ],
-  "web-dev": [],
+  "web-dev": [
+    {
+      "name": "The Suite Spot Salon",
+      "tools": "Figma",
+      "type": "web",
+      "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
+      "summary": "The Suite Spot Salon is a fictitious salon suite client developed by our team for our senior design project. Recognizing the importance of booking features in the salon industry, we aimed to address this gap in the market. Our website allows users to conveniently book appointments, purchase items from the shop, and manage their accounts.",
+      "tasks": [
+        "Collaborated with a team to create low-fi and hi-fi prototypes",
+        "Implemented mobile-first design approach with two hi-fi prototypes",
+        "Generated comprehensive documentation outlining the design process",
+        "Ensured consistency and accessibility throughout the design phase",
+        "Conducted user testings to improve design"
+      ],
+      "actions": [
+        {
+          "name": "See Mobile HiFi",
+          "link": "https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+          "type": "secondary-button"
+        },
+        {
+          "name": "See Web HiFi",
+          "link": "https://www.figma.com/proto/PBrgGbarppN9gmbtOgJ2SG/Web-HiFi-Prototype?type=design&node-id=1-2&t=Wg8Zrt3Pg7guhKYW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+          "type": "secondary-button"
+        },
+        {
+          "name": "Read More",
+          "link": "/projects/thesuitespot",
+          "type": "primary-button"
+        }
+      ]
+    },
+    {
+      "name": "TO DO App",
+      "tools": "Figma",
+      "type": "mobile",
+      "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
+      "summary": "The Suite Spot Salon is a fictitious salon suite client developed by our team for our senior design project. Recognizing the importance of booking features in the salon industry, we aimed to address this gap in the market. Our website allows users to conveniently book appointments, purchase items from the shop, and manage their accounts.",
+      "tasks": [
+        "Collaborated with a team to create low-fi and hi-fi prototypes",
+        "Implemented mobile-first design approach with two hi-fi prototypes",
+        "Generated comprehensive documentation outlining the design process",
+        "Ensured consistency and accessibility throughout the design phase",
+        "Conducted user testings to improve design"
+      ],
+      "actions": [
+        {
+          "name": "See Mobile HiFi",
+          "link": "https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+          "type": "secondary-button"
+        },
+        {
+          "name": "See Web HiFi",
+          "link": "https://www.figma.com/proto/PBrgGbarppN9gmbtOgJ2SG/Web-HiFi-Prototype?type=design&node-id=1-2&t=Wg8Zrt3Pg7guhKYW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+          "type": "secondary-button"
+        },
+        {
+          "name": "Read More",
+          "link": "/projects/thesuitespot",
+          "type": "primary-button"
+        }
+      ]
+    }
+  ],
   "art": []
 }
