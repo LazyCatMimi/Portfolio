@@ -108,5 +108,6 @@ h4 {
 }
 
 section {
-  padding: 4em 3em;
+  /* padding: clamp(200px, 3em, 400px) clamp(300px, 4em, 500px); */
+  padding: 4em 6vw;
 }

@@ -13,9 +13,9 @@ export default function ProjectsQuickView() {
       data: [...PROJECTS["web-design"], ...PROJECTS["web-dev"]],
     },
     { title: "Web UI/UX", id: "web-ui-ux", data: PROJECTS["web-design"] },
-    { title: "Mobile UI/UX", id: "mobile-ui-ux", data: PROJECTS["web-dev"] },
-    { title: "Web Dev", id: "web-dev" },
-    { title: "Mobile Dev", id: "mobile-dev" },
+    // { title: "Mobile UI/UX", id: "mobile-ui-ux", data: PROJECTS["web-dev"] },
+    { title: "Web Dev", id: "web-dev", data: PROJECTS["web-dev"] },
+    // { title: "Mobile Dev", id: "mobile-dev" },
     { title: "Design", id: "design" },
   ];
   const handleRadioButtonChange = (event) => {

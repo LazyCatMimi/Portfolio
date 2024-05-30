@@ -78,7 +78,7 @@ export default function Home() {
           <p>Art & Design</p>
         </motion.div>
       </section>
-      <section className="light-bg" id="about">
+      <section className="light-bg pad" id="about">
         <img src={plImg} alt="Quynh smiling"></img>
         <article>
           <h2>

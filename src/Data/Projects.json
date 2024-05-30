@@ -131,16 +131,16 @@
   "web-dev": [
     {
       "name": "The Suite Spot Salon",
-      "tools": "Figma",
+      "tools": "React.JS, Node.JS, Express.JS, MongoDB Atlas",
       "type": "web",
       "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
       "summary": "The Suite Spot Salon is a fictitious salon suite client developed by our team for our senior design project. Recognizing the importance of booking features in the salon industry, we aimed to address this gap in the market. Our website allows users to conveniently book appointments, purchase items from the shop, and manage their accounts.",
       "tasks": [
-        "Collaborated with a team to create low-fi and hi-fi prototypes",
-        "Implemented mobile-first design approach with two hi-fi prototypes",
-        "Generated comprehensive documentation outlining the design process",
-        "Ensured consistency and accessibility throughout the design phase",
-        "Conducted user testings to improve design"
+        "Collaborated with a team to create a fully functional website based on design",
+        "Documented the development project",
+        "Developed Front end and back end",
+        "Set up database and API",
+        "Developed responsive front-end"
       ],
       "actions": [
         {
@@ -162,7 +162,7 @@
     },
     {
       "name": "TO DO App",
-      "tools": "Figma",
+      "tools": "React Native",
       "type": "mobile",
       "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
       "summary": "The Suite Spot Salon is a fictitious salon suite client developed by our team for our senior design project. Recognizing the importance of booking features in the salon industry, we aimed to address this gap in the market. Our website allows users to conveniently book appointments, purchase items from the shop, and manage their accounts.",
@@ -192,5 +192,24 @@
       ]
     }
   ],
-  "art": []
+  "art": [
+    {
+      "name": "Salon Business Card",
+      "tools": "Canva",
+      "shortSummary": "A business card design for a real salon business in Tampa, FL.",
+      "summary": "My task involved redesigning a business card for a salon business located in Tampa, FL. The client sought both design enhancements and  updated information on their cards. To meet their needs, I presented two  design options: one resembling their previous card but with refreshed  visuals and updated details, and another that explored more experimental  elements.",
+      "tasks": [
+        "Refreshed visuals for the client's business card",
+        "Enhanced legibility of the business card content",
+        "Reinforced brand identity through the redesigned business card"
+      ],
+      "actions": [
+        {
+          "name": "See on Canva",
+          "link": "/projects/thesuitespot",
+          "type": "primary-button"
+        }
+      ]
+    }
+  ]
 }
