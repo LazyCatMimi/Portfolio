@@ -79,7 +79,7 @@ export default function Home() {
         </motion.div>
       </section>
       <section className="light-bg pad" id="about">
-        <img src={plImg} alt="Quynh smiling"></img>
+        <img src={require("../Assets/me.jpg")} alt="Quynh smiling"></img>
         <article>
           <h2>
             <StaggeredText text="About Me" staggerDelay={0.1} />
