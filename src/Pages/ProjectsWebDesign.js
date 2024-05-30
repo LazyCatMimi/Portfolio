@@ -55,7 +55,8 @@ export default function ProjectsWebDesign() {
       <Header stopScalingRef={stopScalingRef} Content={HeaderContent} />
       <div className="info" ref={stopScalingRef}>
         <p>
-          Interested in my projects or just want to chat? send me a message!
+          Web-Focused Projects to craft digital experiences that captivate,
+          innovate, and inspire.
         </p>
       </div>
       {PROJECTS["web-design"].map((project, index) => (

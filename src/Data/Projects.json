@@ -2,6 +2,7 @@
   "web-design": [
     {
       "name": "The Suite Spot Salon",
+      "imgFill": "Assets/projects/TSS-fill.jpg",
       "tools": "Figma",
       "type": "web",
       "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
@@ -33,10 +34,36 @@
     },
     {
       "name": "Noodletopia",
+      "imgFill": "Assets/projects/noodletopia-fill.jpg",
       "tools": "Figma",
       "type": "mobile",
       "shortSummary": "a mobile application designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls with various toppings.",
       "summary": "Noodletopia is a mobile application designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls with various toppings. Users have the freedom to add reviews for their noodle creations and share their unique combinations with others. Additionally, they can save their favorite noodle bowls for easy access. ",
+      "tasks": [
+        "Created hi-fi Prototype",
+        "Ensured consistency and accessibility throughout the design phase",
+        "Conducted user testings throughout hi-fi development to improve design"
+      ],
+      "actions": [
+        {
+          "name": "See Mobile HiFi",
+          "link": "https://www.figma.com/proto/FduZQ80T9yNEoIBoAZKhdj/Noodletopia-Navigation-Wireflow?type=design&t=mIFIWSn5YQ4wsVfM-0&scaling=scale-down&starting-point-node-id=299%3A725",
+          "type": "secondary-button"
+        },
+        {
+          "name": "Read More",
+          "link": "/projects/noodletopia",
+          "type": "primary-button"
+        }
+      ]
+    },
+    {
+      "name": "Salt & Hearth",
+      "imgFill": "Assets/projects/noodletopia-fill.jpg",
+      "tools": "Figma",
+      "type": "mobile",
+      "shortSummary": "Salt & Hearth is a homemade recipe website designed after anticipated wordpress plugins and features.",
+      "summary": "Salt & Hearth is a homemade recipe website designed after anticipated wordpress plugins and features. ",
       "tasks": [
         "Created hi-fi Prototype",
         "Ensured consistency and accessibility throughout the design phase",

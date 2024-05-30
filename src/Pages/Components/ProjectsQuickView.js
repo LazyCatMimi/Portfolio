@@ -22,10 +22,21 @@ export default function ProjectsQuickView() {
     setActiveSortButton(event.target.value);
   };
 
-  const Project = ({ name, tools, shortSummary, tasks, actions, i }) => (
+  const Project = ({
+    name,
+    imgFill,
+    tools,
+    shortSummary,
+    tasks,
+    actions,
+    i,
+  }) => (
     <article className="dark-bg2">
       <button className="project-hover">
-        <img src={plImg} alt="The Suite Spot Salon website"></img>
+        <img
+          src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
+          alt=""
+        ></img>
       </button>
       <div>
         <h3>
