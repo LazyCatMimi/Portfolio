@@ -18,7 +18,7 @@ export default function Resume() {
         </p>
       </div>
       <div id="resume-content" className="light-bg">
-        <img src={plImg} alt="" />
+        <img src={require("../Assets/me.jpg")} alt="" />
         <article id="summary">
           <h2>Summary</h2>
           <p>
