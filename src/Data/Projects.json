@@ -1,7 +1,7 @@
 {
   "web-design": [
     {
-      "name": "The Suite Spot Salon",
+      "name": "The Suite Spot Salon (Design)",
       "imgFill": "Assets/projects/TSS-fill.jpg",
       "tools": "Figma",
       "type": "web",
@@ -37,7 +37,7 @@
       "imgFill": "Assets/projects/noodletopia-fill.jpg",
       "tools": "Figma",
       "type": "mobile",
-      "shortSummary": "a mobile application designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls with various toppings.",
+      "shortSummary": "An app designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls.",
       "summary": "Noodletopia is a mobile application designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls with various toppings. Users have the freedom to add reviews for their noodle creations and share their unique combinations with others. Additionally, they can save their favorite noodle bowls for easy access. ",
       "tasks": [
         "Created hi-fi Prototype",
@@ -59,7 +59,7 @@
     },
     {
       "name": "Salt & Hearth",
-      "imgFill": "Assets/projects/noodletopia-fill.jpg",
+      "imgFill": "Assets/projects/salt&hearth-fill.jpg",
       "tools": "Figma",
       "type": "mobile",
       "shortSummary": "Salt & Hearth is a homemade recipe website designed after anticipated wordpress plugins and features.",
@@ -84,6 +84,7 @@
     },
     {
       "name": "Book Store App",
+      "imgFill": "Assets/projects/WriterBlockBookstore-fill.jpg",
       "tools": "Invision, Powerpoint, Photoshop",
       "type": "mobile",
       "shortSummary": "An app based on the Writer's Block Bookstore website with updated visuals and  new social features.",
@@ -137,7 +138,8 @@
       ]
     },
     {
-      "name": "TO DO App",
+      "name": "TO DO App (Design)",
+      "imgFill": "Assets/projects/ToDo-fill.jpg",
       "tools": "Figma",
       "type": "mobile",
       "shortSummary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
@@ -157,7 +159,8 @@
   ],
   "web-dev": [
     {
-      "name": "The Suite Spot Salon",
+      "name": "The Suite Spot Salon (Dev)",
+      "imgFill": "Assets/projects/TSS-fill.jpg",
       "tools": "React.JS, Node.JS, Express.JS, MongoDB Atlas",
       "type": "web",
       "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
@@ -188,11 +191,12 @@
       ]
     },
     {
-      "name": "TO DO App",
+      "name": "TO DO App (Dev)",
+      "imgFill": "Assets/projects/ToDo-fill.jpg",
       "tools": "React Native",
       "type": "mobile",
-      "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
-      "summary": "The Suite Spot Salon is a fictitious salon suite client developed by our team for our senior design project. Recognizing the importance of booking features in the salon industry, we aimed to address this gap in the market. Our website allows users to conveniently book appointments, purchase items from the shop, and manage their accounts.",
+      "shortSummary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
+      "summary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
       "tasks": [
         "Collaborated with a team to create low-fi and hi-fi prototypes",
         "Implemented mobile-first design approach with two hi-fi prototypes",

@@ -5,7 +5,6 @@ import { useState } from "react";
 
 export default function ProjectsQuickView() {
   const [activeSortButton, setActiveSortButton] = useState("all");
-  const [curData, setCurData] = useState();
   const sortButtons = [
     {
       title: "All",
@@ -16,10 +15,12 @@ export default function ProjectsQuickView() {
     // { title: "Mobile UI/UX", id: "mobile-ui-ux", data: PROJECTS["web-dev"] },
     { title: "Web Dev", id: "web-dev", data: PROJECTS["web-dev"] },
     // { title: "Mobile Dev", id: "mobile-dev" },
-    { title: "Design", id: "design" },
+    { title: "Art & Design", id: "design", data: PROJECTS["art"] },
   ];
-  const handleRadioButtonChange = (event) => {
+  const [curData, setCurData] = useState(sortButtons[0].data);
+  const handleRadioButtonChange = (event, data) => {
     setActiveSortButton(event.target.value);
+    setCurData(data);
   };
 
   const Project = ({
@@ -71,14 +72,14 @@ export default function ProjectsQuickView() {
               name="sortType"
               value={button.id}
               checked={activeSortButton === button.id}
-              onChange={handleRadioButtonChange}
+              onChange={(e) => handleRadioButtonChange(e, button.data)}
             />
             {button.title}
           </label>
         ))}
       </div>
       <div className="projects-grid">
-        {PROJECTS["web-design"].map((project, index) => (
+        {curData.map((project, index) => (
           <Project key={index} {...project} i={index} />
         ))}
       </div>
