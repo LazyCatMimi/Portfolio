@@ -2,6 +2,7 @@
   "design-code": [
     {
       "name": "The Suite Spot Salon",
+      "link": "/projects/thesuitespot",
       "imgFill": "Assets/projects/TSS-fill.jpg",
       "tools": "Figma | React.JS, Node.JS, Express.JS, MongoDB Atlas",
       "type": "web",
@@ -31,14 +32,20 @@
           "type": "secondary-button"
         },
         {
-          "name": "Read More",
-          "link": "/projects/thesuitespot",
+          "name": "See GH repository",
+          "link": "https://github.com/lwolbrink23/group8",
+          "type": "secondary-button"
+        },
+        {
+          "name": "See Website",
+          "link": "https://the-suite-spot.vercel.app/",
           "type": "primary-button"
         }
       ]
     },
     {
       "name": "Portfolio",
+      "link": "/projects/portfolio",
       "imgFill": "",
       "tools": "Figma | CSS, React.js",
       "type": "web",
@@ -51,24 +58,20 @@
       ],
       "actions": [
         {
-          "name": "See Mobile HiFi",
-          "link": "https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+          "name": "See GH repository",
+          "link": "https://github.com/LazyCatMimi/Portfolio",
           "type": "secondary-button"
         },
         {
           "name": "See Web HiFi",
-          "link": "https://www.figma.com/proto/PBrgGbarppN9gmbtOgJ2SG/Web-HiFi-Prototype?type=design&node-id=1-2&t=Wg8Zrt3Pg7guhKYW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
-          "type": "secondary-button"
-        },
-        {
-          "name": "Read More",
-          "link": "/projects/thesuitespot",
+          "link": "https://www.figma.com/proto/8FhwG7oC7tVDZSxJUbOqx6/Portfolio?node-id=2-118&t=Ki7bFmTpbKFhwxWo-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2",
           "type": "primary-button"
         }
       ]
     },
     {
       "name": "TO DO App",
+      "link": "/projects/todoapp",
       "imgFill": "Assets/projects/ToDo-fill.jpg",
       "tools": "Figma | React Native",
       "type": "mobile",
@@ -81,18 +84,19 @@
       ],
       "actions": [
         {
-          "name": "See Mobile HiFi",
-          "link": "https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+          "name": "See HiFi",
+          "link": "https://www.figma.com/proto/maccbQnPEzQBbxP4hbVUsv/To-do-App?node-id=2-8&t=JHY8B9kllLngwVOu-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2",
+          "type": "secondary-button"
+        },
+
+        {
+          "name": "See GH Repository",
+          "link": "https://github.com/LazyCatMimi/TodoApp",
           "type": "secondary-button"
         },
         {
-          "name": "See Web HiFi",
-          "link": "https://www.figma.com/proto/PBrgGbarppN9gmbtOgJ2SG/Web-HiFi-Prototype?type=design&node-id=1-2&t=Wg8Zrt3Pg7guhKYW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
-          "type": "secondary-button"
-        },
-        {
-          "name": "Read More",
-          "link": "/projects/thesuitespot",
+          "name": "See Website",
+          "link": "https://lazycatmimi.github.io/TodoApp/",
           "type": "primary-button"
         }
       ]
@@ -102,6 +106,7 @@
   "web-design": [
     {
       "name": "Noodletopia",
+      "link": "/projects/noodletopia",
       "imgFill": "Assets/projects/noodletopia-fill.jpg",
       "tools": "Figma",
       "type": "mobile",
@@ -117,16 +122,12 @@
           "name": "See Mobile HiFi",
           "link": "https://www.figma.com/proto/FduZQ80T9yNEoIBoAZKhdj/Noodletopia-Navigation-Wireflow?type=design&t=mIFIWSn5YQ4wsVfM-0&scaling=scale-down&starting-point-node-id=299%3A725",
           "type": "secondary-button"
-        },
-        {
-          "name": "Read More",
-          "link": "/projects/noodletopia",
-          "type": "primary-button"
         }
       ]
     },
     {
       "name": "Salt & Hearth",
+      "link": "/projects/salt-hearth",
       "imgFill": "Assets/projects/salt&hearth-fill.jpg",
       "tools": "Figma",
       "type": "mobile",
@@ -139,19 +140,15 @@
       ],
       "actions": [
         {
-          "name": "See Mobile HiFi",
+          "name": "See Web HiFi",
           "link": "https://www.figma.com/proto/FduZQ80T9yNEoIBoAZKhdj/Noodletopia-Navigation-Wireflow?type=design&t=mIFIWSn5YQ4wsVfM-0&scaling=scale-down&starting-point-node-id=299%3A725",
-          "type": "secondary-button"
-        },
-        {
-          "name": "Read More",
-          "link": "/projects/noodletopia",
           "type": "primary-button"
         }
       ]
     },
     {
       "name": "Book Store App",
+      "link": "/projects/bookstore-app",
       "imgFill": "Assets/projects/WriterBlockBookstore-fill.jpg",
       "tools": "Invision, Powerpoint, Photoshop",
       "type": "mobile",
@@ -171,6 +168,7 @@
     },
     {
       "name": "Flashcard App",
+      "link": "/projects/flashcard-app",
       "imgFill": "Assets/projects/flashcard-fill.jpg",
       "tools": "Figma",
       "type": "mobile",
@@ -190,11 +188,12 @@
     },
     {
       "name": "Domino's Accessibility Redesign",
+      "link": "/projects/dominos-redesign",
       "imgFill": "Assets/projects/Dominos-fill.jpg",
       "tools": "Figma",
       "type": "web",
       "shortSummary": "A redesign of Domino's home page to improve accessibility.",
-      "summary": "The Domino's website appears cluttered, leading to cognitive overload even for those without disabilities. Additionally, visibility issues arise from text blending with images or being too small to read. My redesign of Domino’s homepage focuses on maintaining the same content while reducing cognitive overload and improving visibility.",
+      "summary": "The Domino's website appears cluttered, leading to cognitive overload even for those without disabilities. Additionally, visibility issues arise from text blending with images or being too small to read. My redesign of Domino's homepage focuses on maintaining the same content while reducing cognitive overload and improving visibility.",
       "tasks": [
         "Created hi-fi Prototype",
         "Ensured consistency and accessibility throughout the design phase"
@@ -211,12 +210,13 @@
   "development": [
     {
       "name": "Discord Bot",
+      "link": "/projects/discord-bot",
       "imgFill": "",
       "tools": "Node.js",
       "type": "web",
       "shortSummary": "A simple discord bot that uses Discord API to respond to commands such as flip a coin, ask 8 ball, sing happy birthday, and spam messages.",
       "summary": "A simple discord bot that uses Discord API to respond to commands such as flip a coin, ask 8 ball, sing happy birthday, and spam messages.",
-      "tasks": ["Ultilized Discord API", "Deployed the application"],
+      "tasks": ["Ultilized Discord API", "Deployed the node application"],
       "actions": [
         {
           "name": "See Code",
@@ -227,6 +227,7 @@
     },
     {
       "name": "Neon City website",
+      "link": "/projects/neon-city",
       "imgFill": "",
       "tools": "Vanilla HTML/CSS/JS",
       "type": "web",
@@ -235,21 +236,10 @@
       "tasks": ["Created a front-end using basic technologies"],
       "actions": [
         {
-          "name": "See Website",
-          "link": "https://lazycatmimi.github.io/Neon_City_Site/",
+          "name": "See GH repository",
+          "link": "https://github.com/LazyCatMimi/Neon_City_Site",
           "type": "primary-button"
-        }
-      ]
-    },
-    {
-      "name": "Word Guessing Game",
-      "imgFill": "",
-      "tools": "Vanilla HTML/CSS/JS",
-      "type": "web",
-      "shortSummary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
-      "summary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
-      "tasks": ["Created a front-end using basic technologies"],
-      "actions": [
+        },
         {
           "name": "See Website",
           "link": "https://lazycatmimi.github.io/Neon_City_Site/",
@@ -258,7 +248,30 @@
       ]
     },
     {
+      "name": "Cat or Dog Quiz",
+      "link": "/projects/cat-dog-quiz",
+      "imgFill": "",
+      "tools": "Vanilla HTML/CSS/JS",
+      "type": "web",
+      "shortSummary": "A simple form validation website with a quiz",
+      "summary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
+      "tasks": ["Created a front-end using basic technologies"],
+      "actions": [
+        {
+          "name": "See GH repository",
+          "link": "https://github.com/LazyCatMimi/CatDogQuizFormValidation",
+          "type": "primary-button"
+        },
+        {
+          "name": "See Website",
+          "link": "https://lazycatmimi.github.io/CatDogQuizFormValidation/",
+          "type": "primary-button"
+        }
+      ]
+    },
+    {
       "name": "Word Guessing Game",
+      "link": "/projects/wordguessing",
       "imgFill": "",
       "tools": "Vanilla HTML/CSS/JS",
       "type": "web",
@@ -267,8 +280,13 @@
       "tasks": ["Created a front-end using basic technologies"],
       "actions": [
         {
+          "name": "See GH repository",
+          "link": "https://github.com/LazyCatMimi/WordGuessingGame",
+          "type": "primary-button"
+        },
+        {
           "name": "See Website",
-          "link": "https://lazycatmimi.github.io/Neon_City_Site/",
+          "link": "https://lazycatmimi.github.io/WordGuessingGame/",
           "type": "primary-button"
         }
       ]
@@ -277,6 +295,7 @@
   "art": [
     {
       "name": "Salon Business Card",
+      "link": "/projects/businesscard",
       "imgFill": "Assets/projects/business-fill.jpg",
       "tools": "Canva",
       "shortSummary": "A business card design for a real salon business in Tampa, FL.",
@@ -289,7 +308,7 @@
       "actions": [
         {
           "name": "See on Canva",
-          "link": "/projects/thesuitespot",
+          "link": "https://www.canva.com/design/DAFL2g1cUpo/Ov2zDlllU_0jfHAmTrMDFA/edit?utm_content=DAFL2g1cUpo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
           "type": "primary-button"
         }
       ]
