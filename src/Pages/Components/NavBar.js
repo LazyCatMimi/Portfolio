@@ -9,9 +9,7 @@ import "../../Styles/Components/NavBar.css";
 
 const menuItems = [
   { text: "Home", path: PATHS.main.home },
-  { text: "Web Design", path: PATHS.main.webDesign },
-  { text: "Web Dev", path: PATHS.main.webDev },
-  { text: "Art & Design", path: PATHS.main.artDesign },
+  { text: "Projects", path: PATHS.main.webDesign },
   { text: "Resume", path: PATHS.main.resume },
   { text: "Contact", path: PATHS.main.contact },
 ];

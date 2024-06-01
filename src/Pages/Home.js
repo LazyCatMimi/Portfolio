@@ -87,6 +87,15 @@ export default function Home() {
           <p>
             <LineRevealText text="Hello World! My name is Quynh, and I am a student at the University of Central Florida, where I am pursuing a bachelor's degree in Digital Media: Web Design with a minor in Information Technology. My passions lie in web design, development, and art. Having been born in 2002, I witnessed the rapid evolution of technology firsthand, which inspired me to become a creator of unique web experiences. Technology and art are my favorite subjects to learn about and discuss. In my spare time, I enjoy activities such as drawing, paper crafting, fishing, and boating." />
           </p>
+          <p>
+            10+ Years of art program experience - Due to my experience in art
+            programs, I can quickly understand new web design softwares.
+          </p>
+          <p>Design & Code - from design to code, I can do it all!</p>
+          <p>
+            Project Management & Organization - I excel at delegating and
+            organaizing tasks for a project to succeeed.
+          </p>
         </article>
       </section>
       <ProjectsQuickView />
