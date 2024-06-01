@@ -46,7 +46,7 @@
     {
       "name": "Portfolio",
       "link": "/projects/portfolio",
-      "imgFill": "",
+      "imgFill": "Assets/projects/portfolio-fill.jpg",
       "tools": "Figma | CSS, React.js",
       "type": "web",
       "shortSummary": "My Portfolio! Well, you're looking at it. Let's see the process!",
@@ -211,7 +211,7 @@
     {
       "name": "Discord Bot",
       "link": "/projects/discord-bot",
-      "imgFill": "",
+      "imgFill": "Assets/projects/discordbot-fill.png",
       "tools": "Node.js",
       "type": "web",
       "shortSummary": "A simple discord bot that uses Discord API to respond to commands such as flip a coin, ask 8 ball, sing happy birthday, and spam messages.",
@@ -250,7 +250,7 @@
     {
       "name": "Cat or Dog Quiz",
       "link": "/projects/cat-dog-quiz",
-      "imgFill": "",
+      "imgFill": "Assets/projects/catdog-fill.jpg",
       "tools": "Vanilla HTML/CSS/JS",
       "type": "web",
       "shortSummary": "A simple form validation website with a quiz",
@@ -272,7 +272,7 @@
     {
       "name": "Word Guessing Game",
       "link": "/projects/wordguessing",
-      "imgFill": "",
+      "imgFill": "Assets/projects/wordguess-fill.jpg",
       "tools": "Vanilla HTML/CSS/JS",
       "type": "web",
       "shortSummary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
