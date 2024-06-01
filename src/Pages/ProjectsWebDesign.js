@@ -13,7 +13,7 @@ export default function ProjectsWebDesign() {
     </>
   );
 
-  const Project = ({ name, tools, summary, tasks, actions, i }) => (
+  const Project = ({ name, imgFill, tools, summary, tasks, actions, i }) => (
     <section
       className={`proj ${i % 2 === 0 ? "proj-for" : "proj-rev light-bg"}`}
     >
@@ -21,7 +21,7 @@ export default function ProjectsWebDesign() {
         <StaggeredText text={name} staggerDelay={0.05} />
       </h2>
       <div className="divider">
-        <img src={plImg} alt="" />
+        <img src={imgFill ? require(`${"../"}${imgFill}`) : plImg} alt="" />
         <article>
           <p>
             <span>Tools:</span> {tools}

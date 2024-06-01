@@ -9,17 +9,40 @@ export default function ProjectsQuickView() {
     {
       title: "All",
       id: "all",
+      desc: "All projects.",
       data: [
+        ...PROJECTS["design-code"],
         ...PROJECTS["web-design"],
-        ...PROJECTS["web-dev"],
+        ...PROJECTS["development"],
         ...PROJECTS["art"],
       ],
     },
-    { title: "Web UI/UX", id: "web-ui-ux", data: PROJECTS["web-design"] },
+    {
+      title: "Web Design & Development",
+      id: "web-design-code",
+      desc: "Projects that involved both design and development phases.",
+      data: PROJECTS["design-code"],
+    },
+    {
+      title: "Web Design Only",
+      id: "web-ui-ux",
+      desc: "Projects that involved web design only.",
+      data: PROJECTS["web-design"],
+    },
     // { title: "Mobile UI/UX", id: "mobile-ui-ux", data: PROJECTS["web-dev"] },
-    { title: "Web Dev", id: "web-dev", data: PROJECTS["web-dev"] },
+    {
+      title: "Development Only",
+      id: "web-dev",
+      desc: "Projects that involved coding only.",
+      data: PROJECTS["development"],
+    },
     // { title: "Mobile Dev", id: "mobile-dev" },
-    { title: "Art & Design", id: "design", data: PROJECTS["art"] },
+    {
+      title: "Art & Design",
+      id: "design",
+      desc: "Projects that showcase my artistic skills.",
+      data: PROJECTS["art"],
+    },
   ];
   const [curData, setCurData] = useState(sortButtons[0].data);
   const handleRadioButtonChange = (event, data) => {

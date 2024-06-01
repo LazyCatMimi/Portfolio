@@ -2,9 +2,6 @@
   --proj-padding: 3em;
 }
 /* general proj */
-.proj {
-  padding: var(--proj-padding);
-}
 .proj article span {
   font-weight: bold;
 }
@@ -18,8 +15,8 @@
   grid-template-columns: 1fr 2fr;
   gap: 2em;
 }
-.proj-rev h2{
-text-align: center;
+.proj-rev h2 {
+  text-align: center;
 }
 .btn-group {
   text-align: center;
