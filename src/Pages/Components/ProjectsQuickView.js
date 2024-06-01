@@ -105,6 +105,9 @@ export default function ProjectsQuickView() {
           </label>
         ))}
       </div>
+      <p className="center-text sort-desc">
+        {sortButtons.find((button) => button.id === activeSortButton).desc}
+      </p>
       <div className="projects-grid">
         {curData.map((project, index) => (
           <Project key={index} {...project} i={index} />

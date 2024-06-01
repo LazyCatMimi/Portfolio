@@ -93,7 +93,10 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 4em;
+}
+.sort-desc {
+  color: #ffb6cd;
+  margin: 2em;
 }
 .sort-projects {
   text-align: center;
