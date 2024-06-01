@@ -103,6 +103,7 @@
     },
     {
       "name": "Flashcard App",
+      "imgFill": "Assets/projects/flashcard-fill.jpg",
       "tools": "Figma",
       "type": "mobile",
       "shortSummary": "A Simple flash card app where users can create, edit, delete, and learn cards.",
@@ -121,6 +122,7 @@
     },
     {
       "name": "Domino's Accessibility Redesign",
+      "imgFill": "Assets/projects/Dominos-fill.jpg",
       "tools": "Figma",
       "type": "web",
       "shortSummary": "A redesign of Domino's home page to improve accessibility.",
@@ -226,6 +228,7 @@
   "art": [
     {
       "name": "Salon Business Card",
+      "imgFill": "Assets/projects/business-fill.jpg",
       "tools": "Canva",
       "shortSummary": "A business card design for a real salon business in Tampa, FL.",
       "summary": "My task involved redesigning a business card for a salon business located in Tampa, FL. The client sought both design enhancements and  updated information on their cards. To meet their needs, I presented two  design options: one resembling their previous card but with refreshed  visuals and updated details, and another that explored more experimental  elements.",

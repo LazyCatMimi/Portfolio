@@ -9,7 +9,11 @@ export default function ProjectsQuickView() {
     {
       title: "All",
       id: "all",
-      data: [...PROJECTS["web-design"], ...PROJECTS["web-dev"]],
+      data: [
+        ...PROJECTS["web-design"],
+        ...PROJECTS["web-dev"],
+        ...PROJECTS["art"],
+      ],
     },
     { title: "Web UI/UX", id: "web-ui-ux", data: PROJECTS["web-design"] },
     // { title: "Mobile UI/UX", id: "mobile-ui-ux", data: PROJECTS["web-dev"] },
