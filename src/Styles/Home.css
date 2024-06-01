@@ -95,7 +95,8 @@
   flex-wrap: wrap;
 }
 .sort-desc {
-  color: #ffb6cd;
+  color: #666666;
+  font-weight: bold;
   margin: 2em;
 }
 .sort-projects {
