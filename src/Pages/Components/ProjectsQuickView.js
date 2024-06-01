@@ -20,21 +20,21 @@ export default function ProjectsQuickView() {
     {
       title: "Web Design & Development",
       id: "web-design-code",
-      desc: "Projects that involved both design and development phases.",
+      desc: "Projects that include both design and development phases.",
       data: PROJECTS["design-code"],
     },
     {
-      title: "Web Design Only",
+      title: "Web Design",
       id: "web-ui-ux",
-      desc: "Projects that involved web design only.",
-      data: PROJECTS["web-design"],
+      desc: "Projects that include web design phase.",
+      data: [...PROJECTS["design-code"], ...PROJECTS["web-design"]],
     },
     // { title: "Mobile UI/UX", id: "mobile-ui-ux", data: PROJECTS["web-dev"] },
     {
-      title: "Development Only",
+      title: "Development",
       id: "web-dev",
-      desc: "Projects that involved coding only.",
-      data: PROJECTS["development"],
+      desc: "Projects that include development phase.",
+      data: [...PROJECTS["design-code"], ...PROJECTS["development"]],
     },
     // { title: "Mobile Dev", id: "mobile-dev" },
     {
