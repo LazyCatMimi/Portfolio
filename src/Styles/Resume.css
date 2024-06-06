@@ -19,6 +19,14 @@
 
   box-shadow: 2px 2px 22.1px rgba(191, 191, 191, 0.25);
 }
+#edu h2,
+#skills h2 {
+  text-align: center;
+}
+#summary {
+  display: flex;
+  align-items: center; /* Vertically center */
+}
 
 #resume-content img {
   height: 100%;

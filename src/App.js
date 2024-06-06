@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <ScrollToTop />
         <NavBar />
+        <ScrollToTop />
         <Routes>
           <Route path={PATHS.main.home} element={<Home />} />
           <Route path={PATHS.main.contact} element={<Contact />} />

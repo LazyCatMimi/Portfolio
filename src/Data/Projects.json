@@ -2,6 +2,7 @@
   "design-code": [
     {
       "name": "The Suite Spot Salon",
+      "featured": true,
       "link": "/projects/thesuitespot",
       "imgFill": "Assets/projects/TSS-fill.jpg",
       "tools": "Figma | React.JS, Node.JS, Express.JS, MongoDB Atlas",
@@ -106,6 +107,7 @@
   "web-design": [
     {
       "name": "Noodletopia",
+      "featured": true,
       "link": "/projects/noodletopia",
       "imgFill": "Assets/projects/noodletopia-fill.jpg",
       "tools": "Figma",

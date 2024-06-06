@@ -99,7 +99,7 @@ export default function Home() {
         </p>
       </section>
       <ProjectsQuickView />
-      <section className="light-bg" id="explore-projects">
+      {/* <section className="light-bg" id="explore-projects">
         <h2>
           <StaggeredText text="Read More on Projects" staggerDelay={0.05} />
         </h2>
@@ -123,7 +123,7 @@ export default function Home() {
             </div>
           </button>
         </div>
-      </section>
+      </section> */}
       <section className="dark-bg3" id="contact-me" style={{ flex: 1 }}>
         <h2>
           <StaggeredText text="Contact Me" staggerDelay={0.1} />

@@ -20,17 +20,19 @@ export default function Resume() {
       <div id="resume-content" className="light-bg">
         <img src={require("../Assets/me.jpg")} alt="" />
         <article id="summary">
-          <h2>Summary</h2>
-          <p>
-            A highly compassionate individual with a deep passion for
-            integrating art, psychology, and technology within the UI/UX field.
-            Using expertise and interest in these areas, Quynh strives to create
-            web experiences that are not only visually appealing but also
-            intuitive, engaging, and empowering for all users. Quynh's goal is
-            to harness the potential of the web as a powerful tool that enhances
-            the lives of individuals and communities alike through seamless and
-            meaningful interactions.
-          </p>
+          <div>
+            <h2>Summary</h2>
+            <p>
+              A highly compassionate individual with a deep passion for
+              integrating art, psychology, and technology within the UI/UX
+              field. Using expertise and interest in these areas, Quynh strives
+              to create web experiences that are not only visually appealing but
+              also intuitive, engaging, and empowering for all users. Quynh's
+              goal is to harness the potential of the web as a powerful tool
+              that enhances the lives of individuals and communities alike
+              through seamless and meaningful interactions.
+            </p>
+          </div>
         </article>
         <article id="exp">
           <h2>Work Experience</h2>
