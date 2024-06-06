@@ -6,11 +6,13 @@ import ProjectsWebDesign from "./Pages/ProjectsWebDesign";
 import Resume from "./Pages/Resume";
 import Contact from "./Pages/Contact";
 import PATHS from "./Data/Pages.json";
+import ScrollToTop from "./Pages/Components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route path={PATHS.main.home} element={<Home />} />

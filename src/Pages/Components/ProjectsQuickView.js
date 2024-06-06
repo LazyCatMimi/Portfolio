@@ -1,6 +1,7 @@
 import plImg from "../../Assets/test.png";
 import PROJECTS from "../../Data/Projects.json";
 import StaggeredText from "./StaggeredText";
+import LineRevealText from "./LineRevealText";
 import { useState } from "react";
 
 export default function ProjectsQuickView() {
@@ -60,21 +61,20 @@ export default function ProjectsQuickView() {
     i,
   }) => (
     <article className="dark-bg2">
-      <button className="project-hover">
-        <img
-          src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
-          alt=""
-        ></img>
-      </button>
+      <img
+        src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
+        alt=""
+      ></img>
+
       <div>
         <h3>
           <span className="num off-white-text">
             {(i + 1).toString().padStart(2, "0")}{" "}
           </span>
-          | {name}
+          | <LineRevealText text={name} staggerDelay={0.05} />
         </h3>
         <p>{shortSummary}</p>
-        <button className="primary-button">Read More</button>
+        {/* <button className="primary-button">Read More</button> */}
       </div>
     </article>
   );

@@ -167,6 +167,15 @@
 #latest-projects article div {
   padding: 1em 1.5em 1.5em 1.5em;
 }
+#latest-projects article {
+  transition: all 0.5s ease;
+}
+#latest-projects article:hover {
+  transform: scale(1.1);
+}
+/* #latest-projects article button {
+  width: 100%;
+} */
 #latest-projects img {
   width: 100%;
   aspect-ratio: 16/9;

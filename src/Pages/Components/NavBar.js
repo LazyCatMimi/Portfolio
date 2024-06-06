@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion"; // Import motion and useAnimation
 import PATHS from "../../Data/Pages.json";
 import logoIcon from "../../Assets/logo.png";
@@ -9,14 +9,25 @@ import "../../Styles/Components/NavBar.css";
 
 const menuItems = [
   { text: "Home", path: PATHS.main.home },
-  { text: "Web Design", path: PATHS.main.webDesign },
-  { text: "Web Dev", path: PATHS.main.webDev },
-  { text: "Art & Design", path: PATHS.main.artDesign },
+  { text: "Projects", path: `/#latest-projects` },
+  // { text: "Web Design", path: PATHS.main.webDesign },
+  // { text: "Web Dev", path: PATHS.main.webDev },
+  // { text: "Art & Design", path: PATHS.main.artDesign },
   { text: "Resume", path: PATHS.main.resume },
   { text: "Contact", path: PATHS.main.contact },
 ];
 
 export default function NavBar({ revealBGRef }) {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
   const [menuOpen, setMenuOpen] = useState(false);
   const controls = useAnimation(); // Initialize useAnimation
   const ulVariants = {
