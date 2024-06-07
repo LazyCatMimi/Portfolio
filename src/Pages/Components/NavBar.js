@@ -18,16 +18,6 @@ const menuItems = [
 ];
 
 export default function NavBar({ revealBGRef }) {
-  const { hash } = useLocation();
-
-  useEffect(() => {
-    if (hash) {
-      const element = document.getElementById(hash.substring(1));
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [hash]);
   const [menuOpen, setMenuOpen] = useState(false);
   const controls = useAnimation(); // Initialize useAnimation
   const ulVariants = {

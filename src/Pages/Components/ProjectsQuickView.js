@@ -3,6 +3,7 @@ import PROJECTS from "../../Data/Projects.json";
 import StaggeredText from "./StaggeredText";
 import LineRevealText from "./LineRevealText";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function ProjectsQuickView() {
   const [activeSortButton, setActiveSortButton] = useState("all");
@@ -54,29 +55,32 @@ export default function ProjectsQuickView() {
   const Project = ({
     name,
     imgFill,
+    link,
     tools,
     shortSummary,
     tasks,
     actions,
     i,
   }) => (
-    <article className="dark-bg2">
-      <img
-        src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
-        alt=""
-      ></img>
+    <Link to={link}>
+      <article className="dark-bg2">
+        <img
+          src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
+          alt=""
+        ></img>
 
-      <div>
-        <h3>
-          <span className="num off-white-text">
-            {(i + 1).toString().padStart(2, "0")}{" "}
-          </span>
-          | <LineRevealText text={name} staggerDelay={0.05} />
-        </h3>
-        <p>{shortSummary}</p>
-        {/* <button className="primary-button">Read More</button> */}
-      </div>
-    </article>
+        <div>
+          <h3>
+            <span className="num off-white-text">
+              {(i + 1).toString().padStart(2, "0")}{" "}
+            </span>
+            | <LineRevealText text={name} staggerDelay={0.05} />
+          </h3>
+          <p>{shortSummary}</p>
+          {/* <button className="primary-button">Read More</button> */}
+        </div>
+      </article>
+    </Link>
   );
   return (
     <section className="dark-bg" id="latest-projects">

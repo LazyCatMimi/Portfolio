@@ -12,8 +12,10 @@ export default function Thesuitespot() {
     };
     return (
       <>
-        <div style={projectHeaderStyle} className="proj-header"></div>
-        <article>
+        <div style={projectHeaderStyle} className="proj-header">
+          <div></div>
+        </div>
+        <article className="proj-info">
           <h2>
             <StaggeredText text={name} staggerDelay={0.05} />
           </h2>
@@ -53,7 +55,7 @@ export default function Thesuitespot() {
   };
 
   return (
-    <main id="thesuitespot">
+    <main id="projectidv">
       <Project {...PROJECTS.designCode[0]} />
     </main>
   );

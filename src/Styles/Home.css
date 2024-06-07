@@ -148,6 +148,9 @@
   gap: 20px;
   margin-bottom: 3em;
 }
+.projects-grid a {
+  text-decoration: none;
+}
 #latest-projects h2 {
   text-align: center;
 }
