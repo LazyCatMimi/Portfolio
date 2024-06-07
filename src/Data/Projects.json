@@ -1,5 +1,5 @@
 {
-  "design-code": [
+  "designCode": [
     {
       "name": "The Suite Spot Salon",
       "featured": true,
@@ -104,7 +104,7 @@
     }
   ],
 
-  "web-design": [
+  "webDesign": [
     {
       "name": "Noodletopia",
       "featured": true,
@@ -294,7 +294,7 @@
       ]
     }
   ],
-  "art": [
+  "artDesign": [
     {
       "name": "Salon Business Card",
       "link": "/projects/businesscard",

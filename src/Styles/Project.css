@@ -1,0 +1,22 @@
+.proj-header {
+  width: 100%;
+  height: 50vh;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.proj-header::after {
+  position: absolute;
+  width: 1440px;
+  height: 567px;
+  left: 0px;
+  top: -5px;
+
+  background: linear-gradient(
+    360deg,
+    rgba(148, 28, 67, 0.82) 0%,
+    rgba(0, 0, 0, 0.74) 100%
+  );
+}

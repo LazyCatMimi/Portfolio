@@ -13,9 +13,7 @@ export default function Resume() {
     <main id="resume">
       <Header stopScalingRef={stopScalingRef} Content={HeaderContent} />
       <div className="info" ref={stopScalingRef}>
-        <p>
-          Interested in my projects or just want to chat? send me a message!
-        </p>
+        <p>Resume of my work experiences and skills.</p>
       </div>
       <div id="resume-content" className="light-bg">
         <img src={require("../Assets/me.jpg")} alt="" />
