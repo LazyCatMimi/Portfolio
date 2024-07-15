@@ -77,7 +77,7 @@ export default function ProjectsQuickView() {
             | <LineRevealText text={name} staggerDelay={0.05} />
           </h3>
           <p>{shortSummary}</p>
-          {/* <button className="primary-button">Read More</button> */}
+           {/* <button className="primary-button">Read More</button> */}
         </div>
       </article>
     </Link>
