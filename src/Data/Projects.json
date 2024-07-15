@@ -3,7 +3,7 @@
     {
       "name": "The Suite Spot Salon",
       "featured": true,
-      "link": "/projects/thesuitespot",
+      "id": "thesuitespot",
       "imgFill": "Assets/projects/TSS-fill.jpg",
       "tools": "Figma | React.JS, Node.JS, Express.JS, MongoDB Atlas",
       "type": "web",
@@ -46,7 +46,7 @@
     },
     {
       "name": "Portfolio",
-      "link": "/projects/portfolio",
+      "id": "portfolio",
       "imgFill": "Assets/projects/portfolio-fill.jpg",
       "tools": "Figma | CSS, React.js",
       "type": "web",
@@ -72,7 +72,7 @@
     },
     {
       "name": "TO DO App",
-      "link": "/projects/todoapp",
+      "id": "todoapp",
       "imgFill": "Assets/projects/ToDo-fill.jpg",
       "tools": "Figma | React Native",
       "type": "mobile",
@@ -108,7 +108,7 @@
     {
       "name": "Noodletopia",
       "featured": true,
-      "link": "/projects/noodletopia",
+      "id": "noodletopia",
       "imgFill": "Assets/projects/noodletopia-fill.jpg",
       "tools": "Figma",
       "type": "mobile",
@@ -129,7 +129,7 @@
     },
     {
       "name": "Salt & Hearth",
-      "link": "/projects/salt-hearth",
+      "id": "salt-hearth",
       "imgFill": "Assets/projects/salt&hearth-fill.jpg",
       "tools": "Figma",
       "type": "mobile",
@@ -150,7 +150,7 @@
     },
     {
       "name": "Book Store App",
-      "link": "/projects/bookstore-app",
+      "id": "bookstore-app",
       "imgFill": "Assets/projects/WriterBlockBookstore-fill.jpg",
       "tools": "Invision, Powerpoint, Photoshop",
       "type": "mobile",
@@ -170,7 +170,7 @@
     },
     {
       "name": "Flashcard App",
-      "link": "/projects/flashcard-app",
+      "id": "flashcard-app",
       "imgFill": "Assets/projects/flashcard-fill.jpg",
       "tools": "Figma",
       "type": "mobile",
@@ -190,7 +190,7 @@
     },
     {
       "name": "Domino's Accessibility Redesign",
-      "link": "/projects/dominos-redesign",
+      "id": "dominos-redesign",
       "imgFill": "Assets/projects/Dominos-fill.jpg",
       "tools": "Figma",
       "type": "web",
@@ -212,7 +212,7 @@
   "development": [
     {
       "name": "Discord Bot",
-      "link": "/projects/discord-bot",
+      "id": "discord-bot",
       "imgFill": "Assets/projects/discordbot-fill.png",
       "tools": "Node.js",
       "type": "web",
@@ -229,7 +229,7 @@
     },
     {
       "name": "Neon City website",
-      "link": "/projects/neon-city",
+      "id": "neon-city",
       "imgFill": "",
       "tools": "Vanilla HTML/CSS/JS",
       "type": "web",
@@ -251,7 +251,7 @@
     },
     {
       "name": "Cat or Dog Quiz",
-      "link": "/projects/cat-dog-quiz",
+      "id": "cat-dog-quiz",
       "imgFill": "Assets/projects/catdog-fill.jpg",
       "tools": "Vanilla HTML/CSS/JS",
       "type": "web",
@@ -273,7 +273,7 @@
     },
     {
       "name": "Word Guessing Game",
-      "link": "/projects/wordguessing",
+      "id": "wordguessing",
       "imgFill": "Assets/projects/wordguess-fill.jpg",
       "tools": "Vanilla HTML/CSS/JS",
       "type": "web",
@@ -297,7 +297,7 @@
   "artDesign": [
     {
       "name": "Salon Business Card",
-      "link": "/projects/businesscard",
+      "id": "businesscard",
       "imgFill": "Assets/projects/business-fill.jpg",
       "tools": "Canva",
       "shortSummary": "A business card design for a real salon business in Tampa, FL.",

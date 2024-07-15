@@ -55,14 +55,14 @@ export default function ProjectsQuickView() {
   const Project = ({
     name,
     imgFill,
-    link,
+    id,
     tools,
     shortSummary,
     tasks,
     actions,
     i,
   }) => (
-    <Link to={link}>
+    <Link to={`/projects/${id}`}>
       <article className="dark-bg2">
         <img
           src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
