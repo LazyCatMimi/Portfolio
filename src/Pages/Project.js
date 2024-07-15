@@ -69,7 +69,7 @@ export default function Project() {
                   <a
                     key={index}
                     href={action.link}
-                    className={action.type}
+                    className={`${action.type} action-btn`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
