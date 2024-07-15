@@ -1,6 +1,9 @@
 #projectidv {
   background-color: #eeeff0;
 }
+#projectidv .btn-group{
+  display:block;
+}
 .proj-header {
   position: absolute;
   width: 100%;

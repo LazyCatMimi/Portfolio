@@ -66,11 +66,17 @@ export default function Project() {
 
               <div className="btn-group">
                 {actions.map((action, index) => (
-                  <button key={index} className={"primary-button"}>
+                  <a
+                    key={index}
+                    href={action.link}
+                    className={action.type}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {action.name}
-                  </button>
+                  </a>
                 ))}
-              </div>
+              </div>  
             </article>
           </div>
         </article>
