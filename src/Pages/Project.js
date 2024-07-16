@@ -4,6 +4,9 @@ import StaggeredText from "./Components/StaggeredText";
 import PROJECTS from "../Data/Projects.json";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import figmaIcon from "../Assets/Icons/figma.svg";
+import githubIcon from "../Assets/Icons/github.svg";
+import globeIcon from "../Assets/Icons/globe.svg";
 
 export default function Project() {
   const { id } = useParams();
@@ -59,6 +62,7 @@ export default function Project() {
             <img
               src={imgThumb ? require(`${"../"}${imgThumb}`) : plImg}
               alt=""
+              className="proj-thumb"
             />
             <article>
               <div className="btn-group">
@@ -70,6 +74,14 @@ export default function Project() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <img
+                      src={
+                        action.icon &&
+                        require(`../Assets/Icons/${action.icon}.svg`)
+                      }
+                      alt=""
+                      className="proj-icon"
+                    ></img>
                     <span>{action.name}</span>
                   </a>
                 ))}
