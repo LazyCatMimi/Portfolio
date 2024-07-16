@@ -7,18 +7,14 @@
   justify-content: center;
   margin-bottom: 4em;
 }
-.proj-icon{
 
-}
 .action-btn{
  display:flex;
   margin: 10px;
   align-items: center;  
   justify-content: center;
 }
-.action-btn img{
 
-}
 .action-btn span{
   display:block;
   width: 200px;
@@ -62,10 +58,25 @@
   background-color: white;
   width: 65%;
   border-radius: 19px;
-  margin: 5em auto;
-  padding: 3em;
+  margin: 5em auto 2em auto;
+  padding: 4em 6vw;
   z-index: 3;
 }
 .proj-info h2 {
   margin-top: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .proj-info:first-of-type{
+    width:100%;
+    margin: 10em auto 2em auto;
+  }
+.proj-info{
+  width:100%;
+  margin: 0em auto 2em auto;
+}
+  .proj-header {
+    position: absolute;
+
+  }
 }

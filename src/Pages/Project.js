@@ -74,14 +74,14 @@ export default function Project() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    { action.icon && <img
                       src={
-                        action.icon &&
+                       
                         require(`../Assets/Icons/${action.icon}.svg`)
                       }
                       alt=""
                       className="proj-icon"
-                    ></img>
+                    ></img>}
                     <span>{action.name}</span>
                   </a>
                 ))}
@@ -103,6 +103,9 @@ export default function Project() {
             </article>
           </div>
         </article>
+        <article className="proj-info">
+        <p>potatoo</p>
+      </article>
       </>
     );
   };
