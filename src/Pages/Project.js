@@ -31,7 +31,16 @@ export default function Project() {
     return <div>Loading...</div>;
   }
 
-  const Project = ({ name, imgFill, tools, summary, tasks, actions, i }) => {
+  const Project = ({
+    name,
+    imgFill,
+    imgThumb,
+    tools,
+    summary,
+    tasks,
+    actions,
+    i,
+  }) => {
     const projectHeaderStyle = {
       backgroundImage: `url(${
         imgFill ? require(`${"../"}${imgFill}`) : plImg
@@ -43,12 +52,28 @@ export default function Project() {
           <div></div>
         </div>
         <article className="proj-info">
-          <h2>
+          <h2 className="center-text">
             <StaggeredText text={name} staggerDelay={0.05} />
           </h2>
           <div>
-            <img src={imgFill ? require(`${"../"}${imgFill}`) : plImg} alt="" />
+            <img
+              src={imgThumb ? require(`${"../"}${imgThumb}`) : plImg}
+              alt=""
+            />
             <article>
+              <div className="btn-group">
+                {actions.map((action, index) => (
+                  <a
+                    key={index}
+                    href={action.link}
+                    className={`${action.type} action-btn`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>{action.name}</span>
+                  </a>
+                ))}
+              </div>
               <p>
                 <strong>Tools:</strong> {tools}
               </p>
@@ -63,20 +88,6 @@ export default function Project() {
                   <li key={index}>{task}</li>
                 ))}
               </ul>
-
-              <div className="btn-group">
-                {actions.map((action, index) => (
-                  <a
-                    key={index}
-                    href={action.link}
-                    className={`${action.type} action-btn`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {action.name}
-                  </a>
-                ))}
-              </div>  
             </article>
           </div>
         </article>

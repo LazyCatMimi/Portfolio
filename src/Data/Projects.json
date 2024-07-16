@@ -5,6 +5,7 @@
       "featured": true,
       "id": "thesuitespot",
       "imgFill": "Assets/projects/TSS-fill.jpg",
+      "imgThumb": "Assets/projects/TSS-thumb.png",
       "tools": "Figma | React.JS, Node.JS, Express.JS, MongoDB Atlas",
       "type": "web",
       "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
