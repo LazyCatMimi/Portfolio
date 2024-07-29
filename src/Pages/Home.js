@@ -4,8 +4,7 @@ import "../Styles/Home.css";
 import uiuxIcon from "../Assets/Icons/focus-uiux.svg";
 import devIcon from "../Assets/Icons/focus-dev.svg";
 import artIcon from "../Assets/Icons/focus-art.svg";
-import plImg from "../Assets/test.png";
-import arrRightIcon from "../Assets/Icons/chevron-right.svg";
+import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 
 // animations
@@ -29,7 +28,9 @@ export default function Home() {
         <span style={{ color: "white" }}>.</span> Developer
         <span style={{ color: "white" }}>.</span>
       </h1>
-      <button className="primary-button">See Resume</button>
+      <Link to="/resume" className="primary-button">
+        See Resume
+      </Link>
     </>
   );
 
@@ -79,24 +80,43 @@ export default function Home() {
         </motion.div>
       </section>
       <section className="light-bg pad" id="about">
-        <img src={require("../Assets/me.jpg")} alt="Quynh smiling"></img>
-        <article>
-          <h2>
-            <StaggeredText text="About Me" staggerDelay={0.1} />
-          </h2>
-          <p>
-            <LineRevealText text="Hello World! My name is Quynh, and I am a student at the University of Central Florida, where I am pursuing a bachelor's degree in Digital Media: Web Design with a minor in Information Technology. My passions lie in web design, development, and art. Having been born in 2002, I witnessed the rapid evolution of technology firsthand, which inspired me to become a creator of unique web experiences. Technology and art are my favorite subjects to learn about and discuss. In my spare time, I enjoy activities such as drawing, paper crafting, fishing, and boating." />
-          </p>
-        </article>
-        <p>
-          10+ Years of art program experience - Due to my experience in art
-          programs, I can quickly understand new web design softwares.
-        </p>
-        <p>Design & Code - from design to code, I can do it all!</p>
-        <p>
-          Project Management & Organization - I excel at delegating and
-          organaizing tasks for a project to succeeed.
-        </p>
+        <div className="about-container">
+          <img src={require("../Assets/me.jpg")} alt="Quynh smiling"></img>
+          <article>
+            <h2>
+              <StaggeredText text="About Me" staggerDelay={0.1} />
+            </h2>
+            <p>
+              <LineRevealText text="Hello World! My name is Quynh, and I am a student at the University of Central Florida, where I am pursuing a bachelor's degree in Digital Media: Web Design with a minor in Information Technology. My passions lie in web design, development, and art. Having been born in 2002, I witnessed the rapid evolution of technology firsthand, which inspired me to become a creator of unique web experiences. Technology and art are my favorite subjects to learn about and discuss. In my spare time, I enjoy activities such as drawing, paper crafting, fishing, and boating." />
+            </p>
+          </article>
+        </div>
+        <div>
+          <h3>What Makes Me Unique</h3>
+          <div>
+            <div>
+              <h4>10+ Years in Art Softwares</h4>
+              <p>
+                My art software expertise makes mastering new web design
+                applications a breeze.
+              </p>
+            </div>
+            <div>
+              <h4>Design & Code</h4>
+              <p>
+                Every stage, from initial design to final code, is within my
+                skill set.
+              </p>
+            </div>
+            <div>
+              <h4>Project Management & Organization</h4>
+              <p>
+                My strength lies in efficiently delegating and organizing tasks
+                to achieve project success.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <ProjectsQuickView />
       {/* <section className="light-bg" id="explore-projects">

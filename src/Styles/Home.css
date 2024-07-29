@@ -62,11 +62,14 @@
 }
 
 /* aboout me */
-#about {
+#about{
+   padding-right: 0;
+}
+#about .about-container {
   /* padding: 5% 0 5% 2%; */
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: max-content;
+ 
 
   gap: 20px;
   padding-right: 0;
@@ -81,7 +84,7 @@
 }
 #about img {
   width: 100%;
-  /* aspect-ratio: 1; */
+  aspect-ratio: 1;
   height: fit-content;
   object-fit: cover;
   border-radius: 16px;
@@ -166,12 +169,14 @@
 
   box-shadow: 0px 4px 5.3px rgba(0, 0, 0, 0.74);
   border-radius: 12px;
+
 }
 #latest-projects article div {
   padding: 1em 1.5em 1.5em 1.5em;
 }
 #latest-projects article {
   transition: all 0.2s ease-in-out;
+  background-image: linear-gradient(var(--dark-bg2), #17171c);
 }
 #latest-projects article:hover {
   transform: scale(1.05);
@@ -184,26 +189,6 @@
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
-}
-#latest-projects .featured {
-  grid-column: 1/4;
-  grid-auto-flow:  row dense;
-}
-#latest-projects .featured article{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  /* background-color: #000; */
-  /* border: 2px var(--magenta) solid; */
-}
-#latest-projects .featured img{
-  grid-column: 2/4;
-  aspect-ratio: auto;
-  border-radius:  0 12px 12px 0;
-}
-#latest-projects .featured div{
-  grid-column: 1/2;
-grid-row:1/2;
-  border-radius: 12px 0 0 12px;
 }
 .featured-txt{
   color:#D79736;
@@ -325,6 +310,37 @@ grid-row:1/2;
   }
   #about article {
     border-radius: 16px;
+  }
+}
+#latest-projects .featured article{
+  /* border: 2px #D79736 solid; */
+  /* border-radius: 12px; */
+  border: double 2px transparent;
+  border-radius: 12px;
+  background-image: linear-gradient(var(--dark-bg2), #17171c), 
+                    linear-gradient(to right, #bf510f, gold);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+@media screen and (min-width: 830px) {
+
+  #latest-projects .featured {
+    grid-column: 1/4;
+    ;
+  }
+  #latest-projects .featured article{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  #latest-projects .featured img{
+    grid-column: 2/4;
+    aspect-ratio: auto;
+    border-radius:  0 12px 12px 0;
+  }
+  #latest-projects .featured div{
+    grid-column: 1/2;
+  grid-row:1/2;
+    border-radius: 12px 0 0 12px;
   }
 }
 @media screen and (max-width: 830px) {
