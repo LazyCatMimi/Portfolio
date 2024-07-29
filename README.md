@@ -2,10 +2,10 @@ Visit my portfolio site here:
 [https://lazycatmimi.github.io/Portfolio/](https://lazycatmimi.github.io/Portfolio/)
 
 todo:
-
-- fix padding on larger screens (min/max padding)
-- pics for projects
-- add branding to tab
+- link socials to icons
+- put link on main resume button
+- email form
+- back to top in project pages
 
 current bugs:
 

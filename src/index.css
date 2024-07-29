@@ -138,3 +138,11 @@ section {
   /* padding: clamp(200px, 3em, 400px) clamp(300px, 4em, 500px); */
   padding: 4em 6vw;
 }
+.img-text{
+   display: flex;
+  margin:0;
+
+}
+ul{
+   list-style-image: url('./Assets/Icons/star-bullet.svg');
+}

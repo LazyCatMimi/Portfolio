@@ -48,7 +48,7 @@ export default function Project() {
         imgFill ? require(`${"../"}${imgFill}`) : plImg
       })`,
     };
-    const Component = require(`.${component}`).default
+    const Component = component && require(`.${component}`).default
       
     return (
       <>
@@ -104,7 +104,7 @@ export default function Project() {
             </article>
           </div>
         </article>
-        <Component />
+        {component && <Component />}
  
       </>
     );

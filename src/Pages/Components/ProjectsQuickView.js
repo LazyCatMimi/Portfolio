@@ -4,6 +4,8 @@ import StaggeredText from "./StaggeredText";
 import LineRevealText from "./LineRevealText";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import starImg from "../../Assets/Icons/star.svg";
 
 export default function ProjectsQuickView() {
   const [activeSortButton, setActiveSortButton] = useState("all");
@@ -54,6 +56,7 @@ export default function ProjectsQuickView() {
 
   const Project = ({
     name,
+    featured,
     imgFill,
     id,
     tools,
@@ -62,7 +65,7 @@ export default function ProjectsQuickView() {
     actions,
     i,
   }) => (
-    <Link to={`/projects/${id}`}>
+    <Link to={`/projects/${id}`} className={`${featured && "featured"}`}>
       <article className="dark-bg2">
         <img
           src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
@@ -70,6 +73,14 @@ export default function ProjectsQuickView() {
         ></img>
 
         <div>
+          {featured && (
+            <>
+              <div className="img-text">
+                <img src={starImg} className="star-img" />
+                <p className="featured-txt">Featured Project</p>
+              </div>
+            </>
+          )}
           <h3>
             <span className="num off-white-text">
               {(i + 1).toString().padStart(2, "0")}{" "}
@@ -77,7 +88,7 @@ export default function ProjectsQuickView() {
             | <LineRevealText text={name} staggerDelay={0.05} />
           </h3>
           <p>{shortSummary}</p>
-           {/* <button className="primary-button">Read More</button> */}
+          {/* <button className="primary-button">Read More</button> */}
         </div>
       </article>
     </Link>
@@ -109,7 +120,7 @@ export default function ProjectsQuickView() {
           </label>
         ))}
       </div>
-      <p className="center-text sort-desc">
+      <p className="center-text sort   -desc">
         {sortButtons.find((button) => button.id === activeSortButton).desc}
       </p>
       <div className="projects-grid">
