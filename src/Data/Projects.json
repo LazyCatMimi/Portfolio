@@ -2,6 +2,7 @@
   "designCode": [
     {
       "name": "The Suite Spot Salon",
+      "component": "/Projects/thesuitespot.js",
       "featured": true,
       "id": "thesuitespot",
       "imgFill": "Assets/projects/TSS-fill.jpg",

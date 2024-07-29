@@ -62,6 +62,9 @@
   padding: 4em 6vw;
   z-index: 3;
 }
+.pi-after{
+  margin: 1em auto 1em auto;
+}
 .proj-info h2 {
   margin-top: 0;
 }

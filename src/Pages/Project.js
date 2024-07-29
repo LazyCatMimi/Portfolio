@@ -4,9 +4,7 @@ import StaggeredText from "./Components/StaggeredText";
 import PROJECTS from "../Data/Projects.json";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import figmaIcon from "../Assets/Icons/figma.svg";
-import githubIcon from "../Assets/Icons/github.svg";
-import globeIcon from "../Assets/Icons/globe.svg";
+
 
 export default function Project() {
   const { id } = useParams();
@@ -36,6 +34,7 @@ export default function Project() {
 
   const Project = ({
     name,
+    component,
     imgFill,
     imgThumb,
     tools,
@@ -49,6 +48,8 @@ export default function Project() {
         imgFill ? require(`${"../"}${imgFill}`) : plImg
       })`,
     };
+    const Component = require(`.${component}`).default
+      
     return (
       <>
         <div style={projectHeaderStyle} className="proj-header">
@@ -103,9 +104,8 @@ export default function Project() {
             </article>
           </div>
         </article>
-        <article className="proj-info">
-        <p>potatoo</p>
-      </article>
+        <Component />
+ 
       </>
     );
   };
