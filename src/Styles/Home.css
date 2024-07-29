@@ -62,32 +62,34 @@
 }
 
 /* aboout me */
-#about{
-   padding-right: 0;
-}
+
 #about .about-container {
   /* padding: 5% 0 5% 2%; */
   display: grid;
   grid-template-columns: 1fr 2fr;
- 
+  align-items: stretch;
 
   gap: 20px;
-  padding-right: 0;
-  align-items: center; /* Ensures both items are centered vertically */
+  /* padding-right: 0; */
+  align-items: center;
 }
 #about article {
-  background-color: white;
+  /* background-color: white; */
   padding: 20px 40px;
-  height: max-content;
   box-shadow: 2px 2px 22.1px rgba(191, 191, 191, 0.25);
   border-radius: 16px 0 0 16px;
+
 }
 #about img {
   width: 100%;
   aspect-ratio: 1;
-  height: fit-content;
+  height: auto;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 16px; 
+  
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
 }
 
 /* latest projects */
