@@ -151,6 +151,7 @@ export default function Resume() {
                 <li>Photoshop</li>
                 <li>Wix</li>
                 <li>Invision</li>
+                <li>Canva</li>
               </ul>
             </div>
             <div>
