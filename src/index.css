@@ -6,6 +6,7 @@
   --off-white: #eeeff0;
   --magenta: #ff3d7c;
   --white-text: #d3cfdc;
+  --gold: #D79736;
 }
 /* General */
 body {
@@ -145,4 +146,9 @@ section {
 }
 ul{
    list-style-image: url('./Assets/Icons/star-bullet.svg');
+}
+.col-3{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5em;
 }

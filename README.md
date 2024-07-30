@@ -6,6 +6,7 @@ todo:
 - put link on main resume button
 - email form
 - back to top in project pages
+- thumb pics for dominos, writers block, catdog, neon
 
 current bugs:
 

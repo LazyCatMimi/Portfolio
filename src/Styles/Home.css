@@ -62,7 +62,22 @@
 }
 
 /* aboout me */
+.star-list{
+  width:1.3em;
+}
+#about h3{
+  color: var(--gold);
 
+  font-family: 'Kaisei Decol';
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 2.1rem; */
+  line-height: 35px;
+
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
 #about .about-container {
   /* padding: 5% 0 5% 2%; */
   display: grid;
@@ -72,15 +87,25 @@
   gap: 20px;
   /* padding-right: 0; */
   align-items: center;
+  margin-bottom: 1em;
 }
 #about article {
   /* background-color: white; */
   padding: 20px 40px;
-  box-shadow: 2px 2px 22.1px rgba(191, 191, 191, 0.25);
-  border-radius: 16px 0 0 16px;
+  /* box-shadow: 2px 2px 22.1px rgba(191, 191, 191, 0.25); */
+  border-radius: 16px ;
 
 }
-#about img {
+.unique-list{
+  display: flex;
+  background-color: white;
+  padding: 20px 40px;
+  box-shadow: 2px 2px 22.1px rgba(191, 191, 191, 0.25);
+  border-radius: 16px;
+  justify-content: center;
+
+}
+.me-pic {
   width: 100%;
   aspect-ratio: 1;
   height: auto;
@@ -193,7 +218,7 @@
   border-radius: 12px 12px 0 0;
 }
 .featured-txt{
-  color:#D79736;
+  color:var(--gold);
   margin: 0;
 }
 #latest-projects article .img-text{
@@ -202,7 +227,7 @@
 .star-img{
   width:12px !important;
   object-fit: initial !important;  
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   margin-right:2px;
 }
 .project-hover {

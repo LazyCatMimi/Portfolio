@@ -176,7 +176,7 @@
       "name": "Book Store App",
       "id": "bookstore-app",
       "imgFill": "Assets/projects/WriterBlockBookstore-fill.jpg",
-      "imgThumb": "Assets/projects/WriterBlockBookstore-thumb.png",
+      "imgThumb": "Assets/projects/WriterBlockBookstore-thumb.jpg",
       "tools": "Invision, Powerpoint, Photoshop",
       "type": "mobile",
       "shortSummary": "An app based on the Writer's Block Bookstore website with updated visuals and  new social features.",
@@ -261,6 +261,7 @@
       "name": "Neon City website",
       "id": "neon-city",
       "imgFill": "",
+      "imgThumb": "",
       "tools": "Vanilla HTML/CSS/JS",
       "type": "web",
       "shortSummary": "A simple homepage for a fictional city. Coded without a design, created for fun!",
@@ -285,7 +286,7 @@
       "name": "Cat or Dog Quiz",
       "id": "cat-dog-quiz",
       "imgFill": "Assets/projects/catdog-fill.jpg",
-      "imgThumb": "Assets/projects/catdog-thumb.png",
+      "imgThumb": "Assets/projects/catdog-thumb.jpg",
       "tools": "Vanilla HTML/CSS/JS",
       "type": "web",
       "shortSummary": "A simple form validation website with a quiz",
@@ -295,7 +296,7 @@
         {
           "name": "See GH repository",
           "link": "https://github.com/LazyCatMimi/CatDogQuizFormValidation",
-          "type": "primary-button",
+          "type": "secondary-button",
           "icon": "github"
         },
         {
@@ -320,7 +321,7 @@
         {
           "name": "See GH repository",
           "link": "https://github.com/LazyCatMimi/WordGuessingGame",
-          "type": "primary-button",
+          "type": "secondary-button",
           "icon": "github"
         },
         {

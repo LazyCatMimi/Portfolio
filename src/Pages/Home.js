@@ -6,6 +6,7 @@ import devIcon from "../Assets/Icons/focus-dev.svg";
 import artIcon from "../Assets/Icons/focus-art.svg";
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
+import starIcon from "../Assets/Icons/star-bullet.svg";
 
 // animations
 import { motion, useAnimation } from "framer-motion";
@@ -15,6 +16,20 @@ import LineRevealText from "./Components/LineRevealText";
 import ProjectsQuickView from "./Components/ProjectsQuickView";
 
 export default function Home() {
+  const uniqueList = [
+    {
+      title: "10+ Years in Art Softwares",
+      desc: "My art software expertise makes mastering new web design applications a breeze.",
+    },
+    {
+      title: "Design & Code",
+      desc: "Every stage, from initial design to final code, is within my skill set.",
+    },
+    {
+      title: "Project Management & Organization",
+      desc: "My strength lies in efficiently delegating and organizing tasks to achieve project success.",
+    },
+  ];
   const stopScalingRef = useRef(null);
 
   const HeaderContent = () => (
@@ -81,7 +96,7 @@ export default function Home() {
       </section>
       <section className="light-bg pad" id="about">
         <div className="about-container">
-          <img src={require("../Assets/me.jpg")} alt="Quynh smiling"></img>
+          <img src={require("../Assets/me.jpg")} alt="Quynh smiling" className="me-pic"></img>
           <article>
             <h2>
               <StaggeredText text="About Me" staggerDelay={0.1} />
@@ -91,30 +106,19 @@ export default function Home() {
             </p>
           </article>
         </div>
-        <div>
-          <h3>What Makes Me Unique</h3>
-          <div>
-            <div>
-              <h4>10+ Years in Art Softwares</h4>
-              <p>
-                My art software expertise makes mastering new web design
-                applications a breeze.
-              </p>
-            </div>
-            <div>
-              <h4>Design & Code</h4>
-              <p>
-                Every stage, from initial design to final code, is within my
-                skill set.
-              </p>
-            </div>
-            <div>
-              <h4>Project Management & Organization</h4>
-              <p>
-                My strength lies in efficiently delegating and organizing tasks
-                to achieve project success.
-              </p>
-            </div>
+        <div className="unique-list">
+          <h2 className="center-text">What Makes Me Unique</h2>
+          <div className="col-3">
+            {uniqueList.map((item, index) => (
+              <div key={index}>
+                <div  className="img-text">
+                  <img src={starIcon} className="star-list" alt=""></img>
+                  <h3>{item.title}</h3>
+                </div>
+
+                <p>{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
