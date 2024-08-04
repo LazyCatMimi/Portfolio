@@ -18,16 +18,38 @@ import ProjectsQuickView from "./Components/ProjectsQuickView";
 export default function Home() {
   const uniqueList = [
     {
-      title: "10+ Years in Art Softwares",
+      title: "10+ Years in Art Software",
       desc: "My art software expertise makes mastering new web design applications a breeze.",
     },
     {
-      title: "Design & Code",
-      desc: "Every stage, from initial design to final code, is within my skill set.",
+      title: "Design & Development",
+      desc: "Every stage of Web Design & Development, from initial design to final code, is within my skill set.",
     },
     {
-      title: "Project Management & Organization",
+      title: "Project Planning",
       desc: "My strength lies in efficiently delegating and organizing tasks to achieve project success.",
+    },
+    {
+      title: "Empathetic Personality",
+      desc: "As a natural empath, I cultivate a supportive and collaborative workplace, boosting team cohesion and productivity. ",
+    },
+  ];
+  const philosophies = [
+    {
+      title: "Accessibility",
+      desc: "The web should be accessible to everyone. Regardless of ability, accessibility benefits all.",
+    },
+    {
+      title: "Mobile-First",
+      desc: "Design for mobile devices first, then scale up to larger screens. This ensures a better experience on the most widely used devices and promotes a responsive design mindset.",
+    },
+    {
+      title: "User-Centered Design",
+      desc: "Prioritize the needs and preferences of users to create intuitive and enjoyable experiences.",
+    },
+    {
+      title: "Aesthetic Integrity",
+      desc: "Create visually appealing designs that align with brand identity and resonate with the target audience for a cohesive, memorable user experience.",
     },
   ];
   const stopScalingRef = useRef(null);
@@ -64,7 +86,6 @@ export default function Home() {
   return (
     <main id="Home">
       <Header stopScalingRef={stopScalingRef} Content={HeaderContent} />
-
       <section ref={stopScalingRef} className="dark-bg" id="focus">
         <motion.div
           ref={ref}
@@ -96,7 +117,11 @@ export default function Home() {
       </section>
       <section className="light-bg pad" id="about">
         <div className="about-container">
-          <img src={require("../Assets/me.jpg")} alt="Quynh smiling" className="me-pic"></img>
+          <img
+            src={require("../Assets/me.jpg")}
+            alt="Quynh smiling"
+            className="me-pic"
+          ></img>
           <article>
             <h2>
               <StaggeredText text="About Me" staggerDelay={0.1} />
@@ -108,10 +133,10 @@ export default function Home() {
         </div>
         <div className="unique-list">
           <h2 className="center-text">What Makes Me Unique</h2>
-          <div className="col-3">
+          <div className="col-2">
             {uniqueList.map((item, index) => (
               <div key={index}>
-                <div  className="img-text">
+                <div className="img-text">
                   <img src={starIcon} className="star-list" alt=""></img>
                   <h3>{item.title}</h3>
                 </div>
@@ -148,6 +173,22 @@ export default function Home() {
           </button>
         </div>
       </section> */}
+
+      <section className="light-bg" id="phil">
+        <h2 className="center-text">My Design & Development Philosophies</h2>
+        <div className="col-2">
+          {philosophies.map((item, index) => (
+            <div key={index}>
+              <div className="img-text">
+                <img src={starIcon} className="star-list" alt=""></img>
+                <h3>{item.title}</h3>
+              </div>
+
+              <p>{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className="dark-bg3" id="contact-me" style={{ flex: 1 }}>
         <h2>
           <StaggeredText text="Contact Me" staggerDelay={0.1} />

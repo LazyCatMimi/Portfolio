@@ -6,7 +6,7 @@
   --off-white: #eeeff0;
   --magenta: #ff3d7c;
   --white-text: #d3cfdc;
-  --gold: #D79736;
+  --gold: #f4ac40;
 }
 /* General */
 body {
@@ -82,8 +82,8 @@ h4 {
   color: white;
   cursor: pointer;
   padding: 10px 20px;
-text-decoration:none;
-  
+  text-decoration: none;
+
   border-radius: 5px;
   font-size: 1.2rem;
   transition: background-position 0.3s ease-in-out;
@@ -107,8 +107,8 @@ text-decoration:none;
   color: white;
   cursor: pointer;
   padding: 10px 20px;
-  text-decoration:none;
-  
+  text-decoration: none;
+
   border-radius: 5px;
   font-size: 1.2rem;
   transition: background-position 0.3s ease-in-out;
@@ -139,16 +139,20 @@ section {
   /* padding: clamp(200px, 3em, 400px) clamp(300px, 4em, 500px); */
   padding: 4em 6vw;
 }
-.img-text{
-   display: flex;
-  margin:0;
-
+.img-text {
+  display: flex;
+  margin: 0;
 }
-ul{
-   list-style-image: url('./Assets/Icons/star-bullet.svg');
+ul {
+  list-style-image: url("./Assets/Icons/star-bullet.svg");
 }
-.col-3{
-  display:grid;
+.col-3 {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5em;
+}
+.col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1.5em;
 }
