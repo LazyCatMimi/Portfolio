@@ -1,9 +1,8 @@
 import ContactForm from "./Components/ContactForm";
 import Header from "./Components/Header";
+import FocusBanner from "./Components/HomePage/FocusBanner";
 import "../Styles/Home.css";
-import uiuxIcon from "../Assets/Icons/focus-uiux.svg";
-import devIcon from "../Assets/Icons/focus-dev.svg";
-import artIcon from "../Assets/Icons/focus-art.svg";
+
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import starIcon from "../Assets/Icons/star-bullet.svg";
@@ -11,8 +10,8 @@ import starIcon from "../Assets/Icons/star-bullet.svg";
 // animations
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import StaggeredText from "./Components/StaggeredText";
-import LineRevealText from "./Components/LineRevealText";
+import StaggeredText from "./Components/Animation/StaggeredText";
+import LineRevealText from "./Components/Animation/LineRevealText";
 import ProjectsQuickView from "./Components/ProjectsQuickView";
 
 export default function Home() {
@@ -63,17 +62,43 @@ export default function Home() {
   const stopScalingRef = useRef(null);
 
   const FeatureList = ({ list, title }) => {
+    const { ref, inView } = useInView({
+      triggerOnce: true,
+      threshold: 0.5, // Adjust the threshold to control how much of the element should be in view
+    });
+
+    const containerVariants = {
+      hidden: { opacity: 0 },
+      visible: {
+        opacity: 1,
+        transition: {
+          staggerChildren: 0.2,
+        },
+      },
+    };
+
+    const itemVariants = {
+      hidden: { opacity: 0, y: 50 },
+      visible: { opacity: 1, y: 0 },
+    };
+
     return (
       <div>
         <h2 className="center-text">
           <StaggeredText text={title} staggerDelay={0.03} />
         </h2>
-        <div className="feature-list">
-          <div className="col-2">
+        <div className="feature-list" ref={ref}>
+          <motion.div
+            className="col-2"
+            variants={containerVariants}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+          >
             {list.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
-                className={`feature-icon-text ${index % 2 && "even"}`}
+                className={`feature-icon-text ${index % 2 ? "even" : ""}`}
+                variants={itemVariants}
               >
                 <img
                   src={require(`../Assets/Icons/${item.icon}.svg`)}
@@ -82,18 +107,19 @@ export default function Home() {
                 />
                 <div>
                   <div className="img-text">
-                    <img src={starIcon} className="star-list" alt=""></img>
+                    <img src={starIcon} className="star-list" alt="" />
                     <h3>{item.title}</h3>
                   </div>
                   <p>{item.desc}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     );
   };
+
   const HeaderContent = () => (
     <>
       <h1 className="title-sub-1">Hello, I am</h1>
@@ -118,51 +144,6 @@ export default function Home() {
       </Link>
     </>
   );
-  const FocusBanner = () => {
-    // animation for focus banner
-    const controls = useAnimation();
-    const [ref, inView] = useInView();
-    useEffect(() => {
-      if (inView) {
-        controls.start("visible");
-      }
-    }, [controls, inView]);
-    const variants = {
-      visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-      hidden: { opacity: 0, y: 50 },
-    };
-    return (
-      <>
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={variants}
-        >
-          <img src={uiuxIcon} alt="" />
-          <p>UI/UX</p>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={variants}
-        >
-          <img src={devIcon} alt="" />
-          <p>Full Stack Development</p>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={variants}
-        >
-          <img src={artIcon} alt="" />
-          <p>Art & Design</p>
-        </motion.div>
-      </>
-    );
-  };
 
   return (
     <main id="Home">

@@ -3,7 +3,7 @@ import { useRef } from "react";
 import plImg from "../Assets/test.png";
 import "../Styles/Projects.css";
 import PROJECTS from "../Data/Projects.json";
-import StaggeredText from "./Components/StaggeredText";
+import StaggeredText from "./Components/Animation/StaggeredText";
 
 export default function ProjectsWebDesign() {
   const stopScalingRef = useRef(null);

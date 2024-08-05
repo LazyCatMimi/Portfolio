@@ -1,6 +1,6 @@
 import "../Styles/Project.css";
 import plImg from "../Assets/test.png";
-import StaggeredText from "./Components/StaggeredText";
+import StaggeredText from "./Components/Animation/StaggeredText";
 import PROJECTS from "../Data/Projects.json";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";

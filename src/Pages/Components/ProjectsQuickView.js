@@ -1,7 +1,7 @@
 import plImg from "../../Assets/test.png";
 import PROJECTS from "../../Data/Projects.json";
-import StaggeredText from "./StaggeredText";
-import LineRevealText from "./LineRevealText";
+import StaggeredText from "./Animation/StaggeredText";
+import LineRevealText from "./Animation/LineRevealText";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
