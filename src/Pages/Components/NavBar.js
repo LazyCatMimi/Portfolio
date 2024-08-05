@@ -14,7 +14,7 @@ const menuItems = [
   // { text: "Web Dev", path: PATHS.main.webDev },
   // { text: "Art & Design", path: PATHS.main.artDesign },
   { text: "Resume", path: PATHS.main.resume },
-  { text: "Contact", path: PATHS.main.contact },
+  { text: "Contact", path: `/#contact-me` },
 ];
 
 export default function NavBar({ revealBGRef }) {
