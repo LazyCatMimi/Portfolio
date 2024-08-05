@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 export default function LineRevealText({ text }) {
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger the animation only once
-    threshold: 0.5, // Trigger when 50% of the component is in view
+    threshold: 0.9, // Trigger when 50% of the component is in view
   });
 
   // Split the text into lines
