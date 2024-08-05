@@ -62,6 +62,36 @@ export default function Home() {
   ];
   const stopScalingRef = useRef(null);
 
+  const FeatureList = ({ list, title }) => {
+    return (
+      <div>
+        <h2 className="center-text">{title}</h2>
+        <div className="feature-list">
+          <div className="col-2">
+            {list.map((item, index) => (
+              <div
+                key={index}
+                className={`feature-icon-text ${index % 2 && "even"}`}
+              >
+                <img
+                  src={require(`../Assets/Icons/${item.icon}.svg`)}
+                  alt=""
+                  className="feature-list-icon"
+                />
+                <div>
+                  <div className="img-text">
+                    <img src={starIcon} className="star-list" alt=""></img>
+                    <h3>{item.title}</h3>
+                  </div>
+                  <p>{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  };
   const HeaderContent = () => (
     <>
       <h1 className="title-sub-1">Hello, I am</h1>
@@ -140,26 +170,7 @@ export default function Home() {
           </article>
         </div>
         <div className="unique-list">
-          <h2 className="center-text">What Makes Me Unique</h2>
-          <div className="feature-list">
-            <div className="col-2">
-              {uniqueList.map((item, index) => (
-                <div key={index} className="col-2">
-                  <img
-                    src={require(`../Assets/Icons/${item.icon}.svg`)}
-                    alt=""
-                    className="feature-list-icon"
-                  />
-                  <div className="img-text">
-                    <img src={starIcon} className="star-list" alt=""></img>
-                    <h3>{item.title}</h3>
-                  </div>
-
-                  <p>{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <FeatureList list={uniqueList} title="What Makes me Unique" />
         </div>
       </section>
       <ProjectsQuickView />
@@ -190,21 +201,10 @@ export default function Home() {
       </section> */}
 
       <section className="light-bg" id="phil">
-        <h2 className="center-text">My Design & Development Philosophies</h2>
-        <div className="feature-list">
-          <div className="col-2">
-            {philosophies.map((item, index) => (
-              <div key={index}>
-                <div className="img-text">
-                  <img src={starIcon} className="star-list" alt=""></img>
-                  <h3>{item.title}</h3>
-                </div>
-
-                <p>{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <FeatureList
+          list={philosophies}
+          title="My Design & Development Philosophies"
+        />
       </section>
       <section className="dark-bg3" id="contact-me" style={{ flex: 1 }}>
         <h2>
