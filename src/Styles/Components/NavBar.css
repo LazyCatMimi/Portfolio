@@ -54,23 +54,21 @@
 
 .menu {
   display: flex;
-
 }
 
 .menu-items {
-
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 
 .menu-icon {
   display: none; /* Hide menu icon by default */
   z-index: 100;
 }
 @media (min-width: 971px) {
-  .navbar ul, .navbar li {
+  .navbar ul,
+  .navbar li {
     display: inline !important;
     opacity: 1 !important;
     transform: initial !important;
@@ -132,6 +130,6 @@
 
   /* Hide menu icon when menu items are shown*/
   .menu-items.hide {
-    opacity:0
-  } 
+    opacity: 0;
+  }
 }

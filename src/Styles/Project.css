@@ -1,26 +1,26 @@
 #projectidv {
   background-color: #eeeff0;
 }
-#projectidv .btn-group{
-  display:flex;
+#projectidv .btn-group {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 4em;
 }
 
-.action-btn{
- display:flex;
+.action-btn {
+  display: flex;
   margin: 10px;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
 }
 
-.action-btn span{
-  display:block;
+.action-btn span {
+  display: block;
   width: 200px;
   margin: 10px;
 }
-.proj-thumb{
+.proj-thumb {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -56,13 +56,13 @@
 
 .proj-info {
   background-color: white;
-  width: 65%;
+  width: 80%;
   border-radius: 19px;
   margin: 5em auto 2em auto;
   padding: 4em 6vw;
   z-index: 3;
 }
-.pi-after{
+.pi-after {
   margin: 1em auto 1em auto;
 }
 .proj-info h2 {
@@ -70,16 +70,15 @@
 }
 
 @media screen and (max-width: 700px) {
-  .proj-info:first-of-type{
-    width:100%;
+  .proj-info:first-of-type {
+    width: 100%;
     margin: 10em auto 2em auto;
   }
-.proj-info{
-  width:100%;
-  margin: 0em auto 2em auto;
-}
+  .proj-info {
+    width: 100%;
+    margin: 0em auto 2em auto;
+  }
   .proj-header {
     position: absolute;
-
   }
 }

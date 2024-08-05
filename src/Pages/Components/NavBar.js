@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { motion, useAnimation } from "framer-motion"; // Import motion and useAnimation
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { motion, useAnimation } from "framer-motion";
 import PATHS from "../../Data/Pages.json";
 import logoIcon from "../../Assets/logo.png";
 import menuIcon from "../../Assets/Icons/menu.svg";
@@ -10,46 +10,32 @@ import "../../Styles/Components/NavBar.css";
 const menuItems = [
   { text: "Home", path: PATHS.main.home },
   { text: "Projects", path: `/#latest-projects` },
-  // { text: "Web Design", path: PATHS.main.webDesign },
-  // { text: "Web Dev", path: PATHS.main.webDev },
-  // { text: "Art & Design", path: PATHS.main.artDesign },
   { text: "Resume", path: PATHS.main.resume },
   { text: "Contact", path: `/#contact-me` },
 ];
 
-export default function NavBar({ revealBGRef }) {
+export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const controls = useAnimation(); // Initialize useAnimation
+  const controls = useAnimation();
+
   const ulVariants = {
     visible: {
       opacity: 1,
       y: 0,
-
-      // clipPath: `circle(${1000 * 2 + 200}px at 100% 0%)`,
     },
     hidden: {
       opacity: 0,
       y: "-100%",
+    },
+  };
 
-      // clipPath: "circle(30px at 100% 0%)",
-    },
-  };
-  const liVariants = {
-    open: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        y: { stiffness: 1000, velocity: -100 },
-      },
-    },
-    closed: {
-      y: 50,
-      opacity: 0,
-    },
-  };
   const toggleMenu = () => {
+    if (!menuOpen) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
     setMenuOpen(!menuOpen);
-    controls.start(menuOpen ? "hidden" : "visible");
   };
 
   return (
@@ -65,14 +51,17 @@ export default function NavBar({ revealBGRef }) {
           onClick={toggleMenu}
         />
         <motion.ul
-          className={`menu-items ${!menuOpen ? "hide" : ""} `}
+          className={`menu-items ${!menuOpen ? "hide" : ""}`}
+          initial="hidden"
           animate={controls}
           variants={ulVariants}
         >
           {menuItems.map((item, index) => (
             <motion.li
               key={index}
-              style={{ display: `${!menuOpen ? "none" : "inline"}` }}
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: index * 0.1 }}
             >
               <Link to={item.path} onClick={toggleMenu}>
                 {item.text}
