@@ -83,7 +83,7 @@
   /* box-shadow: 2px 2px 22.1px rgba(191, 191, 191, 0.25); */
   border-radius: 16px;
 }
-#about h3 {
+.feature-list h3 {
   /* color: var(--gold); */
 
   font-family: "Kaisei Decol";
@@ -102,11 +102,10 @@
   justify-content: center;
 }
 
-.unique-list .img-text {
+.feature-list.img-text {
   align-items: baseline;
 }
-.unique-list img,
-#phil img {
+.feature-list .star-list {
   width: 15px;
 }
 .me-pic {

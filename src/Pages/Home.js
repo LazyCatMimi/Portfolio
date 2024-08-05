@@ -20,36 +20,44 @@ export default function Home() {
     {
       title: "10+ Years in Art Software",
       desc: "My art software expertise makes mastering new web design applications a breeze.",
+      icon: "unique-art",
     },
     {
       title: "Design & Development",
       desc: "Every stage of Web Design & Development, from initial design to final code, is within my skill set.",
+      icon: "unique-designcode",
     },
     {
       title: "Project Planning",
       desc: "My strength lies in efficiently delegating and organizing tasks to achieve project success.",
+      icon: "unique-project",
     },
     {
       title: "Empathetic Personality",
       desc: "As a natural empath, I cultivate a supportive and collaborative workplace, boosting team cohesion and productivity. ",
+      icon: "unique-empath",
     },
   ];
   const philosophies = [
     {
       title: "Accessibility",
       desc: "The web should be accessible to everyone. Regardless of ability, accessibility benefits all.",
+      icon: "phil-access",
     },
     {
       title: "Mobile-First",
       desc: "Design for mobile devices first, then scale up to larger screens. This ensures a better experience on the most widely used devices and promotes a responsive design mindset.",
+      icon: "phil-mobile",
     },
     {
       title: "User-Centered Design",
       desc: "Prioritize the needs and preferences of users to create intuitive and enjoyable experiences.",
+      icon: "phil-ucd",
     },
     {
       title: "Aesthetic Integrity",
       desc: "Create visually appealing designs that align with brand identity and resonate with the target audience for a cohesive, memorable user experience.",
+      icon: "phil-aesthetic",
     },
   ];
   const stopScalingRef = useRef(null);
@@ -133,17 +141,24 @@ export default function Home() {
         </div>
         <div className="unique-list">
           <h2 className="center-text">What Makes Me Unique</h2>
-          <div className="col-2">
-            {uniqueList.map((item, index) => (
-              <div key={index}>
-                <div className="img-text">
-                  <img src={starIcon} className="star-list" alt=""></img>
-                  <h3>{item.title}</h3>
-                </div>
+          <div className="feature-list">
+            <div className="col-2">
+              {uniqueList.map((item, index) => (
+                <div key={index} className="col-2">
+                  <img
+                    src={require(`../Assets/Icons/${item.icon}.svg`)}
+                    alt=""
+                    className="feature-list-icon"
+                  />
+                  <div className="img-text">
+                    <img src={starIcon} className="star-list" alt=""></img>
+                    <h3>{item.title}</h3>
+                  </div>
 
-                <p>{item.desc}</p>
-              </div>
-            ))}
+                  <p>{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -176,17 +191,19 @@ export default function Home() {
 
       <section className="light-bg" id="phil">
         <h2 className="center-text">My Design & Development Philosophies</h2>
-        <div className="col-2">
-          {philosophies.map((item, index) => (
-            <div key={index}>
-              <div className="img-text">
-                <img src={starIcon} className="star-list" alt=""></img>
-                <h3>{item.title}</h3>
-              </div>
+        <div className="feature-list">
+          <div className="col-2">
+            {philosophies.map((item, index) => (
+              <div key={index}>
+                <div className="img-text">
+                  <img src={starIcon} className="star-list" alt=""></img>
+                  <h3>{item.title}</h3>
+                </div>
 
-              <p>{item.desc}</p>
-            </div>
-          ))}
+                <p>{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
       <section className="dark-bg3" id="contact-me" style={{ flex: 1 }}>
