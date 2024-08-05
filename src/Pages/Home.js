@@ -65,7 +65,9 @@ export default function Home() {
   const FeatureList = ({ list, title }) => {
     return (
       <div>
-        <h2 className="center-text">{title}</h2>
+        <h2 className="center-text">
+          <StaggeredText text={title} staggerDelay={0.03} />
+        </h2>
         <div className="feature-list">
           <div className="col-2">
             {list.map((item, index) => (

@@ -4,7 +4,7 @@ import StaggeredText from "./Components/StaggeredText";
 import PROJECTS from "../Data/Projects.json";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+import BackButton from "./Components/BackButton";
 
 export default function Project() {
   const { id } = useParams();
@@ -48,14 +48,15 @@ export default function Project() {
         imgFill ? require(`${"../"}${imgFill}`) : plImg
       })`,
     };
-    const Component = component && require(`.${component}`).default
-      
+    const Component = component && require(`.${component}`).default;
+
     return (
       <>
         <div style={projectHeaderStyle} className="proj-header">
           <div></div>
         </div>
         <article className="proj-info">
+          <BackButton />
           <h2 className="center-text">
             <StaggeredText text={name} staggerDelay={0.05} />
           </h2>
@@ -75,14 +76,13 @@ export default function Project() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    { action.icon && <img
-                      src={
-                       
-                        require(`../Assets/Icons/${action.icon}.svg`)
-                      }
-                      alt=""
-                      className="proj-icon"
-                    ></img>}
+                    {action.icon && (
+                      <img
+                        src={require(`../Assets/Icons/${action.icon}.svg`)}
+                        alt=""
+                        className="proj-icon"
+                      ></img>
+                    )}
                     <span>{action.name}</span>
                   </a>
                 ))}
@@ -105,7 +105,6 @@ export default function Project() {
           </div>
         </article>
         {component && <Component />}
- 
       </>
     );
   };

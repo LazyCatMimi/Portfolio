@@ -156,3 +156,24 @@ ul {
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.5em;
 }
+
+/* ------------components---------------- */
+.back-button {
+  display: flex;
+  padding: 10px 30px;
+  /* border: 1px solid; */
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 1em;
+  border-radius: 20px;
+  align-items: center;
+  gap: 2px;
+}
+.back-button,
+.back-button img {
+  color: #8d8d8d;
+}
+
+.back-button:hover {
+  background-color: #e6e8ea;
+}
