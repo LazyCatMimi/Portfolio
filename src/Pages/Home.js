@@ -18,8 +18,8 @@ import ProjectsQuickView from "./Components/ProjectsQuickView";
 export default function Home() {
   const uniqueList = [
     {
-      title: "10+ Years in Art Software",
-      desc: "My art software expertise makes mastering new web design applications a breeze.",
+      title: "10+ Years Art Software",
+      desc: "My 10+ years of art software experience makes mastering new web design applications a breeze.",
       icon: "unique-art",
     },
     {
@@ -98,11 +98,19 @@ export default function Home() {
       <h1 className="title-name">
         <StaggeredText text="Quynh Vo" staggerDelay={0.15} />
       </h1>
-      <h1 className="title-sub-2">
-        Artist<span style={{ color: "white" }}>.</span> Designer
-        <span style={{ color: "white" }}>.</span> Developer
-        <span style={{ color: "white" }}>.</span>
-      </h1>
+      <div className="title-sub-2-container">
+        <h1 className="title-sub-2">
+          Artist<span style={{ color: "white" }}>.</span>
+        </h1>
+        <h1 className="title-sub-2">
+          Designer
+          <span style={{ color: "white" }}>.</span>{" "}
+        </h1>
+        <h1 className="title-sub-2">
+          Developer
+          <span style={{ color: "white" }}>.</span>{" "}
+        </h1>
+      </div>
       <Link to="/resume" className="primary-button">
         See Resume
       </Link>
@@ -170,7 +178,7 @@ export default function Home() {
           </article>
         </div>
         <div className="unique-list">
-          <FeatureList list={uniqueList} title="What Makes me Unique" />
+          <FeatureList list={uniqueList} title="What Makes Me Unique" />
         </div>
       </section>
       <ProjectsQuickView />
