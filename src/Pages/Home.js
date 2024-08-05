@@ -118,23 +118,21 @@ export default function Home() {
       </Link>
     </>
   );
-
-  // animation for focus banner
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
-  const variants = {
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-    hidden: { opacity: 0, y: 50 },
-  };
-  return (
-    <main id="Home">
-      <Header stopScalingRef={stopScalingRef} Content={HeaderContent} />
-      <section ref={stopScalingRef} className="dark-bg" id="focus">
+  const FocusBanner = () => {
+    // animation for focus banner
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+    useEffect(() => {
+      if (inView) {
+        controls.start("visible");
+      }
+    }, [controls, inView]);
+    const variants = {
+      visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+      hidden: { opacity: 0, y: 50 },
+    };
+    return (
+      <>
         <motion.div
           ref={ref}
           initial="hidden"
@@ -162,6 +160,15 @@ export default function Home() {
           <img src={artIcon} alt="" />
           <p>Art & Design</p>
         </motion.div>
+      </>
+    );
+  };
+
+  return (
+    <main id="Home">
+      <Header stopScalingRef={stopScalingRef} Content={HeaderContent} />
+      <section ref={stopScalingRef} className="dark-bg" id="focus">
+        <FocusBanner />
       </section>
       <section className="light-bg pad" id="about">
         <div className="about-container">
