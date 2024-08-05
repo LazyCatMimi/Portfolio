@@ -63,8 +63,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 3%;
   }
-  #resume-content img,
-  #summary,
+  #resume-content img {
+    grid-column: 1/2;
+  }
+  #summary {
+    grid-column: 2/4;
+  }
   #exp {
     grid-column: 1/4;
     grid-row: auto;
@@ -80,11 +84,6 @@
   }
   #resume-content .center-text {
     text-align: left;
-  }
-  #resume-content img {
-    height: auto;
-    object-fit: cover;
-    border-radius: 16px;
   }
   #skills {
     align-items: center;
@@ -109,6 +108,13 @@
 }
 
 @media screen and (max-width: 720px) {
+  #skills,
+  #edu {
+    grid-column: 1/4;
+    grid-row: auto;
+  }
+}
+@media screen and (max-width: 550px) {
   #resume-content {
     display: grid;
     grid-template-columns: 1fr;
