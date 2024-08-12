@@ -6,4 +6,4 @@ todo:
 - link socials to icons
 - email form
   -fix accessibility for project tabs, cant enter
-- thumb pics for dominos, writers block, catdog, neon
+- thumb pics for, writers block, catdog, neon
