@@ -5,11 +5,5 @@ todo:
 
 - link socials to icons
 - email form
-- back to top in project pages
+  -fix accessibility for project tabs, cant enter
 - thumb pics for dominos, writers block, catdog, neon
-- back button on indv projects
-- fix home page lists to fit mobile screens better
-
-to animate:
-
-- home page lists
