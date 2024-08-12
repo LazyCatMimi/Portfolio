@@ -176,7 +176,7 @@
       "name": "Book Store App",
       "id": "bookstore-app",
       "imgFill": "Assets/projects/WriterBlockBookstore-fill.jpg",
-      "imgThumb": "Assets/projects/WriterBlockBookstore-thumb.jpg",
+      "imgThumb": "Assets/projects/WriterBlockBookstore-thumb.png",
       "tools": "Invision, Powerpoint, Photoshop",
       "type": "mobile",
       "shortSummary": "An app based on the Writer's Block Bookstore website with updated visuals and  new social features.",
