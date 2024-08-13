@@ -2,9 +2,10 @@
   "designCode": [
     {
       "name": "The Suite Spot Salon",
+      "tags": ["design", "development", "case-study"],
+      "id": "thesuitespot",
       "component": "/Projects/thesuitespot.js",
       "featured": true,
-      "id": "thesuitespot",
       "imgFill": "Assets/projects/TSS-fill.jpg",
       "imgThumb": "Assets/projects/TSS-thumb.png",
       "tools": "Figma | React.JS, Node.JS, Express.JS, MongoDB Atlas",
@@ -53,6 +54,7 @@
     },
     {
       "name": "Portfolio",
+      "tags": ["design", "development"],
       "id": "portfolio",
       "imgFill": "Assets/projects/portfolio-fill.jpg",
       "imgThumb": "Assets/projects/portfolio-thumb.png",
@@ -88,6 +90,7 @@
     },
     {
       "name": "TO DO App",
+      "tags": ["design", "development"],
       "id": "todoapp",
       "imgFill": "Assets/projects/ToDo-fill.jpg",
       "imgThumb": "Assets/projects/ToDo-thumb.png",
@@ -127,8 +130,9 @@
   "webDesign": [
     {
       "name": "Noodletopia",
-      "featured": true,
+      "tags": ["design", "case-study"],
       "id": "noodletopia",
+      "featured": true,
       "imgFill": "Assets/projects/noodletopia-fill.jpg",
       "imgThumb": "Assets/projects/noodletopia-thumb.png",
       "tools": "Figma",
@@ -151,6 +155,7 @@
     },
     {
       "name": "Salt & Hearth",
+      "tags": ["design"],
       "id": "salt-hearth",
       "imgFill": "Assets/projects/salt&hearth-fill.jpg",
       "imgThumb": "Assets/projects/salt&hearth-thumb.png",
@@ -174,6 +179,7 @@
     },
     {
       "name": "Book Store App",
+      "tags": ["design"],
       "id": "bookstore-app",
       "imgFill": "Assets/projects/WriterBlockBookstore-fill.jpg",
       "imgThumb": "Assets/projects/WriterBlockBookstore-thumb.png",
@@ -196,6 +202,7 @@
     },
     {
       "name": "Flashcard App",
+      "tags": ["design"],
       "id": "flashcard-app",
       "imgFill": "Assets/projects/flashcard-fill.jpg",
       "imgThumb": "Assets/projects/flashcard-thumb.png",
@@ -218,6 +225,7 @@
     },
     {
       "name": "Domino's Accessibility Redesign",
+      "tags": ["design", "case-study"],
       "id": "dominos-redesign",
       "imgFill": "Assets/projects/Dominos-fill.jpg",
       "imgThumb": "Assets/projects/Dominos-thumb.png",
@@ -242,6 +250,7 @@
   "development": [
     {
       "name": "Discord Bot",
+      "tags": ["development"],
       "id": "discord-bot",
       "imgFill": "Assets/projects/discordbot-fill.png",
       "imgThumb": "Assets/projects/discordbot-thumb.png",
@@ -260,6 +269,7 @@
     },
     {
       "name": "Neon City website",
+      "tags": ["development"],
       "id": "neon-city",
       "imgFill": "",
       "imgThumb": "",
@@ -285,6 +295,7 @@
     },
     {
       "name": "Cat or Dog Quiz",
+      "tags": ["development"],
       "id": "cat-dog-quiz",
       "imgFill": "Assets/projects/catdog-fill.jpg",
       "imgThumb": "Assets/projects/catdog-thumb.jpg",
@@ -310,6 +321,7 @@
     },
     {
       "name": "Word Guessing Game",
+      "tags": ["development"],
       "id": "wordguessing",
       "imgFill": "Assets/projects/wordguess-fill.jpg",
       "imgThumb": "Assets/projects/wordguess-thumb.png",
@@ -337,6 +349,7 @@
   "artDesign": [
     {
       "name": "Salon Business Card",
+      "tags": ["art"],
       "id": "businesscard",
       "imgFill": "Assets/projects/business-fill.jpg",
       "imgThumb": "Assets/projects/business-thumb.png",
