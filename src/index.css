@@ -62,6 +62,9 @@ h4 {
   font-family: "Kaisei Decol", serif;
   color: var(--magenta);
 }
+a {
+  font-family: "Khula", sans-serif;
+}
 
 /* Button */
 .primary-button {

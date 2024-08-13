@@ -14,7 +14,7 @@
   background-size: cover;
 }
 .header .content {
-  padding-top: 4em;
+  padding-top: 5vh;
 }
 .title-sub-1 {
   font-family: "Julius Sans One";
@@ -60,6 +60,9 @@
 @media screen and (max-width: 720px) {
   .title-sub-1 {
     margin: 0;
+  }
+  .header .content {
+    padding-top: 15vh;
   }
 }
 @media screen and (max-width: 590px) {

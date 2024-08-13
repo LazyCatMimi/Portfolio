@@ -28,6 +28,7 @@
   font-weight: bold;
   padding: 14px 23px 10px 23px;
   border: 2px solid #ff3d7a00;
+  font-family: "Julius Sans One", sans-serif;
 }
 .navbar ul a:hover {
   color: transparent; /* Make the text transparent */
