@@ -107,6 +107,13 @@ export default function ProjectsQuickView() {
               activeSortButton === button.id ? "sort-projects-active" : ""
             }`}
             tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                setActiveSortButton(button.id);
+                setCurData(button.data);
+              }
+            }}
           >
             <input
               type="radio"
