@@ -3,7 +3,5 @@ Visit my portfolio site here:
 
 todo:
 
-- link socials to icons
-- email form
-  -fix accessibility for project tabs, cant enter
-- thumb pics for, writers block, catdog, neon
+- thumb pics for UCF
+- bug where nav appears open when resizing window
