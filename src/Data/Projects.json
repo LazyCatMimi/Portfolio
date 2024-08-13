@@ -1,373 +1,390 @@
-{
-  "designCode": [
-    {
-      "name": "The Suite Spot Salon",
-      "tags": ["design", "development", "case-study"],
-      "id": "thesuitespot",
-      "component": "/Projects/thesuitespot.js",
-      "featured": true,
-      "imgFill": "Assets/projects/TSS-fill.jpg",
-      "imgThumb": "Assets/projects/TSS-thumb.png",
-      "tools": "Figma | React.JS, Node.JS, Express.JS, MongoDB Atlas",
-      "type": "web",
-      "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
-      "summary": "The Suite Spot Salon is a fictitious salon suite client developed by our team for our senior design project. Recognizing the importance of booking features in the salon industry, we aimed to address this gap in the market. Our website allows users to conveniently book appointments, purchase items from the shop, and manage their accounts.",
-      "tasks": [
-        "Collaborated with a team to create low-fi and hi-fi prototypes",
-        "Implemented mobile-first design approach with two hi-fi prototypes",
-        "Generated comprehensive documentation outlining the design process",
-        "Ensured consistency and accessibility throughout the design phase",
-        "Conducted user testings to improve design",
-        "Collaborated with a team to create a fully functional website based on design",
-        "Documented the development project",
-        "Developed Front end and back end",
-        "Set up database and API",
-        "Developed responsive front-end",
-        "Deployed website"
-      ],
-      "actions": [
-        {
-          "name": "See Mobile HiFi",
-          "link": "https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
-          "type": "secondary-button",
-          "icon": "figma"
-        },
-        {
-          "name": "See Web HiFi",
-          "link": "https://www.figma.com/proto/PBrgGbarppN9gmbtOgJ2SG/Web-HiFi-Prototype?type=design&node-id=1-2&t=Wg8Zrt3Pg7guhKYW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
-          "type": "secondary-button",
-          "icon": "figma"
-        },
-        {
-          "name": "See GH repository",
-          "link": "https://github.com/lwolbrink23/group8",
-          "type": "secondary-button",
-          "icon": "github"
-        },
-        {
-          "name": "See Website",
-          "link": "https://the-suite-spot.vercel.app/",
-          "type": "primary-button",
-          "icon": "globe"
-        }
-      ]
-    },
-    {
-      "name": "Portfolio",
-      "tags": ["design", "development"],
-      "id": "portfolio",
-      "imgFill": "Assets/projects/portfolio-fill.jpg",
-      "imgThumb": "Assets/projects/portfolio-thumb.png",
-      "tools": "Figma | CSS, React.js",
-      "type": "web",
-      "shortSummary": "My Portfolio! Well, you're looking at it. Let's see the process!",
-      "summary": "My Portfolio! Well, you're looking at it. Let's see the process!",
-      "tasks": [
-        "Created hi-fi Prototype",
-        "Ensured consistency and accessibility throughout the design phase",
-        "Coded using front-end frameworks and technologies"
-      ],
-      "actions": [
-        {
-          "name": "See GH repository",
-          "link": "https://github.com/LazyCatMimi/Portfolio",
-          "type": "secondary-button",
-          "icon": "github"
-        },
-        {
-          "name": "See Mobile HiFi",
-          "link": "https://www.figma.com/proto/uZxKK9Uvgc28qZtWR4UQ7i/Portfolio-mobile?node-id=1-2&t=rhrpiQGefIro8gUG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
-          "type": "primary-button",
-          "icon": "figma"
-        },
-        {
-          "name": "See Web HiFi",
-          "link": "https://www.figma.com/proto/8FhwG7oC7tVDZSxJUbOqx6/Portfolio?node-id=2-118&t=Ki7bFmTpbKFhwxWo-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2",
-          "type": "primary-button",
-          "icon": "figma"
-        }
-      ]
-    },
-    {
-      "name": "TO DO App",
-      "tags": ["design", "development"],
-      "id": "todoapp",
-      "imgFill": "Assets/projects/ToDo-fill.jpg",
-      "imgThumb": "Assets/projects/ToDo-thumb.png",
-      "tools": "Figma | React Native",
-      "type": "mobile",
-      "shortSummary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
-      "summary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
-      "tasks": [
-        "Created hi-fi Prototype",
-        "Ensured consistency and accessibility throughout the design phase",
-        "Developed mobile front-end based on design"
-      ],
-      "actions": [
-        {
-          "name": "See HiFi",
-          "link": "https://www.figma.com/proto/maccbQnPEzQBbxP4hbVUsv/To-do-App?node-id=2-8&t=JHY8B9kllLngwVOu-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2",
-          "type": "secondary-button",
-          "icon": "figma"
-        },
+[
+  {
+    "name": "The Suite Spot Salon",
+    "tags": ["design", "development", "case-study"],
+    "id": "thesuitespot",
+    "component": "/Projects/thesuitespot.js",
+    "featured": true,
+    "imgFill": "Assets/projects/TSS-fill.jpg",
+    "imgThumb": "Assets/projects/TSS-thumb.png",
+    "tools": "Figma | React.JS, Node.JS, Express.JS, MongoDB Atlas",
+    "type": "web",
+    "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
+    "summary": "The Suite Spot Salon is a fictitious salon suite client developed by our team for our senior design project. Recognizing the importance of booking features in the salon industry, we aimed to address this gap in the market. Our website allows users to conveniently book appointments, purchase items from the shop, and manage their accounts.",
+    "tasks": [
+      "Collaborated with a team to create low-fi and hi-fi prototypes",
+      "Implemented mobile-first design approach with two hi-fi prototypes",
+      "Generated comprehensive documentation outlining the design process",
+      "Ensured consistency and accessibility throughout the design phase",
+      "Conducted user testings to improve design",
+      "Collaborated with a team to create a fully functional website based on design",
+      "Documented the development project",
+      "Developed Front end and back end",
+      "Set up database and API",
+      "Developed responsive front-end",
+      "Deployed website"
+    ],
+    "actions": [
+      {
+        "name": "See Mobile HiFi",
+        "link": "https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+        "type": "secondary-button",
+        "icon": "figma"
+      },
+      {
+        "name": "See Web HiFi",
+        "link": "https://www.figma.com/proto/PBrgGbarppN9gmbtOgJ2SG/Web-HiFi-Prototype?type=design&node-id=1-2&t=Wg8Zrt3Pg7guhKYW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+        "type": "secondary-button",
+        "icon": "figma"
+      },
+      {
+        "name": "See GH repository",
+        "link": "https://github.com/lwolbrink23/group8",
+        "type": "secondary-button",
+        "icon": "github"
+      },
+      {
+        "name": "See Website",
+        "link": "https://the-suite-spot.vercel.app/",
+        "type": "primary-button",
+        "icon": "globe"
+      }
+    ]
+  },
 
-        {
-          "name": "See GH Repository",
-          "link": "https://github.com/LazyCatMimi/TodoApp",
-          "type": "secondary-button",
-          "icon": "github"
-        },
-        {
-          "name": "See Website",
-          "link": "https://lazycatmimi.github.io/TodoApp/",
-          "type": "primary-button",
-          "icon": "globe"
-        }
-      ]
-    }
-  ],
+  {
+    "name": "Noodletopia",
+    "tags": ["design", "case-study"],
+    "id": "noodletopia",
+    "featured": true,
+    "imgFill": "Assets/projects/noodletopia-fill.jpg",
+    "imgThumb": "Assets/projects/noodletopia-thumb.png",
+    "tools": "Figma",
+    "type": "mobile",
+    "shortSummary": "An app designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls.",
+    "summary": "Noodletopia is a mobile application designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls with various toppings. Users have the freedom to add reviews for their noodle creations and share their unique combinations with others. Additionally, they can save their favorite noodle bowls for easy access. ",
+    "tasks": [
+      "Created hi-fi Prototype",
+      "Ensured consistency and accessibility throughout the design phase",
+      "Conducted user testings throughout hi-fi development to improve design"
+    ],
+    "actions": [
+      {
+        "name": "See Mobile HiFi",
+        "link": "https://www.figma.com/proto/FduZQ80T9yNEoIBoAZKhdj/Noodletopia-Navigation-Wireflow?type=design&t=mIFIWSn5YQ4wsVfM-0&scaling=scale-down&starting-point-node-id=299%3A725",
+        "type": "secondary-button",
+        "icon": "figma"
+      }
+    ]
+  },
+  {
+    "name": "Portfolio",
+    "tags": ["design", "development"],
+    "id": "portfolio",
+    "imgFill": "Assets/projects/portfolio-fill.jpg",
+    "imgThumb": "Assets/projects/portfolio-thumb.png",
+    "tools": "Figma | CSS, React.js",
+    "type": "web",
+    "shortSummary": "My Portfolio! Well, you're looking at it. Let's see the process!",
+    "summary": "My Portfolio! Well, you're looking at it. Let's see the process!",
+    "tasks": [
+      "Created hi-fi Prototype",
+      "Ensured consistency and accessibility throughout the design phase",
+      "Coded using front-end frameworks and technologies"
+    ],
+    "actions": [
+      {
+        "name": "See GH repository",
+        "link": "https://github.com/LazyCatMimi/Portfolio",
+        "type": "secondary-button",
+        "icon": "github"
+      },
+      {
+        "name": "See Mobile HiFi",
+        "link": "https://www.figma.com/proto/uZxKK9Uvgc28qZtWR4UQ7i/Portfolio-mobile?node-id=1-2&t=rhrpiQGefIro8gUG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
+        "type": "primary-button",
+        "icon": "figma"
+      },
+      {
+        "name": "See Web HiFi",
+        "link": "https://www.figma.com/proto/8FhwG7oC7tVDZSxJUbOqx6/Portfolio?node-id=2-118&t=Ki7bFmTpbKFhwxWo-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2",
+        "type": "primary-button",
+        "icon": "figma"
+      }
+    ]
+  },
+  {
+    "name": "Domino's Accessibility Redesign",
+    "tags": ["design", "case-study"],
+    "id": "dominos-redesign",
+    "imgFill": "Assets/projects/Dominos-fill.jpg",
+    "imgThumb": "Assets/projects/Dominos-thumb.png",
+    "tools": "Figma",
+    "type": "web",
+    "shortSummary": "A redesign of Domino's home page to improve accessibility.",
+    "summary": "The Domino's website appears cluttered, leading to cognitive overload even for those without disabilities. Additionally, visibility issues arise from text blending with images or being too small to read. My redesign of Domino's homepage focuses on maintaining the same content while reducing cognitive overload and improving visibility.",
+    "tasks": [
+      "Created a simple redesign",
+      "Ensured consistency and accessibility throughout the design phase"
+    ],
+    "actions": [
+      {
+        "name": "See design",
+        "link": "https://www.figma.com/proto/07NKu8JET5Hrfq3kIs4f8g/Dominos?type=design&node-id=0-1&t=dQW07w8uIT2tZO8x-0&scaling=scale-down&starting-point-node-id=1%3A2",
+        "type": "primary-button",
+        "icon": "figma"
+      }
+    ]
+  },
+  {
+    "name": "UCF App Redesign",
+    "tags": ["design", "case-study"],
+    "id": "UCF-redesign",
+    "imgFill": "Assets/projects/Dominos-fill.jpg",
+    "imgThumb": "Assets/projects/Dominos-thumb.png",
+    "tools": "Figma",
+    "type": "web",
+    "shortSummary": "A redesign of UCF's mobile app to improve accessibility and user access.",
+    "summary": "The UCF mobile app suffers from excessive visual and informational clutter, making it challenging to read and locate items. The abundance of colors and disorganized icons contribute to this problem, which can be particularly overwhelming for users prone to cognitive overload. This problem ultimately defeats the app's purpose as a tool for quick access to the university's services. ",
+    "tasks": [
+      "Created a simple redesign",
+      "Ensured consistency and accessibility throughout the design phase"
+    ],
+    "actions": [
+      {
+        "name": "See design",
+        "link": "https://www.figma.com/proto/07NKu8JET5Hrfq3kIs4f8g/Dominos?type=design&node-id=0-1&t=dQW07w8uIT2tZO8x-0&scaling=scale-down&starting-point-node-id=1%3A2",
+        "type": "primary-button",
+        "icon": "figma"
+      }
+    ]
+  },
+  {
+    "name": "TO DO App",
+    "tags": ["design", "development"],
+    "id": "todoapp",
+    "imgFill": "Assets/projects/ToDo-fill.jpg",
+    "imgThumb": "Assets/projects/ToDo-thumb.png",
+    "tools": "Figma | React Native",
+    "type": "mobile",
+    "shortSummary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
+    "summary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
+    "tasks": [
+      "Created hi-fi Prototype",
+      "Ensured consistency and accessibility throughout the design phase",
+      "Developed mobile front-end based on design"
+    ],
+    "actions": [
+      {
+        "name": "See HiFi",
+        "link": "https://www.figma.com/proto/maccbQnPEzQBbxP4hbVUsv/To-do-App?node-id=2-8&t=JHY8B9kllLngwVOu-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2",
+        "type": "secondary-button",
+        "icon": "figma"
+      },
 
-  "webDesign": [
-    {
-      "name": "Noodletopia",
-      "tags": ["design", "case-study"],
-      "id": "noodletopia",
-      "featured": true,
-      "imgFill": "Assets/projects/noodletopia-fill.jpg",
-      "imgThumb": "Assets/projects/noodletopia-thumb.png",
-      "tools": "Figma",
-      "type": "mobile",
-      "shortSummary": "An app designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls.",
-      "summary": "Noodletopia is a mobile application designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls with various toppings. Users have the freedom to add reviews for their noodle creations and share their unique combinations with others. Additionally, they can save their favorite noodle bowls for easy access. ",
-      "tasks": [
-        "Created hi-fi Prototype",
-        "Ensured consistency and accessibility throughout the design phase",
-        "Conducted user testings throughout hi-fi development to improve design"
-      ],
-      "actions": [
-        {
-          "name": "See Mobile HiFi",
-          "link": "https://www.figma.com/proto/FduZQ80T9yNEoIBoAZKhdj/Noodletopia-Navigation-Wireflow?type=design&t=mIFIWSn5YQ4wsVfM-0&scaling=scale-down&starting-point-node-id=299%3A725",
-          "type": "secondary-button",
-          "icon": "figma"
-        }
-      ]
-    },
-    {
-      "name": "Salt & Hearth",
-      "tags": ["design"],
-      "id": "salt-hearth",
-      "imgFill": "Assets/projects/salt&hearth-fill.jpg",
-      "imgThumb": "Assets/projects/salt&hearth-thumb.png",
-      "tools": "Figma",
-      "type": "mobile",
-      "shortSummary": "Salt & Hearth is a homemade recipe website designed after anticipated wordpress plugins and features.",
-      "summary": "Salt & Hearth is a homemade recipe website designed after anticipated wordpress plugins and features. ",
-      "tasks": [
-        "Created hi-fi Prototype",
-        "Ensured consistency and accessibility throughout the design phase",
-        "Conducted user testings throughout hi-fi development to improve design"
-      ],
-      "actions": [
-        {
-          "name": "See Web HiFi",
-          "link": "https://www.figma.com/proto/FduZQ80T9yNEoIBoAZKhdj/Noodletopia-Navigation-Wireflow?type=design&t=mIFIWSn5YQ4wsVfM-0&scaling=scale-down&starting-point-node-id=299%3A725",
-          "type": "primary-button",
-          "icon": "figma"
-        }
-      ]
-    },
-    {
-      "name": "Book Store App",
-      "tags": ["design"],
-      "id": "bookstore-app",
-      "imgFill": "Assets/projects/WriterBlockBookstore-fill.jpg",
-      "imgThumb": "Assets/projects/WriterBlockBookstore-thumb.png",
-      "tools": "Invision, Powerpoint, Photoshop",
-      "type": "mobile",
-      "shortSummary": "An app based on the Writer's Block Bookstore website with updated visuals and  new social features.",
-      "summary": "The Writer's Block Bookstore app was derived from the existing Writer's  Block Bookstore website, undergoing a transformation into a more social  and interactive platform. With a diverse array of capabilities, users  can seamlessly share, save, and rate content, along with managing their  accounts. These integrated features significantly enhance user  engagement through fostering social interactions, thereby enriching the  overall user experience.",
-      "tasks": [
-        "Created hi-fi Prototype",
-        "Ensured consistency and accessibility throughout the design phase"
-      ],
-      "actions": [
-        {
-          "name": "See Mobile HiFi",
-          "link": "",
-          "type": "primary-button",
-          "icon": "figma"
-        }
-      ]
-    },
-    {
-      "name": "Flashcard App",
-      "tags": ["design"],
-      "id": "flashcard-app",
-      "imgFill": "Assets/projects/flashcard-fill.jpg",
-      "imgThumb": "Assets/projects/flashcard-thumb.png",
-      "tools": "Figma",
-      "type": "mobile",
-      "shortSummary": "A Simple flash card app where users can create, edit, delete, and learn cards.",
-      "summary": "A Simple flash card app where users can create, edit, delete, and learn cards.",
-      "tasks": [
-        "Created hi-fi Prototype",
-        "Ensured consistency and accessibility throughout the design phase"
-      ],
-      "actions": [
-        {
-          "name": "See Mobile HiFi",
-          "link": "https://www.figma.com/proto/70v4Ocvl6tx2O1sThKNrES/Untitled?node-id=2-2&starting-point-node-id=2%3A2&mode=design&t=nzoseAqAx23yInpG-1",
-          "type": "primary-button",
-          "icon": "figma"
-        }
-      ]
-    },
-    {
-      "name": "Domino's Accessibility Redesign",
-      "tags": ["design", "case-study"],
-      "id": "dominos-redesign",
-      "imgFill": "Assets/projects/Dominos-fill.jpg",
-      "imgThumb": "Assets/projects/Dominos-thumb.png",
-      "tools": "Figma",
-      "type": "web",
-      "shortSummary": "A redesign of Domino's home page to improve accessibility.",
-      "summary": "The Domino's website appears cluttered, leading to cognitive overload even for those without disabilities. Additionally, visibility issues arise from text blending with images or being too small to read. My redesign of Domino's homepage focuses on maintaining the same content while reducing cognitive overload and improving visibility.",
-      "tasks": [
-        "Created hi-fi Prototype",
-        "Ensured consistency and accessibility throughout the design phase"
-      ],
-      "actions": [
-        {
-          "name": "See HiFi",
-          "link": "https://www.figma.com/proto/07NKu8JET5Hrfq3kIs4f8g/Dominos?type=design&node-id=0-1&t=dQW07w8uIT2tZO8x-0&scaling=scale-down&starting-point-node-id=1%3A2",
-          "type": "primary-button",
-          "icon": "figma"
-        }
-      ]
-    }
-  ],
-  "development": [
-    {
-      "name": "Discord Bot",
-      "tags": ["development"],
-      "id": "discord-bot",
-      "imgFill": "Assets/projects/discordbot-fill.png",
-      "imgThumb": "Assets/projects/discordbot-thumb.png",
-      "tools": "Node.js",
-      "type": "web",
-      "shortSummary": "A simple discord bot that uses Discord API to respond to commands such as flip a coin, ask 8 ball, sing happy birthday, and spam messages.",
-      "summary": "A simple discord bot that uses Discord API to respond to commands such as flip a coin, ask 8 ball, sing happy birthday, and spam messages.",
-      "tasks": ["Ultilized Discord API", "Deployed the node application"],
-      "actions": [
-        {
-          "name": "See Code",
-          "link": "https://replit.com/@mimiyayaya/BottheBot",
-          "type": "primary-button"
-        }
-      ]
-    },
-    {
-      "name": "Neon City website",
-      "tags": ["development"],
-      "id": "neon-city",
-      "imgFill": "",
-      "imgThumb": "",
-      "tools": "Vanilla HTML/CSS/JS",
-      "type": "web",
-      "shortSummary": "A simple homepage for a fictional city. Coded without a design, created for fun!",
-      "summary": "A simple homepage for a fictional city. Coded without a design, created for fun!",
-      "tasks": ["Created a front-end using basic technologies"],
-      "actions": [
-        {
-          "name": "See GH repository",
-          "link": "https://github.com/LazyCatMimi/Neon_City_Site",
-          "type": "primary-button",
-          "icon": "github"
-        },
-        {
-          "name": "See Website",
-          "link": "https://lazycatmimi.github.io/Neon_City_Site/",
-          "type": "primary-button",
-          "icon": "globe"
-        }
-      ]
-    },
-    {
-      "name": "Cat or Dog Quiz",
-      "tags": ["development"],
-      "id": "cat-dog-quiz",
-      "imgFill": "Assets/projects/catdog-fill.jpg",
-      "imgThumb": "Assets/projects/catdog-thumb.jpg",
-      "tools": "Vanilla HTML/CSS/JS",
-      "type": "web",
-      "shortSummary": "A simple form validation website with a quiz",
-      "summary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
-      "tasks": ["Created a front-end using basic technologies"],
-      "actions": [
-        {
-          "name": "See GH repository",
-          "link": "https://github.com/LazyCatMimi/CatDogQuizFormValidation",
-          "type": "secondary-button",
-          "icon": "github"
-        },
-        {
-          "name": "See Website",
-          "link": "https://lazycatmimi.github.io/CatDogQuizFormValidation/",
-          "type": "primary-button",
-          "icon": "globe"
-        }
-      ]
-    },
-    {
-      "name": "Word Guessing Game",
-      "tags": ["development"],
-      "id": "wordguessing",
-      "imgFill": "Assets/projects/wordguess-fill.jpg",
-      "imgThumb": "Assets/projects/wordguess-thumb.png",
-      "tools": "Vanilla HTML/CSS/JS",
-      "type": "web",
-      "shortSummary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
-      "summary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
-      "tasks": ["Created a front-end using basic technologies"],
-      "actions": [
-        {
-          "name": "See GH repository",
-          "link": "https://github.com/LazyCatMimi/WordGuessingGame",
-          "type": "secondary-button",
-          "icon": "github"
-        },
-        {
-          "name": "See Website",
-          "link": "https://lazycatmimi.github.io/WordGuessingGame/",
-          "type": "primary-button",
-          "icon": "globe"
-        }
-      ]
-    }
-  ],
-  "artDesign": [
-    {
-      "name": "Salon Business Card",
-      "tags": ["art"],
-      "id": "businesscard",
-      "imgFill": "Assets/projects/business-fill.jpg",
-      "imgThumb": "Assets/projects/business-thumb.png",
-      "tools": "Canva",
-      "shortSummary": "A business card design for a real salon business in Tampa, FL.",
-      "summary": "My task involved redesigning a business card for a salon business located in Tampa, FL. The client sought both design enhancements and  updated information on their cards. To meet their needs, I presented two  design options: one resembling their previous card but with refreshed  visuals and updated details, and another that explored more experimental  elements.",
-      "tasks": [
-        "Refreshed visuals for the client's business card",
-        "Enhanced legibility of the business card content",
-        "Reinforced brand identity through the redesigned business card"
-      ],
-      "actions": [
-        {
-          "name": "See on Canva",
-          "link": "https://www.canva.com/design/DAFL2g1cUpo/Ov2zDlllU_0jfHAmTrMDFA/edit?utm_content=DAFL2g1cUpo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-          "type": "primary-button"
-        }
-      ]
-    }
-  ]
-}
+      {
+        "name": "See GH Repository",
+        "link": "https://github.com/LazyCatMimi/TodoApp",
+        "type": "secondary-button",
+        "icon": "github"
+      },
+      {
+        "name": "See Website",
+        "link": "https://lazycatmimi.github.io/TodoApp/",
+        "type": "primary-button",
+        "icon": "globe"
+      }
+    ]
+  },
+  {
+    "name": "Salt & Hearth",
+    "tags": ["design"],
+    "id": "salt-hearth",
+    "imgFill": "Assets/projects/salt&hearth-fill.jpg",
+    "imgThumb": "Assets/projects/salt&hearth-thumb.png",
+    "tools": "Figma",
+    "type": "mobile",
+    "shortSummary": "Salt & Hearth is a homemade recipe website designed after anticipated wordpress plugins and features.",
+    "summary": "Salt & Hearth is a homemade recipe website designed after anticipated wordpress plugins and features. ",
+    "tasks": [
+      "Created hi-fi Prototype",
+      "Ensured consistency and accessibility throughout the design phase",
+      "Conducted user testings throughout hi-fi development to improve design"
+    ],
+    "actions": [
+      {
+        "name": "See Web HiFi",
+        "link": "https://www.figma.com/proto/FduZQ80T9yNEoIBoAZKhdj/Noodletopia-Navigation-Wireflow?type=design&t=mIFIWSn5YQ4wsVfM-0&scaling=scale-down&starting-point-node-id=299%3A725",
+        "type": "primary-button",
+        "icon": "figma"
+      }
+    ]
+  },
+  {
+    "name": "Book Store App",
+    "tags": ["design"],
+    "id": "bookstore-app",
+    "imgFill": "Assets/projects/WriterBlockBookstore-fill.jpg",
+    "imgThumb": "Assets/projects/WriterBlockBookstore-thumb.png",
+    "tools": "Invision, Powerpoint, Photoshop",
+    "type": "mobile",
+    "shortSummary": "An app based on the Writer's Block Bookstore website with updated visuals and  new social features.",
+    "summary": "The Writer's Block Bookstore app was derived from the existing Writer's  Block Bookstore website, undergoing a transformation into a more social  and interactive platform. With a diverse array of capabilities, users  can seamlessly share, save, and rate content, along with managing their  accounts. These integrated features significantly enhance user  engagement through fostering social interactions, thereby enriching the  overall user experience.",
+    "tasks": [
+      "Created hi-fi Prototype",
+      "Ensured consistency and accessibility throughout the design phase"
+    ],
+    "actions": [
+      {
+        "name": "See Mobile HiFi",
+        "link": "",
+        "type": "primary-button",
+        "icon": "figma"
+      }
+    ]
+  },
+  {
+    "name": "Flashcard App",
+    "tags": ["design"],
+    "id": "flashcard-app",
+    "imgFill": "Assets/projects/flashcard-fill.jpg",
+    "imgThumb": "Assets/projects/flashcard-thumb.png",
+    "tools": "Figma",
+    "type": "mobile",
+    "shortSummary": "A Simple flash card app where users can create, edit, delete, and learn cards.",
+    "summary": "A Simple flash card app where users can create, edit, delete, and learn cards.",
+    "tasks": [
+      "Created hi-fi Prototype",
+      "Ensured consistency and accessibility throughout the design phase"
+    ],
+    "actions": [
+      {
+        "name": "See Mobile HiFi",
+        "link": "https://www.figma.com/proto/70v4Ocvl6tx2O1sThKNrES/Untitled?node-id=2-2&starting-point-node-id=2%3A2&mode=design&t=nzoseAqAx23yInpG-1",
+        "type": "primary-button",
+        "icon": "figma"
+      }
+    ]
+  },
+
+  {
+    "name": "Discord Bot",
+    "tags": ["development"],
+    "id": "discord-bot",
+    "imgFill": "Assets/projects/discordbot-fill.png",
+    "imgThumb": "Assets/projects/discordbot-thumb.png",
+    "tools": "Node.js",
+    "type": "web",
+    "shortSummary": "A simple discord bot that uses Discord API to respond to commands such as flip a coin, ask 8 ball, sing happy birthday, and spam messages.",
+    "summary": "A simple discord bot that uses Discord API to respond to commands such as flip a coin, ask 8 ball, sing happy birthday, and spam messages.",
+    "tasks": ["Ultilized Discord API", "Deployed the node application"],
+    "actions": [
+      {
+        "name": "See Code",
+        "link": "https://replit.com/@mimiyayaya/BottheBot",
+        "type": "primary-button"
+      }
+    ]
+  },
+  {
+    "name": "Neon City website",
+    "tags": ["development"],
+    "id": "neon-city",
+    "imgFill": "",
+    "imgThumb": "",
+    "tools": "Vanilla HTML/CSS/JS",
+    "type": "web",
+    "shortSummary": "A simple homepage for a fictional city. Coded without a design, created for fun!",
+    "summary": "A simple homepage for a fictional city. Coded without a design, created for fun!",
+    "tasks": ["Created a front-end using basic technologies"],
+    "actions": [
+      {
+        "name": "See GH repository",
+        "link": "https://github.com/LazyCatMimi/Neon_City_Site",
+        "type": "primary-button",
+        "icon": "github"
+      },
+      {
+        "name": "See Website",
+        "link": "https://lazycatmimi.github.io/Neon_City_Site/",
+        "type": "primary-button",
+        "icon": "globe"
+      }
+    ]
+  },
+  {
+    "name": "Cat or Dog Quiz",
+    "tags": ["development"],
+    "id": "cat-dog-quiz",
+    "imgFill": "Assets/projects/catdog-fill.jpg",
+    "imgThumb": "Assets/projects/catdog-thumb.jpg",
+    "tools": "Vanilla HTML/CSS/JS",
+    "type": "web",
+    "shortSummary": "A simple form validation website with a quiz",
+    "summary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
+    "tasks": ["Created a front-end using basic technologies"],
+    "actions": [
+      {
+        "name": "See GH repository",
+        "link": "https://github.com/LazyCatMimi/CatDogQuizFormValidation",
+        "type": "secondary-button",
+        "icon": "github"
+      },
+      {
+        "name": "See Website",
+        "link": "https://lazycatmimi.github.io/CatDogQuizFormValidation/",
+        "type": "primary-button",
+        "icon": "globe"
+      }
+    ]
+  },
+  {
+    "name": "Word Guessing Game",
+    "tags": ["development"],
+    "id": "wordguessing",
+    "imgFill": "Assets/projects/wordguess-fill.jpg",
+    "imgThumb": "Assets/projects/wordguess-thumb.png",
+    "tools": "Vanilla HTML/CSS/JS",
+    "type": "web",
+    "shortSummary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
+    "summary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
+    "tasks": ["Created a front-end using basic technologies"],
+    "actions": [
+      {
+        "name": "See GH repository",
+        "link": "https://github.com/LazyCatMimi/WordGuessingGame",
+        "type": "secondary-button",
+        "icon": "github"
+      },
+      {
+        "name": "See Website",
+        "link": "https://lazycatmimi.github.io/WordGuessingGame/",
+        "type": "primary-button",
+        "icon": "globe"
+      }
+    ]
+  },
+
+  {
+    "name": "Salon Business Card",
+    "tags": ["art"],
+    "id": "businesscard",
+    "imgFill": "Assets/projects/business-fill.jpg",
+    "imgThumb": "Assets/projects/business-thumb.png",
+    "tools": "Canva",
+    "shortSummary": "A business card design for a real salon business in Tampa, FL.",
+    "summary": "My task involved redesigning a business card for a salon business located in Tampa, FL. The client sought both design enhancements and  updated information on their cards. To meet their needs, I presented two  design options: one resembling their previous card but with refreshed  visuals and updated details, and another that explored more experimental  elements.",
+    "tasks": [
+      "Refreshed visuals for the client's business card",
+      "Enhanced legibility of the business card content",
+      "Reinforced brand identity through the redesigned business card"
+    ],
+    "actions": [
+      {
+        "name": "See on Canva",
+        "link": "https://www.canva.com/design/DAFL2g1cUpo/Ov2zDlllU_0jfHAmTrMDFA/edit?utm_content=DAFL2g1cUpo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+        "type": "primary-button"
+      }
+    ]
+  }
+]

@@ -12,19 +12,9 @@ export default function Project() {
 
   useEffect(() => {
     // Function to find project by id
-    const findProjectById = (id, data) => {
-      for (const category in data) {
-        for (const proj of data[category]) {
-          if (proj.id === id) {
-            return proj;
-          }
-        }
-      }
-      return null;
-    };
 
     // Find and set the project based on the id from URL
-    const proj = findProjectById(id, PROJECTS);
+    const proj = PROJECTS.find((p) => p.id === id);
     setProject(proj);
   }, [id]);
 

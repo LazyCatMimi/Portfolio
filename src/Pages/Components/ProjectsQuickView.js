@@ -14,38 +14,43 @@ export default function ProjectsQuickView() {
       title: "All",
       id: "all",
       desc: "All projects.",
-      data: [
-        ...PROJECTS.designCode,
-        ...PROJECTS.webDesign,
-        ...PROJECTS.development,
-        ...PROJECTS.artDesign,
-      ],
+      data: PROJECTS,
     },
     {
       title: "Web Design & Development",
       id: "web-design-code",
       desc: "Projects that include both design and development phases.",
-      data: PROJECTS.designCode,
+      data: PROJECTS.filter(
+        (project) =>
+          project.tags.includes("design") &&
+          project.tags.includes("development")
+      ),
+    },
+    {
+      title: "UX Case Studies",
+      id: "ux-case-study",
+      desc: "Projects that include UX case study.",
+      data: PROJECTS.filter((project) => project.tags.includes("case-study")),
     },
     {
       title: "Web Design",
       id: "web-ui-ux",
       desc: "Projects that include web design phase.",
-      data: [...PROJECTS.designCode, ...PROJECTS.webDesign],
+      data: PROJECTS.filter((project) => project.tags.includes("design")),
     },
     // { title: "Mobile UI/UX", id: "mobile-ui-ux", data: PROJECTS["web-dev"] },
     {
       title: "Development",
       id: "web-dev",
       desc: "Projects that include development phase.",
-      data: [...PROJECTS.designCode, ...PROJECTS.development],
+      data: PROJECTS.filter((project) => project.tags.includes("development")),
     },
     // { title: "Mobile Dev", id: "mobile-dev" },
     {
       title: "Art & Design",
       id: "design",
       desc: "Projects that showcase my artistic skills.",
-      data: PROJECTS.artDesign,
+      data: PROJECTS.filter((project) => project.tags.includes("art")),
     },
   ];
   const [curData, setCurData] = useState(sortButtons[0].data);
