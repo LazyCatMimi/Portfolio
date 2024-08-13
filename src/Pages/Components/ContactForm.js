@@ -4,97 +4,116 @@ import gitIcon from "../../Assets/Icons/contact-github.svg";
 import linkedinIcon from "../../Assets/Icons/contact-linkedin.svg";
 import mailIcon from "../../Assets/Icons/contact-mail.svg";
 import phoneIcon from "../../Assets/Icons/contact-phone.svg";
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function ContactForm() {
-  // State to store form data
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
-  // Function to handle form input changes
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+  // Using Formspree's useForm hook
+  const [state, handleSubmit] = useForm("mrbzkjpa"); // Replace with your Formspree ID
+
+  const handleFormSubmit = async (e) => {
+    await handleSubmit(e);
+    if (state.succeeded) {
+      setIsPopupVisible(true);
+      setFormSubmitted(true);
+    }
   };
 
-  // Function to handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // You can perform any action here with formData, like sending it to a server
-    console.log(formData);
-    // Clear form fields after submission
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+  const handleClosePopup = () => {
+    setIsPopupVisible(false);
+    setFormSubmitted(false);
   };
 
   return (
     <div id="contact-form">
-      <form onSubmit={handleSubmit}>
-        <h3 className="off-white-text">Chat with me. Say hi!</h3>
-        <div>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            placeholder="Name"
-            required
-          />
+      {isPopupVisible && (
+        <div className="popup">
+          <div>
+            <h2>Message Sent!</h2>
+            <p>
+              Thank you! Your message has been sent. I will get back to you as
+              soon as possible.
+            </p>
+            <button className="secondary-button" onClick={handleClosePopup}>
+              OK
+            </button>
+          </div>
         </div>
-        <div>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            placeholder="Email"
-            required
-          />
-        </div>
-        <div>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleInputChange}
-            placeholder="Message..."
-            required
-          />
-        </div>
-        <div>
-          <button type="submit" className="primary-button">
-            Submit
-          </button>
-        </div>
-      </form>
+      )}
+
+      {!formSubmitted && (
+        <form onSubmit={handleFormSubmit}>
+          <h3 className="off-white-text">Chat with me. Say hi!</h3>
+          <div>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
+          </div>
+          <div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+          </div>
+          <div>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message..."
+              required
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
+              className="primary-button"
+              disabled={state.submitting}
+              tabIndex={0}
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      )}
+
       <div id="socials">
         <h3 className="off-white-text">Contact Info</h3>
         <a>
           <img src={mailIcon} alt="email" />
-          <p>quynh.vo3314@gmail.com</p>
+          quynh.vo3314@gmail.com
         </a>
         <a>
           <img src={phoneIcon} alt="phone number" />
-          <p>(407) 797-2019</p>
+          (407) 797-2019
         </a>
         <h3 className="off-white-text">Socials</h3>
         <a>
           <img src={linkedinIcon} alt="linkedIn" />
-          <p>Quynh Vo</p>
+          Quynh Vo
         </a>
         <a>
           <img src={gitIcon} alt="Github" />
-          <p>LazyCatMimi</p>
+          LazyCatMimi
         </a>
       </div>
     </div>
