@@ -98,20 +98,27 @@ export default function ContactForm() {
 
       <div id="socials">
         <h3 className="off-white-text">Contact Info</h3>
-        <a>
-          <img src={mailIcon} alt="email" />
-          quynh.vo3314@gmail.com
+
+        <a href="mailto:quynh.vo3314@gmail.com">
+          <img src={mailIcon} alt="email" /> quynh.vo3314@gmail.com
         </a>
-        <a>
-          <img src={phoneIcon} alt="phone number" />
-          (407) 797-2019
+
+        <a href="tel:+14077972019">
+          <img src={phoneIcon} alt="phone number" /> (407) 797-2019
         </a>
+
         <h3 className="off-white-text">Socials</h3>
-        <a>
+
+        <a
+          href="https://www.linkedin.com/in/quynh-vo-7b714222b"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={linkedinIcon} alt="linkedIn" />
           Quynh Vo
         </a>
-        <a>
+
+        <a href="https://github.com/LazyCatMimi" target="_blank">
           <img src={gitIcon} alt="Github" />
           LazyCatMimi
         </a>

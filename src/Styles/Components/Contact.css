@@ -44,9 +44,12 @@ form .primary-button {
 }
 
 /* socials */
+
 #socials a {
+  color: var(--magenta);
   display: flex;
   align-items: center;
+  margin-bottom: 1em;
 }
 #socials img {
   margin-right: 15px;
