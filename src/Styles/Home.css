@@ -129,18 +129,26 @@
   line-height: 35px;
   margin: 0;
 }
+.feature-list{
+  display: flex;
+  justify-content: center;
+}
+
 .unique-list {
+
   background-color: white;
   padding: 20px 40px;
   box-shadow: 2px 2px 22.1px rgba(191, 191, 191, 0.25);
   border-radius: 16px;
-  justify-content: center;
+
 }
 .feature-icon-text {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 1fr;
   gap: 1em;
+
 }
+
 .feature-list.img-text {
   align-items: baseline;
 }
