@@ -33,6 +33,7 @@ img {
 }
 .img-sub{
   color: #847b7b;
+text-align: center;
 }
 .off-white-text {
   color: var(--white-text);

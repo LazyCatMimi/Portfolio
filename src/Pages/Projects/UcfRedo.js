@@ -30,9 +30,9 @@ export default function UcfRedo() {
           <div className="img-sub">
             <img
               src={require("../../Assets/projects-img/ucfredo-1a.bmp")}
-              alt="image 1A, screenshot of UCF mobile app"
+              alt=""
             />
-            <p className="center-text">Image 1A</p>
+            <p className="center-text">Image 1A: screenshot of UCF mobile app</p>
           </div>
         </div>
       </article>
@@ -80,9 +80,9 @@ export default function UcfRedo() {
           <div className="img-sub">
             <img
               src={require("../../Assets/projects-img/ucfredo-1b.bmp")}
-              alt="image 1B, screenshot of my markings"
+              alt=""
             />
-            <p className="center-text">Image 1B</p>
+            <p className="center-text">Image 1B: screenshot of my markings</p>
           </div>
         </div>
       </article>
@@ -114,6 +114,17 @@ export default function UcfRedo() {
           one line at a time from top to bottom, rather than having to navigate
           both horizontally and vertically.
         </p>
+        <div className="img-sub">
+            <img
+              src={require("../../Assets/projects-img/ucfredo-1c.jpg")}
+              alt=""
+            />
+            <p className="center-text">Image 1C: My Redesign</p>
+          </div>
+
+          <p>
+          Lastly, my redesign tackles the problem of overwhelming eye scanning. In the old design, users had to scan each item from left to right and top to bottom, following the natural reading order. With my redesign, users only need to scan from top to bottom and can easily skip unnecessary categories. This significantly speeds up the process of finding an item and reduces eye strain.
+        </p>
       </article>
       <article className="proj-info pi-after">
         <h3>Reflection</h3>
@@ -127,7 +138,7 @@ export default function UcfRedo() {
           significantly impact a user's attention and willingness to continue
           using a product. For a UX designer, addressing this issue is crucial
           for enhancing user interaction with a website or product, ultimately
-          boosting conversion rates. It’s a win-win for both the user and the
+          boosting conversion rates. It's a win-win for both the user and the
           company.
         </p>
       </article>
