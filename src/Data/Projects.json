@@ -44,6 +44,12 @@
         "icon": "github"
       },
       {
+        "name": "Walkthrough",
+        "link": "https://vimeo.com/936343390?share=copy",
+        "type": "secondary-button",
+        "icon": "play-circle"
+      },
+      {
         "name": "See Website",
         "link": "https://the-suite-spot.vercel.app/",
         "type": "primary-button",
@@ -140,20 +146,22 @@
     "name": "UCF App Redesign",
     "tags": ["design", "case-study"],
     "id": "UCF-redesign",
-    "imgFill": "Assets/projects/Dominos-fill.jpg",
-    "imgThumb": "Assets/projects/Dominos-thumb.png",
+    "component": "/Projects/UcfRedo.js",
+    "imgFill": "Assets/projects/ucfredo-fill.jpg",
+    "imgThumb": "Assets/projects/ucfredo-thumb.jpg",
     "tools": "Figma",
     "type": "web",
     "shortSummary": "A redesign of UCF's mobile app to improve accessibility and user access.",
     "summary": "The UCF mobile app suffers from excessive visual and informational clutter, making it challenging to read and locate items. The abundance of colors and disorganized icons contribute to this problem, which can be particularly overwhelming for users prone to cognitive overload. This problem ultimately defeats the app's purpose as a tool for quick access to the university's services. ",
     "tasks": [
       "Created a simple redesign",
-      "Ensured consistency and accessibility throughout the design phase"
+      "Ensured consistency and accessibility throughout the design phase",
+      "Overhauled navigation system"
     ],
     "actions": [
       {
         "name": "See design",
-        "link": "https://www.figma.com/proto/07NKu8JET5Hrfq3kIs4f8g/Dominos?type=design&node-id=0-1&t=dQW07w8uIT2tZO8x-0&scaling=scale-down&starting-point-node-id=1%3A2",
+        "link": "https://www.figma.com/design/2QVqqmXHwWvl2CTAReGUT0/ucf-app-navigation-redesign?node-id=0-1&t=CN76hkGv0tl5c48y-1",
         "type": "primary-button",
         "icon": "figma"
       }
