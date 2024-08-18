@@ -1,62 +1,90 @@
+import "../../Styles/Project-more-info/ucfredo.css";
+
 export default function UcfRedo() {
   return (
-    <>
+    <div className="proj-more-info" id="ucfredo">
       <article className="proj-info pi-after">
-        <img src={require("../../Assets/projects-img/ucfredo-1a.bmp")} alt="image 1A, screenshot of UCF mobile app"/>
-        <p>Image 1A</p>
-        <h3>The Problem</h3>
-        <p>
-          image 1A shows a screenshot of UCF mobile displays the navigation
-          items pertaining to UCF downtown experience. It encompasses every
-          button necessary for students to access information and news related
-          to the downtown campus. Each icon functions as an interactive button,
-          directing users to the university's webpage, online learning platform,
-          or a detailed map, and will highlight upon selection. This element of
-          the app effectively serves as a significant menu, providing access to
-          various functions and resources offered by the university.
-        </p>
-        <p>
-          However, my biggest critique is the excessive information clutter. The
-          overwhelming use of saturaated bold colors and disorganized icons makes it difficult
-          to read and find what you need. As a user, I believe the menu items
-          could be grouped into categories, making them easier to navigate and
-          locate.
-        </p>
+        <div className="img-text">
+
+          <div>
+            <h3>The Problem</h3>
+            <p>
+              image 1A shows a screenshot of UCF mobile displays the navigation
+              items pertaining to UCF downtown experience. It encompasses every
+              button necessary for students to access information and news
+              related to the downtown campus. Each icon functions as an
+              interactive button, directing users to the university's webpage,
+              online learning platform, or a detailed map, and will highlight
+              upon selection. This element of the app effectively serves as a
+              significant menu, providing access to various functions and
+              resources offered by the university.
+            </p>
+            <p>
+              However, my biggest critique is the excessive information clutter.
+              The overwhelming use of saturaated bold colors and disorganized
+              icons makes it difficult to read and find what you need. As a
+              user, I believe the menu items could be grouped into categories,
+              making them easier to navigate and locate.
+            </p>
+          </div>
+          <div className="img-sub">
+            <img
+              src={require("../../Assets/projects-img/ucfredo-1a.bmp")}
+              alt="image 1A, screenshot of UCF mobile app"
+            />
+            <p className="center-text">Image 1A</p>
+          </div>
+        </div>
       </article>
       <article className="proj-info pi-after">
-        <h3>Redesign Process</h3>
-        <p>
-          To improve the UCF mobile app, I decided to conduct an open
-          card-sorting exercise, using myself as the test subject. In Image 1B,
-          you'll see how I grouped items based on their function, marking each
-          group with a different color. I examined each item from left to right
-          and top to bottom, identifying similarities in their purpose.
-          Ultimately, I categorized the items into five distinct color groups,
-          each representing a different category.
-        </p>
-        <h3>My Findings</h3>
-        <p>
-          As I reviewed the marked items in the screenshot, I noticed the
-          disorganization wasn't just due to the overall display of menu items,
-          but also because related items were scattered across the interface.
-          Some groups appeared in clusters, but were frequently interrupted by
-          unrelated items. For example, the first row includes "myUCF,"
-          "Webcourses," and "Knights Mail," which are all essential tools
-          students use for their classes. However, this flow is disrupted by
-          "UCF Celebrates the Arts," an event-related item that belongs to a
-          different category scattered throughout later rows.
-        </p>
-        <p>
-          The initial grouping of similar items led me, as a user, to expect the
-          entire menu to be organized in a similar way. But the introduction of
-          an unrelated item breaks this expectation, interrupting my thought
-          process as I search for the needed function. This disruption happens
-          repeatedly across the menu, as shown in Image 1B. Each instance of a
-          mismatched item causes a moment of confusion, gradually slowing me
-          down and leading to a sense of frustration. Ultimately, the current
-          design of the UCF mobile app turns what should be a simple search into
-          a daunting task.
-        </p>
+        <div className="img-text-rev">
+      
+
+          <div>
+            <h3>Redesign Process</h3>
+            <p>
+              To improve the UCF mobile app, I decided to conduct an open
+              card-sorting exercise, using myself as the test subject. In Image
+              1B, you'll see how I grouped items based on their function,
+              marking each group with a different color. I examined each item
+              from left to right and top to bottom, identifying similarities in
+              their purpose. Ultimately, I categorized the items into five
+              distinct color groups, each representing a different category.
+            </p>
+            <h3>My Findings</h3>
+            <p>
+              As I reviewed the marked items in the screenshot, I noticed the
+              disorganization wasn't just due to the overall display of menu
+              items, but also because related items were scattered across the
+              interface. Some groups appeared in clusters, but were frequently
+              interrupted by unrelated items. For example, the first row
+              includes "myUCF," "Webcourses," and "Knights Mail," which are all
+              essential tools students use for their classes. However, this flow
+              is disrupted by "UCF Celebrates the Arts," an event-related item
+              that belongs to a different category scattered throughout later
+              rows.
+            </p>
+            <p>
+              The initial grouping of similar items led me, as a user, to expect
+              the entire menu to be organized in a similar way. But the
+              introduction of an unrelated item breaks this expectation,
+              interrupting my thought process as I search for the needed
+              function. This disruption happens repeatedly across the menu, as
+              shown in Image 1B. Each instance of a mismatched item causes a
+              moment of confusion, gradually slowing me down and leading to a
+              sense of frustration. Ultimately, the current design of the UCF
+              mobile app turns what should be a simple search into a daunting
+              task.
+            </p>
+          </div>
+          <div className="img-sub">
+            <img
+              src={require("../../Assets/projects-img/ucfredo-1b.bmp")}
+              alt="image 1B, screenshot of my markings"
+            />
+            <p className="center-text">Image 1B</p>
+          </div>
+        </div>
       </article>
       <article className="proj-info pi-after">
         <h3>Design Solution</h3>
@@ -103,6 +131,6 @@ export default function UcfRedo() {
           company.
         </p>
       </article>
-    </>
+    </div>
   );
 }

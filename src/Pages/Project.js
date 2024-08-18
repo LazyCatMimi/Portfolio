@@ -45,7 +45,7 @@ export default function Project() {
         <div style={projectHeaderStyle} className="proj-header">
           <div></div>
         </div>
-        <article className="proj-info">
+        <article className="proj-info main">
           <BackButton />
           <h2 className="center-text">
             <StaggeredText text={name} staggerDelay={0.05} />
