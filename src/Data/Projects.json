@@ -3,7 +3,7 @@
     "name": "The Suite Spot Salon",
     "tags": ["design", "development", "case-study"],
     "id": "thesuitespot",
-    "component": "/Projects/thesuitespot.js",
+    "component": "/Projects/Thesuitespot.js",
     "featured": true,
     "imgFill": "Assets/projects/TSS-fill.jpg",
     "imgThumb": "Assets/projects/TSS-thumb.png",
@@ -25,18 +25,7 @@
       "Deployed website"
     ],
     "actions": [
-      {
-        "name": "See Mobile HiFi",
-        "link": "https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
-        "type": "secondary-button",
-        "icon": "figma"
-      },
-      {
-        "name": "See Web HiFi",
-        "link": "https://www.figma.com/proto/PBrgGbarppN9gmbtOgJ2SG/Web-HiFi-Prototype?type=design&node-id=1-2&t=Wg8Zrt3Pg7guhKYW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
-        "type": "secondary-button",
-        "icon": "figma"
-      },
+
       {
         "name": "See GH repository",
         "link": "https://github.com/lwolbrink23/group8",
@@ -48,6 +37,18 @@
         "link": "https://vimeo.com/936343390?share=copy",
         "type": "secondary-button",
         "icon": "play-circle"
+      },
+      {
+        "name": "See Mobile HiFi",
+        "link": "https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+        "type": "primary-button",
+        "icon": "figma"
+      },
+      {
+        "name": "See Web HiFi",
+        "link": "https://www.figma.com/proto/PBrgGbarppN9gmbtOgJ2SG/Web-HiFi-Prototype?type=design&node-id=1-2&t=Wg8Zrt3Pg7guhKYW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+        "type": "primary-button",
+        "icon": "figma"
       },
       {
         "name": "See Website",
@@ -62,6 +63,7 @@
     "name": "Noodletopia",
     "tags": ["design", "case-study"],
     "id": "noodletopia",
+    "component": "/Projects/Noodletopia.js",
     "featured": true,
     "imgFill": "Assets/projects/noodletopia-fill.jpg",
     "imgThumb": "Assets/projects/noodletopia-thumb.png",
@@ -76,9 +78,15 @@
     ],
     "actions": [
       {
+        "name": "Read Report",
+        "link": "https://docs.google.com/document/d/1Sb7zcn3KcLkbqAQUAXjt9XSQfn98SbLvRqXA9odnHWc/edit?usp=sharing",
+        "type": "secondary-button",
+        "icon": "book-open"
+      },
+      {
         "name": "See Mobile HiFi",
         "link": "https://www.figma.com/proto/FduZQ80T9yNEoIBoAZKhdj/Noodletopia-Navigation-Wireflow?type=design&t=mIFIWSn5YQ4wsVfM-0&scaling=scale-down&starting-point-node-id=299%3A725",
-        "type": "secondary-button",
+        "type": "primary-button",
         "icon": "figma"
       }
     ]
