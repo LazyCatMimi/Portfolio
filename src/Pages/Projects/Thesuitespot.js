@@ -7,7 +7,7 @@ export default function Thesuitespot() {
   return (
     <>
       <article className="proj-info pi-after">
-        <p>from tsss</p>
+        <p>Writing in progress!</p>
       </article>
     </>
   );

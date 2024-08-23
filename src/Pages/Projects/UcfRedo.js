@@ -20,7 +20,7 @@ export default function UcfRedo() {
               resources offered by the university.
             </p>
             <p>
-              However, my biggest critique is the excessive information clutter.
+              However, my biggest pain point as a user myselg is the excessive information clutter.
               The overwhelming use of saturaated bold colors and disorganized
               icons makes it difficult to read and find what you need. As a
               user, I believe the menu items could be grouped into categories,
