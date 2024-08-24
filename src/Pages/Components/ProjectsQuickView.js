@@ -140,6 +140,10 @@ export default function ProjectsQuickView() {
           <Project key={index} {...project} i={index} />
         ))}
       </div>
+      <div style={{textAlign:"center"}}>
+      <a href="/#latest-projects" className="center-text gray-text"  >Back to top</a>
+
+      </div>
     </section>
   );
 }
