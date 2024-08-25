@@ -76,7 +76,7 @@ a {
     90deg,
     #ff4aed 0%,
     #7c86da 50%,
-    #ff4fed 50%,
+    #d534c5 50%,
     #414eca 97.5%
   );
 
@@ -93,16 +93,24 @@ a {
 
   border-radius: 5px;
   font-size: 1.2rem;
-  transition: background-position 0.3s ease-in-out;
+  /* transition: background-position 0.3s ease-in-out; */
 }
 .secondary-button {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     #1b1919 0%,
     #3e3939 32.5%,
     #7c6f7b 50%,
     #ff4fed 50%,
     #414eca 97.5%
+  ); */
+  background: linear-gradient(
+    90deg,
+    #1b1919 0%,
+    #3e3939 32.5%,
+    #7c6f7b 50%,
+    #000000 50%,
+    #2c242b 97.5%
   );
 
   background-size: 200% 200%;
@@ -118,13 +126,16 @@ a {
 
   border-radius: 5px;
   font-size: 1.2rem;
-  transition: background-position 0.3s ease-in-out;
+  /* transition: background-position 0.3s ease-in-out; */
 }
 .primary-button:hover {
   /* background: linear-gradient(98.87deg, #ff4fed -11.99%, #414eca 115.02%); */
   background-position: -100%;
 }
-
+.secondary-button:hover {
+  /* background: linear-gradient(98.87deg, #ff4fed -11.99%, #414eca 115.02%); */
+  background-position: -100%;
+}
 .info {
   background-color: var(--dark-bg);
   color: var(--white-text);
