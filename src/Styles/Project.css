@@ -80,6 +80,9 @@
 .pi-after {
   margin: 1em auto 0em auto;
 }
+.pi-after .primary-button {
+  margin-bottom: 4em;
+}
 .proj-info:last-of-type {
   margin-bottom: 5em;
 }

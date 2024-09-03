@@ -99,6 +99,10 @@ export default function Thesuitespot() {
           We began by defining our information architecture and selecting key
           features:
         </p>
+        <img
+          src={require("../../Assets/projects-img/thesuitespot/information-architecture.png")}
+          alt=""
+        ></img>
         <ul>
           <li>
             <strong>Shop:</strong> Designed to boost revenue by encouraging
@@ -169,6 +173,77 @@ export default function Thesuitespot() {
           rel="noreferrer"
         >
           See Information Architecture
+        </a>
+        <h4>Design Sketches</h4>
+        <p>
+          As a team, we created our design sketches based on our ideas from the
+          information architecture to test where content should go. We{" "}
+          <strong>created our mobile sketches first</strong>, then used it to
+          translate back to the bigger screen. This is to ensure consistency of
+          information between screen sizes and adhere to our promise of
+          <strong>responsive mobile-first design</strong>.
+        </p>
+        <p>See our design sketches here:</p>
+        <p className="center-text">Mobile</p>
+        <img
+          src={require("../../Assets/projects-img/thesuitespot/sketches-mobile.png")}
+          alt=""
+        ></img>
+        <a
+          href="https://app.uizard.io/p/39a0e03a/overview"
+          className="primary-button proj-info-btn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          See Mobile Sketches
+        </a>
+        <p className="center-text">Desktop</p>
+        <img
+          src={require("../../Assets/projects-img/thesuitespot/sketches-desktop.png")}
+          alt=""
+        ></img>
+        <a
+          href="https://app.uizard.io/p/2173ec7c/overview"
+          className="primary-button proj-info-btn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          See Desktop Sketches
+        </a>
+        <h4>Lo-Fi Prototypes</h4>
+        <p>
+          After determining the placement of our content, we created
+          low-fidelity prototypes to illustrate the website's layout when
+          content is not fully developed yet. We began with mobile lo-fi
+          prototypes and then adapted them to larger screens for the desktop
+          version.
+        </p>
+        <p>See our Lo-Fi Prototypes here:</p>
+        <p className="center-text">Mobile</p>
+        <img
+          src={require("../../Assets/projects-img/thesuitespot/lofi-mobile.png")}
+          alt=""
+        ></img>
+        <a
+          href="https://www.figma.com/proto/Tu8daAYiOE6THFlZO444jD/Mobile-LoFi-Prototype?node-id=1-2&node-type=CANVAS&t=6gFk1JOuDzvMVhfe-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2overview"
+          className="primary-button proj-info-btn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          See Mobile Lo-Fi
+        </a>
+        <p className="center-text">Desktop</p>
+        <img
+          src={require("../../Assets/projects-img/thesuitespot/lofi-desktop.png")}
+          alt=""
+        ></img>
+        <a
+          href="https://www.figma.com/proto/Q0MLRg0LbHp9RDmba8rk6f/Web-LoFi-Prototype?node-id=1-2&node-type=CANVAS&t=hDh6B6gsEcoEkLbY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&show-proto-sidebar=1"
+          className="primary-button proj-info-btn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          See Desktop Lo-Fi
         </a>
       </article>
     </>
