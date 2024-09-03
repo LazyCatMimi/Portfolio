@@ -47,9 +47,9 @@ export default function Project() {
         </div>
         <article className="proj-info main">
           <BackButton />
-          <h2 className="center-text">
+          <h1 className="center-text">
             <StaggeredText text={name} staggerDelay={0.05} />
-          </h2>
+          </h1>
           <div>
             <img
               src={imgThumb ? require(`${"../"}${imgThumb}`) : plImg}
