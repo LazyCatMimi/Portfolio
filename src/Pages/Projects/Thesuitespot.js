@@ -351,14 +351,14 @@ export default function Thesuitespot() {
             src={require("../../Assets/projects-img/thesuitespot/design-guide.png")}
             alt=""
           ></img>
-          <iframe
+          {/* <iframe
             title="Design guide"
             style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
             width="800"
             height="450"
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7jurtj8tWFzDFMtUHpQlwg%2FDesign-Phase%3Fnode-id%3D454-47%26node-type%3DCANVAS%26t%3D4zBhKQQ7R6kSZ2RJ-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26page-id%3D0%253A1"
             allowfullscreen
-          ></iframe>
+          ></iframe> */}
           <a
             href="https://drive.google.com/file/d/1ofQ4XJjVxnx2VwFsEeY0ZlHSmle2-XgZ/view?usp=sharing"
             className="primary-button proj-info-btn"
