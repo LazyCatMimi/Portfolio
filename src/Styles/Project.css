@@ -76,6 +76,7 @@
 }
 .proj-more-info {
   z-index: 5;
+  margin-bottom: 5em;
 }
 .pi-after {
   margin: 1em auto 0em auto;
@@ -83,9 +84,9 @@
 .pi-after .primary-button {
   margin-bottom: 4em;
 }
-.proj-info:last-of-type {
+/* .proj-info:last-of-type {
   margin-bottom: 5em;
-}
+} */
 .proj-info h2 {
   margin-top: 0;
 }
