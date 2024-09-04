@@ -130,7 +130,11 @@ export default function Thesuitespot() {
         <p>
           We decided that our salon will be a suite of salon business, taken
           inspiration from{" "}
-          <a href="https://phenixsalonsuites.com/store/orlando-sodo/">
+          <a
+            href="https://phenixsalonsuites.com/store/orlando-sodo/"
+            target="_blank"
+            rel="noreferrer"
+          >
             https://phenixsalonsuites.com/store/orlando-sodo/
           </a>
           . This will allow multiple salons to have their own page within the
@@ -148,13 +152,32 @@ export default function Thesuitespot() {
         <h4>Use Cases & User Flows</h4>
         <p>
           Before creating sketches, we first identify the key use cases for the
-          salon site. This process helps us clarify essential user needs and
-          goals. For each use case, we outline a simple user flow, detailing how
-          users would interact with the site to complete their tasks. By
-          focusing on user flows, we ensure that every design decision aligns
-          with what the user aims to accomplish, guiding them efficiently toward
-          their goals.
+          salon site. We imagine ourselves as different kinds of users and how
+          they would interact with a salon website. This process helps us
+          clarify essential user needs and goals. For each use case, we outline
+          a simple user flow, detailing how users would interact with the site
+          to complete their tasks. By focusing on user flows, we ensure that
+          every design decision aligns with what the user aims to accomplish,
+          guiding them efficiently toward their goals.
         </p>
+        <p>Read up on our use cases and user flows here:</p>
+        <div className="img-sub">
+          <img
+            src={require("../../Assets/projects-img/thesuitespot/usecaseex.png")}
+            alt=""
+          />
+          <p className="center-text">Example use case & user flow</p>
+        </div>
+
+        <a
+          href="https://docs.google.com/document/d/1tYGhInLkMWd3ycZQXfzpfVvfsNzGEIf9KfcGLF4kr5Y/edit?usp=sharing"
+          className="primary-button proj-info-btn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          See Full Use Cases and User Flows
+        </a>
+
         <h4>Updated Information Architecture</h4>
         <p>
           With our use cases and user flows in place, we moved on to refining
@@ -181,7 +204,7 @@ export default function Thesuitespot() {
           <strong>created our mobile sketches first</strong>, then used it to
           translate back to the bigger screen. This is to ensure consistency of
           information between screen sizes and adhere to our promise of
-          <strong>responsive mobile-first design</strong>.
+          <strong> responsive mobile-first design</strong>.
         </p>
         <p>See our design sketches here:</p>
         <p className="center-text">Mobile</p>
@@ -237,6 +260,7 @@ export default function Thesuitespot() {
           src={require("../../Assets/projects-img/thesuitespot/lofi-desktop.png")}
           alt=""
         ></img>
+
         <a
           href="https://www.figma.com/proto/Q0MLRg0LbHp9RDmba8rk6f/Web-LoFi-Prototype?node-id=1-2&node-type=CANVAS&t=hDh6B6gsEcoEkLbY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&show-proto-sidebar=1"
           className="primary-button proj-info-btn"
@@ -244,6 +268,102 @@ export default function Thesuitespot() {
           rel="noreferrer"
         >
           See Desktop Lo-Fi
+        </a>
+      </article>
+      <article className="proj-info pi-after">
+        <h3 className="center-text">Aesthetic Decisions</h3>
+        <h4>Design Goals</h4>
+        <p>
+          While the lofi was being done, we talked about the aesthetics of the
+          site. As a salon business, we would want our website to feel relaxing,
+          like a sense of ease that pushes the user to want to relax at The
+          Suite Spot salon.
+        </p>
+        <h4>Choosing Colors</h4>
+        <p>
+          We reviewed competitor websites to analyze their color choices and
+          ruled out certain colors that didn't evoke a relaxing atmosphere.
+          Specifically:
+        </p>
+        <ul>
+          <li>
+            <strong>Black:</strong> Too dark, feels uneasy.
+          </li>
+          <li>
+            <strong>Gold:</strong> Luxurious but overly energizing and not
+            relaxing.
+          </li>
+        </ul>
+        <p>
+          Next, we explored color meanings and psychology, and chose the
+          following colors that matched our goals:
+        </p>
+        <ul>
+          <li>
+            <strong>Green:</strong> Represents health and well-being.
+          </li>
+          <li>
+            <strong>Light Purple:</strong> Conveys calmness and serenity.
+          </li>
+          <li>
+            <strong>Beige:</strong> Provides warmth and comfort.
+          </li>
+        </ul>
+        <p>
+          We also considered accessibility for individuals with visual
+          impairments. Our initial color selections did not meet accessibility
+          standards, so we adjusted our choices to ensure good contrast between
+          text and backgrounds, and to accommodate color-blind individuals. We
+          ran our colors through contrast checkers such as{" "}
+          <a
+            href="https://coolors.co/contrast-checker"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://coolors.co/contrast-checker
+          </a>{" "}
+          in order to ensure all content is legible.
+        </p>
+        <h4>Choosing Fonts</h4>
+        <p>
+          Font styles must also align with our relaxing atmosphere. We chose a
+          modern, sans-serif font with rounded edges, such as "Poppins" for
+          paragraphs, to ensure that the text feels approachable and soothing,
+          enhancing the overall calm and inviting vibe of the design.
+        </p>
+        <p>
+          To make our headings stand out from the paragraphs, we opted for a
+          serif font. Its curvy details and varied weights at the curves give it
+          a whimsical yet elegant appearance.
+        </p>
+        <h4>Design Guide</h4>
+        <p>
+          Once all aesthetic decisions were finalized, we created a design
+          guide. This guide will help us ensure consistency, maintain quality,
+          and streamline our process during both high-fidelity design and
+          development. It serves as a comprehensive document that encapsulates
+          the entire Design phase.
+        </p>
+        <p>Access our Design Guide here:</p>
+        <img
+          src={require("../../Assets/projects-img/thesuitespot/design-guide.png")}
+          alt=""
+        ></img>
+        <iframe
+          title="buh"
+          style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+          width="800"
+          height="450"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7jurtj8tWFzDFMtUHpQlwg%2FDesign-Phase%3Fnode-id%3D454-47%26node-type%3DCANVAS%26t%3D4zBhKQQ7R6kSZ2RJ-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26page-id%3D0%253A1"
+          allowfullscreen
+        ></iframe>
+        <a
+          href="https://drive.google.com/file/d/1ofQ4XJjVxnx2VwFsEeY0ZlHSmle2-XgZ/view?usp=sharing"
+          className="primary-button proj-info-btn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Design Guide
         </a>
       </article>
     </>
