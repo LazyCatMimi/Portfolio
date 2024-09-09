@@ -405,8 +405,8 @@ export default function Thesuitespot() {
           <p>
             We divided users into three groups with distinct task sets: two
             groups tested the mobile prototypes, and one group tested the
-            desktop version. A total of 15 users were tested. More details on
-            our testing method can be found here:
+            desktop version. A total of <strong>15 users</strong> were tested.
+            More details on our testing method can be found here:
           </p>
           <div className="img-sub">
             <img
@@ -459,7 +459,7 @@ export default function Thesuitespot() {
             </ul>
             <br></br>
             <li>
-              <strong>Users cannot find the FAQ page</strong>
+              <strong>Users cannot find the FAQ & Blogs pages</strong>
               <ul>
                 <li>
                   <strong>Observation:</strong> Some users mentioned difficulty
@@ -478,6 +478,32 @@ export default function Thesuitespot() {
                 <li>
                   <strong>Solution:</strong> We moved the FAQ and blog to their
                   own main menu items in the navigation bar for easier access.
+                </li>
+              </ul>
+            </li>
+            <br></br>
+            <li>
+              <strong>Hi-fi prototype needed more refinement</strong>
+              <ul>
+                <li>
+                  <strong>Observation:</strong> During tasks like subscribing to
+                  blogs, signing up for newsletters, contacting the company, or
+                  booking an appointment, some buttons lacked interactions or
+                  confirmation responses, causing confusion for testers.
+                </li>
+                <li>
+                  <strong>Possible Cause:</strong> We overlooked the importance
+                  of microinteractions in our Hi-Fi prototypes—small feedback
+                  elements like button animations or confirmation messages—which
+                  are essential for providing users with clear feedback that
+                  their actions were successful.
+                </li>
+                <li>
+                  <strong>Solution:</strong> We added the necessary interactions
+                  and confirmation responses. This improvement enhances clarity
+                  for users, helping them feel confident their actions were
+                  completed, and also aids developers in understanding expected
+                  behaviors.
                 </li>
               </ul>
             </li>
