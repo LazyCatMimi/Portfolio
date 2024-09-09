@@ -8,9 +8,6 @@ export default function Thesuitespot() {
     <>
       <div className="proj-more-info">
         <article className="proj-info pi-after">
-          <p>Writing is still in progress!</p>
-        </article>
-        <article className="proj-info pi-after">
           <h2>Table of Content</h2>
           <ol>
             <li>Acknowledgements</li>
@@ -367,6 +364,47 @@ export default function Thesuitespot() {
           >
             Design Guide
           </a>
+        </article>
+        <article className="proj-info pi-after">
+          <h3 className="center-text">User Testing</h3>
+          <h4>Testing Method</h4>
+          <p>
+            We developed test scenarios based on the use cases of our website.
+            We employed the <strong>"Think Aloud Protocol,"</strong> where users
+            were instructed to complete tasks while verbalizing their thoughts
+            throughout the process. We recorded their actions, logged the time
+            taken to complete each task, and noted any comments or feedback.
+            Afterward, we analyzed the recordings, tracking errors or moments of
+            confusion to identify features that were difficult to access or
+            required further refinement.
+          </p>
+          <p>
+            We divided users into three groups with distinct task sets: two
+            groups tested the mobile prototypes, and one group tested the
+            desktop version. More details on our testing method can be found
+            here:
+          </p>
+          <div className="img-sub">
+            <img
+              src={require("../../Assets/projects-img/thesuitespot/testing-group.png")}
+              alt=""
+              style={{ maxWidth: 300, display: "flex", margin: "auto" }}
+            ></img>
+            <p className="center-text">Screenshot of Task Analysis document</p>
+          </div>
+
+          <a
+            href="https://docs.google.com/document/d/1O7vDT5TvPpgZyDgUO4ZrOcXz0Cx4ijcMYh_pSlMsDcM/edit?usp=sharing"
+            className="primary-button proj-info-btn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Task Analysis Document
+          </a>
+          <h4>Test Results</h4>
+        </article>
+        <article className="proj-info pi-after">
+          <p>Writing is still in progress!</p>
         </article>
       </div>
     </>
