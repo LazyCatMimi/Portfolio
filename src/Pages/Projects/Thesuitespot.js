@@ -432,8 +432,55 @@ export default function Thesuitespot() {
             areas for improvement based on user errors and feedback.
           </p>
           <ol>
-            <li>Users cannot find the Log In button</li>
-            <li>Users cannot find the FAQ page</li>
+            <li>
+              <strong>Users cannot find the Log In button</strong>
+            </li>
+            <ul>
+              <li>
+                <strong>Observation:</strong> Users frequently searched for the
+                login/signup button in the navigation bar or hamburger menu, but
+                it was placed above the main navbar on desktop and outside of
+                the hamburger menu on mobile.
+              </li>
+              <li>
+                <strong>Possible Cause:</strong> The absence of an "Account"
+                button in the navigation or hamburger menu differed from users'
+                expectations. Additionally, the user icon was positioned too far
+                from the main menu items, making it easier to overlook
+                (according to the Gestalt Principle - Law of Proximity).
+              </li>
+              <li>
+                <strong>Solution:</strong> We added an "Account" button to the
+                navigation bar and hamburger menu with login/signup submenus.
+                This improves usability by aligning with user expectations and
+                increasing visibility, following the Gestalt Principle of
+                Proximity to make navigation more intuitive.
+              </li>
+            </ul>
+            <br></br>
+            <li>
+              <strong>Users cannot find the FAQ page</strong>
+              <ul>
+                <li>
+                  <strong>Observation:</strong> Some users mentioned difficulty
+                  finding the FAQ or blog sections, with several expecting the
+                  FAQ to be in the main navigation bar. At the time, both FAQs
+                  and Blogs were located under the "About Us" section as
+                  submenus.
+                </li>
+                <li>
+                  <strong>Possible Cause:</strong> This likely occurred because
+                  users expect frequently accessed information like FAQs and
+                  blogs to be easily accessible from the main navigation bar,
+                  rather than hidden within submenus. Placing them under "About
+                  Us" made them less visible and harder to locate.
+                </li>
+                <li>
+                  <strong>Solution:</strong> We moved the FAQ and blog to their
+                  own main menu items in the navigation bar for easier access.
+                </li>
+              </ul>
+            </li>
           </ol>
         </article>
         <article className="proj-info pi-after">
