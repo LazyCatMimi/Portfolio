@@ -42,6 +42,16 @@ export default function Thesuitespot() {
             life, from initial brainstorming to final implementation. You all
             are awesome!
           </p>
+          <div className="img-sub">
+            <img
+              src={require("../../Assets/projects-img/thesuitespot/the-team.jpg")}
+              alt=""
+              style={{ maxWidth: 500, display: "flex", margin: "auto" }}
+            ></img>
+            <p className="center-text">
+              (left to right) me, Lily, Lindsey, Brianna, and Callie
+            </p>
+          </div>
         </article>
         <article className="proj-info pi-after special-heading">
           <h2 className="center-text" style={{ margin: 0 }}>
@@ -378,11 +388,21 @@ export default function Thesuitespot() {
             confusion to identify features that were difficult to access or
             required further refinement.
           </p>
+          <div className="img-sub">
+            <img
+              src={require("../../Assets/projects-img/thesuitespot/testing-method.png")}
+              alt=""
+              style={{ maxWidth: 500, display: "flex", margin: "auto" }}
+            ></img>
+            <p className="center-text">
+              Example "Think Aloud Protocol" conducted
+            </p>
+          </div>
           <p>
             We divided users into three groups with distinct task sets: two
             groups tested the mobile prototypes, and one group tested the
-            desktop version. More details on our testing method can be found
-            here:
+            desktop version. A total of 15 users were tested. More details on
+            our testing method can be found here:
           </p>
           <div className="img-sub">
             <img
@@ -402,6 +422,11 @@ export default function Thesuitespot() {
             Task Analysis Document
           </a>
           <h4>Test Results</h4>
+          <p>
+            The test results of the Think Aloud can also be found in the Task
+            Analysis Document. After conducting 15 tests, we identified key
+            areas for improvement based on user errors and feedback.
+          </p>
         </article>
         <article className="proj-info pi-after">
           <p>Writing is still in progress!</p>
