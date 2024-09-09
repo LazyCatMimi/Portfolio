@@ -46,7 +46,11 @@ export default function Thesuitespot() {
             <img
               src={require("../../Assets/projects-img/thesuitespot/the-team.jpg")}
               alt=""
-              style={{ maxWidth: 500, display: "flex", margin: "auto" }}
+              style={{
+                width: 500,
+                display: "flex",
+                margin: "auto",
+              }}
             ></img>
             <p className="center-text">
               (left to right) me, Lily, Lindsey, Brianna, and Callie
@@ -392,7 +396,7 @@ export default function Thesuitespot() {
             <img
               src={require("../../Assets/projects-img/thesuitespot/testing-method.png")}
               alt=""
-              style={{ maxWidth: 500, display: "flex", margin: "auto" }}
+              style={{ width: 500, display: "flex", margin: "auto" }}
             ></img>
             <p className="center-text">
               Example "Think Aloud Protocol" conducted
@@ -408,7 +412,7 @@ export default function Thesuitespot() {
             <img
               src={require("../../Assets/projects-img/thesuitespot/testing-group.png")}
               alt=""
-              style={{ maxWidth: 300, display: "flex", margin: "auto" }}
+              style={{ width: 300, display: "flex", margin: "auto" }}
             ></img>
             <p className="center-text">Screenshot of Task Analysis document</p>
           </div>
