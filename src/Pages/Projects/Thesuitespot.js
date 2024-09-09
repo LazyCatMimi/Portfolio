@@ -427,6 +427,10 @@ export default function Thesuitespot() {
             Analysis Document. After conducting 15 tests, we identified key
             areas for improvement based on user errors and feedback.
           </p>
+          <ol>
+            <li>Users cannot find the Log In button</li>
+            <li>Users cannot find the FAQ page</li>
+          </ol>
         </article>
         <article className="proj-info pi-after">
           <p>Writing is still in progress!</p>
