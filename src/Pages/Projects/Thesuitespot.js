@@ -378,6 +378,41 @@ export default function Thesuitespot() {
           >
             Design Guide
           </a>
+          <h4>Hi-Fi Prototypes</h4>
+          <p>
+            With our design guide in place, we had clear brand identity and
+            style guidelines to follow, making us ready to develop our Hi-Fi
+            prototypes. We built on the layout and navigation from the Lo-Fi
+            prototypes and applied the color scheme from the design guide.
+          </p>
+          <p>See our Hi-Fi Prototypes here:</p>
+          <p className="center-text">Mobile</p>
+          <img
+            src={require("../../Assets/projects-img/thesuitespot/hifi-mobile.png")}
+            alt=""
+          ></img>
+          <a
+            href="https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design"
+            className="primary-button proj-info-btn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            See Mobile Hi-Fi
+          </a>
+          <p className="center-text">Desktop</p>
+          <img
+            src={require("../../Assets/projects-img/thesuitespot/hifi-desktop.png")}
+            alt=""
+          ></img>
+
+          <a
+            href="https://www.figma.com/proto/PBrgGbarppN9gmbtOgJ2SG/Web-HiFi-Prototype?type=design&node-id=1-2&t=Wg8Zrt3Pg7guhKYW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design"
+            className="primary-button proj-info-btn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            See Desktop Hi-Fi
+          </a>
         </article>
         <article className="proj-info pi-after">
           <h3 className="center-text">User Testing</h3>
@@ -519,6 +554,76 @@ export default function Thesuitespot() {
               feedbacks
             </p>
           </div>
+          <div>
+            <h4>Test Survey Results</h4>
+            <p>
+              After the Think Aloud Protocol, we gave a survey to each tester
+              for them to rate our site’s functionalities and give feedback. We
+              took note of their demographics to see if there is a trend. We
+              also wanted to see if our site is accommodating to individuals
+              with disabilities that may affect their web browsing experiences.
+            </p>
+            <p>Here are our user demographics:</p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: 500,
+                margin: "auto",
+              }}
+            >
+              <div>
+                <h5>Age</h5>
+                <ul>
+                  <li>under 18 (6.7%)</li>
+                  <li>18-24 (53.3%)</li>
+                  <li>35-44 (20%)</li>
+                  <li>45-54 (13.3%)</li>
+                  <li>55-64 (6.7%)</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Gender</h5>
+                <ul>
+                  <li>Female (60%)</li>
+                  <li>Male (33.3%)</li>
+                  <li>Non-binary (6.7%)</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Has a Disability</h5>
+                <ul>
+                  <li>Yes (26.7%)</li>
+                  <li>No (73.3%)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p>Accessibility Results:</p>
+          <ol>
+            <li>3 individuals have vision impairments</li>
+            <li>1 individual has ADHD and is on the Autism spectrum</li>
+          </ol>
+          <p>
+            Individuals with these disabilities also shared their satisfaction
+            with the prototype's accommodations. While half remained neutral,
+            the other half found it either accommodating or somewhat
+            accommodating. Their disabilities may or may not affect their web
+            browsing experience, but it's reassuring to know that they were
+            either indifferent or felt there were no significant issues that
+            negatively impacted their experience due to their disability.
+          </p>
+          <img
+            src={require("../../Assets/projects-img/thesuitespot/test-disability.png")}
+            alt=""
+            style={{ width: 900, display: "flex", margin: "auto" }}
+          ></img>
+          <p>User Experience Satisfaction Results:</p>
+          <img
+            src={require("../../Assets/projects-img/thesuitespot/test-ux.png")}
+            alt=""
+            style={{ width: 900, display: "flex", margin: "auto" }}
+          ></img>
         </article>
         <article className="proj-info pi-after">
           <p>Writing is still in progress!</p>
