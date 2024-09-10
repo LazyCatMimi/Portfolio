@@ -508,6 +508,17 @@ export default function Thesuitespot() {
               </ul>
             </li>
           </ol>
+          <div className="img-sub">
+            <img
+              src={require("../../Assets/projects-img/thesuitespot/old-new-nav.png")}
+              alt=""
+              style={{ width: 500, display: "flex", margin: "auto" }}
+            ></img>
+            <p className="center-text">
+              Old nav bar (top) vs Revised nav bar (bottom) based on user
+              feedbacks
+            </p>
+          </div>
         </article>
         <article className="proj-info pi-after">
           <p>Writing is still in progress!</p>
