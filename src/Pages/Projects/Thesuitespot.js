@@ -115,8 +115,7 @@ export default function Thesuitespot() {
             ></img>
           <h4>Information Architecture</h4>
           <p>
-            We began by defining our information architecture and selecting key
-            features:
+          After analyzing the Market Matrix, we identified key features and developed them further through information architecture.
           </p>
           <img
             src={require("../../Assets/projects-img/thesuitespot/information-architecture.png")}
