@@ -107,6 +107,12 @@ export default function Thesuitespot() {
             designed to encourage user engagement and drive conversions, whether
             that means booking an appointment or purchasing products.
           </p>
+          <h4>Market Matrix</h4>
+          We started by creating a Market Matrix to analyze competitors. This approach helps identify essential features and pages for salon websites, as well as any gaps in the industry. A higher percentage indicates more critical features, while a lower percentage highlights areas where features are needed or lacking.
+          <img
+              src={require("../../Assets/projects-img/thesuitespot/marketmatrix.png")}
+              alt=""
+            ></img>
           <h4>Information Architecture</h4>
           <p>
             We began by defining our information architecture and selecting key
