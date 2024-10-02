@@ -2,6 +2,7 @@ import "../../Styles/Project.css";
 import plImg from "../../Assets/test.png";
 import StaggeredText from "../Components/Animation/StaggeredText";
 import PROJECTS from "../../Data/Projects.json";
+import { ImageWithCaption } from "./~TEMPLATE";
 
 export default function Thesuitespot() {
   return (
@@ -646,6 +647,12 @@ export default function Thesuitespot() {
             development.
           </p>
           <h4>Final Design Guide and Report</h4>
+          <ImageWithCaption
+            src={require("../../Assets/projects-img/thesuitespot/devphase-front.jpg")}
+            alt=""
+            caption="Final Design Guide - Front page"
+            style={{ width: 200, display: "flex", margin: "auto" }}
+          />
         </article>
         <article className="proj-info pi-after">
           <p>Writing is still in progress!</p>
