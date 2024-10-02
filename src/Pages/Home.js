@@ -139,8 +139,8 @@ export default function Home() {
           <span style={{ color: "white" }}>.</span>{" "}
         </h1>
       </div>
-      <Link to="/resume" className="primary-button">
-        See Resume
+      <Link to="#latest-projects" className="primary-button">
+        See Projects
       </Link>
     </>
   );

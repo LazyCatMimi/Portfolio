@@ -48,20 +48,12 @@ export default function Thesuitespot() {
             life, from initial brainstorming to final implementation. You all
             are awesome!
           </p>
-          <div className="img-sub">
-            <img
-              src={require("../../Assets/projects-img/thesuitespot/the-team.jpg")}
-              alt=""
-              style={{
-                width: 500,
-                display: "flex",
-                margin: "auto",
-              }}
-            ></img>
-            <p className="center-text">
-              (left to right) me, Lily, Lindsey, Brianna, and Callie
-            </p>
-          </div>
+          <ImageWithCaption
+            src={require("../../Assets/projects-img/thesuitespot/the-team.jpg")}
+            alt=""
+            style={{ width: 500, display: "flex", margin: "auto" }}
+            caption="(left to right) me, Lily, Lindsey, Brianna, and Callie"
+          />
         </article>
         <article className="proj-info pi-after special-heading">
           <h2 className="center-text" style={{ margin: 0 }}>
@@ -69,7 +61,6 @@ export default function Thesuitespot() {
           </h2>
         </article>
         <Section title="Ideation">
-          
           <h4>The Problem in the Market</h4>
           <p>
             While reviewing salon websites, my team and I noticed a common
@@ -184,13 +175,12 @@ export default function Thesuitespot() {
             accomplish, guiding them efficiently toward their goals.
           </p>
           <p>Read up on our use cases and user flows here:</p>
-          <div className="img-sub">
-            <img
-              src={require("../../Assets/projects-img/thesuitespot/usecaseex.png")}
-              alt=""
-            />
-            <p className="center-text">Example use case & user flow</p>
-          </div>
+          <ImageWithCaption
+            src={require("../../Assets/projects-img/thesuitespot/usecaseex.png")}
+            alt=""
+            style={{}}
+            caption="Example use case & user flow"
+          />
           <ExternalLinkButton
             href="https://docs.google.com/document/d/1tYGhInLkMWd3ycZQXfzpfVvfsNzGEIf9KfcGLF4kr5Y/edit?usp=sharing"
             text="See Full Use Cases and User Flows"
@@ -324,16 +314,23 @@ export default function Thesuitespot() {
           </p>
           <h4>Choosing Fonts</h4>
           <p>
-            Font styles must also align with our relaxing atmosphere. We chose a
+            Font styles must also align with our relaxing atmosphere. We created several combination of fonts that we think would work well with our goals. Here were our choices:
+          </p>
+          <ImageWithCaption
+            src={require("../../Assets/projects-img/thesuitespot/fontchoices.png")}
+            alt=""
+            style={{ width: 600, display: "flex", margin: "auto" }}
+            caption='Our Font Choices'
+          />
+          <p>
+          After having a thorough meeting, We chose a
             modern, sans-serif font with rounded edges, such as "Poppins" for
             paragraphs, to ensure that the text feels approachable and soothing,
-            enhancing the overall calm and inviting vibe of the design.
-          </p>
-          <p>
-            To make our headings stand out from the paragraphs, we opted for a
+            enhancing the overall calm and inviting vibe of the design. To make our headings stand out from the paragraphs, we opted for a
             serif font. Its curvy details and varied weights at the curves give
             it a whimsical yet elegant appearance.
           </p>
+
           <h4>Design Guide</h4>
           <p>
             Once all aesthetic decisions were finalized, we created a design
@@ -401,30 +398,24 @@ export default function Thesuitespot() {
             confusion to identify features that were difficult to access or
             required further refinement.
           </p>
-          <div className="img-sub">
-            <img
-              src={require("../../Assets/projects-img/thesuitespot/testing-method.png")}
-              alt=""
-              style={{ width: 500, display: "flex", margin: "auto" }}
-            ></img>
-            <p className="center-text">
-              Example "Think Aloud Protocol" conducted
-            </p>
-          </div>
+          <ImageWithCaption
+            src={require("../../Assets/projects-img/thesuitespot/testing-method.png")}
+            alt=""
+            style={{ width: 500, display: "flex", margin: "auto" }}
+            caption='Example "Think Aloud Protocol" conducted'
+          />
           <p>
             We divided users into three groups with distinct task sets: two
             groups tested the mobile prototypes, and one group tested the
             desktop version. A total of <strong>15 users</strong> were tested.
             More details on our testing method can be found here:
           </p>
-          <div className="img-sub">
-            <img
-              src={require("../../Assets/projects-img/thesuitespot/testing-group.png")}
-              alt=""
-              style={{ width: 300, display: "flex", margin: "auto" }}
-            ></img>
-            <p className="center-text">Screenshot of Task Analysis document</p>
-          </div>
+          <ImageWithCaption
+            src={require("../../Assets/projects-img/thesuitespot/testing-group.png")}
+            alt=""
+            style={{ width: 300, display: "flex", margin: "auto" }}
+            caption="Screenshot of Task Analysis document"
+          />
 
           <ExternalLinkButton
             href="https://docs.google.com/document/d/1O7vDT5TvPpgZyDgUO4ZrOcXz0Cx4ijcMYh_pSlMsDcM/edit?usp=sharing"
@@ -513,17 +504,12 @@ export default function Thesuitespot() {
               </ul>
             </li>
           </ol>
-          <div className="img-sub">
-            <img
-              src={require("../../Assets/projects-img/thesuitespot/old-new-nav.png")}
-              alt=""
-              style={{ width: 500, display: "flex", margin: "auto" }}
-            ></img>
-            <p className="center-text">
-              Old nav bar (top) vs Revised nav bar (bottom) based on user
-              feedbacks
-            </p>
-          </div>
+          <ImageWithCaption
+            src={require("../../Assets/projects-img/thesuitespot/old-new-nav.png")}
+            alt=""
+            style={{ width: 500, display: "flex", margin: "auto" }}
+            caption="Old nav bar (top) vs Revised nav bar (bottom) based on user feedbacks"
+          />
           <div>
             <h4>Test Survey Results</h4>
             <p>
