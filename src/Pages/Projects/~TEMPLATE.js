@@ -27,7 +27,7 @@ export const ExternalLinkButton = ({ href, text }) => (
 
 export const Section = ({ title, children }) => (
   <article className="proj-info pi-after">
-    <h2>{title}</h2>
+    <h3>{title}</h3>
     {children}
   </article>
 );

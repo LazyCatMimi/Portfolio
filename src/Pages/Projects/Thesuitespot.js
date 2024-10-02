@@ -2,7 +2,12 @@ import "../../Styles/Project.css";
 import plImg from "../../Assets/test.png";
 import StaggeredText from "../Components/Animation/StaggeredText";
 import PROJECTS from "../../Data/Projects.json";
-import { ImageWithCaption } from "./~TEMPLATE";
+import {
+  ImageWithCaption,
+  ExternalLinkButton,
+  Section,
+  Sectionubsection,
+} from "./~TEMPLATE";
 
 export default function Thesuitespot() {
   return (
@@ -63,8 +68,8 @@ export default function Thesuitespot() {
             Design Phase
           </h2>
         </article>
-        <article className="proj-info pi-after">
-          <h3 className="center-text">Ideation</h3>
+        <Section title="Ideation">
+          
           <h4>The Problem in the Market</h4>
           <p>
             While reviewing salon websites, my team and I noticed a common
@@ -92,14 +97,10 @@ export default function Thesuitespot() {
             I wrote a detailed case study why responsive design is important to
             salon businesses as well as the best ways to implement it. See here:
           </p>
-          <a
+          <ExternalLinkButton
             href="https://docs.google.com/document/d/1-lDLf3FPQqFrQsjOLCP-L5prJ2xr4ZO5Sk1Z8Kx6lH0/edit"
-            className="primary-button proj-info-btn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Salon Responsive Design Case Study
-          </a>
+            text="Salon Responsive Design Case Study"
+          />
           <p>
             Our primary goal is to create a user-friendly website that provides
             clear information about the salon suites and allows clients to
@@ -169,9 +170,8 @@ export default function Thesuitespot() {
             designed to demonstrate how responsive design and booking systems
             can be effectively integrated into salon websites.
           </p>
-        </article>
-        <article className="proj-info pi-after">
-          <h3 className="center-text">Design Beginnings</h3>
+        </Section>
+        <Section title="Design Beginnings">
           <h4>Use Cases & User Flows</h4>
           <p>
             Before creating sketches, we first identify the key use cases for
@@ -191,15 +191,10 @@ export default function Thesuitespot() {
             />
             <p className="center-text">Example use case & user flow</p>
           </div>
-
-          <a
+          <ExternalLinkButton
             href="https://docs.google.com/document/d/1tYGhInLkMWd3ycZQXfzpfVvfsNzGEIf9KfcGLF4kr5Y/edit?usp=sharing"
-            className="primary-button proj-info-btn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            See Full Use Cases and User Flows
-          </a>
+            text="See Full Use Cases and User Flows"
+          />
 
           <h4>Updated Information Architecture</h4>
           <p>
@@ -212,14 +207,10 @@ export default function Thesuitespot() {
             src={require("../../Assets/projects-img/thesuitespot/updated-information-architecture.png")}
             alt=""
           ></img>
-          <a
+          <ExternalLinkButton
             href="https://xmind.ai/share/kFwmfD1s"
-            className="primary-button proj-info-btn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            See Information Architecture
-          </a>
+            text="See Information Architecture"
+          />
           <h4>Design Sketches</h4>
           <p>
             As a team, we created our design sketches based on our ideas from
@@ -235,27 +226,19 @@ export default function Thesuitespot() {
             src={require("../../Assets/projects-img/thesuitespot/sketches-mobile.png")}
             alt=""
           ></img>
-          <a
+          <ExternalLinkButton
             href="https://app.uizard.io/p/39a0e03a/overview"
-            className="primary-button proj-info-btn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            See Mobile Sketches
-          </a>
+            text="See Mobile Sketches"
+          />
           <p className="center-text">Desktop</p>
           <img
             src={require("../../Assets/projects-img/thesuitespot/sketches-desktop.png")}
             alt=""
           ></img>
-          <a
+          <ExternalLinkButton
             href="https://app.uizard.io/p/2173ec7c/overview"
-            className="primary-button proj-info-btn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            See Desktop Sketches
-          </a>
+            text="See Desktop Sketches"
+          />
           <h4>Lo-Fi Prototypes</h4>
           <p>
             After determining the placement of our content, we created
@@ -270,30 +253,22 @@ export default function Thesuitespot() {
             src={require("../../Assets/projects-img/thesuitespot/lofi-mobile.png")}
             alt=""
           ></img>
-          <a
+          <ExternalLinkButton
             href="https://www.figma.com/proto/Tu8daAYiOE6THFlZO444jD/Mobile-LoFi-Prototype?node-id=1-2&node-type=CANVAS&t=6gFk1JOuDzvMVhfe-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2overview"
-            className="primary-button proj-info-btn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            See Mobile Lo-Fi
-          </a>
+            text="See Mobile Lo-Fi"
+          />
           <p className="center-text">Desktop</p>
           <img
             src={require("../../Assets/projects-img/thesuitespot/lofi-desktop.png")}
             alt=""
           ></img>
 
-          <a
+          <ExternalLinkButton
             href="https://www.figma.com/proto/Q0MLRg0LbHp9RDmba8rk6f/Web-LoFi-Prototype?node-id=1-2&node-type=CANVAS&t=hDh6B6gsEcoEkLbY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&show-proto-sidebar=1"
-            className="primary-button proj-info-btn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            See Desktop Lo-Fi
-          </a>
-        </article>
-        <article className="proj-info pi-after">
+            text="See Desktop Lo-Fi"
+          />
+        </Section>
+        <Section title="Aesthetic Decisions">
           <h3 className="center-text">Aesthetic Decisions</h3>
           <h4>Design Goals</h4>
           <p>
@@ -380,14 +355,11 @@ export default function Thesuitespot() {
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7jurtj8tWFzDFMtUHpQlwg%2FDesign-Phase%3Fnode-id%3D454-47%26node-type%3DCANVAS%26t%3D4zBhKQQ7R6kSZ2RJ-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26page-id%3D0%253A1"
             allowfullscreen
           ></iframe> */}
-          <a
+
+          <ExternalLinkButton
             href="https://drive.google.com/file/d/1ofQ4XJjVxnx2VwFsEeY0ZlHSmle2-XgZ/view?usp=sharing"
-            className="primary-button proj-info-btn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Design Guide
-          </a>
+            text="Design Guide"
+          />
           <h4>Hi-Fi Prototypes</h4>
           <p>
             With our design guide in place, we had clear brand identity and
@@ -401,30 +373,22 @@ export default function Thesuitespot() {
             src={require("../../Assets/projects-img/thesuitespot/hifi-mobile.png")}
             alt=""
           ></img>
-          <a
+          <ExternalLinkButton
             href="https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design"
-            className="primary-button proj-info-btn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            See Mobile Hi-Fi
-          </a>
+            text="See Mobile Hi-Fi"
+          />
           <p className="center-text">Desktop</p>
           <img
             src={require("../../Assets/projects-img/thesuitespot/hifi-desktop.png")}
             alt=""
           ></img>
 
-          <a
+          <ExternalLinkButton
             href="https://www.figma.com/proto/PBrgGbarppN9gmbtOgJ2SG/Web-HiFi-Prototype?type=design&node-id=1-2&t=Wg8Zrt3Pg7guhKYW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design"
-            className="primary-button proj-info-btn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            See Desktop Hi-Fi
-          </a>
-        </article>
-        <article className="proj-info pi-after">
+            text="See Desktop Hi-Fi"
+          />
+        </Section>
+        <Section title="User Testing">
           <h3 className="center-text">User Testing</h3>
           <h4>Testing Method</h4>
           <p>
@@ -462,14 +426,10 @@ export default function Thesuitespot() {
             <p className="center-text">Screenshot of Task Analysis document</p>
           </div>
 
-          <a
+          <ExternalLinkButton
             href="https://docs.google.com/document/d/1O7vDT5TvPpgZyDgUO4ZrOcXz0Cx4ijcMYh_pSlMsDcM/edit?usp=sharing"
-            className="primary-button proj-info-btn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Task Analysis Document
-          </a>
+            text="Task Analysis Document"
+          />
           <h4>Test Results</h4>
           <p>
             The test results of the Think Aloud can also be found in the Task
@@ -636,9 +596,8 @@ export default function Thesuitespot() {
             alt=""
             style={{ width: 900, display: "flex", margin: "auto" }}
           ></img>
-        </article>
-        <article className="proj-info pi-after">
-          <h3>Finalizing Design</h3>
+        </Section>
+        <Section title="Finalizing Design">
           <p>
             After making changes and confirming they work with the users, we
             finalized our design by compiling design files to help the
@@ -653,6 +612,51 @@ export default function Thesuitespot() {
             caption="Final Design Guide - Front page"
             style={{ width: 200, display: "flex", margin: "auto" }}
           />
+          <ExternalLinkButton
+            href="https://drive.google.com/file/d/1d1TFn70APIFIAkL_k7JUQ_mDuNlI4IoW/view?usp=sharing"
+            text="View Final Design Guide"
+          />
+        </Section>
+        <Section title="Design Phase Reflection">
+          <p>
+            I learned a great deal throughout the design phase of this project.
+            While I’ve always enjoyed teamwork, this project deepened my
+            appreciation for it, especially when tackling larger, more complex
+            projects like this one. In this CAPSTONE project, I had the
+            opportunity to apply everything I learned throughout my major, which
+            gave me a clearer understanding of how the tools and methods I’ve
+            acquired can be used to enhance the user experience in real-world
+            scenarios.
+          </p>
+          <p>
+            That said, I wish we could have done more, though we were limited by
+            time constraints. For example, we could have conducted interviews
+            with salon owners to better understand stakeholder opinions and
+            gauge how willing they might be to invest in a project like ours.
+            Additionally, we should have sent out more surveys to friends and
+            family to gather feedback on their experiences with salon websites
+            and identify areas for improvement. Another round of prototype
+            testing would have been beneficial to ensure users found the updated
+            UI more intuitive after our fixes. Finally, we could have
+            experimented with multiple layout and color schemes, sending out
+            surveys to gauge user preferences and find out which design
+            resonated best with our target audience.
+          </p>
+          <p>
+            These steps would have further refined our design process and made
+            it even more user-centered. Despite the areas where we could have
+            expanded our work, this project was an amazing experience.
+            Collaborating with my team was incredibly rewarding, and I learned
+            invaluable lessons not only about UX design but also about the power
+            of communication and collaboration in achieving a shared goal. This
+            project reinforced my passion for UX and my excitement to apply
+            these skills in future endeavors.
+          </p>
+        </Section>
+        <article className="proj-info pi-after special-heading">
+          <h2 className="center-text" style={{ margin: 0 }}>
+            Development Phase
+          </h2>
         </article>
         <article className="proj-info pi-after">
           <p>Writing is still in progress!</p>
