@@ -91,7 +91,6 @@ export default function Thesuitespot() {
             I wrote a detailed case study why responsive design is important to
             salon businesses as well as the best ways to implement it. See here:
           </p>
-
           <a
             href="https://docs.google.com/document/d/1-lDLf3FPQqFrQsjOLCP-L5prJ2xr4ZO5Sk1Z8Kx6lH0/edit"
             className="primary-button proj-info-btn"
@@ -108,14 +107,19 @@ export default function Thesuitespot() {
             that means booking an appointment or purchasing products.
           </p>
           <h4>Market Matrix</h4>
-          We started by creating a Market Matrix to analyze competitors. This approach helps identify essential features and pages for salon websites, as well as any gaps in the industry. A higher percentage indicates more critical features, while a lower percentage highlights areas where features are needed or lacking.
+          We started by creating a Market Matrix to analyze competitors. This
+          approach helps identify essential features and pages for salon
+          websites, as well as any gaps in the industry. A higher percentage
+          indicates more critical features, while a lower percentage highlights
+          areas where features are needed or lacking.
           <img
-              src={require("../../Assets/projects-img/thesuitespot/marketmatrix.png")}
-              alt=""
-            ></img>
+            src={require("../../Assets/projects-img/thesuitespot/marketmatrix.png")}
+            alt=""
+          ></img>
           <h4>Information Architecture</h4>
           <p>
-          After analyzing the Market Matrix, we identified key features and developed them further through information architecture.
+            After analyzing the Market Matrix, we identified key features and
+            developed them further through information architecture.
           </p>
           <img
             src={require("../../Assets/projects-img/thesuitespot/information-architecture.png")}
@@ -573,8 +577,10 @@ export default function Thesuitespot() {
               style={{
                 display: "flex",
                 justifyContent: "space-between",
-                width: 500,
+                width: "100%", // Makes it responsive
+                maxWidth: "500px",
                 margin: "auto",
+                flexWrap: "wrap",
               }}
             >
               <div>
@@ -629,6 +635,17 @@ export default function Thesuitespot() {
             alt=""
             style={{ width: 900, display: "flex", margin: "auto" }}
           ></img>
+        </article>
+        <article className="proj-info pi-after">
+          <h3>Finalizing Design</h3>
+          <p>
+            After making changes and confirming they work with the users, we
+            finalized our design by compiling design files to help the
+            development stage later on. This includes updating the Design Guide,
+            project assets, and other technical research to prepare for
+            development.
+          </p>
+          <h4>Final Design Guide and Report</h4>
         </article>
         <article className="proj-info pi-after">
           <p>Writing is still in progress!</p>
