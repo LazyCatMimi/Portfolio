@@ -34,7 +34,7 @@ export default function Thesuitespot() {
           <div className="toc"></div>  {/* TOC will be rendered here */}
         </article>
         <article className="proj-info pi-after">
-          <h2>Acknowledgments</h2>
+          <h2 id="acknowledgements">Acknowledgments</h2>
           <p>
             I’d like to give a special shoutout to my incredible team members–
             Lilian Allgood, Brianna Lattimore, Callie Vaughn, Lindsey Wolbrink—
@@ -51,12 +51,12 @@ export default function Thesuitespot() {
           />
         </article>
         <article className="proj-info pi-after special-heading">
-          <h2 className="center-text" style={{ margin: 0 }}>
+          <h2 className="center-text" style={{ margin: 0 }} id="design-phase">
             Design Phase
           </h2>
         </article>
         <Section title="Ideation">
-          <h4>The Problem in the Market</h4>
+          <h4 id="the-problem">The Problem in the Market</h4>
           <p>
             While reviewing salon websites, my team and I noticed a common
             issue:
@@ -94,7 +94,7 @@ export default function Thesuitespot() {
             designed to encourage user engagement and drive conversions, whether
             that means booking an appointment or purchasing products.
           </p>
-          <h4>Market Matrix</h4>
+          <h4 id="market-matrix">Market Matrix</h4>
           We started by creating a Market Matrix to analyze competitors. This
           approach helps identify essential features and pages for salon
           websites, as well as any gaps in the industry. A higher percentage
@@ -104,7 +104,7 @@ export default function Thesuitespot() {
             src={require("../../Assets/projects-img/thesuitespot/marketmatrix.png")}
             alt=""
           ></img>
-          <h4>Information Architecture</h4>
+          <h4 id="information-architecture">Information Architecture</h4>
           <p>
             After analyzing the Market Matrix, we identified key features and
             developed them further through information architecture.
@@ -136,7 +136,7 @@ export default function Thesuitespot() {
               media links, allowing customers to stay connected with the salon.
             </li>
           </ul>
-          <h4>The Suite Spot Salon</h4>
+          <h4 id="the-suite-spot-salon">The Suite Spot Salon</h4>
           <p>
             We decided that our salon will be a suite of salon business, taken
             inspiration from{" "}
@@ -158,7 +158,7 @@ export default function Thesuitespot() {
           </p>
         </Section>
         <Section title="Design Beginnings">
-          <h4>Use Cases & User Flows</h4>
+          <h4 id="use-cases">Use Cases & User Flows</h4>
           <p>
             Before creating sketches, we first identify the key use cases for
             the salon site. We imagine ourselves as different kinds of users and
@@ -181,7 +181,7 @@ export default function Thesuitespot() {
             text="See Full Use Cases and User Flows"
           />
 
-          <h4>Updated Information Architecture</h4>
+          <h4 id="updated-information architecture">Updated Information Architecture</h4>
           <p>
             With our use cases and user flows in place, we moved on to refining
             our information architecture to better align with the user's goals.
@@ -196,7 +196,7 @@ export default function Thesuitespot() {
             href="https://xmind.ai/share/kFwmfD1s"
             text="See Information Architecture"
           />
-          <h4>Design Sketches</h4>
+          <h4 id="design-sketches">Design Sketches</h4>
           <p>
             As a team, we created our design sketches based on our ideas from
             the information architecture to test where content should go. We{" "}
@@ -224,7 +224,7 @@ export default function Thesuitespot() {
             href="https://app.uizard.io/p/2173ec7c/overview"
             text="See Desktop Sketches"
           />
-          <h4>Lo-Fi Prototypes</h4>
+          <h4 id="lo-fi-prototypes">Lo-Fi Prototypes</h4>
           <p>
             After determining the placement of our content, we created
             low-fidelity prototypes to illustrate the website's layout when
@@ -255,14 +255,14 @@ export default function Thesuitespot() {
         </Section>
         <Section title="Aesthetic Decisions">
 
-          <h4>Design Goals</h4>
+          <h4 id="design-goals">Design Goals</h4>
           <p>
             While the lofi was being done, we talked about the aesthetics of the
             site. As a salon business, we would want our website to feel
             relaxing, like a sense of ease that pushes the user to want to relax
             at The Suite Spot salon.
           </p>
-          <h4>Choosing Colors</h4>
+          <h4 id="choosing-colors">Choosing Colors</h4>
           <p>
             We reviewed competitor websites to analyze their color choices and
             ruled out certain colors that didn't evoke a relaxing atmosphere.
@@ -307,7 +307,7 @@ export default function Thesuitespot() {
             </a>{" "}
             in order to ensure all content is legible.
           </p>
-          <h4>Choosing Fonts</h4>
+          <h4 id="choosing-fonts">Choosing Fonts</h4>
           <p>
             Font styles must also align with our relaxing atmosphere. We created several combination of fonts that we think would work well with our goals. Here were our choices:
           </p>
@@ -326,7 +326,7 @@ export default function Thesuitespot() {
             it a whimsical yet elegant appearance.
           </p>
 
-          <h4>Design Guide</h4>
+          <h4 id="design-guide">Design Guide</h4>
           <p>
             Once all aesthetic decisions were finalized, we created a design
             guide. This guide will help us ensure consistency, maintain quality,
@@ -352,7 +352,7 @@ export default function Thesuitespot() {
             href="https://drive.google.com/file/d/1ofQ4XJjVxnx2VwFsEeY0ZlHSmle2-XgZ/view?usp=sharing"
             text="Design Guide"
           />
-          <h4>Hi-Fi Prototypes</h4>
+          <h4 id="hi-fi-prototypes">Hi-Fi Prototypes</h4>
           <p>
             With our design guide in place, we had clear brand identity and
             style guidelines to follow, making us ready to develop our Hi-Fi
@@ -382,7 +382,7 @@ export default function Thesuitespot() {
         </Section>
         <Section title="User Testing">
     
-          <h4>Testing Method</h4>
+          <h4 id="testing-method">Testing Method</h4>
           <p>
             We developed test scenarios based on the use cases of our website.
             We employed the <strong>"Think Aloud Protocol,"</strong> where users
@@ -416,7 +416,7 @@ export default function Thesuitespot() {
             href="https://docs.google.com/document/d/1O7vDT5TvPpgZyDgUO4ZrOcXz0Cx4ijcMYh_pSlMsDcM/edit?usp=sharing"
             text="Task Analysis Document"
           />
-          <h4>Test Results</h4>
+          <h4 id="test-results">Test Results</h4>
           <p>
             The test results of the Think Aloud can also be found in the Task
             Analysis Document. After conducting 15 tests, we identified key
@@ -506,7 +506,7 @@ export default function Thesuitespot() {
             caption="Old nav bar (top) vs Revised nav bar (bottom) based on user feedbacks"
           />
           <div>
-            <h4>Test Survey Results</h4>
+            <h4 id="test-survey-results">Test Survey Results</h4>
             <p>
               After the Think Aloud Protocol, we gave a survey to each tester
               for them to rate our site’s functionalities and give feedback. We
@@ -586,7 +586,7 @@ export default function Thesuitespot() {
             project assets, and other technical research to prepare for
             development.
           </p>
-          <h4>Final Design Guide and Report</h4>
+          <h4 id="final-design-guide">Final Design Guide and Report</h4>
           <ImageWithCaption
             src={require("../../Assets/projects-img/thesuitespot/devphase-front.jpg")}
             alt=""
@@ -635,7 +635,7 @@ export default function Thesuitespot() {
           </p>
         </Section>
         <article className="proj-info pi-after special-heading">
-          <h2 className="center-text" style={{ margin: 0 }}>
+          <h2 className="center-text" style={{ margin: 0 }} id="development-phase">
             Development Phase
           </h2>
         </article>

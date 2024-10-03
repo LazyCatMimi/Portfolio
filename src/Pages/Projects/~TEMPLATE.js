@@ -27,7 +27,8 @@ export const ExternalLinkButton = ({ href, text }) => (
 
 export const Section = ({ title, children }) => (
   <article className="proj-info pi-after">
-    <h3 className="center-text">{title}</h3>
+  
+    <h3 className="center-text" id={generateIdFromText(title)}>{title}</h3>
     {children}
   </article>
 );
@@ -38,3 +39,10 @@ const SubSection = ({ title, children }) => (
     {children}
   </article>
 );
+
+const generateIdFromText = (text) => {
+  return text
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '');
+};
