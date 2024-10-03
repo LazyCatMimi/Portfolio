@@ -1,6 +1,9 @@
 #projectidv {
   background-color: #eeeff0;
 }
+.footer-space{
+  margin-bottom: 3em;
+}
 #projectidv .btn-group {
   display: flex;
   flex-wrap: wrap;

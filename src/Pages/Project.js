@@ -95,6 +95,7 @@ export default function Project() {
           </div>
         </article>
         {component && <Component />}
+        <div className="footer-space"></div>
       </>
     );
   };
