@@ -8,35 +8,30 @@ import {
   Section,
   Sectionubsection,
 } from "./~TEMPLATE";
+import tocbot from 'tocbot';
+import { useEffect } from "react";
 
 export default function Thesuitespot() {
+  useEffect(() => {
+    // Initialize tocbot after component mounts
+    tocbot.init({
+      tocSelector: '.toc',        // Selector for the TOC container
+      contentSelector: '.h-content', // Selector for the content container
+      headingSelector: 'h2, h3, h4', // Heading tags to include
+      scrollSmooth: true
+    });
+
+    // Clean up tocbot on unmount
+    return () => tocbot.destroy();
+  }, []);
   return (
     <>
-      <div className="proj-more-info">
+      <div className="proj-more-info h-content">
         <article className="proj-info pi-after">
+       
+        
           <h2>Table of Content</h2>
-          <ol>
-            <li>Acknowledgements</li>
-            <li>Design</li>
-            <ol>
-              <li>Ideation</li>
-              <ol>
-                <li>The Problem in the Market</li>
-                <li>Information Architecture</li>
-                <li>The Suite Spot Salon</li>
-              </ol>
-              <li>Early Designs</li>
-              <ol>
-                <li>Use Cases & User Flows</li>
-                <li>Updated Information Architecture</li>
-                <li>Design Sketches</li>
-                <li>Lo-Fi Prototypes</li>
-              </ol>
-              <li>Aesthetic Decisions</li>
-              <li>User Testing</li>
-            </ol>
-            <li>Development</li>
-          </ol>
+          <div className="toc"></div>  {/* TOC will be rendered here */}
         </article>
         <article className="proj-info pi-after">
           <h2>Acknowledgments</h2>
@@ -259,7 +254,7 @@ export default function Thesuitespot() {
           />
         </Section>
         <Section title="Aesthetic Decisions">
-          <h3 className="center-text">Aesthetic Decisions</h3>
+
           <h4>Design Goals</h4>
           <p>
             While the lofi was being done, we talked about the aesthetics of the
@@ -386,7 +381,7 @@ export default function Thesuitespot() {
           />
         </Section>
         <Section title="User Testing">
-          <h3 className="center-text">User Testing</h3>
+    
           <h4>Testing Method</h4>
           <p>
             We developed test scenarios based on the use cases of our website.
