@@ -654,6 +654,22 @@ export default function Thesuitespot() {
     <strong>Database:</strong> MongoDB Atlas
 </p>
         </Section>
+        <Section title="Front End">
+        <p>
+    With the Hi-Fi prototypes completed, we started building our site using React. During front-end development, we prioritized <strong>mobile responsiveness</strong> by utilizing <strong>media queries</strong>, <strong>grid layouts</strong>, and <strong>flexbox</strong>. We also focused on <strong>accessibility</strong> by implementing <strong>proper header hierarchy</strong>, <strong>adding alt text to images</strong>, <strong>using semantic HTML</strong>, and <strong>ensuring that buttons were tabbable</strong>.
+</p>
+<p>The site is extensive, featuring over 25 pages, 8 pop-ups, a header and footer component, and more than 30 CSS files, all neatly organized into folders to maintain clarity and ease of understanding.</p>
+<ImageWithCaption
+            src={require("../../Assets/projects-img/thesuitespot/fe-files.jpg")}
+            alt=""
+            style={{}}
+            caption="Front-end files structure"
+          />
+          {/* <ExternalLinkButton
+            href="https://docs.google.com/document/d/1tYGhInLkMWd3ycZQXfzpfVvfsNzGEIf9KfcGLF4kr5Y/edit?usp=sharing"
+            text="See Full Use Cases and User Flows"
+          /> */}
+        </Section>
 
       </div>
     </>
