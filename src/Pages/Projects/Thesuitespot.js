@@ -416,6 +416,79 @@ export default function Thesuitespot() {
             href="https://docs.google.com/document/d/1O7vDT5TvPpgZyDgUO4ZrOcXz0Cx4ijcMYh_pSlMsDcM/edit?usp=sharing"
             text="Task Analysis Document"
           />
+          
+          <div>
+            <h4 id="test-survey-results">Test Survey Results</h4>
+            <p>
+              After the Think Aloud Protocol, we gave a survey to each tester
+              for them to rate our site’s functionalities and give feedback. We
+              took note of their demographics to see if there is a trend. We
+              also wanted to see if our site is accommodating to individuals
+              with disabilities that may affect their web browsing experiences.
+            </p>
+            <p>Here are our user demographics:</p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: "100%", // Makes it responsive
+                maxWidth: "500px",
+                margin: "auto",
+                flexWrap: "wrap",
+              }}
+            >
+              <div>
+                <h5>Age</h5>
+                <ul>
+                  <li>under 18 (6.7%)</li>
+                  <li>18-24 (53.3%)</li>
+                  <li>35-44 (20%)</li>
+                  <li>45-54 (13.3%)</li>
+                  <li>55-64 (6.7%)</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Gender</h5>
+                <ul>
+                  <li>Female (60%)</li>
+                  <li>Male (33.3%)</li>
+                  <li>Non-binary (6.7%)</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Has a Disability</h5>
+                <ul>
+                  <li>Yes (26.7%)</li>
+                  <li>No (73.3%)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p>Accessibility Results:</p>
+          <ol>
+            <li>3 individuals have vision impairments</li>
+            <li>1 individual has ADHD and is on the Autism spectrum</li>
+          </ol>
+          <p>
+            Individuals with these disabilities also shared their satisfaction
+            with the prototype's accommodations. While half remained neutral,
+            the other half found it either accommodating or somewhat
+            accommodating. Their disabilities may or may not affect their web
+            browsing experience, but it's reassuring to know that they were
+            either indifferent or felt there were no significant issues that
+            negatively impacted their experience due to their disability.
+          </p>
+          <img
+            src={require("../../Assets/projects-img/thesuitespot/test-disability.png")}
+            alt=""
+            style={{ width: 900, display: "flex", margin: "auto" }}
+          ></img>
+          <p>User Experience Satisfaction Results:</p>
+          <img
+            src={require("../../Assets/projects-img/thesuitespot/test-ux.png")}
+            alt=""
+            style={{ width: 900, display: "flex", margin: "auto" }}
+          ></img>
           <h4 id="test-results">Test Results</h4>
           <p>
             The test results of the Think Aloud can also be found in the Task
@@ -505,78 +578,6 @@ export default function Thesuitespot() {
             style={{ width: 500, display: "flex", margin: "auto" }}
             caption="Old nav bar (top) vs Revised nav bar (bottom) based on user feedbacks"
           />
-          <div>
-            <h4 id="test-survey-results">Test Survey Results</h4>
-            <p>
-              After the Think Aloud Protocol, we gave a survey to each tester
-              for them to rate our site’s functionalities and give feedback. We
-              took note of their demographics to see if there is a trend. We
-              also wanted to see if our site is accommodating to individuals
-              with disabilities that may affect their web browsing experiences.
-            </p>
-            <p>Here are our user demographics:</p>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                width: "100%", // Makes it responsive
-                maxWidth: "500px",
-                margin: "auto",
-                flexWrap: "wrap",
-              }}
-            >
-              <div>
-                <h5>Age</h5>
-                <ul>
-                  <li>under 18 (6.7%)</li>
-                  <li>18-24 (53.3%)</li>
-                  <li>35-44 (20%)</li>
-                  <li>45-54 (13.3%)</li>
-                  <li>55-64 (6.7%)</li>
-                </ul>
-              </div>
-              <div>
-                <h5>Gender</h5>
-                <ul>
-                  <li>Female (60%)</li>
-                  <li>Male (33.3%)</li>
-                  <li>Non-binary (6.7%)</li>
-                </ul>
-              </div>
-              <div>
-                <h5>Has a Disability</h5>
-                <ul>
-                  <li>Yes (26.7%)</li>
-                  <li>No (73.3%)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <p>Accessibility Results:</p>
-          <ol>
-            <li>3 individuals have vision impairments</li>
-            <li>1 individual has ADHD and is on the Autism spectrum</li>
-          </ol>
-          <p>
-            Individuals with these disabilities also shared their satisfaction
-            with the prototype's accommodations. While half remained neutral,
-            the other half found it either accommodating or somewhat
-            accommodating. Their disabilities may or may not affect their web
-            browsing experience, but it's reassuring to know that they were
-            either indifferent or felt there were no significant issues that
-            negatively impacted their experience due to their disability.
-          </p>
-          <img
-            src={require("../../Assets/projects-img/thesuitespot/test-disability.png")}
-            alt=""
-            style={{ width: 900, display: "flex", margin: "auto" }}
-          ></img>
-          <p>User Experience Satisfaction Results:</p>
-          <img
-            src={require("../../Assets/projects-img/thesuitespot/test-ux.png")}
-            alt=""
-            style={{ width: 900, display: "flex", margin: "auto" }}
-          ></img>
         </Section>
         <Section title="Finalizing Design">
           <p>
