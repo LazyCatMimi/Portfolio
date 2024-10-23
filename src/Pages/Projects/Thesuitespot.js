@@ -8,17 +8,17 @@ import {
   Section,
   Sectionubsection,
 } from "./~TEMPLATE";
-import tocbot from 'tocbot';
+import tocbot from "tocbot";
 import { useEffect } from "react";
 
 export default function Thesuitespot() {
   useEffect(() => {
     // Initialize tocbot after component mounts
     tocbot.init({
-      tocSelector: '.toc',        // Selector for the TOC container
-      contentSelector: '.h-content', // Selector for the content container
-      headingSelector: 'h2, h3, h4', // Heading tags to include
-      scrollSmooth: true
+      tocSelector: ".toc", // Selector for the TOC container
+      contentSelector: ".h-content", // Selector for the content container
+      headingSelector: "h2, h3, h4", // Heading tags to include
+      scrollSmooth: true,
     });
 
     // Clean up tocbot on unmount
@@ -28,10 +28,8 @@ export default function Thesuitespot() {
     <>
       <div className="proj-more-info h-content">
         <article className="proj-info pi-after">
-       
-        
           <h2>Table of Content</h2>
-          <div className="toc"></div>  {/* TOC will be rendered here */}
+          <div className="toc"></div> {/* TOC will be rendered here */}
         </article>
         <article className="proj-info pi-after">
           <h2 id="acknowledgements">Acknowledgments</h2>
@@ -181,7 +179,9 @@ export default function Thesuitespot() {
             text="See Full Use Cases and User Flows"
           />
 
-          <h4 id="updated-information architecture">Updated Information Architecture</h4>
+          <h4 id="updated-information architecture">
+            Updated Information Architecture
+          </h4>
           <p>
             With our use cases and user flows in place, we moved on to refining
             our information architecture to better align with the user's goals.
@@ -254,7 +254,6 @@ export default function Thesuitespot() {
           />
         </Section>
         <Section title="Aesthetic Decisions">
-
           <h4 id="design-goals">Design Goals</h4>
           <p>
             While the lofi was being done, we talked about the aesthetics of the
@@ -309,21 +308,24 @@ export default function Thesuitespot() {
           </p>
           <h4 id="choosing-fonts">Choosing Fonts</h4>
           <p>
-            Font styles must also align with our relaxing atmosphere. We created several combination of fonts that we think would work well with our goals. Here were our choices:
+            Font styles must also align with our relaxing atmosphere. We created
+            several combination of fonts that we think would work well with our
+            goals. Here were our choices:
           </p>
           <ImageWithCaption
             src={require("../../Assets/projects-img/thesuitespot/fontchoices.png")}
             alt=""
             style={{ width: 600, display: "flex", margin: "auto" }}
-            caption='Our Font Choices'
+            caption="Our Font Choices"
           />
           <p>
-          After having a thorough meeting, We chose a
-            modern, sans-serif font with rounded edges, such as "Poppins" for
-            paragraphs, to ensure that the text feels approachable and soothing,
-            enhancing the overall calm and inviting vibe of the design. To make our headings stand out from the paragraphs, we opted for a
-            serif font. Its curvy details and varied weights at the curves give
-            it a whimsical yet elegant appearance.
+            After having a thorough meeting, We chose a modern, sans-serif font
+            with rounded edges, such as "Poppins" for paragraphs, to ensure that
+            the text feels approachable and soothing, enhancing the overall calm
+            and inviting vibe of the design. To make our headings stand out from
+            the paragraphs, we opted for a serif font. Its curvy details and
+            varied weights at the curves give it a whimsical yet elegant
+            appearance.
           </p>
 
           <h4 id="design-guide">Design Guide</h4>
@@ -381,7 +383,6 @@ export default function Thesuitespot() {
           />
         </Section>
         <Section title="User Testing">
-    
           <h4 id="testing-method">Testing Method</h4>
           <p>
             We developed test scenarios based on the use cases of our website.
@@ -416,7 +417,7 @@ export default function Thesuitespot() {
             href="https://docs.google.com/document/d/1O7vDT5TvPpgZyDgUO4ZrOcXz0Cx4ijcMYh_pSlMsDcM/edit?usp=sharing"
             text="Task Analysis Document"
           />
-          
+
           <div>
             <h4 id="test-survey-results">Test Survey Results</h4>
             <p>
@@ -636,41 +637,84 @@ export default function Thesuitespot() {
           </p>
         </Section>
         <article className="proj-info pi-after special-heading">
-          <h2 className="center-text" style={{ margin: 0 }} id="development-phase">
+          <h2
+            className="center-text"
+            style={{ margin: 0 }}
+            id="development-phase"
+          >
             Development Phase
           </h2>
         </article>
-        <article className="proj-info pi-after">
-          <p>Writing is still in progress!</p>
-        </article>
+
         <Section title="Development Summary">
-        <p>
-    <strong>Front end:</strong> React, HTML, CSS, JavaScript
-</p>
-<p>
-    <strong>Back End:</strong> Node
-</p>
-<p>
-    <strong>Database:</strong> MongoDB Atlas
-</p>
+          <p>
+            <strong>Front end:</strong> React, HTML, CSS, JavaScript
+          </p>
+          <p>
+            <strong>Back End:</strong> Node
+          </p>
+          <p>
+            <strong>Database:</strong> MongoDB Atlas
+          </p>
         </Section>
         <Section title="Front End">
-        <p>
-    With the Hi-Fi prototypes completed, we started building our site using React. During front-end development, we prioritized <strong>mobile responsiveness</strong> by utilizing <strong>media queries</strong>, <strong>grid layouts</strong>, and <strong>flexbox</strong>. We also focused on <strong>accessibility</strong> by implementing <strong>proper header hierarchy</strong>, <strong>adding alt text to images</strong>, <strong>using semantic HTML</strong>, and <strong>ensuring that buttons were tabbable</strong>.
-</p>
-<p>The site is extensive, featuring over 25 pages, 8 pop-ups, a header and footer component, and more than 30 CSS files, all neatly organized into folders to maintain clarity and ease of understanding.</p>
-<ImageWithCaption
+          <h4 id="FE-summary">About the Front End</h4>
+          <p>
+            With the Hi-Fi prototypes completed, we started building our site
+            using React. During front-end development, we prioritized{" "}
+            <strong>mobile responsiveness</strong> by utilizing{" "}
+            <strong>media queries</strong>, <strong>grid layouts</strong>, and{" "}
+            <strong>flexbox</strong>. We also focused on{" "}
+            <strong>accessibility</strong> by implementing{" "}
+            <strong>proper header hierarchy</strong>,{" "}
+            <strong>adding alt text to images</strong>,{" "}
+            <strong>using semantic HTML</strong>, and{" "}
+            <strong>ensuring that buttons were tabbable</strong>.
+          </p>
+          <p>
+            The site is extensive, featuring over 25 pages, 8 pop-ups, a header
+            and footer component, and more than 30 CSS files, all neatly
+            organized into folders to maintain clarity and ease of
+            understanding.
+          </p>
+          <ImageWithCaption
             src={require("../../Assets/projects-img/thesuitespot/fe-files.jpg")}
             alt=""
             style={{}}
             caption="Front-end files structure"
           />
-          {/* <ExternalLinkButton
-            href="https://docs.google.com/document/d/1tYGhInLkMWd3ycZQXfzpfVvfsNzGEIf9KfcGLF4kr5Y/edit?usp=sharing"
-            text="See Full Use Cases and User Flows"
-          /> */}
-        </Section>
+          <h4 id="FE-summary2">More Info</h4>
+          <p>More information on how my team and I implemented the front-end can be found here:</p>
+          <ImageWithCaption
+            src={require("../../Assets/projects-img/thesuitespot/fe-doc.png")}
+            alt=""
+            style={{width:350}}
+            caption="Front-end documentation - front page" 
+          />
+          <ExternalLinkButton
+            href="https://docs.google.com/document/d/1KN13MgtfyvB4xnOyz_9--qZDTUEToCFDc84YlwzK7_4/edit?usp=sharing"
+            text="View Front-End Documentation"
+          />
 
+        </Section>
+        <Section title="Back End">
+        <h4 id="FE-summary2">More Info</h4>
+          <p>More information on how my team and I implemented the back-end can be found here:</p>
+          <ImageWithCaption
+            src={require("../../Assets/projects-img/thesuitespot/be-doc.png")}
+            alt=""
+            style={{width:350}}
+            caption="Back-end documentation - front page" 
+          />
+          <ExternalLinkButton
+            href="https://docs.google.com/document/d/1EINkuwr771uosXcIgvsOX0db-Kf_sy3pn9yE0CPtaYE/edit?usp=sharing"
+            text="View Back-End Documentation"
+          />
+
+        </Section>
+        <article className="proj-info pi-after">
+          <p>Writing is still in progress!</p>
+        </article>
       </div>
     </>
   );
