@@ -643,6 +643,18 @@ export default function Thesuitespot() {
         <article className="proj-info pi-after">
           <p>Writing is still in progress!</p>
         </article>
+        <Section title="Development Summary">
+        <p>
+    <strong>Front end:</strong> React, HTML, CSS, JavaScript
+</p>
+<p>
+    <strong>Back End:</strong> Node
+</p>
+<p>
+    <strong>Database:</strong> MongoDB Atlas
+</p>
+        </Section>
+
       </div>
     </>
   );
