@@ -8,6 +8,8 @@ import Contact from "./Pages/Contact";
 import PATHS from "./Data/Pages.json";
 import ScrollToTop from "./Pages/Components/ScrollToTop";
 import Project from "./Pages/Project";
+import { inject } from '@vercel/analytics';
+
 
 function App() {
   return (
@@ -29,5 +31,5 @@ function App() {
     </div>
   );
 }
-
+inject();
 export default App;
