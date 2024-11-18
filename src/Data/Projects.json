@@ -25,7 +25,6 @@
       "Deployed website"
     ],
     "actions": [
-
       {
         "name": "See GH repository",
         "link": "https://github.com/lwolbrink23/group8",
@@ -131,6 +130,7 @@
     "name": "Domino's Accessibility Redesign",
     "tags": ["design", "case-study"],
     "id": "dominos-redesign",
+    "component": "/Projects/Dominos.js",
     "imgFill": "Assets/projects/Dominos-fill.jpg",
     "imgThumb": "Assets/projects/Dominos-thumb.png",
     "tools": "Figma",
@@ -302,7 +302,7 @@
       }
     ]
   },
-  
+
   {
     "name": "Cat or Dog Quiz",
     "tags": ["development"],
