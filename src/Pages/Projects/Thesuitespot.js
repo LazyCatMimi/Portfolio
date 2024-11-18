@@ -684,33 +684,37 @@ export default function Thesuitespot() {
             caption="Front-end files structure"
           />
           <h4 id="FE-summary2">More Info</h4>
-          <p>More information on how my team and I implemented the front-end can be found here:</p>
+          <p>
+            More information on how my team and I implemented the front-end can
+            be found here:
+          </p>
           <ImageWithCaption
             src={require("../../Assets/projects-img/thesuitespot/fe-doc.png")}
             alt=""
-            style={{width:350}}
-            caption="Front-end documentation - front page" 
+            style={{ width: 350 }}
+            caption="Front-end documentation - front page"
           />
           <ExternalLinkButton
             href="https://docs.google.com/document/d/1KN13MgtfyvB4xnOyz_9--qZDTUEToCFDc84YlwzK7_4/edit?usp=sharing"
             text="View Front-End Documentation"
           />
-
         </Section>
         <Section title="Back End">
-        <h4 id="FE-summary2">More Info</h4>
-          <p>More information on how my team and I implemented the back-end can be found here:</p>
+          <h4 id="BE-summary2">More Info</h4>
+          <p>
+            More information on how my team and I implemented the back-end can
+            be found here:
+          </p>
           <ImageWithCaption
             src={require("../../Assets/projects-img/thesuitespot/be-doc.png")}
             alt=""
-            style={{width:350}}
-            caption="Back-end documentation - front page" 
+            style={{ width: 350 }}
+            caption="Back-end documentation - front page"
           />
           <ExternalLinkButton
             href="https://docs.google.com/document/d/1EINkuwr771uosXcIgvsOX0db-Kf_sy3pn9yE0CPtaYE/edit?usp=sharing"
             text="View Back-End Documentation"
           />
-
         </Section>
         <article className="proj-info pi-after">
           <p>Writing is still in progress!</p>
