@@ -99,10 +99,11 @@ export default function ProjectsQuickView() {
     </Link>
   );
   return (
-    <section className="dark-bg" id="latest-projects">
+    <section className="background1" id="latest-projects">
       <h2>
         <StaggeredText text="Projects" staggerDelay={0.05} />
       </h2>
+      <hr className="line"/>
       <div id="sort-btn-container">
         {/* Map over the button data to render each radio button */}
         {sortButtons.map((button, index) => (

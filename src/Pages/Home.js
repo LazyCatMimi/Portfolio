@@ -59,7 +59,7 @@ export default function Home() {
       icon: "phil-aesthetic",
     },
   ];
-  const stopScalingRef = useRef(null);
+  // const stopScalingRef = useRef(null);
 
   const FeatureList = ({ list, title }) => {
     const { ref, inView } = useInView({
@@ -139,29 +139,38 @@ export default function Home() {
 
   return (
     <main id="Home">
-      <Header stopScalingRef={stopScalingRef} Content={HeaderContent} />
-      <section ref={stopScalingRef} className="dark-bg" id="focus">
+          <header className="header">
+      <div
+        className="background-container"
+      ></div>
+      <div className="content">
+        <HeaderContent />
+      </div>
+    </header>
+      {/* <section ref={stopScalingRef} className="dark-bg" id="focus">
         <FocusBanner />
-      </section>
-      <section className="light-bg pad" id="about">
+      </section> */}
+      <section className="background2 " id="about">
         <div className="about-container">
+          
           <img
             src={require("../Assets/me.jpg")}
             alt="Quynh smiling"
-            className="me-pic"
+            className="me-pic glow"
           ></img>
           <article>
             <h2>
               <StaggeredText text="About Me" staggerDelay={0.1} />
             </h2>
+          <hr className="line"/>
             <p>
               <LineRevealText text="Hello World! My name is Quynh, and I am a student at the University of Central Florida, where I am pursuing a bachelor's degree in Digital Media: Web Design with a minor in Information Technology. My passions lie in web design, development, and art. Having been born in 2002, I witnessed the rapid evolution of technology firsthand, which inspired me to become a creator of unique web experiences. Technology and art are my favorite subjects to learn about and discuss. In my spare time, I enjoy activities such as drawing, paper crafting, fishing, and boating." />
             </p>
           </article>
         </div>
-        <div className="unique-list">
+        {/* <div className="unique-list">
           <FeatureList list={uniqueList} title="What Makes Me Unique" />
-        </div>
+        </div> */}
       </section>
       <ProjectsQuickView />
       {/* <section className="light-bg" id="explore-projects">
@@ -190,13 +199,13 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="light-bg" id="phil">
+      {/* <section className="light-bg" id="phil">
         <FeatureList
           list={philosophies}
           title="My Design & Development Philosophies"
         />
-      </section>
-      <section className="dark-bg3" id="contact-me" style={{ flex: 1 }}>
+      </section> */}
+      <section className="background2" id="contact-me" style={{ flex: 1 }}>
         <h2>
           <StaggeredText text="Contact Me" staggerDelay={0.1} />
         </h2>

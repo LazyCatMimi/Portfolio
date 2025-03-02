@@ -20,6 +20,9 @@
   --numscale-40: 40;
   --numscale-99: 99; */
 
+  /* Frame 4 */
+
+
   --token-border-radius-xs: 6px;
   --token-border-radius-s: 8px;
   --token-border-radius-m: 12px;
@@ -102,6 +105,16 @@
   --token-secondary-border-lighter:var(--color-Purple-400);
   --token-secondary-border-default:var(--color-Purple-600);
   --token-secondary-border-darker:var(--color-Purple-800);
+
+  --gradient-background-1: linear-gradient(180deg, #090510 0%, #26123F 100%);
+  --gradient-background-2: linear-gradient(180deg, #26123F 0%, #090510 100%);
+}
+
+.background1 {
+  background: var(--gradient-background-1);
+}
+.background2 {
+  background: var(--gradient-background-2);
 }
 /* General */
 .poppins-thin {
@@ -122,6 +135,7 @@ body {
   font-family: var(--body-font);
   font-weight: 400;
   font-style: normal;
+  color: var(--token-grayscale-text-color-body);
 }
 html {
   scroll-behavior: smooth;
@@ -136,12 +150,9 @@ code {
 img {
   max-width: 100%;
 }
-.img-sub{
-  color: #847b7b;
-text-align: center;
-}
-.off-white-text {
-  color: var(--white-text);
+
+hr{
+  border: 1px solid var(--color-Purple-700) ;
 }
 /* bg */
 .dark-bg {
@@ -162,37 +173,47 @@ text-align: center;
 
 /* Font stuff */
 h1, h2 {
-  font-family: var(--header-font)
+  font-family: var(--header-font);
+  color: var(--token-grayscale-text-color-title);
 }
 
 a, button, h3,
 h4 {
   font-family: var(--body-font)
+  
 }
 
 h1{
   font-size: var(--h1-size);
+  color: var(--token-grayscale-text-color-title);
 }
 h2{
   font-size: var(--h2-size);
+  color: var(--token-grayscale-text-color-title);
 }
 h3{
   font-size: var(--h3-size);
+  color: var(--token-grayscale-text-color-title);
 }
 h4{
   font-size: var(--h4-size);
+  color: var(--token-grayscale-text-color-title);
 }
 h5{
   font-size: var(--h5-size);
+  color: var(--token-grayscale-text-color-title);
 }
 p{
   font-size: var(--p-size);
+  color: var(--token-grayscale-text-color-body);
 }
 .subtitle{
   font-size: var(--subtitle-size);
+  color: var(--token-grayscale-text-color-subtitle);
 }
 .caption{
   font-size: var(--caption-size);
+  color: var(--token-grayscale-text-color-caption);
 }
 
 /* Button */
@@ -218,6 +239,14 @@ transition: background 0.3s ease-in-out;
 }
 .secondary-button:hover {
   background: var(--token-primary-surface-darker);
+}
+
+.glow{
+
+/* Glow */
+box-shadow: 0px 4px 25px #612FA3;
+
+
 }
 .info {
   background-color: var(--dark-bg);
