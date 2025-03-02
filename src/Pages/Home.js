@@ -128,15 +128,7 @@ export default function Home() {
       </h1>
       <div className="title-sub-2-container">
         <h1 className="title-sub-2">
-          Artist<span style={{ color: "white" }}>.</span>
-        </h1>
-        <h1 className="title-sub-2">
-          Designer
-          <span style={{ color: "white" }}>.</span>{" "}
-        </h1>
-        <h1 className="title-sub-2">
-          Developer
-          <span style={{ color: "white" }}>.</span>{" "}
+          UI/UX Designer & Front-End Enthusiast
         </h1>
       </div>
       <Link to="#latest-projects" className="primary-button">

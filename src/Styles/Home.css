@@ -17,31 +17,31 @@
   padding-top: 5vh;
 }
 .title-sub-1 {
-  font-family: "Julius Sans One";
+  font-family:var(--body-font);
   font-style: normal;
   font-weight: 400;
   font-size: clamp(0.9rem, 2.7vw + 0.6rem, 2rem);
   line-height: 44px;
-  color: #ff3d7c;
+  color: var(--color-Purple-100);
   margin: 50px 0;
 }
 
 .title-name {
-  font-size: clamp(2.9rem, 4vw + 1rem, 5.7rem);
+  /* font-size: clamp(2.9rem, 4vw + 1rem, 5.7rem); */
 }
 .title-sub-2-container {
   margin-bottom: 3em;
 }
 .title-sub-2 {
-  font-weight: 400;
+  font-family:var(--body-font);
   font-size: clamp(0.4rem, 2.5vw + 0.5rem, 1.3rem);
-  letter-spacing: 0.4em;
-  color: #ff3d7c;
+  /* letter-spacing: 0.4em; */
+  color: var(--color-Purple-100);
   display: inline;
 }
-.title-sub-2:not(:first-of-type) {
+/* .title-sub-2:not(:first-of-type) {
   margin-left: clamp(0.15rem, 4vw + 0.5rem, 1.3rem);
-}
+} */
 .full-page-header button {
   margin-top: 8%;
 }
