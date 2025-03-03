@@ -5,6 +5,7 @@ import linkedinIcon from "../../Assets/Icons/contact-linkedin.svg";
 import mailIcon from "../../Assets/Icons/contact-mail.svg";
 import phoneIcon from "../../Assets/Icons/contact-phone.svg";
 import { useForm, ValidationError } from "@formspree/react";
+import { color } from "framer-motion";
 
 export default function ContactForm() {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -97,17 +98,17 @@ export default function ContactForm() {
       )}
 
       <div id="socials">
-        <h3 className="off-white-text">Contact Info</h3>
+        <h4 className="light-font-weight">Contact Info</h4>
 
         <a href="mailto:quynh.vo3314@gmail.com">
-          <img src={mailIcon} alt="email" /> quynh.vo3314@gmail.com
+          <img src={mailIcon} alt="email" className="icon"/> quynh.vo3314@gmail.com
         </a>
 
         <a href="tel:+14077972019">
           <img src={phoneIcon} alt="phone number" /> (407) 797-2019
         </a>
 
-        <h3 className="off-white-text">Socials</h3>
+        <h4 className="light-font-weight">Socials</h4>
 
         <a
           href="https://www.linkedin.com/in/quynh-vo-7b714222b"
