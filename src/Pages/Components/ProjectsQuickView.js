@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import starImg from "../../Assets/Icons/star.svg";
+import "../../Styles/ProjectsList.css";
 
 export default function ProjectsQuickView() {
   const [activeSortButton, setActiveSortButton] = useState("all");

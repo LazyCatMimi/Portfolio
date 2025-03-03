@@ -202,125 +202,6 @@ border: 1px solid  var(--token-primary-surface-default);
   background: var(--token-primary-surface-default);
 }
 
-/* ----------------------------------------------projects---------------------------------------------- */
-/* #latest-projects {
-  padding: 2em;
-  background-image: url("../Assets/header-bg2.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-.projects-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 3em;
-}
-.projects-grid a {
-  text-decoration: none;
-}
-#latest-projects h2 {
-  text-align: center;
-}
-#latest-projects h3 {
-  margin-top: 0;
-}
-
-#latest-projects article {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-
-
-  box-shadow: 0px 4px 5.3px rgba(0, 0, 0, 0.74);
-  border-radius: var(--token-border-radius-l);
-}
-#latest-projects article div {
-  padding: 1em 1.5em 1.5em 1.5em;
-}
-#latest-projects article {
-  transition: all 0.2s ease-in-out;
-  background: var(--token-secondary-surface-default);
-}
-
-
-/* #latest-projects article button {
-  width: 100%;
-} */
-#latest-projects img {
-  width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  border-radius: var(--token-border-radius-l) var(--token-border-radius-l) 0 0;
-  background: rgba(var(--token-secondary-surface-default), 0.2); 
-  mix-blend-mode: luminosity;
-  
-}
-
-/* on hover */
-#latest-projects article:hover {
-  transform: scale(1.05);
-}
-#latest-projects article:hover img {
-  /* mix-blend-mode: multiply; */
-  background: rgba(var(--token-secondary-surface-default), 0.9);
-  mix-blend-mode: normal;
-}
-/*  */
-.project-hover {
-  padding: 0;
-  margin: 0;
-  background-color: var(--dark-bg2);
-  border: 0;
-  border-radius: 12px 12px 0 0;
-}
-.num {
-  font-size: 1.4em;
-  color: var(--token-primary-surface-lighter);
-}
-.proj-tag {
-
-  display: inline-block;
-  padding: 0.2em 0.5em;
-  margin-right: 5px;
-  background-color: var(--token-primary-surface-lighter);
-  border-radius: var(--token-border-radius-full);
-  color: var(--color-Gray-900);
-  /* font-weight: bold; */
-}
-
-/* ---------------featured projects--------------- */
-#latest-projects .featured article {
-  /* border: 2px #D79736 solid; */
-  /* border-radius: 12px; */
-  border: double 2px transparent;
-  border-radius: 12px;
-  background-image: linear-gradient(var(--dark-bg2), #17171c),
-    linear-gradient(to right, #bf510f, gold);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-#latest-projects .featured {
-  max-height: 500px;
-}
-#latest-projects .featured img {
-  max-height: 100%;
-}
-.featured-txt {
-  color: var(--gold);
-  margin: 0;
-}
-#latest-projects article .img-text {
-  padding: 0;
-}
-.star-img {
-  width: 12px !important;
-  object-fit: initial !important;
-  margin-bottom: 4px;
-  margin-right: 2px;
-}
-
 /* ----------------------------------explore more projects---------------------------------- */
 /* #explore-projects {
   padding: 4em 2em;
@@ -461,35 +342,7 @@ border: 1px solid  var(--token-primary-surface-default);
     border-radius: 16px;
   }
 }
-@media screen and (min-width: 830px) {
-  #latest-projects .featured img {
-    border-radius: 0 12px 12px 0;
-    height: 100%;
-  }
-}
 
-@media screen and (max-width: 830px) {
-  .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  #latest-projects .featured {
-    grid-column: 1/2;
-  }
-  #latest-projects .featured article {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  #latest-projects .featured img {
-    grid-column: 1/2;
-    aspect-ratio: auto;
-  }
-  #latest-projects .featured div {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-}
 @media screen and (max-width: 800px) {
   #about .about-container {
     grid-template-columns: 1fr;
@@ -508,20 +361,7 @@ border: 1px solid  var(--token-primary-surface-default);
     margin: 1.4em auto;
   }
 }
-@media screen and (max-width: 485px) {
-  .feature-icon-text {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 1em;
-  }
-  .feature-icon-text p {
-    text-align: center;
-  }
-  .feature-icon-text .img-text {
-    justify-content: center;
-  }
-}
+
 @media screen and (max-width: 336px) {
   .unique-list {
     padding: 20px 30px;

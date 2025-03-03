@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import FocusBanner from "./Components/HomePage/FocusBanner";
 import "../Styles/Home.css";
 
+
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import starIcon from "../Assets/Icons/star-bullet.svg";
