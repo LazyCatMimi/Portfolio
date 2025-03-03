@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import starImg from "../../Assets/Icons/star.svg";
+import "../../Styles/ProjectsList.css";
 
 export default function ProjectsQuickView() {
   const [activeSortButton, setActiveSortButton] = useState("all");
@@ -17,9 +18,27 @@ export default function ProjectsQuickView() {
       data: PROJECTS,
     },
     {
+      title: "UX Case Studies",
+      id: "ux-case-study",
+      desc: "Projects with case studies.",
+      data: PROJECTS.filter((project) => project.tags.includes("case-study")),
+    },
+    {
+      title: "Web Design",
+      id: "web-ui-ux",
+      desc: "Projects as design exercises (no case studies).",
+      data: PROJECTS.filter((project) => project.tags.includes("design")),
+    },
+    {
+      title: "Web Development",
+      id: "web-dev",
+      desc: "Projects that include web development phase.",
+      data: PROJECTS.filter((project) => project.tags.includes("development")),
+    },
+    {
       title: "Web Design & Development",
       id: "web-design-code",
-      desc: "Projects that include both design and development phases.",
+      desc: "Projects that include both web design and web development phases.",
       data: PROJECTS.filter(
         (project) =>
           project.tags.includes("design") &&
@@ -27,40 +46,37 @@ export default function ProjectsQuickView() {
       ),
     },
     {
-      title: "UX Case Studies",
-      id: "ux-case-study",
-      desc: "Projects that include UX case study.",
-      data: PROJECTS.filter((project) => project.tags.includes("case-study")),
-    },
-    {
-      title: "Web Design",
-      id: "web-ui-ux",
-      desc: "Projects that include web design phase.",
-      data: PROJECTS.filter((project) => project.tags.includes("design")),
-    },
-    // { title: "Mobile UI/UX", id: "mobile-ui-ux", data: PROJECTS["web-dev"] },
-    {
-      title: "Development",
-      id: "web-dev",
-      desc: "Projects that include development phase.",
-      data: PROJECTS.filter((project) => project.tags.includes("development")),
-    },
-    // { title: "Mobile Dev", id: "mobile-dev" },
-    {
       title: "Art & Design",
       id: "design",
-      desc: "Projects that showcase my artistic skills.",
+      desc: "Projects that showcase my artistic and general design skills.",
       data: PROJECTS.filter((project) => project.tags.includes("art")),
     },
+
+
   ];
   const [curData, setCurData] = useState(sortButtons[0].data);
   const handleRadioButtonChange = (event, data) => {
     setActiveSortButton(event.target.value);
     setCurData(data);
   };
+  const determineTag = (tag) => {
+    switch (tag) {
+      case "case-study":
+        return "UX Case Study";
+      case "design":
+        return "Web Design";
+      case "development":
+        return "Web Development";
+      case "art":
+        return "Art & Design";
+      default:
+        return "Web Design & Development";
+    }
+  }
 
   const Project = ({
     name,
+    tags,
     featured,
     imgFill,
     id,
@@ -71,11 +87,12 @@ export default function ProjectsQuickView() {
     i,
   }) => (
     <Link to={`/projects/${id}`} className={`${featured && "featured"}`}>
-      <article className="dark-bg2">
+      <article>
         <img
           src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
           alt=""
         ></img>
+
 
         <div>
           {featured && (
@@ -87,11 +104,14 @@ export default function ProjectsQuickView() {
             </>
           )}
           <h3>
-            <span className="num off-white-text">
+            <span className="num">
               {(i + 1).toString().padStart(2, "0")}{" "}
             </span>
             | <LineRevealText text={name} staggerDelay={0.05} />
           </h3>
+          {tags.map((tag, index) => (
+            <p key={index} className="proj-tag">{determineTag(tag)} </p>
+              ))}
           <p>{shortSummary}</p>
           {/* <button className="primary-button">Read More</button> */}
         </div>
@@ -99,10 +119,11 @@ export default function ProjectsQuickView() {
     </Link>
   );
   return (
-    <section className="dark-bg" id="latest-projects">
+    <section className="background1" id="latest-projects" style={{background:"var(--color-Purple-950)"}}>
       <h2>
         <StaggeredText text="Projects" staggerDelay={0.05} />
       </h2>
+      <hr className="line"/>
       <div id="sort-btn-container">
         {/* Map over the button data to render each radio button */}
         {sortButtons.map((button, index) => (
@@ -132,7 +153,7 @@ export default function ProjectsQuickView() {
           </label>
         ))}
       </div>
-      <p className="center-text sort   -desc">
+      <p className="center-text sort-desc subtitle">
         {sortButtons.find((button) => button.id === activeSortButton).desc}
       </p>
       <div className="projects-grid">
@@ -141,7 +162,7 @@ export default function ProjectsQuickView() {
         ))}
       </div>
       <div style={{textAlign:"center"}}>
-      <a href="/#latest-projects" className="center-text gray-text"  >Back to top</a>
+      <a href="/#latest-projects" className="center-text"  >Back to top</a>
 
       </div>
     </section>

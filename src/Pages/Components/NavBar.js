@@ -40,6 +40,7 @@ export default function NavBar() {
 
   return (
     <nav className="navbar">
+      <div className="navbar-container max-width">
       <div className="logo">
         <img src={logoIcon} alt="logo" />
       </div>
@@ -69,6 +70,7 @@ export default function NavBar() {
             </motion.li>
           ))}
         </motion.ul>
+      </div>
       </div>
     </nav>
   );

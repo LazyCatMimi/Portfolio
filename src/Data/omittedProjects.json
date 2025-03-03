@@ -1,4 +1,4 @@
-{
+[{
     "name": "Neon City website",
     "tags": ["development"],
     "id": "neon-city",
@@ -24,3 +24,4 @@
       }
     ]
   }
+ ]

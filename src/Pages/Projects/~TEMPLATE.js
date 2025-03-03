@@ -9,7 +9,7 @@ export default function TEMPLATE() {
 }
 export const ImageWithCaption = ({ src, alt, caption, style }) => (
   <div className="img-sub">
-    <img src={src} alt={alt} style={style}></img>
+    <img src={src} alt={alt} style={{...style,display: "flex", margin:"auto"}}></img>
     <p className="center-text">{caption}</p>
   </div>
 );

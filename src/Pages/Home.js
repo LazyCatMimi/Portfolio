@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import FocusBanner from "./Components/HomePage/FocusBanner";
 import "../Styles/Home.css";
 
+
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import starIcon from "../Assets/Icons/star-bullet.svg";
@@ -13,6 +14,7 @@ import { useInView } from "react-intersection-observer";
 import StaggeredText from "./Components/Animation/StaggeredText";
 import LineRevealText from "./Components/Animation/LineRevealText";
 import ProjectsQuickView from "./Components/ProjectsQuickView";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   const uniqueList = [
@@ -59,7 +61,7 @@ export default function Home() {
       icon: "phil-aesthetic",
     },
   ];
-  const stopScalingRef = useRef(null);
+  // const stopScalingRef = useRef(null);
 
   const FeatureList = ({ list, title }) => {
     const { ref, inView } = useInView({
@@ -128,15 +130,7 @@ export default function Home() {
       </h1>
       <div className="title-sub-2-container">
         <h1 className="title-sub-2">
-          Artist<span style={{ color: "white" }}>.</span>
-        </h1>
-        <h1 className="title-sub-2">
-          Designer
-          <span style={{ color: "white" }}>.</span>{" "}
-        </h1>
-        <h1 className="title-sub-2">
-          Developer
-          <span style={{ color: "white" }}>.</span>{" "}
+          UI/UX Designer & Front-End Enthusiast
         </h1>
       </div>
       <Link to="#latest-projects" className="primary-button">
@@ -146,30 +140,39 @@ export default function Home() {
   );
 
   return (
-    <main id="Home">
-      <Header stopScalingRef={stopScalingRef} Content={HeaderContent} />
-      <section ref={stopScalingRef} className="dark-bg" id="focus">
+    <main id="Home" className="background1">
+          <header className="header">
+      <div
+        className="background-container"
+      ><div className="content">
+      <HeaderContent />
+    </div></div>
+      
+    </header>
+      {/* <section ref={stopScalingRef} className="dark-bg" id="focus">
         <FocusBanner />
-      </section>
-      <section className="light-bg pad" id="about">
+      </section> */}
+      <section className="background2 " id="about">
         <div className="about-container">
+          
           <img
             src={require("../Assets/me.jpg")}
             alt="Quynh smiling"
-            className="me-pic"
+            className="me-pic glow"
           ></img>
           <article>
             <h2>
               <StaggeredText text="About Me" staggerDelay={0.1} />
             </h2>
+          <hr className="line"/>
             <p>
               <LineRevealText text="Hello World! My name is Quynh, and I am a student at the University of Central Florida, where I am pursuing a bachelor's degree in Digital Media: Web Design with a minor in Information Technology. My passions lie in web design, development, and art. Having been born in 2002, I witnessed the rapid evolution of technology firsthand, which inspired me to become a creator of unique web experiences. Technology and art are my favorite subjects to learn about and discuss. In my spare time, I enjoy activities such as drawing, paper crafting, fishing, and boating." />
             </p>
           </article>
         </div>
-        <div className="unique-list">
+        {/* <div className="unique-list">
           <FeatureList list={uniqueList} title="What Makes Me Unique" />
-        </div>
+        </div> */}
       </section>
       <ProjectsQuickView />
       {/* <section className="light-bg" id="explore-projects">
@@ -198,18 +201,20 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="light-bg" id="phil">
+      {/* <section className="light-bg" id="phil">
         <FeatureList
           list={philosophies}
           title="My Design & Development Philosophies"
         />
-      </section>
-      <section className="dark-bg3" id="contact-me" style={{ flex: 1 }}>
+      </section> */}
+      <section className="background1" id="contact-me" style={{ flex: 1 }}>
         <h2>
-          <StaggeredText text="Contact Me" staggerDelay={0.1} />
+          <StaggeredText text="Let's Connect!" staggerDelay={0.1} />
         </h2>
+        {/* <hr className="line"/> */}
         <ContactForm />
       </section>
+      <Footer />
     </main>
   );
 }

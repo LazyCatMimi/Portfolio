@@ -1,5 +1,5 @@
 #projectidv {
-  background-color: #eeeff0;
+  background-color: var(--token-secondary-surface-default);
 }
 .footer-space{
   margin-bottom: 3em;
@@ -11,11 +11,24 @@
   margin-bottom: 4em;
 }
 #projectidv h1 {
-  font-size: 2.7rem;
-  color: var(--magenta);
+  font-size: 2.7em;
+  /* color: var(--); */
 }
+#projectidv h4{
+  color: var(--token-primary-surface-lighter);
+}
+
+
+#project-content{
+  padding: var(--padding-H);
+  z-index: 5;
+  width: 100%;
+}
+
+
+
 .special-heading {
-  background-color: var(--magenta) !important;
+  background-color: var(--token-secondary-surface-lighter) !important;
 }
 .special-heading h2 {
   color: white;
@@ -63,17 +76,20 @@
 
   background: linear-gradient(
     360deg,
-    #eeeff0 0%,
-    rgba(103, 9, 60, 0.57) 67.6%,
-    rgba(18, 1, 14, 0.79) 100%
+    var(--token-secondary-surface-default) 0%,
+    rgba(103, 9, 60, 0.57) 100%
   );
 }
 
+.proj-icon{
+  stroke: rgb(0, 225, 225);
+}
+
 .proj-info {
-  background-color: white;
-  width: 80%;
+  background-color: var(--token-secondary-surface-default);
+  width: 100%;
   border-radius: 19px;
-  margin: 5em auto 0em auto;
+  margin: 30vh auto 0em auto;
   padding: 2em 6vw 2em 6vw;
   z-index: 5;
 }

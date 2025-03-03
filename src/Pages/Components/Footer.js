@@ -3,7 +3,7 @@ import gitIcon from "../../Assets/Icons/contact-github.svg";
 import linkedinIcon from "../../Assets/Icons/contact-linkedin.svg";
 export default function Footer() {
   return (
-    <footer className="dark-bg">
+    <footer>
       <h5>Quynh Vo</h5>
       <div>
         <a href="https://github.com/LazyCatMimi" target="_blank">
