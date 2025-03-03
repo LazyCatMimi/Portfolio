@@ -208,8 +208,9 @@ export default function Home() {
       </section> */}
       <section className="background1" id="contact-me" style={{ flex: 1 }}>
         <h2>
-          <StaggeredText text="Contact Me" staggerDelay={0.1} />
+          <StaggeredText text="Let's Connect!" staggerDelay={0.1} />
         </h2>
+        {/* <hr className="line"/> */}
         <ContactForm />
       </section>
       <Footer />

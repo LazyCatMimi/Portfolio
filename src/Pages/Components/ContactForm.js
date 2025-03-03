@@ -101,7 +101,7 @@ export default function ContactForm() {
         <h4 className="light-font-weight">Contact Info</h4>
 
         <a href="mailto:quynh.vo3314@gmail.com">
-          <img src={mailIcon} alt="email" className="icon"/> quynh.vo3314@gmail.com
+          <img src={mailIcon} alt="email" /> quynh.vo3314@gmail.com
         </a>
 
         <a href="tel:+14077972019">

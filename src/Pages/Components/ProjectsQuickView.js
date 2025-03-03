@@ -19,25 +19,25 @@ export default function ProjectsQuickView() {
     {
       title: "UX Case Studies",
       id: "ux-case-study",
-      desc: "Projects that include UX case study.",
+      desc: "Projects with case studies.",
       data: PROJECTS.filter((project) => project.tags.includes("case-study")),
     },
     {
       title: "Web Design",
       id: "web-ui-ux",
-      desc: "Projects that include web design phase.",
+      desc: "Projects as design exercises (no case studies).",
       data: PROJECTS.filter((project) => project.tags.includes("design")),
     },
     {
       title: "Web Development",
       id: "web-dev",
-      desc: "Projects that include development phase.",
+      desc: "Projects that include web development phase.",
       data: PROJECTS.filter((project) => project.tags.includes("development")),
     },
     {
       title: "Web Design & Development",
       id: "web-design-code",
-      desc: "Projects that include both design and development phases.",
+      desc: "Projects that include both web design and web development phases.",
       data: PROJECTS.filter(
         (project) =>
           project.tags.includes("design") &&
@@ -47,7 +47,7 @@ export default function ProjectsQuickView() {
     {
       title: "Art & Design",
       id: "design",
-      desc: "Projects that showcase my artistic skills.",
+      desc: "Projects that showcase my artistic and general design skills.",
       data: PROJECTS.filter((project) => project.tags.includes("art")),
     },
 
@@ -91,6 +91,7 @@ export default function ProjectsQuickView() {
           src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
           alt=""
         ></img>
+
 
         <div>
           {featured && (
@@ -160,7 +161,7 @@ export default function ProjectsQuickView() {
         ))}
       </div>
       <div style={{textAlign:"center"}}>
-      <a href="/#latest-projects" className="center-text subtitle"  >Back to top</a>
+      <a href="/#latest-projects" className="center-text"  >Back to top</a>
 
       </div>
     </section>

@@ -127,9 +127,7 @@
   --gradient-background-1: linear-gradient(180deg, #090510 0%, #26123F 100%);
   --gradient-background-2: linear-gradient(180deg, #26123F 0%, #090510 100%);
 }
-.icon{
-  fill: blue;
-}
+
 .background1 {
   background: var(--gradient-background-1);
 }
