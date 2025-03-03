@@ -142,10 +142,10 @@ export default function Home() {
           <header className="header">
       <div
         className="background-container"
-      ></div>
-      <div className="content">
-        <HeaderContent />
-      </div>
+      ><div className="content">
+      <HeaderContent />
+    </div></div>
+      
     </header>
       {/* <section ref={stopScalingRef} className="dark-bg" id="focus">
         <FocusBanner />

@@ -1,26 +1,16 @@
 #Home .header {
-  position: relative;
+
   height: 100vh;
   color: #fff;
   display: flex;
   overflow: hidden; /* Prevent content overflow */
   background-color: #000000;
 }
-#Home .light-bg {
-  /* background-image: url("../Assets/test.svg"); */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-}
 
 .header .content {
-  position: relative;
-  z-index: 1;
-  margin: 10% 0 0 8%;
-
+  /* margin: 8% 0 0 8%; */
+  width: 100%;
   text-align: left;
-  width: auto;
   height: auto;
   display: block;
 }
@@ -40,6 +30,7 @@
 
 .title-name {
   font-size: clamp(2.9rem, 12vw + 1rem, 8rem);
+  margin:0;
 }
 .title-sub-2-container {
   margin-bottom: 3em;
