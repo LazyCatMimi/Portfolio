@@ -8,7 +8,6 @@
 }
 
 .header .content {
-  /* margin: 8% 0 0 8%; */
   width: 100%;
   text-align: left;
   height: auto;
@@ -66,7 +65,7 @@
     display: block;
     text-align: center;
     /* color: white; */
-    letter-spacing: 0.2em;
+    /* letter-spacing: 0.2em; */
   }
   .title-sub-2:not(:first-of-type) {
     margin-left: auto;
@@ -209,14 +208,14 @@
 }
 
 /* ----------------------------------------------projects---------------------------------------------- */
-#latest-projects {
-  /* padding: 2em; */
-  /* background-image: url("../Assets/header-bg2.png");
+/* #latest-projects {
+  padding: 2em;
+  background-image: url("../Assets/header-bg2.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
-}
+  background-size: cover;
+} */
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -304,9 +303,9 @@
 }
 
 /* ----------------------------------explore more projects---------------------------------- */
-#explore-projects {
-  /* padding: 4em 2em; */
-}
+/* #explore-projects {
+  padding: 4em 2em;
+} */
 #explore-projects h2 {
   margin-top: 0;
   text-align: center;

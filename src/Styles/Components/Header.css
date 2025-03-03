@@ -9,7 +9,7 @@
 }
 
 .background-container {
-  padding:  8%;
+  padding:  var(--padding);
 
   width: 100%;
 display: flex;
@@ -23,7 +23,7 @@ align-items: center;
 
   /* z-index: -99; */
 }
-
+/* 
 .content {
   position: relative;
   z-index: 1;
@@ -33,7 +33,7 @@ align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 /* .header-title {
   font-size: 4rem;
 } */

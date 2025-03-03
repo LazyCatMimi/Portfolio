@@ -71,7 +71,7 @@ export default function ProjectsQuickView() {
     i,
   }) => (
     <Link to={`/projects/${id}`} className={`${featured && "featured"}`}>
-      <article className="dark-bg2">
+      <article>
         <img
           src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
           alt=""
