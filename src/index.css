@@ -102,10 +102,10 @@
   --token-primary-border-default:var(--color-Blue-600);
   --token-primary-border-darker:var(--color-Blue-800);
 
-  --token-secondary-surface-subtle:var(--color-Purple-100);
-  --token-secondary-surface-lighter:var(--color-Purple-300);
-  --token-secondary-surface-default:var(--color-Purple-500);
-  --token-secondary-surface-darker:var(--color-Purple-700);
+  --token-secondary-surface-subtle:var(--color-Purple-400);
+  --token-secondary-surface-lighter:var(--color-Purple-600);
+  --token-secondary-surface-default:var(--color-Purple-800);
+  --token-secondary-surface-darker:var(--color-Purple-950);
 
   --token-secondary-border-subtle:var(--color-Purple-200);
   --token-secondary-border-lighter:var(--color-Purple-400);
@@ -194,7 +194,9 @@ h4 {
   font-family: var(--body-font)
   
 }
-
+.light-font-weight {
+  font-weight: 300;
+}
 h1{
   font-size: var(--h1-size);
   color: var(--token-grayscale-text-color-title);
@@ -245,18 +247,21 @@ border: none;
 
 }
 .secondary-button {
-  background: var(--token-secondary-surface-default);
+  background: var(--token-primary-surface-subtle);
   border-radius: var(--token-border-radius-s);
-  color: var(--token-grayscale-text-color-body);
+  color: var(--color-Gray-900);
   cursor: pointer;
+  padding: 12px 24px;
   transition: background 0.3s ease-in-out;
-  border:none
+  border:none;
+  text-decoration: none;
 }
 .primary-button:hover {
   background: var(--token-primary-surface-darker);
 }
 .secondary-button:hover {
-  background: var(--token-primary-surface-darker);
+  background: var(--token-primary-surface-default);
+  color: var(--token-grayscale-text-color-body);
 }
 
 .glow{

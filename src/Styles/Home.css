@@ -241,7 +241,7 @@ border: 1px solid  var(--token-primary-surface-default);
 }
 #latest-projects article {
   transition: all 0.2s ease-in-out;
-  background: var(--color-Purple-800);
+  background: var(--token-secondary-surface-default);
 }
 #latest-projects article:hover {
   transform: scale(1.05);
@@ -266,7 +266,16 @@ border: 1px solid  var(--token-primary-surface-default);
   font-size: 1.4em;
   color: var(--token-primary-surface-lighter);
 }
+.proj-tag {
 
+  display: inline;
+  padding: 0.2em 0.5em;
+  margin-right: 5px;
+  background-color: var(--token-primary-surface-lighter);
+  border-radius: var(--token-border-radius-full);
+  color: var(--color-Gray-900);
+  font-weight: bold;
+}
 /* ---------------featured projects--------------- */
 #latest-projects .featured article {
   /* border: 2px #D79736 solid; */

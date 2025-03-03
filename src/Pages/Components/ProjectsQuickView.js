@@ -58,9 +58,24 @@ export default function ProjectsQuickView() {
     setActiveSortButton(event.target.value);
     setCurData(data);
   };
+  const determineTag = (tag) => {
+    switch (tag) {
+      case "case-study":
+        return "UX Case Study";
+      case "design":
+        return "Web Design";
+      case "development":
+        return "Web Development";
+      case "art":
+        return "Art & Design";
+      default:
+        return "Web Design & Development";
+    }
+  }
 
   const Project = ({
     name,
+    tags,
     featured,
     imgFill,
     id,
@@ -87,11 +102,14 @@ export default function ProjectsQuickView() {
             </>
           )}
           <h3>
-            <span className="num off-white-text">
+            <span className="num">
               {(i + 1).toString().padStart(2, "0")}{" "}
             </span>
             | <LineRevealText text={name} staggerDelay={0.05} />
           </h3>
+          {tags.map((tag, index) => (
+            <p key={index} className="proj-tag">{determineTag(tag)} </p>
+              ))}
           <p>{shortSummary}</p>
           {/* <button className="primary-button">Read More</button> */}
         </div>
