@@ -73,6 +73,7 @@ export default function Project() {
                           src={require(`../Assets/Icons/${action.icon}.svg`)}
                           alt=""
                           className="proj-icon"
+                          
                         ></img>
                       )}
                       <span>{action.name}</span>

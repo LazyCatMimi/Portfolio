@@ -81,6 +81,10 @@
   );
 }
 
+.proj-icon{
+  stroke: rgb(0, 225, 225);
+}
+
 .proj-info {
   background-color: var(--token-secondary-surface-default);
   width: 100%;

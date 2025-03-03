@@ -260,13 +260,13 @@ display: inline-block;
 
 }
 .secondary-button {
-  background: var(--token-primary-surface-subtle);
+  /* background: var(--token-primary-surface-subtle); */
   border-radius: var(--token-border-radius-s);
-  color: var(--color-Gray-900);
+  color: var(--token-grayscale-text-color-body);
   cursor: pointer;
   padding: 12px 24px;
   transition: background 0.3s ease-in-out;
-  border:none;
+  border: 1px solid var(--token-primary-surface-default);
   text-decoration: none;
   display: inline-block;
 }
@@ -274,7 +274,7 @@ display: inline-block;
   background: var(--token-primary-surface-darker);
 }
 .secondary-button:hover {
-  background: var(--token-primary-surface-default);
+  background: var(--token-primary-surface-darker);
   color: var(--token-grayscale-text-color-body);
 }
 
