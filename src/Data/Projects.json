@@ -59,31 +59,36 @@
   },
 
   {
-    "name": "Noodletopia",
-    "tags": ["design", "case-study"],
-    "id": "noodletopia",
-    "component": "/Projects/Noodletopia.js",
-    "imgFill": "Assets/projects/noodletopia-fill.jpg",
-    "imgThumb": "Assets/projects/noodletopia-thumb.png",
-    "tools": "Figma",
-    "type": "mobile",
-    "shortSummary": "An app designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls.",
-    "summary": "Noodletopia is a mobile application designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls with various toppings. Users have the freedom to add reviews for their noodle creations and share their unique combinations with others. Additionally, they can save their favorite noodle bowls for easy access. ",
+    "name": "Portfolio",
+    "tags": ["design", "development"],
+    "id": "portfolio",
+    "imgFill": "Assets/projects/portfolio-fill.jpg",
+    "imgThumb": "Assets/projects/portfolio-thumb.png",
+    "tools": "Figma | CSS, React.js",
+    "type": "web",
+    "shortSummary": "My Portfolio! Well, you're looking at it. Let's see the process!",
+    "summary": "My Portfolio! Well, you're looking at it. Let's see the process!",
     "tasks": [
       "Created hi-fi Prototype",
       "Ensured consistency and accessibility throughout the design phase",
-      "Conducted user testings throughout hi-fi development to improve design"
+      "Coded using front-end frameworks and technologies"
     ],
     "actions": [
       {
-        "name": "Read Report",
-        "link": "https://docs.google.com/document/d/1Sb7zcn3KcLkbqAQUAXjt9XSQfn98SbLvRqXA9odnHWc/edit?usp=sharing",
+        "name": "See GH repository",
+        "link": "https://github.com/LazyCatMimi/Portfolio",
         "type": "secondary-button",
-        "icon": "book-open"
+        "icon": "github"
       },
       {
         "name": "See Mobile HiFi",
-        "link": "https://www.figma.com/proto/FduZQ80T9yNEoIBoAZKhdj/Noodletopia-Navigation-Wireflow?type=design&t=mIFIWSn5YQ4wsVfM-0&scaling=scale-down&starting-point-node-id=299%3A725",
+        "link": "https://www.figma.com/proto/uZxKK9Uvgc28qZtWR4UQ7i/Portfolio-mobile?node-id=1-2&t=rhrpiQGefIro8gUG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
+        "type": "primary-button",
+        "icon": "figma"
+      },
+      {
+        "name": "See Web HiFi",
+        "link": "https://www.figma.com/proto/8FhwG7oC7tVDZSxJUbOqx6/Portfolio?node-id=2-118&t=Ki7bFmTpbKFhwxWo-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2",
         "type": "primary-button",
         "icon": "figma"
       }
@@ -140,39 +145,33 @@
     ]
   },
   {
-    "name": "TO DO App",
-    "tags": ["design", "development"],
-    "id": "todoapp",
-    "imgFill": "Assets/projects/ToDo-fill.jpg",
-    "imgThumb": "Assets/projects/ToDo-thumb.png",
-    "tools": "Figma | React Native",
+    "name": "Noodletopia",
+    "tags": ["design", "case-study"],
+    "id": "noodletopia",
+    "component": "/Projects/Noodletopia.js",
+    "imgFill": "Assets/projects/noodletopia-fill.jpg",
+    "imgThumb": "Assets/projects/noodletopia-thumb.png",
+    "tools": "Figma",
     "type": "mobile",
-    "shortSummary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
-    "summary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
+    "shortSummary": "An app designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls.",
+    "summary": "Noodletopia is a mobile application designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls with various toppings. Users have the freedom to add reviews for their noodle creations and share their unique combinations with others. Additionally, they can save their favorite noodle bowls for easy access. ",
     "tasks": [
       "Created hi-fi Prototype",
       "Ensured consistency and accessibility throughout the design phase",
-      "Developed mobile front-end based on design"
+      "Conducted user testings throughout hi-fi development to improve design"
     ],
     "actions": [
       {
-        "name": "See HiFi",
-        "link": "https://www.figma.com/proto/maccbQnPEzQBbxP4hbVUsv/To-do-App?node-id=2-8&t=JHY8B9kllLngwVOu-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2",
+        "name": "Read Report",
+        "link": "https://docs.google.com/document/d/1Sb7zcn3KcLkbqAQUAXjt9XSQfn98SbLvRqXA9odnHWc/edit?usp=sharing",
         "type": "secondary-button",
-        "icon": "figma"
-      },
-
-      {
-        "name": "See GH Repository",
-        "link": "https://github.com/LazyCatMimi/TodoApp",
-        "type": "secondary-button",
-        "icon": "github"
+        "icon": "book-open"
       },
       {
-        "name": "See Website",
-        "link": "https://lazycatmimi.github.io/TodoApp/",
+        "name": "See Mobile HiFi",
+        "link": "https://www.figma.com/proto/FduZQ80T9yNEoIBoAZKhdj/Noodletopia-Navigation-Wireflow?type=design&t=mIFIWSn5YQ4wsVfM-0&scaling=scale-down&starting-point-node-id=299%3A725",
         "type": "primary-button",
-        "icon": "globe"
+        "icon": "figma"
       }
     ]
   },
@@ -223,6 +222,44 @@
       }
     ]
   },
+  {
+    "name": "TO DO App",
+    "tags": ["design", "development"],
+    "id": "todoapp",
+    "imgFill": "Assets/projects/ToDo-fill.jpg",
+    "imgThumb": "Assets/projects/ToDo-thumb.png",
+    "tools": "Figma | React Native",
+    "type": "mobile",
+    "shortSummary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
+    "summary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
+    "tasks": [
+      "Created hi-fi Prototype",
+      "Ensured consistency and accessibility throughout the design phase",
+      "Developed mobile front-end based on design"
+    ],
+    "actions": [
+      {
+        "name": "See HiFi",
+        "link": "https://www.figma.com/proto/maccbQnPEzQBbxP4hbVUsv/To-do-App?node-id=2-8&t=JHY8B9kllLngwVOu-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2",
+        "type": "secondary-button",
+        "icon": "figma"
+      },
+
+      {
+        "name": "See GH Repository",
+        "link": "https://github.com/LazyCatMimi/TodoApp",
+        "type": "secondary-button",
+        "icon": "github"
+      },
+      {
+        "name": "See Website",
+        "link": "https://lazycatmimi.github.io/TodoApp/",
+        "type": "primary-button",
+        "icon": "globe"
+      }
+    ]
+  },
+  
   {
     "name": "Flashcard App",
     "tags": ["design"],

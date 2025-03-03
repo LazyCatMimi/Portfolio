@@ -680,7 +680,7 @@ export default function Thesuitespot() {
           <ImageWithCaption
             src={require("../../Assets/projects-img/thesuitespot/fe-files.jpg")}
             alt=""
-            style={{}}
+            style={{display: "flex", margin: "auto"}}
             caption="Front-end files structure"
           />
           <h4 id="FE-summary2">More Info</h4>
@@ -691,7 +691,7 @@ export default function Thesuitespot() {
           <ImageWithCaption
             src={require("../../Assets/projects-img/thesuitespot/fe-doc.png")}
             alt=""
-            style={{ width: 350 }}
+            style={{ width: 350, display: "flex", margin: "auto" }}
             caption="Front-end documentation - front page"
           />
           <ExternalLinkButton
@@ -708,7 +708,7 @@ export default function Thesuitespot() {
           <ImageWithCaption
             src={require("../../Assets/projects-img/thesuitespot/be-doc.png")}
             alt=""
-            style={{ width: 350 }}
+            style={{ width: 350, display: "flex", margin: "auto" }}
             caption="Back-end documentation - front page"
           />
           <ExternalLinkButton
@@ -716,9 +716,6 @@ export default function Thesuitespot() {
             text="View Back-End Documentation"
           />
         </Section>
-        <article className="proj-info pi-after">
-          <p>Writing is still in progress!</p>
-        </article>
       </div>
     </>
   );
