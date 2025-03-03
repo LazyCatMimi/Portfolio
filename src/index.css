@@ -227,6 +227,10 @@ p{
   font-size: var(--caption-size);
   color: var(--token-grayscale-text-color-caption);
 }
+a{
+  color: var(--token-primary-surface-default);
+  /* text-decoration: none; */
+}
 
 /* Button */
 .primary-button {
@@ -237,6 +241,7 @@ padding: 12px 24px;
 cursor: pointer;
 text-decoration: none;
 transition: background 0.3s ease-in-out;
+border: none;
 
 }
 .secondary-button {
@@ -245,6 +250,7 @@ transition: background 0.3s ease-in-out;
   color: var(--token-grayscale-text-color-body);
   cursor: pointer;
   transition: background 0.3s ease-in-out;
+  border:none
 }
 .primary-button:hover {
   background: var(--token-primary-surface-darker);

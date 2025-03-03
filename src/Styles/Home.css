@@ -168,15 +168,14 @@
   flex-wrap: wrap;
 }
 .sort-desc {
-  color: #666666;
-  font-weight: bold;
+  font-weight: 400;
   margin: 2em;
 }
 .sort-projects {
   text-align: center;
-  background: #000000;
+
   line-height: normal;
-  border: 1px solid #d3cfdc;
+  border: 1px solid #d3cfdc00;
   border-radius: 100px;
   padding: 0.5em 1em;
   margin: 0.7em;
@@ -184,16 +183,10 @@
   box-sizing: border-box;
   font-family: "Julius Sans One", sans-serif;
   font-weight: bold;
-  background: linear-gradient(
-    90deg,
-    #1b1919 0%,
-    #3e3939 50%,
-    #ff4fed 50%,
-    #414eca 97.5%
-  );
-  background-size: 200% 200%;
+  
   cursor: pointer;
   display: inline-block;
+  transition: all 0.2s ease-in-out; 
 }
 
 /* Hide the radio buttons */
@@ -202,9 +195,11 @@
 }
 
 /* Style for active and hover states */
-.sort-projects:hover,
+.sort-projects:hover{
+border: 1px solid  var(--token-primary-surface-default);
+}
 .sort-projects-active {
-  background-position: -100%;
+  background: var(--token-primary-surface-default);
 }
 
 /* ----------------------------------------------projects---------------------------------------------- */
@@ -236,17 +231,17 @@
   width: 100%;
   height: 100%;
   margin: auto;
-  border-radius: 12px;
+
 
   box-shadow: 0px 4px 5.3px rgba(0, 0, 0, 0.74);
-  border-radius: 12px;
+  border-radius: var(--token-border-radius-l);
 }
 #latest-projects article div {
   padding: 1em 1.5em 1.5em 1.5em;
 }
 #latest-projects article {
   transition: all 0.2s ease-in-out;
-  background-image: linear-gradient(var(--dark-bg2), #17171c);
+  background: var(--color-Purple-800);
 }
 #latest-projects article:hover {
   transform: scale(1.05);
@@ -258,7 +253,7 @@
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
-  border-radius: 12px 12px 0 0;
+  border-radius: var(--token-border-radius-l) var(--token-border-radius-l) 0 0;
 }
 .project-hover {
   padding: 0;
@@ -269,6 +264,7 @@
 }
 .num {
   font-size: 1.4em;
+  color: var(--token-primary-surface-lighter);
 }
 
 /* ---------------featured projects--------------- */

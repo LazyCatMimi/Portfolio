@@ -13,6 +13,7 @@ import { useInView } from "react-intersection-observer";
 import StaggeredText from "./Components/Animation/StaggeredText";
 import LineRevealText from "./Components/Animation/LineRevealText";
 import ProjectsQuickView from "./Components/ProjectsQuickView";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   const uniqueList = [
@@ -138,7 +139,7 @@ export default function Home() {
   );
 
   return (
-    <main id="Home">
+    <main id="Home" className="background1">
           <header className="header">
       <div
         className="background-container"
@@ -205,12 +206,13 @@ export default function Home() {
           title="My Design & Development Philosophies"
         />
       </section> */}
-      <section className="background2" id="contact-me" style={{ flex: 1 }}>
+      <section className="background1" id="contact-me" style={{ flex: 1 }}>
         <h2>
           <StaggeredText text="Contact Me" staggerDelay={0.1} />
         </h2>
         <ContactForm />
       </section>
+      <Footer />
     </main>
   );
 }

@@ -17,16 +17,6 @@ export default function ProjectsQuickView() {
       data: PROJECTS,
     },
     {
-      title: "Web Design & Development",
-      id: "web-design-code",
-      desc: "Projects that include both design and development phases.",
-      data: PROJECTS.filter(
-        (project) =>
-          project.tags.includes("design") &&
-          project.tags.includes("development")
-      ),
-    },
-    {
       title: "UX Case Studies",
       id: "ux-case-study",
       desc: "Projects that include UX case study.",
@@ -38,20 +28,30 @@ export default function ProjectsQuickView() {
       desc: "Projects that include web design phase.",
       data: PROJECTS.filter((project) => project.tags.includes("design")),
     },
-    // { title: "Mobile UI/UX", id: "mobile-ui-ux", data: PROJECTS["web-dev"] },
     {
-      title: "Development",
+      title: "Web Development",
       id: "web-dev",
       desc: "Projects that include development phase.",
       data: PROJECTS.filter((project) => project.tags.includes("development")),
     },
-    // { title: "Mobile Dev", id: "mobile-dev" },
+    {
+      title: "Web Design & Development",
+      id: "web-design-code",
+      desc: "Projects that include both design and development phases.",
+      data: PROJECTS.filter(
+        (project) =>
+          project.tags.includes("design") &&
+          project.tags.includes("development")
+      ),
+    },
     {
       title: "Art & Design",
       id: "design",
       desc: "Projects that showcase my artistic skills.",
       data: PROJECTS.filter((project) => project.tags.includes("art")),
     },
+
+
   ];
   const [curData, setCurData] = useState(sortButtons[0].data);
   const handleRadioButtonChange = (event, data) => {
@@ -99,7 +99,7 @@ export default function ProjectsQuickView() {
     </Link>
   );
   return (
-    <section className="background1" id="latest-projects">
+    <section className="background1" id="latest-projects" style={{background:"var(--color-Purple-950)"}}>
       <h2>
         <StaggeredText text="Projects" staggerDelay={0.05} />
       </h2>
@@ -133,7 +133,7 @@ export default function ProjectsQuickView() {
           </label>
         ))}
       </div>
-      <p className="center-text sort   -desc">
+      <p className="center-text sort-desc subtitle">
         {sortButtons.find((button) => button.id === activeSortButton).desc}
       </p>
       <div className="projects-grid">
@@ -142,7 +142,7 @@ export default function ProjectsQuickView() {
         ))}
       </div>
       <div style={{textAlign:"center"}}>
-      <a href="/#latest-projects" className="center-text gray-text"  >Back to top</a>
+      <a href="/#latest-projects" className="center-text subtitle"  >Back to top</a>
 
       </div>
     </section>
