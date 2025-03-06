@@ -40,7 +40,7 @@ export default function NavBar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-container max-width">
+      <div className="navbar-container">
       <div className="logo">
         <img src={logoIcon} alt="logo" />
       </div>
