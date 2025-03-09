@@ -37,12 +37,13 @@ export default function ContactForm() {
               Thank you! Your message has been sent. I will get back to you as
               soon as possible.
             </p>
-            <button className="secondary-button" onClick={handleClosePopup}>
+            <button className="secondary-button" style={{backgroundColor:"var(--token-secondary-surface-default)"}} onClick={handleClosePopup}>
               OK
             </button>
           </div>
         </div>
       )}
+
 
       {!formSubmitted && (
         <form onSubmit={handleFormSubmit}>

@@ -57,13 +57,13 @@
   position: absolute;
   width: 100%;
   height: 110vh;
-
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
 
-  z-index: 1;
 }
 .proj-header div {
   width: 100%;
@@ -80,6 +80,7 @@
     rgba(103, 9, 60, 0.57) 100%
   );
 }
+
 
 .proj-icon{
   stroke: rgb(0, 225, 225);
@@ -114,9 +115,24 @@
   display: flex;
   width: fit-content;
   margin: auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 700px) {
+  .proj-info.main {
+    width: 100%;
+    margin: 10em auto 2em auto;
+  }
+  .proj-info {
+    width: 100%;
+    margin: 0em auto 2em auto;
+  }
+  .proj-header {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: px) {
   .proj-info.main {
     width: 100%;
     margin: 10em auto 2em auto;

@@ -58,42 +58,7 @@
     ]
   },
 
-  {
-    "name": "Portfolio",
-    "tags": ["design", "development"],
-    "id": "portfolio",
-    "imgFill": "Assets/projects/portfolio-fill.jpg",
-    "imgThumb": "Assets/projects/portfolio-thumb.png",
-    "tools": "Figma | CSS, React.js",
-    "type": "web",
-    "shortSummary": "My Portfolio! Well, you're looking at it. Let's see the process!",
-    "summary": "My Portfolio! Well, you're looking at it. Let's see the process!",
-    "tasks": [
-      "Created hi-fi Prototype",
-      "Ensured consistency and accessibility throughout the design phase",
-      "Coded using front-end frameworks and technologies"
-    ],
-    "actions": [
-      {
-        "name": "See GH repository",
-        "link": "https://github.com/LazyCatMimi/Portfolio",
-        "type": "secondary-button",
-        "icon": "github"
-      },
-      {
-        "name": "See Mobile HiFi",
-        "link": "https://www.figma.com/proto/uZxKK9Uvgc28qZtWR4UQ7i/Portfolio-mobile?node-id=1-2&t=rhrpiQGefIro8gUG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
-        "type": "primary-button",
-        "icon": "figma"
-      },
-      {
-        "name": "See Web HiFi",
-        "link": "https://www.figma.com/proto/8FhwG7oC7tVDZSxJUbOqx6/Portfolio?node-id=2-118&t=Ki7bFmTpbKFhwxWo-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2",
-        "type": "primary-button",
-        "icon": "figma"
-      }
-    ]
-  },
+  
  
   {
     "name": "Domino's Accessibility Redesign",
@@ -144,37 +109,7 @@
       }
     ]
   },
-  {
-    "name": "Noodletopia",
-    "tags": ["design", "case-study"],
-    "id": "noodletopia",
-    "component": "/Projects/Noodletopia.js",
-    "imgFill": "Assets/projects/noodletopia-fill.jpg",
-    "imgThumb": "Assets/projects/noodletopia-thumb.png",
-    "tools": "Figma",
-    "type": "mobile",
-    "shortSummary": "An app designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls.",
-    "summary": "Noodletopia is a mobile application designed for noodle enthusiasts, offering a personalized experience for ordering and creating customized noodle bowls with various toppings. Users have the freedom to add reviews for their noodle creations and share their unique combinations with others. Additionally, they can save their favorite noodle bowls for easy access. ",
-    "tasks": [
-      "Created hi-fi Prototype",
-      "Ensured consistency and accessibility throughout the design phase",
-      "Conducted user testings throughout hi-fi development to improve design"
-    ],
-    "actions": [
-      {
-        "name": "Read Report",
-        "link": "https://docs.google.com/document/d/1Sb7zcn3KcLkbqAQUAXjt9XSQfn98SbLvRqXA9odnHWc/edit?usp=sharing",
-        "type": "secondary-button",
-        "icon": "book-open"
-      },
-      {
-        "name": "See Mobile HiFi",
-        "link": "https://www.figma.com/proto/FduZQ80T9yNEoIBoAZKhdj/Noodletopia-Navigation-Wireflow?type=design&t=mIFIWSn5YQ4wsVfM-0&scaling=scale-down&starting-point-node-id=299%3A725",
-        "type": "primary-button",
-        "icon": "figma"
-      }
-    ]
-  },
+ 
   {
     "name": "Salt & Hearth",
     "tags": ["design"],

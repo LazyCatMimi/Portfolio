@@ -46,7 +46,8 @@ export default function Project() {
         <div style={projectHeaderStyle} className="proj-header">
           <div></div>
         </div>
-        <div id="project-content">
+        
+        <div id="project-content" style={{ overflow: "hidden" }}>
           <article className="proj-info main">
             <BackButton />
             <h1 className="center-text">

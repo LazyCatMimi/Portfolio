@@ -26,7 +26,7 @@ export default function ProjectsQuickView() {
     {
       title: "Web Design",
       id: "web-ui-ux",
-      desc: "Projects as design exercises (no case studies).",
+      desc: "Projects as design exercises (with or without case studies).",
       data: PROJECTS.filter((project) => project.tags.includes("design")),
     },
     {
