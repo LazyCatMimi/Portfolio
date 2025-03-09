@@ -10,7 +10,7 @@ import "../../Styles/Components/NavBar.css";
 const menuItems = [
   { text: "Home", path: PATHS.main.home },
   { text: "Projects", path: `/#latest-projects` },
-  { text: "Resume", path: PATHS.main.resume },
+  // { text: "Resume", path: PATHS.main.resume },
   { text: "Contact", path: `/#contact-me` },
 ];
 

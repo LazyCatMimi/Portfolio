@@ -373,5 +373,6 @@ ul {
 }
 
 .back-button:hover {
-  background-color: #e6e8ea;
+  background-color: var(--token-secondary-surface-lighter);
+  color: white;
 }
