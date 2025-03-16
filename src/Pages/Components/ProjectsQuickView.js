@@ -119,8 +119,10 @@ export default function ProjectsQuickView() {
     </Link>
   );
   return (
-    <section className="background1" id="latest-projects" style={{background:"var(--color-Purple-950)"}}>
-      <h2>
+    <section className="background1"  style={{background:"var(--color-Purple-950)"}}>
+      <div className="max-width">
+        <div id="latest-projects">
+        <h2>
         <StaggeredText text="Projects" staggerDelay={0.05} />
       </h2>
       <hr className="line"/>
@@ -165,6 +167,10 @@ export default function ProjectsQuickView() {
       <a href="/#latest-projects" className="center-text"  >Back to top</a>
 
       </div>
+        </div>
+
+      </div>
+    
     </section>
   );
 }
