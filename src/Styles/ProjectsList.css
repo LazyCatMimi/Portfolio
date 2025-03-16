@@ -57,7 +57,11 @@
   
   /* on hover */
   #latest-projects article:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    position: relative;
+    /* border: 1px solid var(--token-secondary-border-lighter); */
+    z-index: 99;
+    box-shadow: var(--glow-shadow);
   }
   #latest-projects article:hover img {
     /* mix-blend-mode: multiply; */

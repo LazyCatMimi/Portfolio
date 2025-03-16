@@ -135,6 +135,7 @@
 
   --gradient-background-1: linear-gradient(180deg, #090510 0%, #26123F 100%);
   --gradient-background-2: linear-gradient(180deg, #26123F 0%, #090510 100%);
+  --glow-shadow: 0px 4px 25px #612FA3;
 }
 
 .background1 {
@@ -317,9 +318,7 @@ display: inline-block;
 .glow{
 
 /* Glow */
-box-shadow: 0px 4px 25px #612FA3;
-
-
+box-shadow: var(--glow-shadow);
 }
 .info {
   background-color: var(--dark-bg);
