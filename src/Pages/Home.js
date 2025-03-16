@@ -3,7 +3,6 @@ import Header from "./Components/Header";
 import FocusBanner from "./Components/HomePage/FocusBanner";
 import "../Styles/Home.css";
 
-
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import starIcon from "../Assets/Icons/star-bullet.svg";
@@ -123,38 +122,36 @@ export default function Home() {
   };
 
   const HeaderContent = () => (
-    <>
-      <h1 className="title-sub-1">Hello, I am</h1>
-      <h1 className="title-name">
-        <StaggeredText text="Quynh Vo" staggerDelay={0.15} />
-      </h1>
-      <div className="title-sub-2-container">
-        <h1 className="title-sub-2">
-          UI/UX Designer & Front-End Enthusiast
+    <div className="max-width">
+      <div>
+        <h1 className="title-sub-1">Hello, I am</h1>
+        <h1 className="title-name">
+          <StaggeredText text="Quynh Vo" staggerDelay={0.15} />
         </h1>
+        <div className="title-sub-2-container">
+          <h1 className="title-sub-2">UI/UX Designer & Front-End Enthusiast</h1>
+        </div>
+        <Link to="#latest-projects" className="primary-button">
+          See Projects
+        </Link>
       </div>
-      <Link to="#latest-projects" className="primary-button">
-        See Projects
-      </Link>
-    </>
+    </div>
   );
 
   return (
     <main id="Home" className="background1">
-          <header className="header">
-      <div
-        className="background-container"
-      ><div className="content">
-      <HeaderContent />
-    </div></div>
-      
-    </header>
+      <header className="header">
+        <div className="background-container">
+          <div className="content">
+            <HeaderContent />
+          </div>
+        </div>
+      </header>
       {/* <section ref={stopScalingRef} className="dark-bg" id="focus">
         <FocusBanner />
       </section> */}
-      <section className="background2 " id="about">
-        <div className="about-container">
-          
+      <section className="background2" id="about">
+        <div className=" about-container max-width">
           <img
             src={require("../Assets/me.jpg")}
             alt="Quynh smiling"
@@ -164,7 +161,7 @@ export default function Home() {
             <h2>
               <StaggeredText text="About Me" staggerDelay={0.1} />
             </h2>
-          <hr className="line"/>
+            <hr className="line" />
             <p>
               <LineRevealText text="Hello World! My name is Quynh, and I am a student at the University of Central Florida, where I am pursuing a bachelor's degree in Digital Media: Web Design with a minor in Information Technology. My passions lie in web design, development, and art. Having been born in 2002, I witnessed the rapid evolution of technology firsthand, which inspired me to become a creator of unique web experiences. Technology and art are my favorite subjects to learn about and discuss. In my spare time, I enjoy activities such as drawing, paper crafting, fishing, and boating." />
             </p>
@@ -207,12 +204,16 @@ export default function Home() {
           title="My Design & Development Philosophies"
         />
       </section> */}
-      <section className="background1" id="contact-me" style={{ flex: 1 }}>
-        <h2>
-          <StaggeredText text="Let's Connect!" staggerDelay={0.1} />
-        </h2>
-        {/* <hr className="line"/> */}
-        <ContactForm />
+      <section className="background1" style={{ flex: 1 }}>
+        <div className="max-width">
+          <div id="contact-me">
+            <h2>
+              <StaggeredText text="Let's Connect!" staggerDelay={0.1} />
+            </h2>
+            {/* <hr className="line"/> */}
+            <ContactForm />
+          </div>
+        </div>
       </section>
       <Footer />
     </main>

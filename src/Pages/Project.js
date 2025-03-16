@@ -47,8 +47,10 @@ export default function Project() {
           <div></div>
         </div>
         
-        <div id="project-content" style={{ overflow: "hidden" }}>
-          <article className="proj-info main">
+        <div  style={{ overflow: "hidden" }}>
+          <div className="max-width">
+            <div id="project-content">
+            <article className="proj-info main">
             <BackButton />
             <h1 className="center-text">
               <StaggeredText text={name} staggerDelay={0.05} />
@@ -99,6 +101,9 @@ export default function Project() {
             </div>
           </article>
           {component && <Component />}
+            </div>
+          </div>
+          
         </div>
         <div className="footer-space"></div>
       </>
