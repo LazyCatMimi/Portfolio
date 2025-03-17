@@ -9,7 +9,7 @@ import PATHS from "./Data/Pages.json";
 import ScrollToTop from "./Pages/Components/ScrollToTop";
 import Project from "./Pages/Project";
 import { inject } from '@vercel/analytics';
-
+import { injectSpeedInsights } from '@vercel/speed-insights';
 
 function App() {
   return (
@@ -32,4 +32,5 @@ function App() {
   );
 }
 inject();
+injectSpeedInsights();
 export default App;

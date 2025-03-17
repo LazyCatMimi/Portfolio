@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap");
 :root {
   --dark-bg: #2867e5;
   --dark-bg2: #2867e5;
@@ -26,7 +26,7 @@
   --padding: var(--padding-V) var(--padding-H);
   --margin-percentage: 8%;
   --margin-desktop: 32px;
-  --margin-tablet: 24px;  
+  --margin-tablet: 24px;
   --margin-mobile: 16px;
 
   --token-border-radius-xs: 6px;
@@ -40,7 +40,7 @@
   --h2-size: 2.441rem;
   --h3-size: 1.953rem;
   --h4-size: 1.562rem;
-  --h5-size: 1.250rem;
+  --h5-size: 1.25rem;
   --p-size: 1rem;
   --subtitle-size: 0.8rem;
   --caption-size: 0.64rem;
@@ -53,10 +53,9 @@
   --mobile-p-size: 0.8rem;
   --mobile-subtitle-size: 0.64rem;
   --mobile-caption-size: 0.512rem;
-  
-  --header-font:"Rozha One", serif;
-  --body-font:"Poppins", sans-serif;
 
+  --header-font: "Rozha One", serif;
+  --body-font: "Poppins", sans-serif;
 
   --color-Purple-50: #efe7f8;
   --color-Purple-100: #ded0f1;
@@ -70,17 +69,17 @@
   --color-Purple-900: #130920;
   --color-Purple-950: #090510;
 
-  --color-Magenta-50: #FFEBF1;
-  --color-Magenta-100: #FFD6E3;
-  --color-Magenta-200: #FFB3CB;
-  --color-Magenta-300: #FF8AAF;
-  --color-Magenta-400: #FF6696;
-  --color-Magenta-500: #FF3D7C;
-  --color-Magenta-600: #FF0051;
-  --color-Magenta-700: #BD003C;
+  --color-Magenta-50: #ffebf1;
+  --color-Magenta-100: #ffd6e3;
+  --color-Magenta-200: #ffb3cb;
+  --color-Magenta-300: #ff8aaf;
+  --color-Magenta-400: #ff6696;
+  --color-Magenta-500: #ff3d7c;
+  --color-Magenta-600: #ff0051;
+  --color-Magenta-700: #bd003c;
   --color-Magenta-800: #800028;
-  --color-Magenta-900: #3D0013;
-  --color-Magenta-950: #1F000A;
+  --color-Magenta-900: #3d0013;
+  --color-Magenta-950: #1f000a;
 
   --color-Gray-50: #ececef;
   --color-Gray-100: #d9d9de;
@@ -106,35 +105,36 @@
   --color-Blue-900: #080042;
   --color-Blue-950: #04001f;
 
-  --token-grayscale-text-color-title:var(--color-Gray-50);
-  --token-grayscale-text-color-body:var(--color-Gray-100); 
-  --token-grayscale-text-color-subtitle:var(--color-Gray-200); 
-  --token-grayscale-text-color-caption:var(--color-Gray-200); 
-  --token-grayscale-text-color-negative:var(--color-Gray-900); 
-  --token-grayscale-text-color-disabled:var(--color-Gray-500); 
+  --token-grayscale-text-color-title: var(--color-Gray-50);
+  --token-grayscale-text-color-body: var(--color-Gray-100);
+  --token-grayscale-text-color-subtitle: var(--color-Gray-200);
+  --token-grayscale-text-color-caption: var(--color-Gray-200);
+  --token-grayscale-text-color-negative: var(--color-Gray-900);
+  --token-grayscale-text-color-disabled: var(--color-Gray-500);
 
-  --token-primary-surface-subtle:var(--color-Magenta-100);
-  --token-primary-surface-lighter:var(--color-Magenta-300);
-  --token-primary-surface-default:var(--color-Magenta-500);
-  --token-primary-surface-darker:var(--color-Magenta-600);
+  --token-primary-surface-subtle: var(--color-Magenta-100);
+  --token-primary-surface-lighter: var(--color-Magenta-300);
+  --token-primary-surface-default: var(--color-Magenta-500);
+  --token-primary-surface-darker: var(--color-Magenta-600);
 
-  --token-primary-border-subtle:var(--color-Magenta-200);
-  --token-primary-border-lighter:var(--color-Magenta-400);
-  --token-primary-border-default:var(--color-Magenta-600);
-  --token-primary-border-darker:var(--color-Magenta-800);
+  --token-primary-border-subtle: var(--color-Magenta-200);
+  --token-primary-border-lighter: var(--color-Magenta-400);
+  --token-primary-border-default: var(--color-Magenta-600);
+  --token-primary-border-darker: var(--color-Magenta-800);
 
-  --token-secondary-surface-subtle:var(--color-Purple-400);
-  --token-secondary-surface-lighter:var(--color-Purple-600);
-  --token-secondary-surface-default:var(--color-Purple-800);
-  --token-secondary-surface-darker:var(--color-Purple-950);
+  --token-secondary-surface-subtle: var(--color-Purple-400);
+  --token-secondary-surface-lighter: var(--color-Purple-600);
+  --token-secondary-surface-default: var(--color-Purple-800);
+  --token-secondary-surface-darker: var(--color-Purple-950);
 
-  --token-secondary-border-subtle:var(--color-Purple-200);
-  --token-secondary-border-lighter:var(--color-Purple-400);
-  --token-secondary-border-default:var(--color-Purple-600);
-  --token-secondary-border-darker:var(--color-Purple-800);
+  --token-secondary-border-subtle: var(--color-Purple-200);
+  --token-secondary-border-lighter: var(--color-Purple-400);
+  --token-secondary-border-default: var(--color-Purple-600);
+  --token-secondary-border-darker: var(--color-Purple-800);
 
-  --gradient-background-1: linear-gradient(180deg, #090510 0%, #26123F 100%);
-  --gradient-background-2: linear-gradient(180deg, #26123F 0%, #090510 100%);
+  --gradient-background-1: linear-gradient(180deg, #090510 0%, #26123f 100%);
+  --gradient-background-2: linear-gradient(180deg, #26123f 0%, #090510 100%);
+  --glow-shadow: 0px 4px 25px #612fa3;
 }
 
 .background1 {
@@ -172,6 +172,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -184,8 +185,8 @@ img {
   max-width: 100%;
 }
 
-hr{
-  border: 1px solid var(--color-Purple-700) ;
+hr {
+  border: 1px solid var(--color-Purple-700);
 }
 /* bg */
 .dark-bg {
@@ -205,95 +206,94 @@ hr{
 }
 
 /* Font stuff */
-h1, h2 {
+h1,
+h2 {
   font-family: var(--header-font);
   color: var(--token-grayscale-text-color-title);
 }
 
-a, button, h3,
+a,
+button,
+h3,
 h4 {
-  font-family: var(--body-font)
-  
+  font-family: var(--body-font);
 }
 .light-font-weight {
   font-weight: 300;
 }
-h1{
+h1 {
   font-size: var(--h1-size);
   color: var(--token-grayscale-text-color-title);
 }
-h2{
+h2 {
   font-size: var(--h2-size);
   color: var(--token-grayscale-text-color-title);
 }
-h3{
+h3 {
   font-size: var(--h3-size);
   color: var(--token-grayscale-text-color-title);
 }
-h4{
+h4 {
   font-size: var(--h4-size);
   color: var(--token-grayscale-text-color-title);
 }
-h5{
+h5 {
   font-size: var(--h5-size);
   color: var(--token-grayscale-text-color-title);
 }
-p{
+p {
   font-size: var(--p-size);
   color: var(--token-grayscale-text-color-body);
 }
-.subtitle{
+.subtitle {
   font-size: var(--subtitle-size);
   color: var(--token-grayscale-text-color-subtitle);
 }
-.caption{
+.caption {
   font-size: var(--caption-size);
   color: var(--token-grayscale-text-color-caption);
 }
-a{
+a {
   color: var(--token-primary-surface-default);
   /* text-decoration: none; */
 }
 @media screen and (max-width: 455px) {
-  h1{
+  h1 {
     font-size: var(--mobile-h1-size);
   }
-  h2{
+  h2 {
     font-size: var(--mobile-h2-size);
   }
-  h3{
+  h3 {
     font-size: var(--mobile-h3-size);
   }
-  h4{
+  h4 {
     font-size: var(--mobile-h4-size);
   }
-  h5{
+  h5 {
     font-size: var(--mobile-h5-size);
   }
-  p{
+  p {
     font-size: var(--mobile-p-size);
   }
-  .subtitle{
+  .subtitle {
     font-size: var(--mobile-subtitle-size);
   }
-  .caption{
+  .caption {
     font-size: var(--mobile-caption-size);
   }
-  
-  
 }
 /* Button */
 .primary-button {
-background: var(--token-primary-surface-default);
-border-radius: var(--token-border-radius-s);
-color: var(--token-grayscale-text-color-body);
-padding: 12px 24px;
-cursor: pointer;
-text-decoration: none;
-transition: background 0.3s ease-in-out;
-border: none;
-display: inline-block;
-
+  background: var(--token-primary-surface-default);
+  border-radius: var(--token-border-radius-s);
+  color: var(--token-grayscale-text-color-body);
+  padding: 12px 24px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+  border: none;
+  display: inline-block;
 }
 .secondary-button {
   /* background: var(--token-primary-surface-subtle); */
@@ -314,12 +314,9 @@ display: inline-block;
   color: var(--token-grayscale-text-color-body);
 }
 
-.glow{
-
-/* Glow */
-box-shadow: 0px 4px 25px #612FA3;
-
-
+.glow {
+  /* Glow */
+  box-shadow: var(--glow-shadow);
 }
 .info {
   background-color: var(--dark-bg);
