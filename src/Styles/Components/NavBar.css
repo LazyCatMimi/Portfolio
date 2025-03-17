@@ -1,4 +1,4 @@
-nav{
+nav {
   background: linear-gradient(
     90deg,
     rgba(9, 5, 16, 0.5) 0%,
@@ -9,17 +9,15 @@ nav{
   position: fixed; /* Set the position to fixed */
   top: 0; /* Position the navbar at the top of the viewport */
   width: 100%;
+  padding: 0 var(--padding-H);
 }
 .navbar-container {
-
-  /* padding: 0 var(--padding-H); */
+  /* margin: 0 var(--padding-H); */
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
-
+  width: 100%;
   color: white;
-
 }
 
 .navbar ul li {

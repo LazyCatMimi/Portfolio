@@ -40,36 +40,38 @@ export default function NavBar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-container max-width">
-        <div className="logo">
-          <img src={logoIcon} alt="logo" />
-        </div>
-        <div className="menu">
-          <img
-            src={menuOpen ? xIcon : menuIcon}
-            alt="menu"
-            className="menu-icon"
-            onClick={toggleMenu}
-          />
-          <motion.ul
-            className={`menu-items ${!menuOpen ? "hide" : ""}`}
-            initial="hidden"
-            animate={controls}
-            variants={ulVariants}
-          >
-            {menuItems.map((item, index) => (
-              <motion.li
-                key={index}
-                initial={{ y: 50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Link to={item.path} onClick={toggleMenu}>
-                  {item.text}
-                </Link>
-              </motion.li>
-            ))}
-          </motion.ul>
+      <div className="max-width">
+        <div className="navbar-container">
+          <div className="logo">
+            <img src={logoIcon} alt="logo" />
+          </div>
+          <div className="menu">
+            <img
+              src={menuOpen ? xIcon : menuIcon}
+              alt="menu"
+              className="menu-icon"
+              onClick={toggleMenu}
+            />
+            <motion.ul
+              className={`menu-items ${!menuOpen ? "hide" : ""}`}
+              initial="hidden"
+              animate={controls}
+              variants={ulVariants}
+            >
+              {menuItems.map((item, index) => (
+                <motion.li
+                  key={index}
+                  initial={{ y: 50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Link to={item.path} onClick={toggleMenu}>
+                    {item.text}
+                  </Link>
+                </motion.li>
+              ))}
+            </motion.ul>
+          </div>
         </div>
       </div>
     </nav>
