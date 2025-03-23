@@ -241,7 +241,8 @@ h5 {
   font-size: var(--h5-size);
   color: var(--token-grayscale-text-color-title);
 }
-p {
+p,
+ul {
   font-size: var(--p-size);
   color: var(--token-grayscale-text-color-body);
 }
@@ -273,7 +274,8 @@ a {
   h5 {
     font-size: var(--mobile-h5-size);
   }
-  p {
+  p,
+  ul {
     font-size: var(--mobile-p-size);
   }
   .subtitle {
@@ -351,7 +353,12 @@ ul {
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.5em;
 }
-
+.highlight {
+  background-color: var(--token-primary-surface-default);
+  padding: 0 0.1em;
+  color: WHITE;
+  /* border-radius: var(--token-border-radius-s); */
+}
 /* ------------components---------------- */
 .back-button {
   display: flex;

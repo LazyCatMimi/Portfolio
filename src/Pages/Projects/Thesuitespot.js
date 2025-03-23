@@ -60,22 +60,22 @@ export default function Thesuitespot() {
             issue:
           </p>
           <p>
-            <strong>The absence of a booking page on many sites</strong>.
-            Customers are often required to call to book an appointment, which
+            <strong className="highlight">
+              The absence of a booking page on many sites
+            </strong>
+            . Customers are often required to call to book an appointment, which
             can be inconvenient. This traditional approach may not suit
             everyone, especially those who prefer contactless interactions due
             to reasons like hearing impairments, being in a noisy environment,
             or simply valuing the convenience of online booking.
           </p>
           <p>
-            <strong>
-              Not mobile-responsive, which is a critical flaw in today's digital
-              landscape
-            </strong>
-            . Responsive design is essential for retaining customers, as a
-            tailored mobile experience is increasingly expected. Given that many
-            users search for nearby salons on their smartphones, it's crucial
-            for our site to be fully responsive.
+            <strong className="highlight">Not mobile-responsive</strong>, which
+            is a critical flaw in today's digital landscape. Responsive design
+            is essential for retaining customers, as a tailored mobile
+            experience is increasingly expected. Given that many users search
+            for nearby salons on their smartphones, it's crucial for our site to
+            be fully responsive.
           </p>
           <p>
             I wrote a detailed case study why responsive design is important to
@@ -160,12 +160,15 @@ export default function Thesuitespot() {
           <p>
             Before creating sketches, we first identify the key use cases for
             the salon site. We imagine ourselves as different kinds of users and
-            how they would interact with a salon website. This process helps us
-            clarify essential user needs and goals. For each use case, we
-            outline a simple user flow, detailing how users would interact with
-            the site to complete their tasks. By focusing on user flows, we
-            ensure that every design decision aligns with what the user aims to
-            accomplish, guiding them efficiently toward their goals.
+            how they would interact with a salon website. This process helps us{" "}
+            <strong className="highlight">
+              clarify essential user needs and goals
+            </strong>
+            . For each use case, we outline a simple user flow, detailing how
+            users would interact with the site to complete their tasks. By
+            focusing on user flows, we ensure that every design decision aligns
+            with what the user aims to accomplish, guiding them efficiently
+            toward their goals.
           </p>
           <p>Read up on our use cases and user flows here:</p>
           <ImageWithCaption
@@ -203,7 +206,11 @@ export default function Thesuitespot() {
             <strong>created our mobile sketches first</strong>, then used it to
             translate back to the bigger screen. This is to ensure consistency
             of information between screen sizes and adhere to our promise of
-            <strong> responsive mobile-first design</strong>.
+            <strong className="highlight">
+              {" "}
+              responsive mobile-first design
+            </strong>
+            .
           </p>
           <p>See our design sketches here:</p>
           <p className="center-text">Mobile</p>
@@ -257,9 +264,11 @@ export default function Thesuitespot() {
           <h4 id="design-goals">Design Goals</h4>
           <p>
             While the lofi was being done, we talked about the aesthetics of the
-            site. As a salon business, we would want our website to feel
-            relaxing, like a sense of ease that pushes the user to want to relax
-            at The Suite Spot salon.
+            site. As a salon business, we would want our website to{" "}
+            <strong className="highlight">
+              feel relaxing, like a sense of ease that pushes the user to want
+              to relax at The Suite Spot salon.
+            </strong>
           </p>
           <h4 id="choosing-colors">Choosing Colors</h4>
           <p>
@@ -386,13 +395,14 @@ export default function Thesuitespot() {
           <h4 id="testing-method">Testing Method</h4>
           <p>
             We developed test scenarios based on the use cases of our website.
-            We employed the <strong>"Think Aloud Protocol,"</strong> where users
-            were instructed to complete tasks while verbalizing their thoughts
-            throughout the process. We recorded their actions, logged the time
-            taken to complete each task, and noted any comments or feedback.
-            Afterward, we analyzed the recordings, tracking errors or moments of
-            confusion to identify features that were difficult to access or
-            required further refinement.
+            We employed the{" "}
+            <strong className="highlight">"Think Aloud Protocol,"</strong> where
+            users were instructed to complete tasks while verbalizing their
+            thoughts throughout the process. We recorded their actions, logged
+            the time taken to complete each task, and noted any comments or
+            feedback. Afterward, we analyzed the recordings, tracking errors or
+            moments of confusion to identify features that were difficult to
+            access or required further refinement.
           </p>
           <ImageWithCaption
             src={require("../../Assets/projects-img/thesuitespot/testing-method.png")}
@@ -403,8 +413,11 @@ export default function Thesuitespot() {
           <p>
             We divided users into three groups with distinct task sets: two
             groups tested the mobile prototypes, and one group tested the
-            desktop version. A total of <strong>15 users</strong> were tested.
-            More details on our testing method can be found here:
+            desktop version. These tasks were based on the use cases and
+            features we have already identified earlier in the project. A total
+            of <strong className="highlight">15 users</strong> were tested, all
+            of which were friends and family. More details on our testing method
+            can be found here:
           </p>
           <ImageWithCaption
             src={require("../../Assets/projects-img/thesuitespot/testing-group.png")}
@@ -680,7 +693,7 @@ export default function Thesuitespot() {
           <ImageWithCaption
             src={require("../../Assets/projects-img/thesuitespot/fe-files.jpg")}
             alt=""
-            style={{display: "flex", margin: "auto"}}
+            style={{ display: "flex", margin: "auto" }}
             caption="Front-end files structure"
           />
           <h4 id="FE-summary2">More Info</h4>
