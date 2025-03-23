@@ -351,7 +351,11 @@ ul {
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.5em;
 }
-
+.highlight {
+  background-color: var(--token-primary-surface-default);
+  /* padding: 1em; */
+  /* border-radius: var(--token-border-radius-s); */
+}
 /* ------------components---------------- */
 .back-button {
   display: flex;
