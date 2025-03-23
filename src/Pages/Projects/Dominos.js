@@ -7,7 +7,7 @@ import {
 export default function Dominos() {
   return (
     <div className="proj-more-info h-content">
-      <Section title="Quick Overview of Improvements">
+      <Section title="Video Overview">
         <iframe
           className="iframe-yt"
           width="1519"
