@@ -380,3 +380,23 @@ ul {
   background-color: var(--token-secondary-surface-lighter);
   color: white;
 }
+
+.iframe-yt {
+  aspect-ratio: 16 / 9;
+  width: 50%;
+  height: auto;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px var(--token-primary-surface-default);
+  margin: auto;
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: var(--token-primary-surface-default); */
+  /* transition: all 0.3s ease-in-out; */
+}
+@media screen and (max-width: 1000px) {
+  .iframe-yt {
+    width: 100%;
+  }
+}
