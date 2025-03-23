@@ -413,9 +413,10 @@ export default function Thesuitespot() {
           <p>
             We divided users into three groups with distinct task sets: two
             groups tested the mobile prototypes, and one group tested the
-            desktop version. A total of{" "}
-            <strong className="highlight">15 users</strong> were tested, all of
-            which were friends and family. More details on our testing method
+            desktop version. These tasks were based on the use cases and
+            features we have already identified earlier in the project. A total
+            of <strong className="highlight">15 users</strong> were tested, all
+            of which were friends and family. More details on our testing method
             can be found here:
           </p>
           <ImageWithCaption
