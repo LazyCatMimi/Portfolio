@@ -74,7 +74,12 @@ export default function Dominos() {
             instantly overwhelmed me.
           </li>
         </ul>
-
+        <ImageWithCaption
+          src={require("../../Assets/projects-img/Dominos/word-cloud.png")}
+          alt=""
+          style={{ width: 500, display: "flex", margin: "auto" }}
+          caption="word cloud of user survey"
+        />
         <h4>Identifying the problems</h4>
         <p>
           Based on user feedbacks, I identified the following problems,

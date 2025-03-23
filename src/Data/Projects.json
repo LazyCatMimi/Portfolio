@@ -25,7 +25,6 @@
       "Deployed website"
     ],
     "actions": [
-     
       {
         "name": "See Mobile HiFi",
         "link": "https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
@@ -43,23 +42,16 @@
         "link": "https://the-suite-spot.vercel.app/",
         "type": "primary-button",
         "icon": "globe"
-      }, {
+      },
+      {
         "name": "See GH repository",
         "link": "https://github.com/lwolbrink23/group8",
         "type": "secondary-button",
         "icon": "github"
-      },
-      {
-        "name": "Walkthrough",
-        "link": "https://vimeo.com/936343390?share=copy",
-        "type": "secondary-button",
-        "icon": "play-circle"
       }
     ]
   },
 
-  
- 
   {
     "name": "Domino's Accessibility Redesign",
     "tags": ["design", "case-study"],
@@ -109,7 +101,7 @@
       }
     ]
   },
- 
+
   {
     "name": "Salt & Hearth",
     "tags": ["design"],
@@ -194,7 +186,7 @@
       }
     ]
   },
-  
+
   {
     "name": "Flashcard App",
     "tags": ["design"],
