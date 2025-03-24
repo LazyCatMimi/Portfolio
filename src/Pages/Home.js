@@ -131,9 +131,14 @@ export default function Home() {
         <div className="title-sub-2-container">
           <h1 className="title-sub-2">UI/UX Designer & Front-End Enthusiast</h1>
         </div>
-        <Link to="#latest-projects" className="primary-button">
-          See Projects
-        </Link>
+        <div className="button-container">
+          <Link to="#latest-projects" className="primary-button">
+            See Projects
+          </Link>
+          <Link to="#contact-me" className="secondary-button">
+            Contact Me
+          </Link>
+        </div>
       </div>
     </div>
   );

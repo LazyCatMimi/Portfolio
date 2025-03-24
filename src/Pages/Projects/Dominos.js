@@ -7,6 +7,19 @@ import {
 export default function Dominos() {
   return (
     <div className="proj-more-info h-content">
+      <Section title="Video Overview">
+        <iframe
+          className="iframe-yt"
+          width="1519"
+          height="609"
+          src="https://www.youtube.com/embed/AOEsIu5U4d8"
+          title="Dominos   Accessibility Final Quynh Vo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </Section>
       <Section title="The Problems">
         <p>
           Domino's Pizza's website is difficult for many users, especially those
@@ -18,13 +31,60 @@ export default function Dominos() {
           enjoy an equitable pizza ordering experience.
         </p>
         <p>
-          The following list is based on my paper on Domino’s accessibility.
-          View the full analysis here:
+          I did a full analysis of the Domino's website, focusing on the
+          accessibility. View the full analysis here:
         </p>
         <ExternalLinkButton
           href="https://docs.google.com/document/d/1IpC7AllgDSzGR97BcVZ7EKvnn44x7pe7Oa44ugeV1xc/edit?tab=t.0"
           text="Full Analysis"
         />
+        <h4>User Survey</h4>
+        <p>
+          I gathered first impressions of the website design from friends and
+          family, asking for their thoughts and reasons why. Here are some
+          notable comments:
+        </p>
+
+        <ul>
+          <li>
+            It's over-stimulating to me, so many bright colors and intense font
+            changes.
+          </li>
+          <li>
+            I used to order from them on the site but stopped because their site
+            was confusing to use.
+          </li>
+          <li>
+            When I order from Domino's, I don't even try to understand the home
+            page, I just immediately go to place a pickup order. Cause I have no
+            idea what I should be looking at because of how much there really
+            is.
+          </li>
+          <li>
+            I think if they change the bright colors and made the pictures not
+            so crowded, it could have a pretty good change.
+          </li>
+          <li>
+            This front page is a complete nightmare for those with sensory
+            issues. As a person with sensory issues, it's simply too much going
+            on without need.
+          </li>
+          <li>
+            Right when I looked at the website, it instantly looked too much and
+            instantly overwhelmed me.
+          </li>
+        </ul>
+        <ImageWithCaption
+          src={require("../../Assets/projects-img/Dominos/word-cloud.png")}
+          alt=""
+          style={{ width: 500, display: "flex", margin: "auto" }}
+          caption="word cloud of user survey"
+        />
+        <h4>Identifying the problems</h4>
+        <p>
+          Based on user feedbacks, I identified the following problems,
+          especially linked with accessibility:
+        </p>
         <p>
           <strong>Readability Issues</strong>
         </p>
