@@ -44,7 +44,7 @@ export default function NavBar() {
         <div className="navbar-container">
           <div className="logo">
             <Link to={PATHS.main.home}>
-              <img src={logoIcon} alt="logo" />
+              <img src={logoIcon} alt="Quynh's Logo" />
             </Link>
           </div>
           <div className="menu">
