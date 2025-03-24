@@ -43,7 +43,9 @@ export default function NavBar() {
       <div className="max-width">
         <div className="navbar-container">
           <div className="logo">
-            <img src={logoIcon} alt="logo" />
+            <Link to={PATHS.main.home}>
+              <img src={logoIcon} alt="Logo" />
+            </Link>
           </div>
           <div className="menu">
             <img

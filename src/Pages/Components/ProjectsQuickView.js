@@ -51,8 +51,6 @@ export default function ProjectsQuickView() {
       desc: "Projects that showcase my artistic and general design skills.",
       data: PROJECTS.filter((project) => project.tags.includes("art")),
     },
-
-
   ];
   const [curData, setCurData] = useState(sortButtons[0].data);
   const handleRadioButtonChange = (event, data) => {
@@ -72,7 +70,7 @@ export default function ProjectsQuickView() {
       default:
         return "Web Design & Development";
     }
-  }
+  };
 
   const Project = ({
     name,
@@ -93,25 +91,26 @@ export default function ProjectsQuickView() {
           alt=""
         ></img>
 
-
         <div>
           {featured && (
             <>
               <div className="img-text">
-                <img src={starImg} className="star-img" />
+                <img src={starImg} className="star-img" alt="" />
                 <p className="featured-txt">Featured Project</p>
               </div>
             </>
           )}
           <h3>
-            <span className="num">
-              {(i + 1).toString().padStart(2, "0")}{" "}
-            </span>
+            <span className="num">{(i + 1).toString().padStart(2, "0")} </span>
             | <LineRevealText text={name} staggerDelay={0.05} />
           </h3>
-          {tags.map((tag, index) => (
-            <p key={index} className="proj-tag">{determineTag(tag)} </p>
-              ))}
+          <div className="proj-tags">
+            {tags.map((tag, index) => (
+              <p key={index} className="proj-tag">
+                {determineTag(tag)}{" "}
+              </p>
+            ))}
+          </div>
           <p>{shortSummary}</p>
           {/* <button className="primary-button">Read More</button> */}
         </div>
@@ -119,58 +118,60 @@ export default function ProjectsQuickView() {
     </Link>
   );
   return (
-    <section className="background1"  style={{background:"var(--color-Purple-950)"}}>
+    <section
+      className="background1"
+      style={{ background: "var(--color-Purple-950)" }}
+    >
       <div className="max-width">
         <div id="latest-projects">
-        <h2>
-        <StaggeredText text="Projects" staggerDelay={0.05} />
-      </h2>
-      <hr className="line"/>
-      <div id="sort-btn-container">
-        {/* Map over the button data to render each radio button */}
-        {sortButtons.map((button, index) => (
-          <label
-            key={index}
-            className={`sort-projects off-white-text ${
-              activeSortButton === button.id ? "sort-projects-active" : ""
-            }`}
-            tabIndex={0}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                e.preventDefault();
-                setActiveSortButton(button.id);
-                setCurData(button.data);
-              }
-            }}
-          >
-            <input
-              type="radio"
-              id={button.id}
-              name="sortType"
-              value={button.id}
-              checked={activeSortButton === button.id}
-              onChange={(e) => handleRadioButtonChange(e, button.data)}
-            />
-            {button.title}
-          </label>
-        ))}
-      </div>
-      <p className="center-text sort-desc subtitle">
-        {sortButtons.find((button) => button.id === activeSortButton).desc}
-      </p>
-      <div className="projects-grid">
-        {curData.map((project, index) => (
-          <Project key={index} {...project} i={index} />
-        ))}
-      </div>
-      <div style={{textAlign:"center"}}>
-      <a href="/#latest-projects" className="center-text"  >Back to top</a>
-
-      </div>
+          <h2>
+            <StaggeredText text="Projects" staggerDelay={0.05} />
+          </h2>
+          <hr className="line" />
+          <div id="sort-btn-container">
+            {/* Map over the button data to render each radio button */}
+            {sortButtons.map((button, index) => (
+              <label
+                key={index}
+                className={`sort-projects off-white-text ${
+                  activeSortButton === button.id ? "sort-projects-active" : ""
+                }`}
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.preventDefault();
+                    setActiveSortButton(button.id);
+                    setCurData(button.data);
+                  }
+                }}
+              >
+                <input
+                  type="radio"
+                  id={button.id}
+                  name="sortType"
+                  value={button.id}
+                  checked={activeSortButton === button.id}
+                  onChange={(e) => handleRadioButtonChange(e, button.data)}
+                />
+                {button.title}
+              </label>
+            ))}
+          </div>
+          <p className="center-text sort-desc subtitle">
+            {sortButtons.find((button) => button.id === activeSortButton).desc}
+          </p>
+          <div className="projects-grid">
+            {curData.map((project, index) => (
+              <Project key={index} {...project} i={index} />
+            ))}
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <a href="/#latest-projects" className="center-text">
+              Back to top
+            </a>
+          </div>
         </div>
-
       </div>
-    
     </section>
   );
 }

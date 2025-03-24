@@ -76,14 +76,62 @@
   font-size: 1.4em;
   color: var(--token-primary-surface-lighter);
 }
+/* ----------------project tags--------------- */
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5em 0;
+  padding: 0 !important;
+}
 .proj-tag {
   display: inline-block;
   padding: 0.2em 0.5em;
-  margin-right: 5px;
+  margin: 5px 5px 0 0;
   background-color: var(--token-primary-surface-lighter);
   border-radius: var(--token-border-radius-full);
   color: var(--color-Gray-900);
   /* font-weight: bold; */
+}
+/* ------------------sort buttons------------------ */
+#sort-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.sort-desc {
+  font-weight: 400;
+  margin: 2em;
+}
+.sort-projects {
+  text-align: center;
+
+  line-height: normal;
+  border: 1px solid var(--token-secondary-surface-lighter);
+  border-radius: 100px;
+  padding: 0.5em 1em;
+  margin: 0.7em;
+  min-width: 100px;
+  box-sizing: border-box;
+  /* font-family: "Julius Sans One", sans-serif; */
+  font-weight: bold;
+
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+/* Style for active and hover states */
+.sort-projects:hover {
+  border: 1px solid var(--token-primary-surface-default);
+  /* background-color: var(--token-secondary-surface-default); */
+}
+.sort-projects-active {
+  background: var(--token-primary-surface-default);
+}
+
+/* Hide the radio buttons */
+.sort-projects input[type="radio"] {
+  display: none;
 }
 
 /* ---------------featured projects--------------- */
