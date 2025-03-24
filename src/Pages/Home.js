@@ -16,6 +16,10 @@ import ProjectsQuickView from "./Components/ProjectsQuickView";
 import Footer from "./Components/Footer";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const uniqueList = [
     {
       title: "10+ Years Art Software",
