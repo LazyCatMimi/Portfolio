@@ -12,6 +12,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import StaggeredText from "./Components/Animation/StaggeredText";
 import LineRevealText from "./Components/Animation/LineRevealText";
+import { FromBottom } from "./Components/Animation/Animated";
 import ProjectsQuickView from "./Components/ProjectsQuickView";
 import Footer from "./Components/Footer";
 
@@ -171,9 +172,21 @@ export default function Home() {
               <StaggeredText text="About Me" staggerDelay={0.1} />
             </h2>
             <hr className="line" />
-            <p>
-              <LineRevealText text="Hello World! My name is Quynh, and I am a student at the University of Central Florida, where I am pursuing a bachelor's degree in Digital Media: Web Design with a minor in Information Technology. My passions lie in web design, development, and art. Having been born in 2002, I witnessed the rapid evolution of technology firsthand, which inspired me to become a creator of unique web experiences. Technology and art are my favorite subjects to learn about and discuss. In my spare time, I enjoy activities such as drawing, paper crafting, fishing, and boating." />
-            </p>
+
+            <FromBottom>
+              <p>
+                Hello World! My name is Quynh, and I am a student at the
+                University of Central Florida, where I am pursuing a bachelor's
+                degree in Digital Media: Web Design with a minor in Information
+                Technology. My passions lie in web design, development, and art.
+                Having been born in 2002, I witnessed the rapid evolution of
+                technology firsthand, which inspired me to become a creator of
+                unique web experiences. Technology and art are my favorite
+                subjects to learn about and discuss. In my spare time, I enjoy
+                activities such as drawing, paper crafting, fishing, and
+                boating.
+              </p>
+            </FromBottom>
           </article>
         </div>
         {/* <div className="unique-list">
