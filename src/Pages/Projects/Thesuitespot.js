@@ -93,7 +93,8 @@ export default function Thesuitespot() {
             that means booking an appointment or purchasing products.
           </p>
           <h4 id="market-matrix">Market Matrix</h4>
-          We started by creating a Market Matrix to analyze competitors. This
+          We started by creating a Market Matrix to{" "}
+          <strong className="highlight">analyze competitors</strong>. This
           approach helps identify essential features and pages for salon
           websites, as well as any gaps in the industry. A higher percentage
           indicates more critical features, while a lower percentage highlights
@@ -104,8 +105,10 @@ export default function Thesuitespot() {
           ></img>
           <h4 id="information-architecture">Information Architecture</h4>
           <p>
-            After analyzing the Market Matrix, we identified key features and
-            developed them further through information architecture.
+            After analyzing the Market Matrix, we identified{" "}
+            <strong className="highlight">key features</strong> based on what is
+            missing and what is essential, and developed them further through
+            information architecture.
           </p>
           <img
             src={require("../../Assets/projects-img/thesuitespot/information-architecture.png")}
@@ -187,7 +190,8 @@ export default function Thesuitespot() {
           </h4>
           <p>
             With our use cases and user flows in place, we moved on to refining
-            our information architecture to better align with the user's goals.
+            our information architecture to better{" "}
+            <strong className="highlight">align with the user's goals</strong>.
             We identified and organized the necessary pages to ensure the
             website effectively supports these goals.
           </p>

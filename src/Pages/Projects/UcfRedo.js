@@ -1,11 +1,11 @@
 import "../../Styles/Project-more-info/ucfredo.css";
+import { ImageWithCaption } from "./~TEMPLATE";
 
 export default function UcfRedo() {
   return (
     <div className="proj-more-info" id="ucfredo">
       <article className="proj-info pi-after">
-        <div className="img-text">
-
+        <div>
           <div>
             <h3>The Problem</h3>
             <p>
@@ -20,26 +20,23 @@ export default function UcfRedo() {
               resources offered by the university.
             </p>
             <p>
-              However, my biggest pain point as a user myselg is the excessive information clutter.
-              The overwhelming use of saturaated bold colors and disorganized
-              icons makes it difficult to read and find what you need. As a
-              user, I believe the menu items could be grouped into categories,
-              making them easier to navigate and locate.
+              However, my biggest pain point as a user myselg is the excessive
+              information clutter. The overwhelming use of saturaated bold
+              colors and disorganized icons makes it difficult to read and find
+              what you need. As a user, I believe the menu items could be
+              grouped into categories, making them easier to navigate and
+              locate.
             </p>
           </div>
-          <div className="img-sub">
-            <img
-              src={require("../../Assets/projects-img/ucfredo-1a.bmp")}
-              alt=""
-            />
-            <p className="center-text">Image 1A: screenshot of UCF mobile app</p>
-          </div>
+          <ImageWithCaption
+            src={require("../../Assets/projects-img/ucfredo-1a.bmp")}
+            caption="Image 1A: screenshot of UCF mobile app"
+            style={{ width: "10%" }}
+          />
         </div>
       </article>
       <article className="proj-info pi-after">
         <div className="img-text-rev">
-      
-
           <div>
             <h3>Redesign Process</h3>
             <p>
@@ -77,13 +74,11 @@ export default function UcfRedo() {
               task.
             </p>
           </div>
-          <div className="img-sub">
-            <img
-              src={require("../../Assets/projects-img/ucfredo-1b.bmp")}
-              alt=""
-            />
-            <p className="center-text">Image 1B: screenshot of my markings</p>
-          </div>
+          <ImageWithCaption
+            src={require("../../Assets/projects-img/ucfredo-1b.bmp")}
+            caption="Image 1B: screenshot of my markings"
+            style={{ width: "50%" }}
+          />
         </div>
       </article>
       <article className="proj-info pi-after">
@@ -114,16 +109,19 @@ export default function UcfRedo() {
           one line at a time from top to bottom, rather than having to navigate
           both horizontally and vertically.
         </p>
-        <div className="img-sub">
-            <img
-              src={require("../../Assets/projects-img/ucfredo-1c.jpg")}
-              alt=""
-            />
-            <p className="center-text">Image 1C: My Redesign</p>
-          </div>
+        <ImageWithCaption
+          src={require("../../Assets/projects-img/ucfredo-1c.jpg")}
+          caption="Image 1C: My Redesign"
+          style={{ width: "20%" }}
+        />
 
-          <p>
-          Lastly, my redesign tackles the problem of overwhelming eye scanning. In the old design, users had to scan each item from left to right and top to bottom, following the natural reading order. With my redesign, users only need to scan from top to bottom and can easily skip unnecessary categories. This significantly speeds up the process of finding an item and reduces eye strain.
+        <p>
+          Lastly, my redesign tackles the problem of overwhelming eye scanning.
+          In the old design, users had to scan each item from left to right and
+          top to bottom, following the natural reading order. With my redesign,
+          users only need to scan from top to bottom and can easily skip
+          unnecessary categories. This significantly speeds up the process of
+          finding an item and reduces eye strain.
         </p>
       </article>
       <article className="proj-info pi-after">
