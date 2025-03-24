@@ -293,7 +293,7 @@ a {
   padding: 12px 24px;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   border: none;
   display: inline-block;
 }
@@ -303,17 +303,19 @@ a {
   color: var(--token-grayscale-text-color-body);
   cursor: pointer;
   padding: 12px 24px;
-  transition: background 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   border: 1px solid var(--token-primary-surface-default);
   text-decoration: none;
   display: inline-block;
 }
 .primary-button:hover {
   background: var(--token-primary-surface-darker);
+  transform: scale(1.1);
 }
 .secondary-button:hover {
   background: var(--token-primary-surface-darker);
   color: var(--token-grayscale-text-color-body);
+  transform: scale(1.1);
 }
 
 .glow {

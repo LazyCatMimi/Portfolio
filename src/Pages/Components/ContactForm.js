@@ -37,13 +37,18 @@ export default function ContactForm() {
               Thank you! Your message has been sent. I will get back to you as
               soon as possible.
             </p>
-            <button className="secondary-button" style={{backgroundColor:"var(--token-secondary-surface-default)"}} onClick={handleClosePopup}>
+            <button
+              className="secondary-button"
+              style={{
+                backgroundColor: "var(--token-secondary-surface-default)",
+              }}
+              onClick={handleClosePopup}
+            >
               OK
             </button>
           </div>
         </div>
       )}
-
 
       {!formSubmitted && (
         <form onSubmit={handleFormSubmit}>
@@ -101,11 +106,11 @@ export default function ContactForm() {
       <div id="socials">
         <h4 className="light-font-weight">Contact Info</h4>
 
-        <a href="mailto:quynh.vo3314@gmail.com">
+        <a href="mailto:quynh.vo3314@gmail.com" className="social-link">
           <img src={mailIcon} alt="email" /> quynh.vo3314@gmail.com
         </a>
 
-        <a href="tel:+14077972019">
+        <a href="tel:+14077972019" className="social-link">
           <img src={phoneIcon} alt="phone number" /> (407) 797-2019
         </a>
 
@@ -115,12 +120,18 @@ export default function ContactForm() {
           href="https://www.linkedin.com/in/quynh-vo-7b714222b"
           target="_blank"
           rel="noreferrer"
+          className="social-link"
         >
           <img src={linkedinIcon} alt="linkedIn" />
           Quynh Vo
         </a>
 
-        <a href="https://github.com/LazyCatMimi" target="_blank">
+        <a
+          href="https://github.com/LazyCatMimi"
+          target="_blank"
+          rel="noreferrer"
+          className="social-link"
+        >
           <img src={gitIcon} alt="Github" />
           LazyCatMimi
         </a>
