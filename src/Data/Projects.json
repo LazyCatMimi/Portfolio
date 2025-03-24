@@ -101,7 +101,37 @@
       }
     ]
   },
-
+  {
+    "name": "Portfolio",
+    "tags": ["design", "development"],
+    "id": "portfolio",
+    "imgFill": "Assets/projects/portfolio-fill.jpg",
+    "imgThumb": "Assets/projects/portfolio-thumb.png",
+    "tools": "Figma | CSS, React.js",
+    "type": "web",
+    "shortSummary": "My Portfolio! Well, you're looking at it.",
+    "summary": "My Portfolio! Well, you're looking at it.",
+    "tasks": [
+      "Created hi-fi Prototype",
+      "Created design system in Figma",
+      "Ensured consistency and accessibility throughout the design phase",
+      "Coded using front-end frameworks and technologies with responsive design"
+    ],
+    "actions": [
+      {
+        "name": "See Figma File",
+        "link": "https://www.figma.com/design/8FhwG7oC7tVDZSxJUbOqx6/Portfolio?node-id=325-632&t=RcMdwgxg8cihQfak-1",
+        "type": "primary-button",
+        "icon": "figma"
+      },
+      {
+        "name": "See GH repository",
+        "link": "https://github.com/LazyCatMimi/Portfolio",
+        "type": "secondary-button",
+        "icon": "github"
+      }
+    ]
+  },
   {
     "name": "Salt & Hearth",
     "tags": ["design"],
@@ -252,32 +282,6 @@
       {
         "name": "See Website",
         "link": "https://lazycatmimi.github.io/CatDogQuizFormValidation/",
-        "type": "primary-button",
-        "icon": "globe"
-      }
-    ]
-  },
-  {
-    "name": "Word Guessing Game",
-    "tags": ["development"],
-    "id": "wordguessing",
-    "imgFill": "Assets/projects/wordguess-fill.jpg",
-    "imgThumb": "Assets/projects/wordguess-thumb.png",
-    "tools": "Vanilla HTML/CSS/JS",
-    "type": "web",
-    "shortSummary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
-    "summary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
-    "tasks": ["Created a front-end using basic technologies"],
-    "actions": [
-      {
-        "name": "See GH repository",
-        "link": "https://github.com/LazyCatMimi/WordGuessingGame",
-        "type": "secondary-button",
-        "icon": "github"
-      },
-      {
-        "name": "See Website",
-        "link": "https://lazycatmimi.github.io/WordGuessingGame/",
         "type": "primary-button",
         "icon": "globe"
       }
