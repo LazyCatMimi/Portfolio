@@ -49,15 +49,16 @@ form .primary-button {
 
 #socials a {
   color: var(--token-primary-surface-default);
-  display: flex;
+  display: block;
   align-items: center;
-  padding: 0.5em 0;
-  margin-bottom: 1em;
+  padding: 0.8em 0;
+  /* margin-bottom: 1em; */
   position: relative;
 }
 #socials a:hover {
   color: var(--token-primary-surface-darker);
   transform: scale(1.1);
+
   transition: all 0.3s ease;
 }
 #socials img {

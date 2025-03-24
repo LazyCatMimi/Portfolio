@@ -296,6 +296,7 @@ a {
   transition: all 0.1s ease-in-out;
   border: none;
   display: inline-block;
+  text-align: center;
 }
 .secondary-button {
   /* background: var(--token-primary-surface-subtle); */
@@ -307,6 +308,7 @@ a {
   border: 1px solid var(--token-primary-surface-default);
   text-decoration: none;
   display: inline-block;
+  text-align: center;
 }
 .primary-button:hover {
   background: var(--token-primary-surface-darker);
