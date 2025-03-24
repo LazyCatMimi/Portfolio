@@ -7,6 +7,7 @@ import {
   ExternalLinkButton,
   Section,
   Sectionubsection,
+  Highlight,
 } from "./~TEMPLATE";
 import tocbot from "tocbot";
 import { useEffect } from "react";
@@ -60,22 +61,20 @@ export default function Thesuitespot() {
             issue:
           </p>
           <p>
-            <strong className="highlight">
-              The absence of a booking page on many sites
-            </strong>
-            . Customers are often required to call to book an appointment, which
+            <Highlight>The absence of a booking page on many sites</Highlight>.
+            Customers are often required to call to book an appointment, which
             can be inconvenient. This traditional approach may not suit
             everyone, especially those who prefer contactless interactions due
             to reasons like hearing impairments, being in a noisy environment,
             or simply valuing the convenience of online booking.
           </p>
           <p>
-            <strong className="highlight">Not mobile-responsive</strong>, which
-            is a critical flaw in today's digital landscape. Responsive design
-            is essential for retaining customers, as a tailored mobile
-            experience is increasingly expected. Given that many users search
-            for nearby salons on their smartphones, it's crucial for our site to
-            be fully responsive.
+            <Highlight>Not mobile-responsive</Highlight>, which is a critical
+            flaw in today's digital landscape. Responsive design is essential
+            for retaining customers, as a tailored mobile experience is
+            increasingly expected. Given that many users search for nearby
+            salons on their smartphones, it's crucial for our site to be fully
+            responsive.
           </p>
           <p>
             I wrote a detailed case study why responsive design is important to
@@ -93,22 +92,22 @@ export default function Thesuitespot() {
             that means booking an appointment or purchasing products.
           </p>
           <h4 id="market-matrix">Market Matrix</h4>
-          We started by creating a Market Matrix to{" "}
-          <strong className="highlight">analyze competitors</strong>. This
-          approach helps identify essential features and pages for salon
-          websites, as well as any gaps in the industry. A higher percentage
-          indicates more critical features, while a lower percentage highlights
-          areas where features are needed or lacking.
+          We started by creating a Market Matrix to
+          <Highlight>analyze competitors</Highlight>. This approach helps
+          identify essential features and pages for salon websites, as well as
+          any gaps in the industry. A higher percentage indicates more critical
+          features, while a lower percentage highlights areas where features are
+          needed or lacking.
           <img
             src={require("../../Assets/projects-img/thesuitespot/marketmatrix.png")}
             alt=""
           ></img>
           <h4 id="information-architecture">Information Architecture</h4>
           <p>
-            After analyzing the Market Matrix, we identified{" "}
-            <strong className="highlight">key features</strong> based on what is
-            missing and what is essential, and developed them further through
-            information architecture.
+            After analyzing the Market Matrix, we identified
+            <Highlight>key features</Highlight> based on what is missing and
+            what is essential, and developed them further through information
+            architecture.
           </p>
           <img
             src={require("../../Assets/projects-img/thesuitespot/information-architecture.png")}
@@ -153,7 +152,7 @@ export default function Thesuitespot() {
             agreements, we decided to name our project The Suite Spot.
           </p>
           <p>
-            "The Suite Spot Salon" is a <strong>fictional project</strong>{" "}
+            "The Suite Spot Salon" is a <strong>fictional project</strong>
             designed to demonstrate how responsive design and booking systems
             can be effectively integrated into salon websites.
           </p>
@@ -163,15 +162,13 @@ export default function Thesuitespot() {
           <p>
             Before creating sketches, we first identify the key use cases for
             the salon site. We imagine ourselves as different kinds of users and
-            how they would interact with a salon website. This process helps us{" "}
-            <strong className="highlight">
-              clarify essential user needs and goals
-            </strong>
-            . For each use case, we outline a simple user flow, detailing how
-            users would interact with the site to complete their tasks. By
-            focusing on user flows, we ensure that every design decision aligns
-            with what the user aims to accomplish, guiding them efficiently
-            toward their goals.
+            how they would interact with a salon website. This process helps us
+            <Highlight>clarify essential user needs and goals</Highlight>. For
+            each use case, we outline a simple user flow, detailing how users
+            would interact with the site to complete their tasks. By focusing on
+            user flows, we ensure that every design decision aligns with what
+            the user aims to accomplish, guiding them efficiently toward their
+            goals.
           </p>
           <p>Read up on our use cases and user flows here:</p>
           <ImageWithCaption
@@ -190,10 +187,10 @@ export default function Thesuitespot() {
           </h4>
           <p>
             With our use cases and user flows in place, we moved on to refining
-            our information architecture to better{" "}
-            <strong className="highlight">align with the user's goals</strong>.
-            We identified and organized the necessary pages to ensure the
-            website effectively supports these goals.
+            our information architecture to better
+            <Highlight>align with the user's goals</Highlight>. We identified
+            and organized the necessary pages to ensure the website effectively
+            supports these goals.
           </p>
           <img
             src={require("../../Assets/projects-img/thesuitespot/updated-information-architecture.png")}
@@ -206,15 +203,11 @@ export default function Thesuitespot() {
           <h4 id="design-sketches">Design Sketches</h4>
           <p>
             As a team, we created our design sketches based on our ideas from
-            the information architecture to test where content should go. We{" "}
+            the information architecture to test where content should go. We
             <strong>created our mobile sketches first</strong>, then used it to
             translate back to the bigger screen. This is to ensure consistency
             of information between screen sizes and adhere to our promise of
-            <strong className="highlight">
-              {" "}
-              responsive mobile-first design
-            </strong>
-            .
+            <Highlight> responsive mobile-first design</Highlight>.
           </p>
           <p>See our design sketches here:</p>
           <p className="center-text">Mobile</p>
@@ -268,11 +261,11 @@ export default function Thesuitespot() {
           <h4 id="design-goals">Design Goals</h4>
           <p>
             While the lofi was being done, we talked about the aesthetics of the
-            site. As a salon business, we would want our website to{" "}
-            <strong className="highlight">
+            site. As a salon business, we would want our website to
+            <Highlight>
               feel relaxing, like a sense of ease that pushes the user to want
               to relax at The Suite Spot salon.
-            </strong>
+            </Highlight>
           </p>
           <h4 id="choosing-colors">Choosing Colors</h4>
           <p>
@@ -309,14 +302,14 @@ export default function Thesuitespot() {
             impairments. Our initial color selections did not meet accessibility
             standards, so we adjusted our choices to ensure good contrast
             between text and backgrounds, and to accommodate color-blind
-            individuals. We ran our colors through contrast checkers such as{" "}
+            individuals. We ran our colors through contrast checkers such as
             <a
               href="https://coolors.co/contrast-checker"
               target="_blank"
               rel="noreferrer"
             >
               https://coolors.co/contrast-checker
-            </a>{" "}
+            </a>
             in order to ensure all content is legible.
           </p>
           <h4 id="choosing-fonts">Choosing Fonts</h4>
@@ -399,8 +392,7 @@ export default function Thesuitespot() {
           <h4 id="testing-method">Testing Method</h4>
           <p>
             We developed test scenarios based on the use cases of our website.
-            We employed the{" "}
-            <strong className="highlight">"Think Aloud Protocol,"</strong> where
+            We employed the <Highlight>"Think Aloud Protocol,"</Highlight> where
             users were instructed to complete tasks while verbalizing their
             thoughts throughout the process. We recorded their actions, logged
             the time taken to complete each task, and noted any comments or
@@ -419,9 +411,9 @@ export default function Thesuitespot() {
             groups tested the mobile prototypes, and one group tested the
             desktop version. These tasks were based on the use cases and
             features we have already identified earlier in the project. A total
-            of <strong className="highlight">15 users</strong> were tested, all
-            of which were friends and family. More details on our testing method
-            can be found here:
+            of <Highlight>15 users</Highlight> were tested, all of which were
+            friends and family. More details on our testing method can be found
+            here:
           </p>
           <ImageWithCaption
             src={require("../../Assets/projects-img/thesuitespot/testing-group.png")}
@@ -678,14 +670,14 @@ export default function Thesuitespot() {
           <h4 id="FE-summary">About the Front End</h4>
           <p>
             With the Hi-Fi prototypes completed, we started building our site
-            using React. During front-end development, we prioritized{" "}
-            <strong>mobile responsiveness</strong> by utilizing{" "}
-            <strong>media queries</strong>, <strong>grid layouts</strong>, and{" "}
-            <strong>flexbox</strong>. We also focused on{" "}
-            <strong>accessibility</strong> by implementing{" "}
-            <strong>proper header hierarchy</strong>,{" "}
-            <strong>adding alt text to images</strong>,{" "}
-            <strong>using semantic HTML</strong>, and{" "}
+            using React. During front-end development, we prioritized
+            <strong>mobile responsiveness</strong> by utilizing
+            <strong>media queries</strong>, <strong>grid layouts</strong>, and
+            <strong>flexbox</strong>. We also focused on
+            <strong>accessibility</strong> by implementing
+            <strong>proper header hierarchy</strong>,
+            <strong>adding alt text to images</strong>,
+            <strong>using semantic HTML</strong>, and
             <strong>ensuring that buttons were tabbable</strong>.
           </p>
           <p>

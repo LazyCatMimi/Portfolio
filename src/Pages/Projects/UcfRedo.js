@@ -1,5 +1,5 @@
 import "../../Styles/Project-more-info/ucfredo.css";
-import { ImageWithCaption } from "./~TEMPLATE";
+import { ImageWithCaption, Highlight } from "./~TEMPLATE";
 
 export default function UcfRedo() {
   return (
@@ -16,16 +16,16 @@ export default function UcfRedo() {
               interactive button, directing users to the university's webpage,
               online learning platform, or a detailed map, and will highlight
               upon selection. This element of the app effectively serves as a
-              significant menu, providing access to various functions and
-              resources offered by the university.
+              <Highlight>significant menu</Highlight>, providing access to
+              various functions and resources offered by the university.
             </p>
             <p>
-              However, my biggest pain point as a user myselg is the excessive
-              information clutter. The overwhelming use of saturaated bold
-              colors and disorganized icons makes it difficult to read and find
-              what you need. As a user, I believe the menu items could be
-              grouped into categories, making them easier to navigate and
-              locate.
+              However, my biggest pain point as a user myself is the
+              <Highlight>excessive information clutter</Highlight>. The
+              overwhelming use of saturated bold colors and disorganized icons
+              makes it difficult to read and find what you need. As a user, I
+              believe the menu items could be grouped into categories, making
+              them easier to navigate and locate.
             </p>
           </div>
           <ImageWithCaption
@@ -40,20 +40,24 @@ export default function UcfRedo() {
           <div>
             <h3>Redesign Process</h3>
             <p>
-              To improve the UCF mobile app, I decided to conduct an open
-              card-sorting exercise, using myself as the test subject. In Image
-              1B, you'll see how I grouped items based on their function,
-              marking each group with a different color. I examined each item
-              from left to right and top to bottom, identifying similarities in
-              their purpose. Ultimately, I categorized the items into five
-              distinct color groups, each representing a different category.
+              To improve the UCF mobile app, I decided to conduct an
+              <Highlight>open card-sorting</Highlight> exercise, using myself as
+              the test subject. In Image 1B, you'll see how I grouped items
+              based on their function, marking each group with a different
+              color. I examined each item from left to right and top to bottom,
+              identifying similarities in their purpose. Ultimately, I
+              categorized the items into five distinct color groups, each
+              representing a different category.
             </p>
             <h3>My Findings</h3>
             <p>
               As I reviewed the marked items in the screenshot, I noticed the
               disorganization wasn't just due to the overall display of menu
-              items, but also because related items were scattered across the
-              interface. Some groups appeared in clusters, but were frequently
+              items, but also because
+              <Highlight>
+                related items were scattered across the interface
+              </Highlight>
+              . Some groups appeared in clusters, but were frequently
               interrupted by unrelated items. For example, the first row
               includes "myUCF," "Webcourses," and "Knights Mail," which are all
               essential tools students use for their classes. However, this flow
@@ -65,13 +69,15 @@ export default function UcfRedo() {
               The initial grouping of similar items led me, as a user, to expect
               the entire menu to be organized in a similar way. But the
               introduction of an unrelated item breaks this expectation,
-              interrupting my thought process as I search for the needed
-              function. This disruption happens repeatedly across the menu, as
-              shown in Image 1B. Each instance of a mismatched item causes a
-              moment of confusion, gradually slowing me down and leading to a
-              sense of frustration. Ultimately, the current design of the UCF
-              mobile app turns what should be a simple search into a daunting
-              task.
+              <Highlight>interrupting my thought process</Highlight> as I search
+              for the needed function. This disruption happens repeatedly across
+              the menu, as shown in Image 1B. Each instance of a mismatched item
+              causes a moment of confusion, gradually
+              <Highlight>
+                slowing me down and leading to a sense of frustration
+              </Highlight>
+              . Ultimately, the current design of the UCF mobile app turns what
+              should be a simple search into a daunting task.
             </p>
           </div>
           <ImageWithCaption
@@ -94,11 +100,15 @@ export default function UcfRedo() {
           scrolling.
         </p>
         <p>
-          My solution was to implement dropdown menus. With dropdowns, users can
-          quickly scan for the category they need and collapse the ones they
-          don't, allowing them to access the desired items faster without the
-          need to scroll through irrelevant options. This approach reduces the
-          overall scrolling time and improves efficiency.
+          My solution was to implement <Highlight>dropdown menus</Highlight>.
+          With dropdowns, users can {""}
+          <Highlight>
+            quickly scan for the category they need and collapse the ones they
+            don't
+          </Highlight>
+          , allowing them to access the desired items faster without the need to
+          scroll through irrelevant options. This approach reduces the overall
+          scrolling time and improves efficiency.
         </p>
         <p>
           Additionally, I made the icons smaller because some were not
@@ -119,25 +129,26 @@ export default function UcfRedo() {
           Lastly, my redesign tackles the problem of overwhelming eye scanning.
           In the old design, users had to scan each item from left to right and
           top to bottom, following the natural reading order. With my redesign,
-          users only need to scan from top to bottom and can easily skip
-          unnecessary categories. This significantly speeds up the process of
-          finding an item and reduces eye strain.
+          users <Highlight>only need to scan from top to bottom</Highlight> and
+          can easily skip unnecessary categories. This significantly
+          <Highlight>speeds up</Highlight> the process of finding an item and
+          reduces eye strain.
         </p>
       </article>
       <article className="proj-info pi-after">
         <h3>Reflection</h3>
         <p>
-          By organizing the items in this way, scanning and scrolling are
-          minimized, making it much easier for users to find what they need.
-          Users can bypass categories they don't need, and even if they're
-          unsure where an item is located, they can make an educated guess by
-          selecting the relevant category, avoiding the need to scan through all
-          the items. This redesign highlights how the layout of navigation can
-          significantly impact a user's attention and willingness to continue
-          using a product. For a UX designer, addressing this issue is crucial
-          for enhancing user interaction with a website or product, ultimately
-          boosting conversion rates. It's a win-win for both the user and the
-          company.
+          By organizing the items in this way,
+          <Highlight>scanning and scrolling are minimized</Highlight> , making
+          it much easier for users to find what they need. Users can bypass
+          categories they don't need, and even if they're unsure where an item
+          is located, they can make an educated guess by selecting the relevant
+          category, avoiding the need to scan through all the items. This
+          redesign highlights how the layout of navigation can significantly
+          impact a user's attention and willingness to continue using a product.
+          For a UX designer, addressing this issue is crucial for enhancing user
+          interaction with a website or product, ultimately boosting conversion
+          rates. It's a win-win for both the user and the company.
         </p>
       </article>
     </div>
