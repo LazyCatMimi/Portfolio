@@ -273,6 +273,42 @@ export default function Dominos() {
           users focus, especially those with attention or processing challenges.
         </p>
       </Section>
+      <Section title="The Results">
+        <h4>User Survey - After</h4>
+        <p>
+          I surveyed the same individuals again about my redesign, asking if and
+          why it had improved upon the original.
+        </p>
+        <ul>
+          <li>
+            SO much better. A lot less overwhelming because everything is spaced
+            out and not cramped in one place.
+          </li>
+          <li>
+            I can clearly see where I’m supposed to click compared to the old
+            one.
+          </li>
+          <li>
+            It’s somewhat of a shame that I can’t see all the deals all at once,
+            but at least there’s a slider thing so it’s not too bad. Definitely
+            better looking though.
+          </li>
+          <li>Yeah. There’s a lot less going on.</li>
+          <li>It looks simpler - in a good way.</li>
+        </ul>
+
+        <h4>Conclusion</h4>
+        <p>
+          The redesigned version of Domino's website is more user-friendly and
+          accessible. It reduces clutter, improves readability, and enhances
+          navigation. Users with disabilities can now easily find what they
+          need, making the pizza ordering experience more enjoyable for
+          everyone. The changes also benefit all users, creating a more
+          efficient and pleasant experience. The redesigned site is a step
+          towards a more inclusive online environment, where everyone can access
+          information and services without barriers.
+        </p>
+      </Section>
     </div>
   );
 }
