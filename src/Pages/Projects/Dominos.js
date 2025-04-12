@@ -40,7 +40,7 @@ export default function Dominos() {
         />
         <p>Visit the site at the point of design here:</p>
         <a href="https://web.archive.org/web/20230930231216/https://www.dominos.com/"     target="_blank"
-    rel="noreferrer" className="m-auto">https://web.archive.org/web/20230930231216/https://www.dominos.com/
+    rel="noreferrer" className="text-4xl font-bold text-pink-500 text-center">https://web.archive.org/web/20230930231216/https://www.dominos.com/
         </a>
         <h4>User Survey</h4>
         <p>

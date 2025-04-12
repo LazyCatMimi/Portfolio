@@ -137,7 +137,7 @@
   --glow-shadow: 0px 4px 25px #612fa3;
 }
 
-/* @import "tailwindcss"; */
+
 .background1 {
   background: var(--gradient-background-1);
 }
