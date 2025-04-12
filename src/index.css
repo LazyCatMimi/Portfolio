@@ -335,7 +335,9 @@ a {
 .center-text {
   text-align: center;
 }
-
+.margin-auto {
+  margin: auto;
+}
 section {
   /* padding: clamp(200px, 3em, 400px) clamp(300px, 4em, 500px); */
   padding: var(--padding);

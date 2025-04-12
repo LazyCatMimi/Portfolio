@@ -38,10 +38,19 @@ export default function Dominos() {
           href="https://docs.google.com/document/d/1IpC7AllgDSzGR97BcVZ7EKvnn44x7pe7Oa44ugeV1xc/edit?tab=t.0"
           text="Full Analysis"
         />
-        <p >Visit the site at the point of design here:</p>
+        <p className="center-text">Visit the site at the point of design here:</p>
+        <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: "20px"}}>
         <a href="https://web.archive.org/web/20230930231216/https://www.dominos.com/"     target="_blank"
     rel="noreferrer" >https://web.archive.org/web/20230930231216/https://www.dominos.com/
         </a>
+        </div>
+
+        <ImageWithCaption
+          src={require("../../Assets/projects-img/Dominos/original.png")}
+          alt=""
+          style={{ width: 500, display: "flex", margin: "auto" }}
+          caption="The original website as of September 30, 2023"
+        />
         <h4>User Survey</h4>
         <p>
           I gathered first impressions of the website design from friends and
@@ -149,7 +158,7 @@ export default function Dominos() {
           </li>
         </ul>
       </Section>
-      <Section title="The Solutions">
+      <Section title="The Changes">
         <h4>Visual Clarity and Reduced Clutter</h4>
         <p>
           <strong>Original:</strong> The original design is visually
