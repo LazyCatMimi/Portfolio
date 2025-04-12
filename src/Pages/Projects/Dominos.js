@@ -38,9 +38,9 @@ export default function Dominos() {
           href="https://docs.google.com/document/d/1IpC7AllgDSzGR97BcVZ7EKvnn44x7pe7Oa44ugeV1xc/edit?tab=t.0"
           text="Full Analysis"
         />
-        <p>Visit the site at the point of design here:</p>
+        <p >Visit the site at the point of design here:</p>
         <a href="https://web.archive.org/web/20230930231216/https://www.dominos.com/"     target="_blank"
-    rel="noreferrer" className="text-4xl font-bold text-pink-500 text-center">https://web.archive.org/web/20230930231216/https://www.dominos.com/
+    rel="noreferrer" >https://web.archive.org/web/20230930231216/https://www.dominos.com/
         </a>
         <h4>User Survey</h4>
         <p>
