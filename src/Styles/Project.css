@@ -14,10 +14,21 @@
   font-size: 2.7em;
   /* color: var(--); */
 }
+
+#projectidv h3 {
+  font-family: var(--header-font);
+  margin: 0 auto 1em 0;
+  /* border-bottom: 5px solid var(--token-secondary-border-default); */
+}
 #projectidv h4 {
   color: var(--token-primary-surface-lighter);
+  margin: 3em 1em auto auto;
 }
 
+
+#projectidv img {
+border-radius: var(--token-border-radius-s);
+}
 #project-content {
   z-index: 5;
   width: 100%;
@@ -27,9 +38,14 @@
 .special-heading {
   /* background-color: var(--token-secondary-surface-lighter) !important; */
   background: none !important;
-  color: white;
-}
+ text-align: center !important;
+  margin: 6em 0 1em 0  !important;
 
+}
+.special-heading  h2 {
+  font-size: 3rem !important;
+  color:  var(--token-primary-surface-default) !important;
+}
 .action-btn {
   display: flex;
   margin: 10px;

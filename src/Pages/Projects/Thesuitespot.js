@@ -53,6 +53,7 @@ export default function Thesuitespot() {
           <h2 className="center-text" style={{ margin: 0 }} id="design-phase">
             Design Phase
           </h2>
+          <p>The starting point of it all—where ideas are born, designs are crafted, and user testing begins.</p>
         </article>
         <Section title="Ideation">
           <h4 id="the-problem">The Problem in the Market</h4>
@@ -210,7 +211,7 @@ export default function Thesuitespot() {
             <Highlight> responsive mobile-first design</Highlight>.
           </p>
           <p>See our design sketches here:</p>
-          <p className="center-text">Mobile</p>
+
           <img
             src={require("../../Assets/projects-img/thesuitespot/sketches-mobile.png")}
             alt=""
@@ -219,7 +220,7 @@ export default function Thesuitespot() {
             href="https://app.uizard.io/p/39a0e03a/overview"
             text="See Mobile Sketches"
           />
-          <p className="center-text">Desktop</p>
+  
           <img
             src={require("../../Assets/projects-img/thesuitespot/sketches-desktop.png")}
             alt=""
@@ -237,7 +238,7 @@ export default function Thesuitespot() {
             version.
           </p>
           <p>See our Lo-Fi Prototypes here:</p>
-          <p className="center-text">Mobile</p>
+
           <img
             src={require("../../Assets/projects-img/thesuitespot/lofi-mobile.png")}
             alt=""
@@ -246,7 +247,6 @@ export default function Thesuitespot() {
             href="https://www.figma.com/proto/Tu8daAYiOE6THFlZO444jD/Mobile-LoFi-Prototype?node-id=1-2&node-type=CANVAS&t=6gFk1JOuDzvMVhfe-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2overview"
             text="See Mobile Lo-Fi"
           />
-          <p className="center-text">Desktop</p>
           <img
             src={require("../../Assets/projects-img/thesuitespot/lofi-desktop.png")}
             alt=""
@@ -488,12 +488,13 @@ export default function Thesuitespot() {
             either indifferent or felt there were no significant issues that
             negatively impacted their experience due to their disability.
           </p>
+          <p className="center-text" style={{marginTop: "3em"}}>Accessibility satisfaction:</p>
           <img
             src={require("../../Assets/projects-img/thesuitespot/test-disability.png")}
             alt=""
             style={{ width: 900, display: "flex", margin: "auto" }}
           ></img>
-          <p>User Experience Satisfaction Results:</p>
+          <p className="center-text" style={{marginTop: "3em"}}>Overall user experience satisfaction results from all users tested:</p>
           <img
             src={require("../../Assets/projects-img/thesuitespot/test-ux.png")}
             alt=""
@@ -653,6 +654,7 @@ export default function Thesuitespot() {
           >
             Development Phase
           </h2>
+          <p>Transforming design into reality through the magic of code.</p>
         </article>
 
         <Section title="Development Summary">

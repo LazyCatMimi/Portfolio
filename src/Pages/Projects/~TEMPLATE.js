@@ -29,11 +29,12 @@ export const ExternalLinkButton = ({ href, text }) => (
   </a>
 );
 
-export const Section = ({ title, children }) => (
+export const Section = ({ title, children, line=true }) => (
   <article className="proj-info pi-after">
     <h3 className="center-text" id={generateIdFromText(title)}>
       {title}
     </h3>
+    {line ? <hr class="line"></hr> : null}
     {children}
   </article>
 );
