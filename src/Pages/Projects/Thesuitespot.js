@@ -49,12 +49,15 @@ export default function Thesuitespot() {
             caption="(left to right) me, Lily, Lindsey, Brianna, and Callie"
           />
         </article>
-        <article className="proj-info pi-after special-heading">
+        <div className="center-div">
+          <article className="proj-info pi-after special-heading">
           <h2 className="center-text" style={{ margin: 0 }} id="design-phase">
             Design Phase
           </h2>
           <p>The starting point of it all—where ideas are born, designs are crafted, and user testing begins.</p>
         </article>
+        </div>
+        
         <Section title="Ideation">
           <h4 id="the-problem">The Problem in the Market</h4>
           <p>
@@ -646,7 +649,8 @@ export default function Thesuitespot() {
             these skills in future endeavors.
           </p>
         </Section>
-        <article className="proj-info pi-after special-heading">
+        <div className="center-div">
+<article className="proj-info pi-after special-heading">
           <h2
             className="center-text"
             style={{ margin: 0 }}
@@ -656,6 +660,9 @@ export default function Thesuitespot() {
           </h2>
           <p>Transforming design into reality through the magic of code.</p>
         </article>
+
+        </div>
+        
 
         <Section title="Development Summary">
           <p>

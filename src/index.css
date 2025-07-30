@@ -366,6 +366,13 @@ ul {
   color: WHITE;
   /* border-radius: var(--token-border-radius-s); */
 }
+.center-div {
+  width: 100% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 /* ------------components---------------- */
 .back-button {
   display: flex;
