@@ -132,6 +132,17 @@
   --token-secondary-border-default: var(--color-Purple-600);
   --token-secondary-border-darker: var(--color-Purple-800);
 
+ --token-tertiary-surface-subtle: var(--color-Blue-400);
+  --token-tertiary-surface-lighter: var(--color-Blue-600);
+  --token-tertiary-surface-default: var(--color-Blue-800);
+  --token-tertiary-surface-darker: var(--color-Blue-950);
+
+
+  --token-tertiary-border-subtle: var(--color-Blue-200);
+  --token-tertiary-border-lighter: var(--color-Blue-400);
+  --token-tertiary-border-default: var(--color-Blue-600);
+  --token-tertiary-border-darker: var(--color-Blue-800);
+
   --gradient-background-1: linear-gradient(180deg, #090510 0%, #26123f 100%);
   --gradient-background-2: linear-gradient(180deg, #26123f 0%, #090510 100%);
   --glow-shadow: 0px 4px 25px #612fa3;
@@ -361,10 +372,17 @@ ul {
   grid-gap: 1.5em;
 }
 .highlight {
-  background-color: var(--token-primary-surface-default);
+  background-color: var(--token-secondary-surface-subtle);
   padding: 0 0.1em;
-  color: WHITE;
+  color: rgb(255, 255, 255);
   /* border-radius: var(--token-border-radius-s); */
+}
+.center-div {
+  width: 100% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* ------------components---------------- */
 .back-button {

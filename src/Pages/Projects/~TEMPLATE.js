@@ -1,6 +1,6 @@
 export default function TEMPLATE() {
   return (
-    <div className="proj-more-info" id="ucfredo">
+    <div className="proj-more-info">
       <article className="proj-info pi-after">
         <p>TEMPLATE</p>
       </article>

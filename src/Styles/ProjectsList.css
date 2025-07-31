@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 } */
+
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -98,7 +99,13 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+   /* width:max-content; */
+  /* overflow-x: scroll; */
 }
+
+/* #latest-projects {
+  width: 100%;
+} */
 .sort-desc {
   font-weight: 400;
   margin: 2em;
@@ -112,6 +119,7 @@
   padding: 0.5em 1em;
   margin: 0.7em;
   min-width: 100px;
+  width:max-content;
   box-sizing: border-box;
   /* font-family: "Julius Sans One", sans-serif; */
   font-weight: bold;
