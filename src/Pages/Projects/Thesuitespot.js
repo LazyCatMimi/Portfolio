@@ -96,12 +96,15 @@ export default function Thesuitespot() {
             that means booking an appointment or purchasing products.
           </p>
           <h4 id="market-matrix">Market Matrix</h4>
-          We started by creating a Market Matrix to
+          <p>
+We started by creating a Market Matrix to
           <Highlight>analyze competitors</Highlight>. This approach helps
           identify essential features and pages for salon websites, as well as
           any gaps in the industry. A higher percentage indicates more critical
           features, while a lower percentage highlights areas where features are
           needed or lacking.
+          </p>
+          
           <img
             src={require("../../Assets/projects-img/thesuitespot/marketmatrix.png")}
             alt=""
