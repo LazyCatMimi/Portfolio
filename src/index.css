@@ -287,7 +287,7 @@ a {
     font-size: var(--mobile-h5-size);
   }
   p,
-  ul {
+  ul,ol {
     font-size: var(--mobile-p-size);
   }
   .subtitle {
