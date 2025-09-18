@@ -1,8 +1,13 @@
 #contact-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10%;
+  display:flex;
+  /* grid-template-columns: auto auto; */
+  /* gap: 2em; */
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5em;
 }
+
 
 /* form */
 form {
@@ -11,6 +16,8 @@ form {
   border-radius: 31px;
   padding: 2em;
   width: 100%;
+  min-width: 600px;
+  /* margin-left: 2em; */
   max-width: 600px;
   justify-self: flex-end;
 }
@@ -101,16 +108,20 @@ form .primary-button {
 
 @media screen and (max-width: 920px) {
   #contact-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 5%;
+    display: block;
+  }
+  #contact-form div:first-of-type{
+    width: 100%;
+    align-items: center;
   }
 
   form {
+    min-width: auto;
     width: 100%;
-    max-width: 600px;
-    justify-self: center;
+    max-width: 100%;
+margin: auto;
   }
+
   #socials {
     justify-self: center;
     margin-bottom: 50px;

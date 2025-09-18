@@ -81,5 +81,54 @@
         "icon": "figma"
       }
     ]
+  },
+  {
+    "name": "Cat or Dog Quiz",
+    "tags": ["development"],
+    "id": "cat-dog-quiz",
+    "imgFill": "Assets/projects/catdog-fill.jpg",
+    "imgThumb": "Assets/projects/catdog-thumb.jpg",
+    "tools": "Vanilla HTML/CSS/JS",
+    "type": "web",
+    "shortSummary": "A simple form validation website with a quiz",
+    "summary": "A simple word guessing game from a small selected list of words. My first Javascript project!",
+    "tasks": ["Created a front-end using basic technologies"],
+    "actions": [
+      {
+        "name": "See GH repository",
+        "link": "https://github.com/LazyCatMimi/CatDogQuizFormValidation",
+        "type": "secondary-button",
+        "icon": "github"
+      },
+      {
+        "name": "See Website",
+        "link": "https://lazycatmimi.github.io/CatDogQuizFormValidation/",
+        "type": "primary-button",
+        "icon": "globe"
+      }
+    ]
+  },
+   {
+    "name": "Flashcard App",
+    "tags": ["design"],
+    "id": "flashcard-app",
+    "imgFill": "Assets/projects/flashcard-fill.jpg",
+    "imgThumb": "Assets/projects/flashcard-thumb.png",
+    "tools": "Figma",
+    "type": "mobile",
+    "shortSummary": "A Simple flash card app where users can create, edit, delete, and learn cards.",
+    "summary": "A Simple flash card app where users can create, edit, delete, and learn cards.",
+    "tasks": [
+      "Created hi-fi Prototype",
+      "Ensured consistency and accessibility throughout the design phase"
+    ],
+    "actions": [
+      {
+        "name": "See Mobile HiFi",
+        "link": "https://www.figma.com/proto/70v4Ocvl6tx2O1sThKNrES/Untitled?node-id=2-2&starting-point-node-id=2%3A2&mode=design&t=nzoseAqAx23yInpG-1",
+        "type": "primary-button",
+        "icon": "figma"
+      }
+    ]
   }
 ]
