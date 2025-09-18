@@ -16,7 +16,7 @@ form {
   border-radius: 31px;
   padding: 2em;
   width: 100%;
-  min-width: 500px;
+  min-width: 600px;
   /* margin-left: 2em; */
   max-width: 600px;
   justify-self: flex-end;
@@ -118,6 +118,7 @@ form .primary-button {
   form {
     min-width: auto;
     width: 100%;
+    max-width: 100%;
 margin: auto;
   }
 
