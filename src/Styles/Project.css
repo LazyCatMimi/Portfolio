@@ -37,7 +37,7 @@ border-radius: var(--token-border-radius-s);
 #project-content {
   z-index: 5;
   width: 100%;
-  margin: 0 var(--padding-H);
+  /* margin: 0 var(--padding-H); */
 }
 
 .special-heading {
@@ -156,6 +156,7 @@ border-radius: var(--token-border-radius-s);
   }
   .proj-info {
     width: 100%;
+    padding: var(--padding);
     /* margin: 0em auto 2em auto; */
   }
 

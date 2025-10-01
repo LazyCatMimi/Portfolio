@@ -226,8 +226,8 @@ export default function Home() {
           title="My Design & Development Philosophies"
         />
       </section> */}
-      <div className="background1" style={{ flex: 1 }}>
-        <div className="max-width">
+      <div className="background1" >
+        
           <section id="contact-me">
             <h2>
               <StaggeredText text="Let's Connect!" staggerDelay={0.1} />
@@ -235,7 +235,7 @@ export default function Home() {
             {/* <hr className="line"/> */}
             <ContactForm />
           </section>
-        </div>
+     
       </div>
       <Footer />
     </main>
