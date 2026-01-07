@@ -85,7 +85,7 @@ export default function ProjectsQuickView() {
     i,
   }) => (
     <Link to={`/projects/${id}`} className={`${featured && "featured"}`}>
-      <article>
+      <article className="project-card hover">
         <img
           src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
           alt=""

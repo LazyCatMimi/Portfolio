@@ -168,11 +168,17 @@
 } */
 #more-projects {
   padding: 4em 2em;
-  background-image: url("../Assets/more-proj-banner.jpg");
+  background:
+  linear-gradient(
+    to right,
+    color-mix(in srgb, var(--token-secondary-surface-default) 100%, transparent),
+    color-mix(in srgb, var(--token-secondary-surface-default) 60%, transparent)
+  ),
+    url("../Assets/more-proj-banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overlay-color: rgba(0, 0, 0, 0.5);
+transition: all 0.2s ease-in-out;
   width: 100%;
   border-radius: var(--token-border-radius-m);
   text-decoration: none;

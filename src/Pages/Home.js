@@ -196,7 +196,7 @@ export default function Home() {
 
       <section style={{ background: "var(--token-secondary-surface-darker)" }}>
         <div className="max-width">
-          <a id="more-projects" href={PATHS.main.projects}>
+          <a id="more-projects" className="hover" href={PATHS.main.projects}>
             <h2>See My Fullest Potential!</h2>
             <p> View more cool projects</p>
           </a>
