@@ -166,6 +166,15 @@
 /* #explore-projects {
   padding: 4em 2em;
 } */
+#more-projects {
+  padding: 4em 2em;
+  background-image: url("../Assets/more-proj-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: var(--token-border-radius-m);
+}
 #explore-projects h2 {
   margin-top: 0;
   text-align: center;

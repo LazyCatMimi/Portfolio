@@ -194,18 +194,15 @@ export default function Home() {
         </div> */}
       </section>
 
-      <section  style={{ background: "var(--token-secondary-surface-darker)" }}>
+      <section style={{ background: "var(--token-secondary-surface-darker)" }}>
         <div className="max-width">
-          <h2>
-            See My Fullest Potential!
-          </h2>
-          <p> View more cool projects</p>
-
+          <div id="more-projects">
+            <h2>See My Fullest Potential!</h2>
+            <p> View more cool projects</p>
+          </div>
         </div>
-      
       </section>
 
-      
       {/* <section className="light-bg" id="explore-projects">
         <h2>
           <StaggeredText text="Read More on Projects" staggerDelay={0.05} />
@@ -238,16 +235,14 @@ export default function Home() {
           title="My Design & Development Philosophies"
         />
       </section> */}
-      <div className="background1" >
-        
-          <section id="contact-me">
-            <h2>
-              <StaggeredText text="Let's Connect!" staggerDelay={0.1} />
-            </h2>
-            {/* <hr className="line"/> */}
-            <ContactForm />
-          </section>
-     
+      <div className="background1">
+        <section id="contact-me">
+          <h2>
+            <StaggeredText text="Let's Connect!" staggerDelay={0.1} />
+          </h2>
+          {/* <hr className="line"/> */}
+          <ContactForm />
+        </section>
       </div>
       <Footer />
     </main>
