@@ -2,7 +2,7 @@ import ContactForm from "./Components/ContactForm";
 import Header from "./Components/Header";
 import FocusBanner from "./Components/HomePage/FocusBanner";
 import "../Styles/Home.css";
-
+import PATHS from "../Data/Pages.json";
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import starIcon from "../Assets/Icons/star-bullet.svg";
@@ -196,10 +196,10 @@ export default function Home() {
 
       <section style={{ background: "var(--token-secondary-surface-darker)" }}>
         <div className="max-width">
-          <div id="more-projects">
+          <a id="more-projects" href={PATHS.main.projects}>
             <h2>See My Fullest Potential!</h2>
             <p> View more cool projects</p>
-          </div>
+          </a>
         </div>
       </section>
 
