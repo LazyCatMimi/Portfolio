@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 import BackButton from "./Components/BackButton";
 import Footer from "./Components/Footer";
 
-export default function Project() {
+export default function ProjectArticle() {
   const { id } = useParams();
   const [project, setProject] = useState(null);
 

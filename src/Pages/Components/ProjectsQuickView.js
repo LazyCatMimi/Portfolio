@@ -119,8 +119,7 @@ export default function ProjectsQuickView() {
   );
   return (
     <section
-      className="background1"
-      style={{ background: "var(--color-Purple-950)" }}
+      
     >
       <div className="max-width">
         <div id="latest-projects">

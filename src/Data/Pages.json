@@ -2,6 +2,7 @@
   "main": {
     "home": "/",
     "contact": "/contact",
+    "projects": "/projects",
     "webDesign": "/web-design",
     "webDev": "/web-dev",
     "artDesign": "/art-design",

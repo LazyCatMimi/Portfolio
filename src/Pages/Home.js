@@ -193,7 +193,19 @@ export default function Home() {
           <FeatureList list={uniqueList} title="What Makes Me Unique" />
         </div> */}
       </section>
-      <ProjectsQuickView />
+
+      <section  style={{ background: "var(--token-secondary-surface-darker)" }}>
+        <div className="max-width">
+          <h2>
+            See My Fullest Potential!
+          </h2>
+          <p> View more cool projects</p>
+
+        </div>
+      
+      </section>
+
+      
       {/* <section className="light-bg" id="explore-projects">
         <h2>
           <StaggeredText text="Read More on Projects" staggerDelay={0.05} />
