@@ -137,7 +137,7 @@ export default function Home() {
           <h1 className="title-sub-2">UI/UX Designer & Front-End Enthusiast</h1>
         </div>
         <div className="button-container">
-          <Link to="#latest-projects" className="primary-button">
+          <Link to="#selected-projects" className="primary-button">
             See Projects
           </Link>
           <Link to="#contact-me" className="secondary-button">
@@ -161,6 +161,7 @@ export default function Home() {
         <FocusBanner />
       </section> */}
       <section className="background2" id="about">
+      {/* <FocusBanner />  */}
         <div className=" about-container max-width">
           <img
             src={require("../Assets/me.jpg")}
@@ -194,10 +195,10 @@ export default function Home() {
         </div> */}
       </section>
 
-      <section style={{ background: "var(--token-secondary-surface-darker)" }}>
+      <section id="selected-projects" style={{ background: "var(--token-secondary-surface-darker)" }}>
         <div className="max-width">
           <a id="more-projects" className="hover" href={PATHS.main.projects}>
-            <h2>See My Fullest Potential!</h2>
+            <h2>See My <span style={{color:"var(--token-primary-surface-lighter)"}}>Fullest</span> Potential!</h2>
             <p> View more cool projects</p>
           </a>
         </div>

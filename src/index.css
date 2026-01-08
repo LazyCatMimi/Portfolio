@@ -29,11 +29,11 @@
   --margin-tablet: 24px;
   --margin-mobile: 16px;
 
-  --token-border-radius-xs: 6px;
+  --token-border-radius-xs: 4px;
   --token-border-radius-s: 8px;
-  --token-border-radius-m: 12px;
-  --token-border-radius-l: 16px;
-  --token-border-radius-xl: 24px;
+  --token-border-radius-m: 16px;
+  --token-border-radius-l: 32px;
+  --token-border-radius-xl: 40px;
   --token-border-radius-full: 99px;
 
   --h1-size: 3.052rem;
@@ -145,7 +145,8 @@
 
   --gradient-background-1: linear-gradient(180deg, #090510 0%, #26123f 100%);
   --gradient-background-2: linear-gradient(180deg, #26123f 0%, #090510 100%);
-  --glow-shadow: 0px 4px 25px #612fa3;
+  --glow-S: 0px 5px 100px -50px var(--token-secondary-surface-lighter);
+  --glow-L: 0px 70px 200px -100px var(--token-primary-surface-default);
 }
 
 
@@ -275,7 +276,7 @@ a {
   position: relative;
   /* border: 1px solid var(--token-secondary-border-lighter); */
   z-index: 98;
-  box-shadow: 0px 30px 10px var(--glow-shadow);
+  box-shadow: var(--glow-L);
   transition: all 0.2s ease-in-out;
 }
 @media screen and (max-width: 455px) {
@@ -342,7 +343,7 @@ a {
 
 .glow {
   /* Glow */
-  box-shadow: var(--glow-shadow);
+  box-shadow: var(--glow-S);
 }
 .info {
   background-color: var(--dark-bg);
