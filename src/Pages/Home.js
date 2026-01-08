@@ -6,7 +6,7 @@ import PATHS from "../Data/Pages.json";
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import starIcon from "../Assets/Icons/star-bullet.svg";
-
+import arrRightIcon from "../Assets/Icons/arrow-right.svg";
 // animations
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -161,7 +161,7 @@ export default function Home() {
         <FocusBanner />
       </section> */}
       <section className="background2" id="about">
-      {/* <FocusBanner />  */}
+        {/* <FocusBanner />  */}
         <div className=" about-container max-width">
           <img
             src={require("../Assets/me.jpg")}
@@ -195,11 +195,23 @@ export default function Home() {
         </div> */}
       </section>
 
-      <section id="selected-projects" style={{ background: "var(--token-secondary-surface-darker)" }}>
+      <section
+        id="selected-projects"
+        style={{ background: "var(--token-secondary-surface-darker)" }}
+      >
         <div className="max-width">
           <a id="more-projects" className="hover" href={PATHS.main.projects}>
-            <h2>See My <span style={{color:"var(--token-primary-surface-lighter)"}}>Fullest</span> Potential!</h2>
-            <p> View more cool projects</p>
+            <h2 className="m-0">
+              See My{" "}
+              <span style={{ color: "var(--token-primary-surface-lighter)" }}>
+                Fullest
+              </span>{" "}
+              Potential!
+            </h2>
+            <div className="inline-flex items-center gap-2">
+              <p>View more cool projects</p>
+              <img src={arrRightIcon} alt="" />
+            </div>
           </a>
         </div>
       </section>

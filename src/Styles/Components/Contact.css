@@ -56,9 +56,9 @@ form .primary-button {
 
 #socials a {
   color: var(--token-primary-surface-default);
-  display: block;
+  display: flex;
   align-items: center;
-  padding: 0.8em 0;
+  padding: 1.2em 0;
   /* margin-bottom: 1em; */
   position: relative;
 }
