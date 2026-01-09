@@ -8,7 +8,67 @@ import { motion } from "framer-motion";
 import starImg from "../../Assets/Icons/star.svg";
 import "../../Styles/ProjectsList.css";
 
-export default function ProjectsQuickView() {
+  const determineTag = (tag) => {
+    switch (tag) {
+      case "case-study":
+        return "UX Case Study";
+      case "design":
+        return "Web Design";
+      case "development":
+        return "Web Development";
+      case "art":
+        return "Art & Design";
+      default:
+        return "Web Design & Development";
+    }
+  };
+  export const ProjectCard = ({
+    name,
+    tags,
+    featured,
+    imgFill,
+    id,
+    tools,
+    shortSummary,
+    tasks,
+    actions,
+    i,
+  }) => (
+    <Link to={`/projects/${id}`} className={`${featured && "featured"}`}>
+      <article className="project-card hover">
+        <img
+          src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
+          alt=""
+        ></img>
+
+        <div>
+          {featured && (
+            <>
+              <div className="img-text">
+                <img src={starImg} className="star-img" alt="" />
+                <p className="featured-txt">Featured Project</p>
+              </div>
+            </>
+          )}
+          <h3>
+            <span className="num">{(i + 1).toString().padStart(2, "0")} </span>
+            | <LineRevealText text={name} staggerDelay={0.05} />
+          </h3>
+          <div className="proj-tags">
+            {tags.map((tag, index) => (
+              <p key={index} className="proj-tag">
+                {determineTag(tag)}{" "}
+              </p>
+            ))}
+          </div>
+          <p>{shortSummary}</p>
+          {/* <button className="primary-button">Read More</button> */}
+        </div>
+      </article>
+    </Link>
+  );
+
+export function ProjectsQuickView() {
   const [activeSortButton, setActiveSortButton] = useState("all");
   const sortButtons = [
     {
@@ -57,76 +117,18 @@ export default function ProjectsQuickView() {
     setActiveSortButton(event.target.value);
     setCurData(data);
   };
-  const determineTag = (tag) => {
-    switch (tag) {
-      case "case-study":
-        return "UX Case Study";
-      case "design":
-        return "Web Design";
-      case "development":
-        return "Web Development";
-      case "art":
-        return "Art & Design";
-      default:
-        return "Web Design & Development";
-    }
-  };
 
-  const Project = ({
-    name,
-    tags,
-    featured,
-    imgFill,
-    id,
-    tools,
-    shortSummary,
-    tasks,
-    actions,
-    i,
-  }) => (
-    <Link to={`/projects/${id}`} className={`${featured && "featured"}`}>
-      <article className="project-card hover">
-        <img
-          src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
-          alt=""
-        ></img>
 
-        <div>
-          {featured && (
-            <>
-              <div className="img-text">
-                <img src={starImg} className="star-img" alt="" />
-                <p className="featured-txt">Featured Project</p>
-              </div>
-            </>
-          )}
-          <h3>
-            <span className="num">{(i + 1).toString().padStart(2, "0")} </span>
-            | <LineRevealText text={name} staggerDelay={0.05} />
-          </h3>
-          <div className="proj-tags">
-            {tags.map((tag, index) => (
-              <p key={index} className="proj-tag">
-                {determineTag(tag)}{" "}
-              </p>
-            ))}
-          </div>
-          <p>{shortSummary}</p>
-          {/* <button className="primary-button">Read More</button> */}
-        </div>
-      </article>
-    </Link>
-  );
   return (
     <section
       
     >
       <div className="max-width">
         <div id="latest-projects">
-          <h2>
+          {/* <h2>
             <StaggeredText text="Projects" staggerDelay={0.05} />
           </h2>
-          <hr className="line" />
+          <hr className="line" /> */}
           <div id="sort-btn-container">
             {/* Map over the button data to render each radio button */}
             {sortButtons.map((button, index) => (
@@ -161,7 +163,7 @@ export default function ProjectsQuickView() {
           </p>
           <div className="projects-grid">
             {curData.map((project, index) => (
-              <Project key={index} {...project} i={index} />
+              <ProjectCard key={index} {...project} i={index} />
             ))}
           </div>
           <div style={{ textAlign: "center" }}>

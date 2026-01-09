@@ -13,7 +13,9 @@ import { useInView } from "react-intersection-observer";
 import StaggeredText from "./Components/Animation/StaggeredText";
 import LineRevealText from "./Components/Animation/LineRevealText";
 import { FromBottom } from "./Components/Animation/Animated";
-import ProjectsQuickView from "./Components/ProjectsQuickView";
+import { ProjectCard } from "./Components/ProjectsQuickView";
+import PROJECTS from "..//Data/Projects.json";
+// import ProjectsQuickView from "./Components/ProjectsQuickView";
 import Footer from "./Components/Footer";
 
 export default function Home() {
@@ -134,7 +136,7 @@ export default function Home() {
           <StaggeredText text="Quynh Vo" staggerDelay={0.15} />
         </h1>
         <div className="title-sub-2-container">
-          <h1 className="title-sub-2">UI/UX Designer & Front-End Enthusiast</h1>
+          <h1 className="title-sub-2"><strong>UI/UX Designer</strong> bridging design and development</h1>
         </div>
         <div className="button-container">
           <Link to="#selected-projects" className="primary-button">
@@ -200,6 +202,13 @@ export default function Home() {
         style={{ background: "var(--token-secondary-surface-darker)" }}
       >
         <div className="max-width">
+           <h2 className="text-center">
+            <StaggeredText text="Projects" staggerDelay={0.05} />
+          </h2>
+          <hr className="line" />
+          {PROJECTS.slice(0, 3).map((project, index) => (
+  <ProjectCard key={index} {...project} i={index} />
+))}
           <a id="more-projects" className="hover" href={PATHS.main.projects}>
             <h2 className="m-0">
               See My{" "}
