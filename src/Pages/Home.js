@@ -203,7 +203,7 @@ export default function Home() {
       >
         <div className="max-width">
            <h2 className="text-center">
-            <StaggeredText text="Projects" staggerDelay={0.05} />
+            <StaggeredText text="Selected Projects" staggerDelay={0.05} />
           </h2>
           <hr className="line" />
           {PROJECTS.slice(0, 3).map((project, index) => (

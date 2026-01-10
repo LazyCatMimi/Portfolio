@@ -61,12 +61,13 @@ form .primary-button {
   padding: 1.2em 0;
   /* margin-bottom: 1em; */
   position: relative;
+   transition: all 0.3s ease;
 }
 #socials a:hover {
   color: var(--token-primary-surface-darker);
   transform: scale(1.1);
 
-  transition: all 0.3s ease;
+ 
 }
 #socials img {
   margin-right: 15px;
