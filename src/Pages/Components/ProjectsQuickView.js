@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import starImg from "../../Assets/Icons/star.svg";
 import "../../Styles/ProjectsList.css";
+import { FromBottom } from "./Animation/Animated";
+
 
   const determineTag = (tag) => {
     switch (tag) {
@@ -52,7 +54,7 @@ import "../../Styles/ProjectsList.css";
           )}
           <h3>
             <span className="num">{(i + 1).toString().padStart(2, "0")} </span>
-            | <LineRevealText text={name} staggerDelay={0.05} />
+            | {name}
           </h3>
           <div className="proj-tags">
             {tags.map((tag, index) => (
@@ -163,14 +165,14 @@ export function ProjectsQuickView() {
           </p>
           <div className="projects-grid">
             {curData.map((project, index) => (
-              <ProjectCard key={index} {...project} i={index} />
+              <FromBottom><ProjectCard key={index} {...project} i={index} /></FromBottom>
             ))}
           </div>
-          <div style={{ textAlign: "center" }}>
+          {/* <div style={{ textAlign: "center" }}>
             <a href="/#latest-projects" className="center-text">
               Back to top
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

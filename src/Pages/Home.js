@@ -136,7 +136,9 @@ export default function Home() {
           <StaggeredText text="Quynh Vo" staggerDelay={0.15} />
         </h1>
         <div className="title-sub-2-container">
-          <h1 className="title-sub-2"><strong>UI/UX Designer</strong> bridging design and development</h1>
+          <h1 className="title-sub-2">
+            <strong>UI/UX Designer</strong> bridging design and development
+          </h1>
         </div>
         <div className="button-container">
           <Link to="#selected-projects" className="primary-button">
@@ -198,18 +200,20 @@ export default function Home() {
       </section>
 
       <section
-        id="selected-projects"
+        id="selected-projects "
         style={{ background: "var(--token-secondary-surface-darker)" }}
       >
         <div className="max-width">
-           <h2 className="text-center">
+          <h2 className="text-center m-0">
             <StaggeredText text="Selected Projects" staggerDelay={0.05} />
           </h2>
           <hr className="line" />
-          {PROJECTS.slice(0, 3).map((project, index) => (
-  <ProjectCard key={index} {...project} i={index} />
-))}
-          <a id="more-projects" className="hover" href={PATHS.main.projects}>
+          <div className="projects-grid" id="latest-projects">
+            {PROJECTS.slice(0, 3).map((project, index) => (
+              <FromBottom><ProjectCard key={index} {...project} i={index} /></FromBottom>
+            ))}
+          </div>
+          <FromBottom><a id="more-projects" className="hover block" href={PATHS.main.projects}>
             <h2 className="m-0">
               See My{" "}
               <span style={{ color: "var(--token-primary-surface-lighter)" }}>
@@ -221,7 +225,7 @@ export default function Home() {
               <p>View more cool projects</p>
               <img src={arrRightIcon} alt="" />
             </div>
-          </a>
+          </a></FromBottom>
         </div>
       </section>
 

@@ -224,7 +224,8 @@ img {
 }
 
 hr {
-  border: 1px solid var(--color-Purple-700);
+  border: 1px solid var(--token-secondary-border-default);
+  margin: 1em 0 2em 0;
 }
 /* bg */
 .dark-bg {

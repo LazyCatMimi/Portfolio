@@ -156,6 +156,7 @@
   /* height: auto; */
   object-fit: cover;
   border-radius: var(--token-border-radius-l);
+  border-radius: 100em;
 
   display: flex;
   align-items: center; /* Center content vertically */
