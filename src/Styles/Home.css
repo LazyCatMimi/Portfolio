@@ -168,7 +168,7 @@
   padding: 4em 2em;
 } */
 #more-projects {
-  padding: 6em 6em;
+  padding: 6em clamp(2em, 5vw, 6em);
   background:
   linear-gradient(
     to right,

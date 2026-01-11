@@ -210,22 +210,30 @@ export default function Home() {
           <hr className="line" />
           <div className="projects-grid" id="latest-projects">
             {PROJECTS.slice(0, 3).map((project, index) => (
-              <FromBottom><ProjectCard key={index} {...project} i={index} /></FromBottom>
+              <FromBottom>
+                <ProjectCard key={index} {...project} i={index} />
+              </FromBottom>
             ))}
           </div>
-          <FromBottom threshold={0.5}><a id="more-projects" className="hover block" href={PATHS.main.projects}>
-            <h2 className="m-0">
-              See My{" "}
-              <span style={{ color: "var(--token-primary-surface-lighter)" }}>
-                Fullest
-              </span>{" "}
-              Potential!
-            </h2>
-            <div className="inline-flex items-center gap-2">
-              <p>View more cool projects</p>
-              <img src={arrRightIcon} alt="" />
-            </div>
-          </a></FromBottom>
+          <FromBottom threshold={0.5}>
+            <a
+              id="more-projects"
+              className="hover block"
+              href={PATHS.main.projects}
+            >
+              <h2 className="m-0">
+                See My{" "}
+                <span style={{ color: "var(--token-primary-surface-lighter)" }}>
+                  Fullest
+                </span>{" "}
+                Potential!
+              </h2>
+              <div className="inline-flex items-center gap-2">
+                <p>View more cool projects</p>
+                <img src={arrRightIcon} alt="" />
+              </div>
+            </a>
+          </FromBottom>
         </div>
       </section>
 
