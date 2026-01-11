@@ -8,6 +8,12 @@
   background-size: cover;
 } */
 
+#ProjectList .header {
+
+  background-image: var(--gradient-background-2);
+
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
