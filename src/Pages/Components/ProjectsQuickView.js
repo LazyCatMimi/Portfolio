@@ -165,7 +165,7 @@ export function ProjectsQuickView() {
           </p>
           <div className="projects-grid">
             {curData.map((project, index) => (
-              <FromBottom><ProjectCard key={index} {...project} i={index} /></FromBottom>
+              <FromBottom threshold={0.2}><ProjectCard key={index} {...project} i={index} /></FromBottom>
             ))}
           </div>
           {/* <div style={{ textAlign: "center" }}>

@@ -213,7 +213,7 @@ export default function Home() {
               <FromBottom><ProjectCard key={index} {...project} i={index} /></FromBottom>
             ))}
           </div>
-          <FromBottom><a id="more-projects" className="hover block" href={PATHS.main.projects}>
+          <FromBottom threshold={0.5}><a id="more-projects" className="hover block" href={PATHS.main.projects}>
             <h2 className="m-0">
               See My{" "}
               <span style={{ color: "var(--token-primary-surface-lighter)" }}>
