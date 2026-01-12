@@ -1,9 +1,9 @@
-#Home .header {
+.header {
   height: 100vh;
   color: #fff;
   display: flex;
   overflow: hidden; /* Prevent content overflow */
-  background-color: #000000;
+
 }
 
 .header .content {
@@ -22,7 +22,7 @@
   font-weight: 300;
   font-size: clamp(0.9rem, 3vw + 0.5rem, 3rem);
 
-  color: var(--color-Purple-100);
+  color: var(--token-secondary-text-subtle);
 }
 
 .title-name {
@@ -36,7 +36,7 @@
   font-family: var(--body-font);
   font-size: clamp(0.9rem, 3vw + 0.5rem, 3rem);
   /* letter-spacing: 0.4em; */
-  color: var(--color-Purple-100);
+  color: var(--token-secondary-text-subtle);
   font-weight: 300;
 }
 .button-container {
@@ -155,7 +155,9 @@
   aspect-ratio: 1;
   /* height: auto; */
   object-fit: cover;
-  border-radius: 16px;
+  /* border-radius: var(--token-border-radius-l); */
+  border-radius: 100em;
+  border: 12px solid var(--token-secondary-border-darker);
 
   display: flex;
   align-items: center; /* Center content vertically */
@@ -166,6 +168,23 @@
 /* #explore-projects {
   padding: 4em 2em;
 } */
+#more-projects {
+  padding: 6em clamp(2em, 5vw, 6em);
+  background:
+  linear-gradient(
+    to right,
+    color-mix(in srgb, var(--token-secondary-surface-default) 100%, transparent),
+    color-mix(in srgb, var(--token-secondary-surface-default) 60%, transparent)
+  ),
+    url("../Assets/more-proj-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+transition: all 0.2s ease-in-out;
+  width: 100%;
+  border-radius: var(--token-border-radius-l);
+  text-decoration: none;
+}
 #explore-projects h2 {
   margin-top: 0;
   text-align: center;

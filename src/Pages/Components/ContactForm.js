@@ -111,36 +111,44 @@ export default function ContactForm() {
 
       <div id="socials">
         <h4 className="light-font-weight">Contact Info</h4>
+        <div className="socials-group">
+          <a href="mailto:quynh.vo3314@gmail.com" className="social-link">
+            <img src={mailIcon} alt="email" /> quynh.vo3314@gmail.com
+          </a>
+        </div>
 
-        <a href="mailto:quynh.vo3314@gmail.com" className="social-link">
-          <img src={mailIcon} alt="email" /> quynh.vo3314@gmail.com
-        </a>
-
-        <a href="tel:+14077972019" className="social-link">
-          <img src={phoneIcon} alt="phone number" /> (407) 797-2019
-        </a>
+        <div className="socials-group">
+          <a href="tel:+14077972019" className="social-link">
+            <img src={phoneIcon} alt="phone number" /> (407) 797-2019
+          </a>
+        </div>
 
         <h4 className="light-font-weight">Socials</h4>
 
-        <a
-          href="https://www.linkedin.com/in/quynh-vo-7b714222b"
-          target="_blank"
-          rel="noreferrer"
-          className="social-link"
-        >
-          <img src={linkedinIcon} alt="linkedIn" />
-          Quynh Vo
-        </a>
+        <div className="socials-group">
+          <a
+            href="https://www.linkedin.com/in/quynh-vo-7b714222b"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+          >
+            <img src={linkedinIcon} alt="linkedIn" />
+            Quynh Vo
+          </a>
+        </div>
 
-        <a
-          href="https://github.com/LazyCatMimi"
-          target="_blank"
-          rel="noreferrer"
-          className="social-link"
-        >
-          <img src={gitIcon} alt="Github" />
-          LazyCatMimi
-        </a>
+        <div className="socials-group">
+          <a
+            href="https://github.com/LazyCatMimi"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+            
+          >
+            <img src={gitIcon} alt="Github" />
+            LazyCatMimi
+          </a>
+        </div>
       </div>
     </div>
   );

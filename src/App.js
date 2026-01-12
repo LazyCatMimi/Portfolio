@@ -7,24 +7,25 @@ import Resume from "./Pages/Resume";
 import Contact from "./Pages/Contact - OLD";
 import PATHS from "./Data/Pages.json";
 import ScrollToTop from "./Pages/Components/ScrollToTop";
-import Project from "./Pages/Project";
+import ProjectArticle from "./Pages/ProjectArticle";
 import { inject } from "@vercel/analytics";
 import { injectSpeedInsights } from "@vercel/speed-insights";
+import ProjectList from "./Pages/ProjectList";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <NavBar />
         <ScrollToTop />
+        <NavBar />
         <Routes>
           <Route path={PATHS.main.home} element={<Home />} />
-          {/* <Route path={PATHS.main.contact} element={<Contact />} /> */}
-          {/* <Route path={PATHS.main.webDesign} element={<ProjectsWebDesign />} /> */}
+          <Route path={PATHS.main.contact} element={<Contact />} />
           <Route path={PATHS.main.resume} element={<Resume />} />
-          <Route path="/projects/:id" element={<Project />} />
+          <Route path={PATHS.main.projects} element={<ProjectList />} />
+          <Route path="/projects/:id" element={<ProjectArticle />} />
 
-          {/* <Route path="/projects/thesuitespot" element={<Thesuitespot />} /> */}
+          
         </Routes>
         {/* <Footer /> */}
       </Router>

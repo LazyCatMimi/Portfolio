@@ -1,13 +1,14 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { Children, useEffect, useState } from "react";
 
-export const FromBottom = ({ children }) => {
+export const FromBottom = ({ children, threshold }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
+    triggerOnce: true,
+    threshold: threshold ? threshold : 0.5,
   });
+
   useEffect(() => {
     if (inView) {
       controls.start("visible");
@@ -24,6 +25,40 @@ export const FromBottom = ({ children }) => {
       variants={variants}
       animate={controls}
       transition={{ duration: 1, ease: "easeOut" }} // Smooth easing
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export const AnimatedBackground = ({ children, toColor }) => {
+  // Choose starting + ending states based on desired direction
+  const map = {
+    toPurple: { initial: "toBlack", final: "toPurple" },
+    toBlack: { initial: "toPurple", final: "toBlack" },
+    toAllBlack: { initial: "toBlack", final: "toAllBlack" },
+  };
+
+  const { initial, final } = map[toColor] || map.toPurple;
+
+  const variants = {
+    toPurple: {
+      backgroundImage: "linear-gradient(180deg, #090510 0%, #26123f 100%)",
+    },
+    toBlack: {
+      backgroundImage: "linear-gradient(180deg, #26123f 0%, #090510 100%)",
+    },
+    toAllBlack: {
+      backgroundImage: "linear-gradient(180deg, #090510 0%, #090510 100%)",
+    },
+  };
+
+  return (
+    <motion.div
+      initial={initial}
+      animate={final}
+      variants={variants}
+      transition={{ duration: 1, ease: "easeOut" }}
     >
       {children}
     </motion.div>

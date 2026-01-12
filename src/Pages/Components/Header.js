@@ -1,14 +1,20 @@
 import "../../Styles/Components/Header.css";
+import { motion } from "framer-motion";
+import { AnimatedBackground } from "./Animation/Animated";
 
-export default function Header({ Content }) {
+export default function Header({ HeaderContent, toColor }) {
+
   return (
-    <header className="header">
-      <div className="background-container"></div>
-      <div className="max-width">
-        <div className="content max-width">
-          <Content />
-        </div>
-      </div>
-    </header>
+<AnimatedBackground toColor={toColor}
+
+      >
+        <header className="header">
+          <div className="background-container">
+            <div className="content ">
+              <HeaderContent />
+            </div>
+          </div>
+        </header>
+      </AnimatedBackground>
   );
 }
