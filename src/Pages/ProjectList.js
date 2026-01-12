@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import { useAnimation, useTransform } from "framer-motion";
+import Header from "./Components/Header";
 
 const HeaderContent = () => (
   <div className="max-width">
@@ -22,7 +23,6 @@ const HeaderContent = () => (
 );
 
 const ProjectList = () => {
-
   const variants = {
     hidden: {
       backgroundImage: "linear-gradient(180deg, #090510 0%, #26123f 100%)",
@@ -33,20 +33,7 @@ const ProjectList = () => {
   };
   return (
     <main id="ProjectList">
-      <motion.div
-        initial="hidden"
-        variants={variants}
-        animate="visible"
-        transition={{ duration: 1, ease: "easeOut" }}
-      >
-        <header className="header">
-          <div className="background-container">
-            <div className="content ">
-              <HeaderContent />
-            </div>
-          </div>
-        </header>
-      </motion.div>
+      <Header HeaderContent={HeaderContent} from="project" />
 
       <div class="bg-[var(--token-secondary-surface-darker)]">
         <ProjectsQuickView />

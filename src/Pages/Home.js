@@ -152,32 +152,10 @@ export default function Home() {
       </div>
     </div>
   );
-  const variants = {
-    visible: {
-      backgroundImage: "linear-gradient(180deg, #090510 0%, #26123f 100%)",
-    },
-    hidden: {
-      backgroundImage: "linear-gradient(180deg, #26123f 0%, #090510 100%)",
-    },
-  };
 
   return (
     <main id="Home" className="background1">
-
-      <motion.div
-        initial="hidden"
-        variants={variants}
-        animate="visible"
-        transition={{ duration: 1, ease: "easeOut" }}
-      >
-        <header className="header">
-          <div className="background-container">
-            <div className="content ">
-              <HeaderContent />
-            </div>
-          </div>
-        </header>
-      </motion.div>
+      <Header HeaderContent={HeaderContent} from="home" />
       {/* <section ref={stopScalingRef} className="dark-bg" id="focus">
         <FocusBanner />
       </section> */}
