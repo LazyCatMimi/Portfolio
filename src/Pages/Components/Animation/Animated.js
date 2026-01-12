@@ -1,6 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const FromBottom = ( { children, threshold }) => {
   const controls = useAnimation();
@@ -8,7 +8,8 @@ export const FromBottom = ( { children, threshold }) => {
     triggerOnce: true,
     threshold: threshold? threshold : 0.5,
   });
-  console.log(threshold)
+
+
   useEffect(() => {
     if (inView) {
       controls.start("visible");

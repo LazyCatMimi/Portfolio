@@ -154,6 +154,7 @@
 
   --gradient-background-1: linear-gradient(180deg, #090510 0%, #26123f 100%);
   --gradient-background-2: linear-gradient(180deg, #26123f 0%, #090510 100%);
+  --gradient-background-3: linear-gradient(180deg,#090510 0%, #26123f 50%, #090510 100%);
   --glow-S: 0px 5px 100px -50px var(--token-secondary-surface-lighter);
   --glow-L: 0px 70px 200px -100px var(--token-primary-surface-default);
 }

@@ -1,33 +1,53 @@
-
-
-import {ProjectsQuickView} from "./Components/ProjectsQuickView";
+import { ProjectsQuickView } from "./Components/ProjectsQuickView";
 import StaggeredText from "./Components/Animation/StaggeredText";
-  const HeaderContent = () => (
-    <div className="max-width">
-      <div>
-        <h1 className="title-name">
-          <StaggeredText text="Explore Projects" staggerDelay={0.15} />
+import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
+import { useEffect, useState } from "react";
+import { useAnimation, useTransform } from "framer-motion";
+
+const HeaderContent = () => (
+  <div className="max-width">
+    <div>
+      <h1 className="title-name">
+        <StaggeredText text="Explore Projects" staggerDelay={0.15} />
+      </h1>
+      <div className="title-sub-2-container">
+        <h1 className="title-sub-2">
+          From Design to Deployment, I got you covered.
         </h1>
-        <div className="title-sub-2-container">
-          <h1 className="title-sub-2">
-            From Design to Deployment, I got you covered.
-          </h1>
-        </div>
-    
       </div>
     </div>
-  );
+  </div>
+);
 
 const ProjectList = () => {
+
+  const variants = {
+    hidden: {
+      backgroundImage: "linear-gradient(180deg, #090510 0%, #26123f 100%)",
+    },
+    visible: {
+      backgroundImage: "linear-gradient(180deg, #26123f 0%, #090510 100%)",
+    },
+  };
   return (
     <main id="ProjectList">
-      <header className="header">
-        <div className="background-container">
-          <div className="content ">
-            <HeaderContent />
+      <motion.div
+        initial="hidden"
+        variants={variants}
+        animate="visible"
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <header className="header">
+          <div className="background-container">
+            <div className="content ">
+              <HeaderContent />
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </motion.div>
+
       <div class="bg-[var(--token-secondary-surface-darker)]">
         <ProjectsQuickView />
       </div>

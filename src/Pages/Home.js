@@ -17,6 +17,7 @@ import { ProjectCard } from "./Components/ProjectsQuickView";
 import PROJECTS from "..//Data/Projects.json";
 // import ProjectsQuickView from "./Components/ProjectsQuickView";
 import Footer from "./Components/Footer";
+import { useLocation } from "react-router-dom";
 
 export default function Home() {
   useEffect(() => {
@@ -151,16 +152,32 @@ export default function Home() {
       </div>
     </div>
   );
+  const variants = {
+    visible: {
+      backgroundImage: "linear-gradient(180deg, #090510 0%, #26123f 100%)",
+    },
+    hidden: {
+      backgroundImage: "linear-gradient(180deg, #26123f 0%, #090510 100%)",
+    },
+  };
 
   return (
     <main id="Home" className="background1">
-      <header className="header">
-        <div className="background-container">
-          <div className="content">
-            <HeaderContent />
+
+      <motion.div
+        initial="hidden"
+        variants={variants}
+        animate="visible"
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <header className="header">
+          <div className="background-container">
+            <div className="content ">
+              <HeaderContent />
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </motion.div>
       {/* <section ref={stopScalingRef} className="dark-bg" id="focus">
         <FocusBanner />
       </section> */}
