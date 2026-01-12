@@ -18,7 +18,7 @@ import { ProjectCard } from "./Components/ProjectsQuickView";
 import PROJECTS from "..//Data/Projects.json";
 // import ProjectsQuickView from "./Components/ProjectsQuickView";
 import Footer from "./Components/Footer";
-
+import { NavHashLink } from 'react-router-hash-link';
 
 
 export default function Home() {
@@ -141,12 +141,12 @@ export default function Home() {
           </h1>
         </div>
         <div className="button-container">
-          <Link to="#selected-projects" className="primary-button">
+          <NavHashLink to="#selected-projects" className="primary-button">
             See Projects
-          </Link>
-          <Link to="#contact-me" className="secondary-button">
+          </NavHashLink>
+          <NavHashLink to="#contact-me" className="secondary-button">
             Contact Me
-          </Link>
+          </NavHashLink>
         </div>
       </div>
     </div>
@@ -195,7 +195,7 @@ export default function Home() {
         </section>
       </AnimatedBackground>
       <section
-        id="selected-projects "
+        id="selected-projects"
         style={{ background: "var(--token-secondary-surface-darker)" }}
       >
         <div className="max-width">
