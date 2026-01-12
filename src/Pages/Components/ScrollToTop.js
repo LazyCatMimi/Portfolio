@@ -1,14 +1,22 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-export function ScrollToTop() {
-  const { pathname } = useLocation();
+export default function ScrollToTop() {
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
+    // if there's a hash like #contact → attempt anchor jump
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+      return; // don't force scroll-to-top
+    }
+
+    // normal page scroll
     window.scrollTo({ top: 0, behavior: "auto" });
-  }, [pathname]);
+  }, [pathname, hash]);
 
   return null;
 }
-
-export default ScrollToTop;
