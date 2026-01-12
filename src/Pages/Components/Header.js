@@ -2,7 +2,7 @@ import "../../Styles/Components/Header.css";
 import { motion } from "framer-motion";
 
 export default function Header({ HeaderContent, from }) {
-  const initialBg = from === "home" ? "project" : "project";
+  const initialBg = from === "home" ? "project" : "home";
   const finalBg = from === "home" ? "home" : "project";
     const variants = {
     home: {
