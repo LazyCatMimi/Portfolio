@@ -6,6 +6,8 @@ import logoIcon from "../../Assets/logo.png";
 import menuIcon from "../../Assets/Icons/menu.svg";
 import xIcon from "../../Assets/Icons/x.svg";
 import "../../Styles/Components/NavBar.css";
+import { NavHashLink } from 'react-router-hash-link';
+
 
 const menuItems = [
   { text: "Home", path: PATHS.main.home },
@@ -67,9 +69,9 @@ export default function NavBar() {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <Link to={item.path} onClick={toggleMenu}>
+                  <NavHashLink to={item.path} onClick={toggleMenu}>
                     {item.text}
-                  </Link>
+                  </NavHashLink>
                 </motion.li>
               ))}
             </motion.ul>

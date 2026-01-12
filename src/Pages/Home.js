@@ -18,7 +18,8 @@ import { ProjectCard } from "./Components/ProjectsQuickView";
 import PROJECTS from "..//Data/Projects.json";
 // import ProjectsQuickView from "./Components/ProjectsQuickView";
 import Footer from "./Components/Footer";
-import { useLocation } from "react-router-dom";
+
+
 
 export default function Home() {
 

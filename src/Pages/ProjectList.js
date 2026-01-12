@@ -4,10 +4,11 @@ import StaggeredText from "./Components/Animation/StaggeredText";
 import Header from "./Components/Header";
 import { AnimatedBackground } from "./Components/Animation/Animated";
 import Footer from "./Components/Footer";
-
+import { useEffect } from "react";  
 
 
 const ProjectList = () => {
+
 const HeaderContent = () => (
   <div className="max-width">
     <div>
@@ -16,7 +17,7 @@ const HeaderContent = () => (
       </h1>
       <div className="title-sub-2-container">
         <h1 className="title-sub-2">
-          From Design to Deployment, I got you covered.
+          From Design to Deployment, I got it all.
         </h1>
       </div>
     </div>
