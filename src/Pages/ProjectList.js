@@ -1,12 +1,13 @@
 import { ProjectsQuickView } from "./Components/ProjectsQuickView";
 import StaggeredText from "./Components/Animation/StaggeredText";
-import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
-import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
-import { useAnimation, useTransform } from "framer-motion";
-import Header from "./Components/Header";
 
+import Header from "./Components/Header";
+import { AnimatedBackground } from "./Components/Animation/Animated";
+import Footer from "./Components/Footer";
+
+
+
+const ProjectList = () => {
 const HeaderContent = () => (
   <div className="max-width">
     <div>
@@ -21,25 +22,17 @@ const HeaderContent = () => (
     </div>
   </div>
 );
-
-const ProjectList = () => {
-  const variants = {
-    hidden: {
-      backgroundImage: "linear-gradient(180deg, #090510 0%, #26123f 100%)",
-    },
-    visible: {
-      backgroundImage: "linear-gradient(180deg, #26123f 0%, #090510 100%)",
-    },
-  };
   return (
     <main id="ProjectList">
-      <Header HeaderContent={HeaderContent} from="project" />
+      <Header HeaderContent={HeaderContent} toColor="toBlack" />
 
-      <div class="bg-[var(--token-secondary-surface-darker)]">
+      <AnimatedBackground toColor="toAllBlack">
         <ProjectsQuickView />
-      </div>
+             <Footer />
+      </AnimatedBackground>
 
       {/* Map through your projects and display them here */}
+ 
     </main>
   );
 };

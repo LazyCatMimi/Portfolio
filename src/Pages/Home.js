@@ -12,6 +12,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import StaggeredText from "./Components/Animation/StaggeredText";
 import LineRevealText from "./Components/Animation/LineRevealText";
+import { AnimatedBackground } from "./Components/Animation/Animated";
 import { FromBottom } from "./Components/Animation/Animated";
 import { ProjectCard } from "./Components/ProjectsQuickView";
 import PROJECTS from "..//Data/Projects.json";
@@ -155,45 +156,46 @@ export default function Home() {
 
   return (
     <main id="Home" className="background1">
-      <Header HeaderContent={HeaderContent} from="home" />
+      <Header HeaderContent={HeaderContent} toColor="toPurple" />
       {/* <section ref={stopScalingRef} className="dark-bg" id="focus">
         <FocusBanner />
       </section> */}
-      <section className="background2" id="about">
-        {/* <FocusBanner />  */}
-        <div className=" about-container max-width">
-          <img
-            src={require("../Assets/me.jpg")}
-            alt="Quynh smiling"
-            className="me-pic glow"
-          ></img>
-          <article>
-            <h2>
-              <StaggeredText text="About Me" staggerDelay={0.1} />
-            </h2>
-            <hr className="line" />
+      <AnimatedBackground toColor="toBlack">
+        <section id="about">
+          {/* <FocusBanner />  */}
+          <div className=" about-container max-width">
+            <img
+              src={require("../Assets/me.jpg")}
+              alt="Quynh smiling"
+              className="me-pic glow"
+            ></img>
+            <article>
+              <h2>
+                <StaggeredText text="About Me" staggerDelay={0.1} />
+              </h2>
+              <hr className="line" />
 
-            <FromBottom>
-              <p>
-                Hello World! My name is Quynh, and I am a student at the
-                University of Central Florida, where I am pursuing a bachelor's
-                degree in Digital Media: Web Design with a minor in Information
-                Technology. My passions lie in web design, development, and art.
-                Having been born in 2002, I witnessed the rapid evolution of
-                technology firsthand, which inspired me to become a creator of
-                unique web experiences. Technology and art are my favorite
-                subjects to learn about and discuss. In my spare time, I enjoy
-                activities such as drawing, paper crafting, fishing, and
-                boating.
-              </p>
-            </FromBottom>
-          </article>
-        </div>
-        {/* <div className="unique-list">
+              <FromBottom>
+                <p>
+                  Hello World! My name is Quynh, and I am a student at the
+                  University of Central Florida, where I am pursuing a
+                  bachelor's degree in Digital Media: Web Design with a minor in
+                  Information Technology. My passions lie in web design,
+                  development, and art. Having been born in 2002, I witnessed
+                  the rapid evolution of technology firsthand, which inspired me
+                  to become a creator of unique web experiences. Technology and
+                  art are my favorite subjects to learn about and discuss. In my
+                  spare time, I enjoy activities such as drawing, paper
+                  crafting, fishing, and boating.
+                </p>
+              </FromBottom>
+            </article>
+          </div>
+          {/* <div className="unique-list">
           <FeatureList list={uniqueList} title="What Makes Me Unique" />
         </div> */}
-      </section>
-
+        </section>
+      </AnimatedBackground>
       <section
         id="selected-projects "
         style={{ background: "var(--token-secondary-surface-darker)" }}
