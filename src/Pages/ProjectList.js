@@ -17,7 +17,7 @@ const HeaderContent = () => (
       </h1>
       <div className="title-sub-2-container">
         <h1 className="title-sub-2">
-          From Design to Deployment, I got it all.
+          From Design to Development, I got it all.
         </h1>
       </div>
     </div>

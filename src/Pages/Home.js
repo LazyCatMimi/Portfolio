@@ -137,7 +137,7 @@ export default function Home() {
         </h1>
         <div className="title-sub-2-container">
           <h1 className="title-sub-2">
-            <strong>UI/UX Designer</strong> bridging design and development
+            <span className="font-bold text-[var(--token-primary-text-lighter)]">UI/UX Designer</span> <i>bridging design and development</i>
           </h1>
         </div>
         <div className="button-container">

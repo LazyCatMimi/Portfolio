@@ -117,6 +117,7 @@
   --token-grayscale-text-color-disabled: var(--color-Gray-500);
 
   --token-primary-text-subtle: var(--color-Magenta-100);
+  --token-primary-text-lighter: var(--color-Magenta-200);
   --token-primary-text-default: var(--color-Magenta-500);
     --token-secondary-text-subtle: var(--color-Purple-100);
   --token-secondary-text-default: var(--color-Purple-500);

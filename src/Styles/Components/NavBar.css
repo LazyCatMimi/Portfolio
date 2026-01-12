@@ -7,8 +7,8 @@ nav {
   /* mask: linear-gradient(black, black, transparent); */
   backdrop-filter: blur(30px);
   z-index: 99;
-  position: fixed; /* Set the position to fixed */
-  top: 0; /* Position the navbar at the top of the viewport */
+  position: fixed; 
+  top: 0; 
   width: 100%;
   padding: 0 var(--padding-H);
 }
@@ -29,10 +29,10 @@ nav {
 .navbar ul a {
   text-decoration: none;
   color: #fff;
-  /* font-weight: bold; */
+  font-weight: 400;
   padding: 14px 23px 10px 23px;
   border: 2px solid #ff3d7a00;
-  font-family: "Julius Sans One", sans-serif;
+  /* font-family: "Julius Sans One", sans-serif; */
 }
 .navbar ul a:hover {
   /* color: transparent; 
