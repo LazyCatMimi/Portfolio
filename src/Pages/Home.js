@@ -21,9 +21,6 @@ import Footer from "./Components/Footer";
 import { useLocation } from "react-router-dom";
 
 export default function Home() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const uniqueList = [
     {
