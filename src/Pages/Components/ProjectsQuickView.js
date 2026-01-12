@@ -9,66 +9,71 @@ import starImg from "../../Assets/Icons/star.svg";
 import "../../Styles/ProjectsList.css";
 import { FromBottom } from "./Animation/Animated";
 
+const determineTag = (tag) => {
+  switch (tag) {
+    case "case-study":
+      return "UX Case Study";
+    case "design":
+      return "Web Design";
+    case "development":
+      return "Web Development";
+    case "art":
+      return "Art & Design";
+    default:
+      return "Web Design & Development";
+  }
+};
+export const ProjectCard = ({
+  name,
+  tags,
+  featured,
+  imgFill,
+  id,
+  tools,
+  shortSummary,
+  tasks,
+  actions,
+  i,
+}) => (
+  <Link to={`/projects/${id}`} className={`${featured && "featured"}`}>
+    <article className="project-card hover">
+<div className="group relative project-card-img">
+  <img
+    src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
+    alt=""
+    className="block w-full h-full object-cover"
+  />
 
-  const determineTag = (tag) => {
-    switch (tag) {
-      case "case-study":
-        return "UX Case Study";
-      case "design":
-        return "Web Design";
-      case "development":
-        return "Web Development";
-      case "art":
-        return "Art & Design";
-      default:
-        return "Web Design & Development";
-    }
-  };
-  export const ProjectCard = ({
-    name,
-    tags,
-    featured,
-    imgFill,
-    id,
-    tools,
-    shortSummary,
-    tasks,
-    actions,
-    i,
-  }) => (
-    <Link to={`/projects/${id}`} className={`${featured && "featured"}`}>
-      <article className="project-card hover">
-        <img
-          src={imgFill ? require(`${"../../"}${imgFill}`) : plImg}
-          alt=""
-        ></img>
+  <div/>
+</div>
 
-        <div>
-          {featured && (
-            <>
-              <div className="img-text">
-                <img src={starImg} className="star-img" alt="" />
-                <p className="featured-txt">Featured Project</p>
-              </div>
-            </>
-          )}
-          <h3>
-            <span className="num">{(i + 1).toString().padStart(2, "0")} </span>
-            | {name}
-          </h3>
-          <div className="proj-tags">
-            {tags.map((tag, index) => (
-              <p key={index} className="proj-tag">
-                {determineTag(tag)}{" "}
-              </p>
-            ))}
-          </div>
-          <p>{shortSummary}</p>
-          {/* <button className="primary-button">Read More</button> */}
+
+      <div className="project-card-content">
+        {featured && (
+          <>
+            <div className="img-text">
+              <img src={starImg} className="star-img" alt="" />
+              <p className="featured-txt">Featured Project</p>
+            </div>
+          </>
+        )}
+        <h3>
+          <span className="num">{(i + 1).toString().padStart(2, "0")} </span>|{" "}
+          {name}
+        </h3>
+        <div className="proj-tags">
+          {tags.map((tag, index) => (
+            <p key={index} className="proj-tag">
+              {determineTag(tag)}{" "}
+            </p>
+          ))}
         </div>
-      </article>
-    </Link>
-  );
+        <p>{shortSummary}</p>
+        {/* <button className="primary-button">Read More</button> */}
+      </div>
+    </article>
+  </Link>
+);
 
 export function ProjectsQuickView() {
   const [activeSortButton, setActiveSortButton] = useState("all");
@@ -120,11 +125,8 @@ export function ProjectsQuickView() {
     setCurData(data);
   };
 
-
   return (
-    <section
-      
-    >
+    <section>
       <div className="max-width">
         <div id="latest-projects">
           {/* <h2>
@@ -165,7 +167,9 @@ export function ProjectsQuickView() {
           </p>
           <div className="projects-grid">
             {curData.map((project, index) => (
-              <FromBottom threshold={0.2}><ProjectCard key={index} {...project} i={index} /></FromBottom>
+              <FromBottom threshold={0.2}>
+                <ProjectCard key={index} {...project} i={index} />
+              </FromBottom>
             ))}
           </div>
           {/* <div style={{ textAlign: "center" }}>
