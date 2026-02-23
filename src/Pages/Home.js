@@ -16,13 +16,12 @@ import { AnimatedBackground } from "./Components/Animation/Animated";
 import { FromBottom } from "./Components/Animation/Animated";
 import { ProjectCard } from "./Components/ProjectsQuickView";
 import PROJECTS from "..//Data/Projects.json";
+import EXP from "../Data/Experience.json";
 // import ProjectsQuickView from "./Components/ProjectsQuickView";
 import Footer from "./Components/Footer";
-import { NavHashLink } from 'react-router-hash-link';
-
+import { NavHashLink } from "react-router-hash-link";
 
 export default function Home() {
-
   const uniqueList = [
     {
       title: "10+ Years Art Software",
@@ -137,7 +136,10 @@ export default function Home() {
         </h1>
         <div className="title-sub-2-container">
           <h1 className="title-sub-2">
-            <span className="font-bold text-[var(--token-primary-text-lighter)]">UI/UX Designer</span> <i>bridging design and development</i>
+            <span className="font-bold text-[var(--token-primary-text-lighter)]">
+              UI/UX Designer
+            </span>{" "}
+            <i>bridging design and development</i>
           </h1>
         </div>
         <div className="button-container">
@@ -265,11 +267,42 @@ export default function Home() {
         />
       </section> */}
       <div className="background1">
+        <section id="career-journey">
+          <h2 className="text-center m-0">
+            <StaggeredText text="My Career Journey" staggerDelay={0.05} />
+          </h2>
+          <hr className="line" />
+          {EXP.map((exp, index) => (
+            <FromBottom>
+              <div key={index} className="career-item grid grid-cols-[auto_2fr] gap-[2em] mb-16">
+                <div className="bg-[var(--token-secondary-surface-default)] p-4 rounded-[var(--token-border-radius-xl)] flex items-center justify-center aspect-square p-6">
+                  <img
+                    src={require(`../Assets/Companies/${exp.img}.png`)}
+                    alt="Career Journey"
+                  />
+                </div>
+                <div>
+                  <div className="flex flex-row justify-between items-center">
+                  <h3 className="m-0">{exp.role}</h3>
+                  <p className="text-[var(--token-primary-surface-lighter)]">{exp.duration}</p>
+                    
+                  </div>
+                  <h4 className="text-[var(--token-primary-surface-lighter)]">{exp.company}</h4>
+                  <ul>
+                    {exp.description.map((resp, idx) => (
+                      <li key={idx}>{resp}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </FromBottom>
+          ))}
+        </section>
         <section id="contact-me">
           <h2>
             <StaggeredText text="Let's Connect!" staggerDelay={0.1} />
           </h2>
-          {/* <hr className="line"/> */}
+          <hr className="line"/>
           <ContactForm />
         </section>
       </div>

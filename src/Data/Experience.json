@@ -1,0 +1,27 @@
+[
+  {
+    "role": "UI/UX Intern",
+    "company": "Cooledtured",
+    "duration": "Remote, Jan 2025 - Feb 2026",
+    "description": [
+      "Designed and redesigned 20+ responsive web pages to improve usability and brand identity using Figma.",
+      "Created and maintained variables, components, and design systems.",
+      "Collaborated with cross-functional teams, including graphic designers, developers, and analysts.",
+      "Refreshed brand visual styling, contributing to a more cohesive and modern brand identity.",
+      "Conceptualized a gamification system for Cooledtured’s Engage platform.",
+      "Designed and built a client-facing website using Figma and Wix."
+    ],
+    "img": "Cooledtured"
+  },
+  {
+    "role": "Web Design Specialist Intern",
+    "company": "Center for Societal Aspiration",
+    "duration": "Remote, Oct 2024 - Dec 2024",
+    "description": [
+      "Designed accessible web and mobile solutions to support non-profit initiatives using Figma and Wix.",
+      "Developed prototypes to enable stakeholders to visualize design concepts.",
+      "Researched and proposed cost-effective web strategies tailored for non-profits."
+    ],
+    "img": "CSA"
+  }
+]

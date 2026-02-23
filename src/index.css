@@ -288,9 +288,10 @@ h5 {
   color: var(--token-grayscale-text-color-title);
 }
 p,
-ul {
+ul,ol {
   font-size: var(--p-size);
   color: var(--token-grayscale-text-color-body);
+  list-style-position: inside;
 }
 .subtitle {
   font-size: var(--subtitle-size);
