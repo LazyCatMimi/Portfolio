@@ -274,17 +274,17 @@ export default function Home() {
           <hr className="line" />
           {EXP.map((exp, index) => (
             <FromBottom>
-              <div key={index} className="career-item grid grid-cols-[auto_2fr] gap-[2em] mb-16">
-                <div className="bg-[var(--token-secondary-surface-default)] p-4 rounded-[var(--token-border-radius-xl)] flex items-center justify-center aspect-square p-6">
+              <div key={index} className="career-item grid grid-cols-[auto_2fr] gap-[2em] mb-16 max-[885px]:grid-cols-1">
+                <div className="bg-[var(--token-secondary-surface-default)] p-4 rounded-[var(--token-border-radius-xl)] flex items-center justify-center aspect-square p-6 max-[885px]:w-[50%] max-[885px]:max-w-[200px]">
                   <img
                     src={require(`../Assets/Companies/${exp.img}.png`)}
                     alt="Career Journey"
                   />
                 </div>
                 <div>
-                  <div className="flex flex-row justify-between items-center">
-                  <h3 className="m-0">{exp.role}</h3>
-                  <p className="text-[var(--token-primary-surface-lighter)]">{exp.duration}</p>
+                  <div className="flex justify-between items-center max-[1145px]:flex-col max-[1145px]:justify-start max-[1145px]:items-start">
+                    <h3 className="m-0">{exp.role}</h3>
+                    <p className="text-[var(--token-primary-surface-lighter)]">{exp.duration}</p>
                     
                   </div>
                   <h4 className="text-[var(--token-primary-surface-lighter)]">{exp.company}</h4>
