@@ -5,6 +5,8 @@ import Header from "./Components/Header";
 import { AnimatedBackground } from "./Components/Animation/Animated";
 import Footer from "./Components/Footer";
 import { useEffect } from "react";  
+import { NavHashLink } from 'react-router-hash-link';
+
 
 
 const ProjectList = () => {
@@ -19,6 +21,9 @@ const HeaderContent = () => (
         <h1 className="title-sub-2">
           From Design to Development, I got it all.
         </h1>
+                  <NavHashLink to="#latest-projects" className="secondary-button">
+            See Projects
+          </NavHashLink>
       </div>
     </div>
   </div>
