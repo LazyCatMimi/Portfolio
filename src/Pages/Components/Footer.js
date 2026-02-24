@@ -6,7 +6,8 @@ export default function Footer() {
     <footer style={{ width: "100%" }}>
       <div className="max-width">
         <div className="footer-content">
-          <h5>Quynh Vo</h5>
+          <h2>Quynh Vo</h2>
+          <p className="text-[var(--token-primary-surface-lighter)]">Designed with <b>Figma</b> | Developed with <b>React</b> | Done with <b>❤️</b></p>
           <div className="flex gap-2 ">
             <a
               href="https://github.com/LazyCatMimi"
