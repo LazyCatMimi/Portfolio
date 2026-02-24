@@ -1,5 +1,4 @@
 import "../../Styles/Components/Header.css";
-import { motion } from "framer-motion";
 import { AnimatedBackground } from "./Animation/Animated";
 
 export default function Header({ HeaderContent, toColor }) {
