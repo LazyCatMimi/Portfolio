@@ -274,20 +274,20 @@ export default function Home() {
           <hr className="line" />
           {EXP.map((exp, index) => (
             <FromBottom>
-              <div key={index} className="career-item grid grid-cols-[auto_2fr] gap-[2em] mb-16 max-[885px]:grid-cols-1">
-                <div className="bg-[var(--token-secondary-surface-default)] p-4 rounded-[var(--token-border-radius-xl)] flex items-center justify-center aspect-square p-6 max-[885px]:w-[50%] max-[885px]:max-w-[200px]">
+              <div key={index} className="career-item grid grid-cols-[auto_2fr] gap-[2em] mb-16 max-[885px]:grid-cols-1 items-center">
+                <div className="bg-[var(--token-secondary-surface-default)] p-4 rounded-[var(--token-border-radius-xl)] flex items-center justify-center aspect-square p-6 max-[885px]:w-[50%] max-[885px]:max-w-[200px] max-[885px]:mx-auto">
                   <img
                     src={require(`../Assets/Companies/${exp.img}.png`)}
                     alt="Career Journey"
                   />
                 </div>
                 <div>
-                  <div className="flex justify-between items-center max-[1145px]:flex-col max-[1145px]:justify-start max-[1145px]:items-start">
-                    <h3 className="m-0">{exp.role}</h3>
-                    <p className="text-[var(--token-primary-surface-lighter)]">{exp.duration}</p>
+                  <div className="grid grid-cols-[auto_auto] items-center grid-flow-col-dense w-full max-[1200px]:inline">
+                    <p className="text-[var(--token-primary-surface-lighter)] col-start-2 text-right max-[1200px]:text-left max-[885px]:text-center">{exp.duration}</p>
+                    <h3 className="m-0 col-start-1 max-[1200px]:col-start-auto max-[885px]:text-center">{exp.role}</h3>
                     
                   </div>
-                  <h4 className="text-[var(--token-primary-surface-lighter)]">{exp.company}</h4>
+                  <h4 className="text-[var(--token-primary-surface-lighter)] max-[885px]:text-center ">{exp.company}</h4>
                   <ul>
                     {exp.description.map((resp, idx) => (
                       <li key={idx}>{resp}</li>
