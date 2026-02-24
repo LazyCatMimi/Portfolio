@@ -4,7 +4,7 @@ import StaggeredText from "./Components/Animation/StaggeredText";
 import Header from "./Components/Header";
 import { AnimatedBackground } from "./Components/Animation/Animated";
 import Footer from "./Components/Footer";
-import { useEffect } from "react";  
+
 import { NavHashLink } from 'react-router-hash-link';
 
 
