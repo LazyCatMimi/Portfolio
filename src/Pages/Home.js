@@ -1,17 +1,16 @@
 import ContactForm from "./Components/ContactForm";
 import Header from "./Components/Header";
-import FocusBanner from "./Components/HomePage/FocusBanner";
+
 import "../Styles/Home.css";
 import PATHS from "../Data/Pages.json";
-import { Link } from "react-router-dom";
-import { useState, useRef, useEffect } from "react";
+
 import starIcon from "../Assets/Icons/star-bullet.svg";
 import arrRightIcon from "../Assets/Icons/arrow-right.svg";
 // animations
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import StaggeredText from "./Components/Animation/StaggeredText";
-import LineRevealText from "./Components/Animation/LineRevealText";
+
 import { AnimatedBackground } from "./Components/Animation/Animated";
 import { FromBottom } from "./Components/Animation/Animated";
 import { ProjectCard } from "./Components/ProjectsQuickView";

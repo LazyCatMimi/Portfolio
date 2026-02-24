@@ -1,6 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Children, useEffect, useState } from "react";
+import {  useEffect } from "react";
 
 export const FromBottom = ({ children, threshold }) => {
   const controls = useAnimation();

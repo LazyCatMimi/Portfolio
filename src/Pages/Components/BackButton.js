@@ -9,7 +9,7 @@ function BackButton() {
   }
 
   return (
-    <a className="back-button" onClick={handleBack}>
+    <a className="back-button" href="#" onClick={handleBack}>
       <img src={Arrow} alt=""></img>
       Back
     </a>
