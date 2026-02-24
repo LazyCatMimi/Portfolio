@@ -9,10 +9,10 @@ function BackButton() {
   }
 
   return (
-    <a className="back-button" href="#" onClick={handleBack}>
+    <button className="back-button" href="#" onClick={handleBack}>
       <img src={Arrow} alt=""></img>
       Back
-    </a>
+    </button>
   );
 }
 
