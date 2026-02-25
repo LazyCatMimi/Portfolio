@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="max-width">
         <div className="footer-content">
           <h2>Quynh Vo</h2>
-          <p className="text-[var(--token-primary-surface-lighter)]">Designed with <b>Figma</b> | Developed with <b>React</b> | Done with <b>❤️</b></p>
-          <div className="flex gap-2 ">
+          <p className="text-[var(--token-primary-surface-lighter)] text-center max-[1185px]:row-start-2 max-[1185px]:col-span-full">Designed with <b>Figma</b> - Developed with <b>React</b> - Done with <b>❤️</b></p>
+          <div className="flex gap-2 justify-end">
             <a
               href="https://github.com/LazyCatMimi"
               target="_blank"
