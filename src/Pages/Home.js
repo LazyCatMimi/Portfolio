@@ -163,14 +163,14 @@ export default function Home() {
           <div className=" about-container max-width">
             <img
               src={require("../Assets/me.jpg")}
-              alt="Quynh smiling"
+              alt=""
               className="me-pic glow"
             ></img>
             <article>
               <h2>
                 <StaggeredText text="About Me" staggerDelay={0.1} />
               </h2>
-              <hr className="line" />
+              <hr className="line w-full" />
 
               <FromBottom>
                 <p>
