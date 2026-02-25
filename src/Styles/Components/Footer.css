@@ -5,8 +5,9 @@ footer {
 .footer-content {
   /* padding: 2em 2em 1.8em 2em; */
   /* padding: 2em var(--padding-H); */
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  /* justify-content: space-between; */
   align-items: center;
   /* background-color: rgba(0, 0, 0, 0); */
   width: 100%;
