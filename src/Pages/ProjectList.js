@@ -21,7 +21,7 @@ const HeaderContent = () => (
         <h1 className="title-sub-2">
           From Design to Development, I got it all.
         </h1>
-                  <NavHashLink to="#latest-projects" className="secondary-button">
+                  <NavHashLink to="#latest-projects" className="secondary-button mt-[3em] max-[590px]:w-full">
             See Projects
           </NavHashLink>
       </div>
