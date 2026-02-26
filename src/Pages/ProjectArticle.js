@@ -44,45 +44,20 @@ export default function ProjectArticle() {
     return (
       <>
         <div style={projectHeaderStyle} className="proj-header">
-          <div></div>
-        </div>
-        
-        <div  style={{ overflow: "hidden" }}>
-          <div className="max-width">
-            <div id="project-content">
-            <article className="proj-info main">
-            <BackButton />
-            <h1 className="center-text">
-              <StaggeredText text={name} staggerDelay={0.05} />
-            </h1>
-            <div>
-              <img
-                src={imgThumb ? require(`${"../"}${imgThumb}`) : plImg}
-                alt=""
-                className="proj-thumb"
-              />
-              <article>
-                <div className="btn-group">
-                  {actions.map((action, index) => (
-                    <a
-                      key={index}
-                      href={action.link}
-                      className={`${action.type} action-btn`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {action.icon && (
-                        <img
-                          src={require(`../Assets/Icons/${action.icon}.svg`)}
-                          alt=""
-                          className="proj-icon"
-                          
-                        ></img>
-                      )}
-                      <span>{action.name}</span>
-                    </a>
-                  ))}
-                </div>
+          <div className="gra">
+            <section className="max-width">
+              <div>
+                <BackButton />
+                <h1 >
+                  <StaggeredText text={name} staggerDelay={0.05} />
+                </h1>
+                {/* <img
+                  src={imgThumb ? require(`${"../"}${imgThumb}`) : plImg}
+                  alt=""
+                  className="proj-thumb"
+                /> */}
+
+                
                 <p>
                   <strong>Tools:</strong> {tools}
                 </p>
@@ -97,23 +72,48 @@ export default function ProjectArticle() {
                     <li key={index}>{task}</li>
                   ))}
                 </ul>
-              </article>
-            </div>
-          </article>
-          {component && <Component />}
-            </div>
+                <div className="btn-group">
+                  {actions.map((action, index) => (
+                    <a
+                      key={index}
+                      href={action.link}
+                      className={`${action.type} action-btn`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {action.icon && (
+                        <img
+                          src={require(`../Assets/Icons/${action.icon}.svg`)}
+                          alt=""
+                          className="proj-icon"
+                        ></img>
+                      )}
+                      <span>{action.name}</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </section>
           </div>
-          
         </div>
-        <div className="footer-space"></div>
+
+        <div style={{ overflow: "hidden" }} className="background2">
+          <div className="max-width">
+            <div id="project-content">{component && <Component />}</div>
+          </div>
+           <div className="footer-space"></div>
+          <Footer />
+        </div>
+       
+        
       </>
     );
   };
 
   return (
-    <main id="projectidv" className="background2">
+    <main id="projectidv" className="">
       <Project {...project} />
-      <Footer />
+      
     </main>
   );
 }
