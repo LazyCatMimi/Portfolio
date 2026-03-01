@@ -1,6 +1,4 @@
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+
 import uiuxIcon from "../../../Assets/Icons/focus-uiux.svg";
 import devIcon from "../../../Assets/Icons/focus-dev.svg";
 import artIcon from "../../../Assets/Icons/focus-art.svg";

@@ -18,10 +18,20 @@
 }
 
 @media screen and (max-width: 785px) {
-  #ucfredo .img-text,   #ucfredo .img-text-rev {
+  #ucfredo .img-text,
+  #ucfredo .img-text-rev {
     grid-template-columns: 1fr;
   }
   #ucfredo .img-text div:first-of-type {
     grid-column: auto;
+  }
+  #ucfredo img {
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #ucfredo img {
+    width: 100% !important;
   }
 }

@@ -6,11 +6,13 @@ import logoIcon from "../../Assets/logo.png";
 import menuIcon from "../../Assets/Icons/menu.svg";
 import xIcon from "../../Assets/Icons/x.svg";
 import "../../Styles/Components/NavBar.css";
+import { NavHashLink } from 'react-router-hash-link';
+
 
 const menuItems = [
   { text: "Home", path: PATHS.main.home },
-  { text: "Projects", path: `/#latest-projects` },
-  { text: "Resume", path: PATHS.main.resume },
+  { text: "Projects", path: PATHS.main.projects  },
+  // { text: "Resume", path: PATHS.main.resume },
   { text: "Contact", path: `/#contact-me` },
 ];
 
@@ -40,37 +42,41 @@ export default function NavBar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-container">
-      <div className="logo">
-        <img src={logoIcon} alt="logo" />
-      </div>
-      <div className="menu">
-        <img
-          src={menuOpen ? xIcon : menuIcon}
-          alt="menu"
-          className="menu-icon"
-          onClick={toggleMenu}
-        />
-        <motion.ul
-          className={`menu-items ${!menuOpen ? "hide" : ""}`}
-          initial="hidden"
-          animate={controls}
-          variants={ulVariants}
-        >
-          {menuItems.map((item, index) => (
-            <motion.li
-              key={index}
-              initial={{ y: 50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: index * 0.1 }}
+      <div className="max-width">
+        <div className="navbar-container">
+          <div className="logo">
+            <Link to={PATHS.main.home}>
+              <img src={logoIcon} alt="Logo" />
+            </Link>
+          </div>
+          <div className="menu">
+            <img
+              src={menuOpen ? xIcon : menuIcon}
+              alt="menu"
+              className="menu-icon"
+              onClick={toggleMenu}
+            />
+            <motion.ul
+              className={`menu-items ${!menuOpen ? "hide" : ""}`}
+              initial="hidden"
+              animate={controls}
+              variants={ulVariants}
             >
-              <Link to={item.path} onClick={toggleMenu}>
-                {item.text}
-              </Link>
-            </motion.li>
-          ))}
-        </motion.ul>
-      </div>
+              {menuItems.map((item, index) => (
+                <motion.li
+                  key={index}
+                  initial={{ y: 50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <NavHashLink to={item.path} onClick={toggleMenu}>
+                    {item.text}
+                  </NavHashLink>
+                </motion.li>
+              ))}
+            </motion.ul>
+          </div>
+        </div>
       </div>
     </nav>
   );

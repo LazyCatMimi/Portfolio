@@ -1,16 +1,19 @@
 import "../../Styles/Components/Header.css";
-import { useState, useEffect } from "react"; // Remove useRef import
+import { AnimatedBackground } from "./Animation/Animated";
 
-export default function Header({ Content }) {
+export default function Header({ HeaderContent, toColor }) {
 
   return (
-    <header className="header">
-      <div
-        className="background-container"
-      ></div>
-      <div className="content">
-        <Content />
-      </div>
-    </header>
+<AnimatedBackground toColor={toColor}
+
+      >
+        <header className="header">
+          <div className="background-container">
+            <div className="content ">
+              <HeaderContent />
+            </div>
+          </div>
+        </header>
+      </AnimatedBackground>
   );
 }

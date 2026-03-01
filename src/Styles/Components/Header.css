@@ -3,10 +3,14 @@
   color: #fff;
   display: flex;
   overflow: hidden; /* Prevent content overflow */
-  background-color: #000000;
-  background-image: var(--gradient-background-1);
+
+ 
   
 }
+/* #Home .header {
+   background-image: var(--gradient-background-1);
+ 
+} */
 
 .background-container {
   padding:  var(--padding);

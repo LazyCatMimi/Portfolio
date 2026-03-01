@@ -3,19 +3,30 @@ import gitIcon from "../../Assets/Icons/contact-github.svg";
 import linkedinIcon from "../../Assets/Icons/contact-linkedin.svg";
 export default function Footer() {
   return (
-    <footer>
-      <h5>Quynh Vo</h5>
-      <div>
-        <a href="https://github.com/LazyCatMimi" target="_blank">
-          <img src={gitIcon} alt="Github" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/quynh-vo-7b714222b"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={linkedinIcon} alt="linkedIn" />
-        </a>
+    <footer style={{ width: "100%" }}>
+      <div className="max-width">
+        <div className="footer-content">
+          <h2>Quynh Vo</h2>
+          <p className="text-[var(--token-primary-surface-lighter)] text-center max-[1185px]:row-start-2 max-[1185px]:col-span-full">Designed with <b>Figma</b> - Developed with <b>React</b> - Done with <b>❤️</b></p>
+          <div className="flex gap-2 justify-end">
+            <a
+              href="https://github.com/LazyCatMimi"
+              target="_blank"
+              rel="noreferrer"
+              className="flex"
+            >
+              <img src={gitIcon} alt="Github" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/quynh-vo-7b714222b"
+              target="_blank"
+              rel="noreferrer"
+              className="flex"
+            >
+              <img src={linkedinIcon} alt="linkedIn" rel="noreferrer" />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );

@@ -5,7 +5,7 @@ import linkedinIcon from "../../Assets/Icons/contact-linkedin.svg";
 import mailIcon from "../../Assets/Icons/contact-mail.svg";
 import phoneIcon from "../../Assets/Icons/contact-phone.svg";
 import { useForm, ValidationError } from "@formspree/react";
-import { color } from "framer-motion";
+import { FromBottom } from "./Animation/Animated";
 
 export default function ContactForm() {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -37,7 +37,13 @@ export default function ContactForm() {
               Thank you! Your message has been sent. I will get back to you as
               soon as possible.
             </p>
-            <button className="secondary-button" onClick={handleClosePopup}>
+            <button
+              className="secondary-button"
+              style={{
+                backgroundColor: "var(--token-secondary-surface-default)",
+              }}
+              onClick={handleClosePopup}
+            >
               OK
             </button>
           </div>
@@ -45,84 +51,104 @@ export default function ContactForm() {
       )}
 
       {!formSubmitted && (
-        <form onSubmit={handleFormSubmit}>
-          <h3 className="off-white-text">Chat with me. Say hi!</h3>
-          <div>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              required
-            />
-            <ValidationError prefix="Name" field="name" errors={state.errors} />
-          </div>
-          <div>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
-          </div>
-          <div>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Message..."
-              required
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-          </div>
-          <div>
-            <button
-              type="submit"
-              className="primary-button"
-              disabled={state.submitting}
-              tabIndex={0}
-            >
-              Submit
-            </button>
-          </div>
-        </form>
+        <FromBottom>
+          <form onSubmit={handleFormSubmit}>
+            <h3 className="off-white-text">Chat with me. Say hi!</h3>
+            <div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <ValidationError
+                prefix="Name"
+                field="name"
+                errors={state.errors}
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+            </div>
+            <div>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message..."
+                required
+              />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
+            </div>
+            <div>
+              <button
+                type="submit"
+                className="primary-button"
+                disabled={state.submitting}
+                tabIndex={0}
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </FromBottom>
       )}
 
       <div id="socials">
         <h4 className="light-font-weight">Contact Info</h4>
+        <div className="socials-group">
+          <a href="mailto:quynh.vo3314@gmail.com" className="social-link">
+            <img src={mailIcon} alt="email" /> quynh.vo3314@gmail.com
+          </a>
+        </div>
 
-        <a href="mailto:quynh.vo3314@gmail.com">
-          <img src={mailIcon} alt="email" /> quynh.vo3314@gmail.com
-        </a>
-
-        <a href="tel:+14077972019">
-          <img src={phoneIcon} alt="phone number" /> (407) 797-2019
-        </a>
+        <div className="socials-group">
+          <a href="tel:+14077972019" className="social-link">
+            <img src={phoneIcon} alt="phone number" /> (407) 797-2019
+          </a>
+        </div>
 
         <h4 className="light-font-weight">Socials</h4>
 
-        <a
-          href="https://www.linkedin.com/in/quynh-vo-7b714222b"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={linkedinIcon} alt="linkedIn" />
-          Quynh Vo
-        </a>
+        <div className="socials-group">
+          <a
+            href="https://www.linkedin.com/in/quynh-vo-7b714222b"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+          >
+            <img src={linkedinIcon} alt="linkedIn" />
+            Quynh Vo
+          </a>
+        </div>
 
-        <a href="https://github.com/LazyCatMimi" target="_blank">
-          <img src={gitIcon} alt="Github" />
-          LazyCatMimi
-        </a>
+        <div className="socials-group">
+          <a
+            href="https://github.com/LazyCatMimi"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+            
+          >
+            <img src={gitIcon} alt="Github" />
+            LazyCatMimi
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -1,8 +1,13 @@
 #contact-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10%;
+  display:flex;
+  /* grid-template-columns: auto auto; */
+  /* gap: 2em; */
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5em;
 }
+
 
 /* form */
 form {
@@ -11,6 +16,8 @@ form {
   border-radius: 31px;
   padding: 2em;
   width: 100%;
+  min-width: 600px;
+  /* margin-left: 2em; */
   max-width: 600px;
   justify-self: flex-end;
 }
@@ -28,13 +35,13 @@ textarea {
   padding: 0.9em;
   font-family: "Khula", sans-serif;
   background: #e4e4e4;
-  border:  4px solid var(--token-secondary-surface-default);
+  border: 4px solid var(--token-secondary-surface-default);
   border-radius: 12px;
 }
 
 input:focus,
 textarea:focus {
-  border:  4px solid var(--token-primary-border-lighter);
+  border: 4px solid var(--token-primary-border-lighter);
   background-color: var(--color-Purple-100);
 }
 form div:last-child {
@@ -48,10 +55,19 @@ form .primary-button {
 /* socials */
 
 #socials a {
-  color: var( --token-primary-surface-default);
+  color: var(--token-primary-surface-default);
   display: flex;
   align-items: center;
-  margin-bottom: 1em;
+  padding: 1.2em 0;
+  /* margin-bottom: 1em; */
+  position: relative;
+   transition: all 0.3s ease;
+}
+#socials a:hover {
+  color: var(--token-primary-surface-darker);
+  transform: scale(1.1);
+
+ 
 }
 #socials img {
   margin-right: 15px;
@@ -78,7 +94,7 @@ form .primary-button {
 }
 .popup div {
   margin: auto;
-  background-color: var(--token-secondary-surface-default);;
+  background-color: var(--token-secondary-surface-default);
   padding: 3em;
   text-align: center;
   border-radius: 16px;
@@ -87,21 +103,27 @@ form .primary-button {
   color: var(--token-primary-surface-default);
 }
 .popup button {
-  margin-top:5em;
+  margin-top: 5em;
   min-width: 30%;
 }
+
 @media screen and (max-width: 920px) {
   #contact-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 5%;
+    display: block;
+  }
+  #contact-form div:first-of-type{
+    width: 100%;
+    align-items: center;
   }
 
   form {
+    min-width: auto;
     width: 100%;
-    max-width: 600px;
-    justify-self: center;
+    max-width: 100%;
+margin: 2em auto 4em auto;
+
   }
+
   #socials {
     justify-self: center;
     margin-bottom: 50px;

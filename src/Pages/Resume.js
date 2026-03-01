@@ -1,6 +1,6 @@
 import Header from "./Components/Header";
 import { useRef } from "react";
-import plImg from "../Assets/test.png";
+
 import "../Styles/Resume.css";
 export default function Resume() {
   const stopScalingRef = useRef(null);

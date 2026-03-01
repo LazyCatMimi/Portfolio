@@ -1,7 +1,13 @@
 :root {
   --proj-padding: 3em;
+  --proj-max-width: 75ch;
 }
 /* general proj */
+.proj-max-width {
+  /* width: var(--proj-max-width); */
+  width: var(--max-width);
+
+}
 .proj article span {
   font-weight: bold;
 }

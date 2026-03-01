@@ -2,11 +2,23 @@ import {
   ImageWithCaption,
   ExternalLinkButton,
   Section,
-  Sectionubsection,
 } from "./~TEMPLATE";
 export default function Dominos() {
   return (
     <div className="proj-more-info h-content">
+      <Section title="Video Overview" line={false}>
+        <iframe
+          className="iframe-yt"
+          width="1519"
+          height="609"
+          src="https://www.youtube.com/embed/AOEsIu5U4d8"
+          title="Dominos   Accessibility Final Quynh Vo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </Section>
       <Section title="The Problems">
         <p>
           Domino's Pizza's website is difficult for many users, especially those
@@ -18,13 +30,73 @@ export default function Dominos() {
           enjoy an equitable pizza ordering experience.
         </p>
         <p>
-          The following list is based on my paper on Domino’s accessibility.
-          View the full analysis here:
+          I did a full analysis of the Domino's website, focusing on the
+          accessibility. View the full analysis here:
         </p>
         <ExternalLinkButton
           href="https://docs.google.com/document/d/1IpC7AllgDSzGR97BcVZ7EKvnn44x7pe7Oa44ugeV1xc/edit?tab=t.0"
           text="Full Analysis"
         />
+        <p className="center-text">Visit the site at the point of design here:</p>
+        <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: "20px"}}>
+        <a href="https://web.archive.org/web/20230930231216/https://www.dominos.com/"     target="_blank"
+    rel="noreferrer" >https://web.archive.org/web/20230930231216/https://www.dominos.com/
+        </a>
+        </div>
+
+        <ImageWithCaption
+          src={require("../../Assets/projects-img/Dominos/original.png")}
+          alt=""
+          style={{ width: 500, display: "flex", margin: "auto" }}
+          caption="The original website as of September 30, 2023"
+        />
+        <h4>User Survey</h4>
+        <p>
+          I gathered first impressions of the website design from friends and
+          family, asking for their thoughts and reasons why. Here are some
+          notable comments:
+        </p>
+
+        <ul>
+          <li>
+            It's over-stimulating to me, so many bright colors and intense font
+            changes.
+          </li>
+          <li>
+            I used to order from them on the site but stopped because their site
+            was confusing to use.
+          </li>
+          <li>
+            When I order from Domino's, I don't even try to understand the home
+            page, I just immediately go to place a pickup order. Cause I have no
+            idea what I should be looking at because of how much there really
+            is.
+          </li>
+          <li>
+            I think if they change the bright colors and made the pictures not
+            so crowded, it could have a pretty good change.
+          </li>
+          <li>
+            This front page is a complete nightmare for those with sensory
+            issues. As a person with sensory issues, it's simply too much going
+            on without need.
+          </li>
+          <li>
+            Right when I looked at the website, it instantly looked too much and
+            instantly overwhelmed me.
+          </li>
+        </ul>
+        <ImageWithCaption
+          src={require("../../Assets/projects-img/Dominos/word-cloud.png")}
+          alt=""
+          style={{ width: 500, display: "flex", margin: "auto" }}
+          caption="word cloud of user survey"
+        />
+        <h4>Identifying the problems</h4>
+        <p>
+          Based on user feedbacks, I identified the following problems,
+          especially linked with accessibility:
+        </p>
         <p>
           <strong>Readability Issues</strong>
         </p>
@@ -85,7 +157,7 @@ export default function Dominos() {
           </li>
         </ul>
       </Section>
-      <Section title="The Solutions">
+      <Section title="The Changes">
         <h4>Visual Clarity and Reduced Clutter</h4>
         <p>
           <strong>Original:</strong> The original design is visually
@@ -211,6 +283,42 @@ export default function Dominos() {
         <p>
           <strong>Accessibility Impact:</strong> Reducing visual noise helps
           users focus, especially those with attention or processing challenges.
+        </p>
+      </Section>
+      <Section title="The Results">
+        <h4>User Survey - After</h4>
+        <p>
+          I surveyed the same individuals again about my redesign, asking if and
+          why it had improved upon the original.
+        </p>
+        <ul>
+          <li>
+            SO much better. A lot less overwhelming because everything is spaced
+            out and not cramped in one place.
+          </li>
+          <li>
+            I can clearly see where I’m supposed to click compared to the old
+            one.
+          </li>
+          <li>
+            It’s somewhat of a shame that I can’t see all the deals all at once,
+            but at least there’s a slider thing so it’s not too bad. Definitely
+            better looking though.
+          </li>
+          <li>Yeah. There’s a lot less going on.</li>
+          <li>It looks simpler - in a good way.</li>
+        </ul>
+
+        <h4>Conclusion</h4>
+        <p>
+          The redesigned version of Domino's website is more user-friendly and
+          accessible. It reduces clutter, improves readability, and enhances
+          navigation. Users with disabilities can now easily find what they
+          need, making the pizza ordering experience more enjoyable for
+          everyone. The changes also benefit all users, creating a more
+          efficient and pleasant experience. The redesigned site is a step
+          towards a more inclusive online environment, where everyone can access
+          information and services without barriers.
         </p>
       </Section>
     </div>
