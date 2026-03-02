@@ -12,17 +12,9 @@
     "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
     "summary": "The Suite Spot Salon is a fictitious salon suite client developed by our team for our senior design project. Recognizing the importance of booking features in the salon industry, we aimed to address this gap in the market. Our website allows users to conveniently book appointments, purchase items from the shop, and manage their accounts.",
     "tasks": [
-      "Collaborated with a team to create low-fi and hi-fi prototypes",
-      "Implemented mobile-first design approach with two hi-fi prototypes",
-      "Generated comprehensive documentation outlining the design process",
-      "Ensured consistency and accessibility throughout the design phase",
-      "Conducted user testings to improve design",
-      "Collaborated with a team to create a fully functional website based on design",
-      "Documented the development project",
-      "Developed Front end and back end",
-      "Set up database and API",
-      "Developed responsive front-end",
-      "Deployed website"
+      "UI/UX Design",
+      "Front End Development",
+      "Back End Development"
     ],
     "actions": [
       {
@@ -112,10 +104,8 @@
     "shortSummary": "My Portfolio! Well, you're looking at it.",
     "summary": "My Portfolio! Well, you're looking at it.",
     "tasks": [
-      "Created hi-fi Prototype",
-      "Created design system in Figma",
-      "Ensured consistency and accessibility throughout the design phase",
-      "Coded using front-end frameworks and technologies with responsive design"
+      "UI/UX Design",
+      "Front End Development"
     ],
     "actions": [
       {

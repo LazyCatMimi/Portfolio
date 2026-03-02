@@ -10,7 +10,20 @@ import Footer from "./Components/Footer";
 export default function ProjectArticle() {
   const { id } = useParams();
   const [project, setProject] = useState(null);
-
+const determineTag = (tag) => {
+  switch (tag) {
+    case "case-study":
+      return "UX Case Study";
+    case "design":
+      return "Web Design";
+    case "development":
+      return "Web Development";
+    case "art":
+      return "Art & Design";
+    default:
+      return "Web Design & Development";
+  }
+};
   useEffect(() => {
     // Function to find project by id
 
@@ -32,6 +45,7 @@ export default function ProjectArticle() {
     summary,
     tasks,
     actions,
+    tags,
     i,
   }) => {
     const projectHeaderStyle = {
@@ -56,7 +70,13 @@ export default function ProjectArticle() {
                   alt=""
                   className="proj-thumb"
                 /> */}
-
+<div className="proj-tags">
+          {tags.map((tag, index) => (
+            <p key={index} className="proj-tag">
+              {determineTag(tag)}{" "}
+            </p>
+          ))}
+        </div>
                 
                 <p>
                   <strong>Tools:</strong> {tools}
@@ -64,14 +84,14 @@ export default function ProjectArticle() {
                 <p>
                   <strong>Project Overview:</strong> {summary}
                 </p>
-                <p>
+                {/* <p>
                   <strong>Tasks Accomplished:</strong>
                 </p>
                 <ul>
                   {tasks.map((task, index) => (
                     <li key={index}>{task}</li>
                   ))}
-                </ul>
+                </ul> */}
                 <div className="btn-group">
                   {actions.map((action, index) => (
                     <a
