@@ -1,4 +1,4 @@
-import "../Styles/Project.css";
+import "../Styles/ProjectArticle.css";
 import plImg from "../Assets/test.png";
 import StaggeredText from "./Components/Animation/StaggeredText";
 import PROJECTS from "../Data/Projects.json";

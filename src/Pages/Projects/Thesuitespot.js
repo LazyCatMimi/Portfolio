@@ -1,4 +1,4 @@
-import "../../Styles/Project.css";
+import "../../Styles/ProjectArticle.css";
 
 import {
   ImageWithCaption,

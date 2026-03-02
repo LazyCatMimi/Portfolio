@@ -93,8 +93,8 @@ border-radius: var(--token-border-radius-s);
   min-height: 80vh;
 }
 .proj-header .gra {
-  width: 100%;
-  height: 100%;
+  width: 100% ;
+  min-height: 80vh;
   /* background: linear-gradient(
     360deg,
     rgba(148, 28, 67, 0.82) 0%,
