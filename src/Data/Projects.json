@@ -7,7 +7,10 @@
 
     "imgFill": "Assets/projects/TSS-fill.jpg",
     "imgThumb": "Assets/projects/TSS-thumb.png",
-    "tools": "Figma | React.JS, Node.JS, Express.JS, MongoDB Atlas",
+    "designTools": "Figma, Xmind, Google Forms",
+    "devTools": "React, Node, Express, MongoDB Atlas",
+
+    "roles": "UX/UI Designer, Technical Researcher, Front End Developer, Back End Developer",
     "type": "web",
     "shortSummary": "A salon website where users can conveniently book appointments, purchase items from the shop, and manage their accounts.",
     "summary": "The Suite Spot Salon is a fictitious salon suite client developed by our team for our senior design project. Recognizing the importance of booking features in the salon industry, we aimed to address this gap in the market. Our website allows users to conveniently book appointments, purchase items from the shop, and manage their accounts.",
@@ -17,24 +20,25 @@
       "Back End Development"
     ],
     "actions": [
-      {
-        "name": "See Mobile HiFi",
-        "link": "https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
-        "type": "primary-button",
-        "icon": "figma"
-      },
-      {
-        "name": "See Web HiFi",
-        "link": "https://www.figma.com/proto/PBrgGbarppN9gmbtOgJ2SG/Web-HiFi-Prototype?type=design&node-id=1-2&t=Wg8Zrt3Pg7guhKYW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
-        "type": "primary-button",
-        "icon": "figma"
-      },
-      {
+            {
         "name": "See Website",
         "link": "https://the-suite-spot.vercel.app/",
         "type": "primary-button",
         "icon": "globe"
       },
+      {
+        "name": "See Mobile HiFi",
+        "link": "https://www.figma.com/proto/xBcWK5LhvhetgYrxEitJa4/Mobile-HiFi-Prototype?type=design&t=BAUKefgdvnAVwDuY-1&scaling=scale-down&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+        "type": "secondary-button",
+        "icon": "figma"
+      },
+      {
+        "name": "See Web HiFi",
+        "link": "https://www.figma.com/proto/PBrgGbarppN9gmbtOgJ2SG/Web-HiFi-Prototype?type=design&node-id=1-2&t=Wg8Zrt3Pg7guhKYW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+        "type": "secondary-button",
+        "icon": "figma"
+      },
+
       {
         "name": "See GH repository",
         "link": "https://github.com/lwolbrink23/group8",
@@ -51,7 +55,9 @@
     "component": "/Projects/Dominos.js",
     "imgFill": "Assets/projects/Dominos-fill.jpg",
     "imgThumb": "Assets/projects/Dominos-thumb.png",
-    "tools": "Figma",
+ "designTools": "Figma",
+    
+    "roles": "UX/UI Designer",
     "type": "web",
     "shortSummary": "A redesign of Domino's home page to improve accessibility.",
     "summary": "The Domino's website appears cluttered, leading to cognitive overload even for those without disabilities. Additionally, visibility issues arise from text blending with images or being too small to read. My redesign of Domino's homepage focuses on maintaining the same content while reducing cognitive overload and improving visibility.",
@@ -75,7 +81,9 @@
     "component": "/Projects/UcfRedo.js",
     "imgFill": "Assets/projects/ucfredo-fill.jpg",
     "imgThumb": "Assets/projects/ucfredo-thumb.jpg",
-    "tools": "Figma",
+       "designTools": "Figma",
+  
+    "roles": "UX/UI Designer",
     "type": "web",
     "shortSummary": "A redesign of UCF's mobile app to improve accessibility and user access.",
     "summary": "The UCF mobile app suffers from excessive visual and informational clutter, making it challenging to read and locate items. The abundance of colors and disorganized icons contribute to this problem, which can be particularly overwhelming for users prone to cognitive overload. This problem ultimately defeats the app's purpose as a tool for quick access to the university's services. ",
@@ -99,7 +107,9 @@
     "id": "portfolio",
     "imgFill": "Assets/projects/portfolio-fill.jpg",
     "imgThumb": "Assets/projects/portfolio-thumb.png",
-    "tools": "Figma | CSS, React.js",
+    "roles": "UX/UI Designer, Technical Researcher, Front End Developer",
+       "designTools": "Figma",
+    "devTools": "React, Tailwind CSS",
     "type": "web",
     "shortSummary": "My Portfolio! Well, you're looking at it.",
     "summary": "My Portfolio! Well, you're looking at it.",
@@ -128,7 +138,8 @@
     "id": "salt-hearth",
     "imgFill": "Assets/projects/salt&hearth-fill.jpg",
     "imgThumb": "Assets/projects/salt&hearth-thumb.png",
-    "tools": "Figma",
+    "designTools": "Figma",
+    "roles": "UX/UI Designer",
     "type": "mobile",
     "shortSummary": "Salt & Hearth is a homemade recipe website designed after anticipated wordpress plugins and features.",
     "summary": "Salt & Hearth is a homemade recipe website designed after anticipated wordpress plugins and features. ",
@@ -152,7 +163,8 @@
     "id": "bookstore-app",
     "imgFill": "Assets/projects/WriterBlockBookstore-fill.jpg",
     "imgThumb": "Assets/projects/WriterBlockBookstore-thumb.png",
-    "tools": "Invision, Powerpoint, Photoshop",
+    "designTools": "Invision, Powerpoint, Photoshop",
+    "roles": "UX/UI Designer",
     "type": "mobile",
     "shortSummary": "An app based on the Writer's Block Bookstore website with updated visuals and  new social features.",
     "summary": "The Writer's Block Bookstore app was derived from the existing Writer's  Block Bookstore website, undergoing a transformation into a more social  and interactive platform. With a diverse array of capabilities, users  can seamlessly share, save, and rate content, along with managing their  accounts. These integrated features significantly enhance user  engagement through fostering social interactions, thereby enriching the  overall user experience.",
@@ -175,7 +187,9 @@
     "id": "todoapp",
     "imgFill": "Assets/projects/ToDo-fill.jpg",
     "imgThumb": "Assets/projects/ToDo-thumb.png",
-    "tools": "Figma | React Native",
+    "roles": "UX/UI Designer, Front End Developer",
+    "designTools": "Figma",
+    "devTools": "React Native",
     "type": "mobile",
     "shortSummary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
     "summary": "A simple TO DO app where users can sign up, login, create/edit/delete/sort TO DO items.",
@@ -215,7 +229,8 @@
     "id": "discord-bot",
     "imgFill": "Assets/projects/discordbot-fill.png",
     "imgThumb": "Assets/projects/discordbot-thumb.png",
-    "tools": "Node.js",
+    "devTools": "Node.js",
+    "roles": "Developer",
     "type": "web",
     "shortSummary": "A simple discord bot that uses Discord API to respond to commands such as flip a coin, ask 8 ball, sing happy birthday, and spam messages.",
     "summary": "A simple discord bot that uses Discord API to respond to commands such as flip a coin, ask 8 ball, sing happy birthday, and spam messages.",
@@ -237,7 +252,8 @@
     "id": "businesscard",
     "imgFill": "Assets/projects/business-fill.jpg",
     "imgThumb": "Assets/projects/business-thumb.png",
-    "tools": "Canva",
+    "designTools": "Canva",
+    "roles": "Graphic Designer",
     "shortSummary": "A business card design for a real salon business in Tampa, FL.",
     "summary": "My task involved redesigning a business card for a salon business located in Tampa, FL. The client sought both design enhancements and  updated information on their cards. To meet their needs, I presented two  design options: one resembling their previous card but with refreshed  visuals and updated details, and another that explored more experimental  elements.",
     "tasks": [

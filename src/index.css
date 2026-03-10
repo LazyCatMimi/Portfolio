@@ -434,12 +434,12 @@ ul {
   gap: 8px;
   padding: 10px 30px;
   border-radius: 20px;
-  border: 2px solid var(--token-primary-border-lighter);
+  border: 2px solid var(--token-secondary-border-lighter);
   cursor: pointer;
   width: fit-content;
   margin-bottom: 1em;
 
-  color: var(--token-primary-border-lighter); 
+  color: white;
   background-color: transparent;
 
   transition: color 0.2s, background-color 0.2s;

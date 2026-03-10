@@ -10,20 +10,20 @@ import Footer from "./Components/Footer";
 export default function ProjectArticle() {
   const { id } = useParams();
   const [project, setProject] = useState(null);
-const determineTag = (tag) => {
-  switch (tag) {
-    case "case-study":
-      return "UX Case Study";
-    case "design":
-      return "Web Design";
-    case "development":
-      return "Web Development";
-    case "art":
-      return "Art & Design";
-    default:
-      return "Web Design & Development";
-  }
-};
+  const determineTag = (tag) => {
+    switch (tag) {
+      case "case-study":
+        return "UX Case Study";
+      case "design":
+        return "Web Design";
+      case "development":
+        return "Web Development";
+      case "art":
+        return "Art & Design";
+      default:
+        return "Web Design & Development";
+    }
+  };
   useEffect(() => {
     // Function to find project by id
 
@@ -42,6 +42,9 @@ const determineTag = (tag) => {
     imgFill,
     imgThumb,
     tools,
+    roles,
+    designTools,
+    devTools,
     summary,
     tasks,
     actions,
@@ -62,7 +65,7 @@ const determineTag = (tag) => {
             <section className="max-width">
               <div>
                 <BackButton />
-                <h1 >
+                <h1>
                   <StaggeredText text={name} staggerDelay={0.05} />
                 </h1>
                 {/* <img
@@ -70,20 +73,44 @@ const determineTag = (tag) => {
                   alt=""
                   className="proj-thumb"
                 /> */}
-<div className="proj-tags">
-          {tags.map((tag, index) => (
-            <p key={index} className="proj-tag">
-              {determineTag(tag)}{" "}
-            </p>
-          ))}
-        </div>
-                
-                <p>
-                  <strong>Tools:</strong> {tools}
-                </p>
-                <p>
-                  <strong>Project Overview:</strong> {summary}
-                </p>
+                <div className="proj-tags">
+                  {tags.map((tag, index) => (
+                    <p key={index} className="proj-tag">
+                      {determineTag(tag)}{" "}
+                    </p>
+                  ))}
+                </div>
+                <div className="my-10 max-w-[75ch]">
+                  <p>
+                    <strong className="text-[var(--token-primary-surface-default)]">
+                      Roles:
+                    </strong>{" "}
+                    {roles}
+                  </p>
+                  {designTools && (
+                    <p>
+                      <strong className="text-[var(--token-primary-surface-default)]">
+                        Design Tools:
+                      </strong>{" "}
+                      {designTools}
+                    </p>
+                  )}
+                  {devTools && (
+                    <p>
+                      <strong className="text-[var(--token-primary-surface-default)]">
+                        Development Tools:
+                      </strong>{" "}
+                      {devTools}
+                    </p>
+                  )}
+                  <p>
+                    <strong className="text-[var(--token-primary-surface-default)]">
+                      Project Overview:
+                    </strong>{" "}
+                    {summary}
+                  </p>
+                </div>
+
                 {/* <p>
                   <strong>Tasks Accomplished:</strong>
                 </p>
@@ -121,11 +148,9 @@ const determineTag = (tag) => {
           <div className="max-width">
             <div id="project-content">{component && <Component />}</div>
           </div>
-           <div className="footer-space"></div>
+          <div className="footer-space"></div>
           <Footer />
         </div>
-       
-        
       </>
     );
   };
@@ -133,7 +158,6 @@ const determineTag = (tag) => {
   return (
     <main id="projectidv" className="">
       <Project {...project} />
-      
     </main>
   );
 }
