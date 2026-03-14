@@ -28,7 +28,7 @@ export default function Thesuitespot() {
       <div className="proj-more-info h-content">
         <article className="proj-info pi-after">
           <h2>Table of Content</h2>
-          <div className="toc"></div> {/* TOC will be rendered here */}
+          <div className="toc"></div> {/* TOC will be generated here by tocbot */}
         </article>
         <article className="proj-info pi-after">
           <h2 id="acknowledgements">Acknowledgments</h2>

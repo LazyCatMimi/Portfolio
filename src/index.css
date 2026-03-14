@@ -472,6 +472,8 @@ ul {
   /* background-color: var(--token-primary-surface-default); */
   /* transition: all 0.3s ease-in-out; */
 }
+
+
 @media screen and (max-width: 1000px) {
   .iframe-yt {
     width: 100%;
