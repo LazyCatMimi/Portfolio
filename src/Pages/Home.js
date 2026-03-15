@@ -160,7 +160,7 @@ export default function Home() {
       <AnimatedBackground toColor="toBlack">
         <section id="about">
           {/* <FocusBanner />  */}
-          <div className=" about-container max-width">
+          <div className=" about-container max-width pad">
             <img
               src={require("../Assets/me.jpg")}
               alt=""
@@ -197,7 +197,7 @@ export default function Home() {
         id="selected-projects"
         style={{ background: "var(--token-secondary-surface-darker)" }}
       >
-        <div className="max-width">
+        <div className="max-width pad">
           <h2 className="text-center m-0">
             <StaggeredText text="Selected Projects" staggerDelay={0.05} />
           </h2>
@@ -266,7 +266,7 @@ export default function Home() {
       <div className="background1">
         
         <section id="career-journey" >
-          <div className=" max-width">
+          <div className=" max-width pad">
           <h2 className="text-center m-0">
             <StaggeredText text="My Career Journey" staggerDelay={0.05} />
           </h2>
@@ -300,7 +300,7 @@ export default function Home() {
         </section>
        
         <section id="contact-me">
-          <div className=" max-width">
+          <div className=" max-width pad">
           <h2>
             <StaggeredText text="Let's Connect!" staggerDelay={0.1} />
           </h2>

@@ -26,10 +26,7 @@ export default function Thesuitespot() {
   return (
     <>
       <div className="proj-more-info h-content">
-        <article className="proj-info pi-after">
-          <h2>Table of Content</h2>
-          <div className="toc"></div> {/* TOC will be generated here by tocbot */}
-        </article>
+
         <article className="proj-info pi-after">
           <h2 id="acknowledgements">Acknowledgments</h2>
           <p>
@@ -48,7 +45,7 @@ export default function Thesuitespot() {
           />
         </article>
         <div className="center-div">
-          <article className="proj-info pi-after special-heading">
+          <article className="proj-info  special-heading">
           <h2 className="center-text" style={{ margin: 0 }} id="design-phase">
             Design Phase
           </h2>

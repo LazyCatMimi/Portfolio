@@ -6,8 +6,21 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BackButton from "./Components/BackButton";
 import Footer from "./Components/Footer";
+import tocbot from "tocbot";
 
 export default function ProjectArticle() {
+  useEffect(() => {
+    // Initialize tocbot after component mounts
+    tocbot.init({
+      tocSelector: ".toc", // Selector for the TOC container
+      contentSelector: ".h-content", // Selector for the content container
+      headingSelector: "h2, h3, h4", // Heading tags to include
+      scrollSmooth: true,
+    });
+
+    // Clean up tocbot on unmount
+    return () => tocbot.destroy();
+  }, []);
   const { id } = useParams();
   const [project, setProject] = useState(null);
   const determineTag = (tag) => {
@@ -60,9 +73,9 @@ export default function ProjectArticle() {
 
     return (
       <>
-        <div style={projectHeaderStyle} className="proj-header">
+        <div style={projectHeaderStyle} className="proj-header ">
           <div className="gra">
-            <section className="max-width">
+            <section className="max-width pad">
               <div>
                 <BackButton />
                 <h1>
@@ -145,7 +158,13 @@ export default function ProjectArticle() {
         </div>
 
         <div style={{ overflow: "hidden" }} className="background2">
-          <div className="max-width">
+          <div className="max-width pad-h proj-content-container">
+            <div className="toc-container ">
+              <h2 className="m-0">Table of Content</h2>
+              <div className="toc"></div>{" "}
+              {/* TOC will be generated here by tocbot */}
+            </div>
+
             <div id="project-content">{component && <Component />}</div>
           </div>
           <div className="footer-space"></div>
