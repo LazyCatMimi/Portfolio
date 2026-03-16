@@ -174,6 +174,8 @@
 
   margin: auto;
 }
+@media screen and (max-width: 1920px) {
+
 .pad{
   padding: var(--padding);
 }
@@ -183,6 +185,10 @@
 .pad-h {
   padding: 0 var(--padding-H);
 }
+}
+
+
+
 /* General */
 .App {
   display: flex;
