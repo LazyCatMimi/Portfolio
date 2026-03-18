@@ -167,7 +167,7 @@ export default function Home() {
               className="me-pic glow"
             ></img>
             <article>
-              <h2>
+              <h2 >
                 <StaggeredText text="About Me" staggerDelay={0.1} />
               </h2>
               <hr className="line w-full" />
@@ -263,7 +263,7 @@ export default function Home() {
           title="My Design & Development Philosophies"
         />
       </section> */}
-      <div className="background1">
+      <div className="background1 pad-v">
         
         <section id="career-journey" >
           <div className=" max-width pad">

@@ -157,12 +157,15 @@ export default function ProjectArticle() {
           </div>
         </div>
 
-        <div style={{ overflow: "hidden" }} className="background2">
+        <div  className="background2">
           <div className="max-width pad-h proj-content-container">
+            
+
             <div className="toc-container ">
               <h4 className="m-0">Table of Content</h4>
               <div className="toc"></div>{" "}
               {/* TOC will be generated here by tocbot */}
+           
             </div>
 
             <div id="project-content">{component && <Component />}</div>

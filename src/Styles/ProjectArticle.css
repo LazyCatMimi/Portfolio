@@ -7,15 +7,19 @@
 
 .proj-content-container {
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 2rem;
+  grid-template-columns: auto 1fr;
+  /* grid-template-rows: 1fr auto; */
+  /* justify-content: center; */
+  gap: 3rem;
+
+  /* align-items: start;  */
+  
 }
 .toc-container {
-  position: sticky;
-  top: 20px;
-
+  position: sticky !important;
+ outline: 2px solid red;
   max-height: 70vh;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 #projectidv .btn-group {
@@ -142,13 +146,17 @@ border-radius: var(--token-border-radius-s);
 
 .proj-info {
   /* background-color: var(--token-secondary-surface-default); */
-  margin:auto;
+  margin:5em auto;
   border-radius: 19px;
 
   /* padding: 2em 6em; */
   /* z-index: 5; */
   width: 75ch;
 }
+.proj-info:first-of-type {
+margin:0 auto;
+}
+
 .proj-more-info {
   /* z-index: 5; */
   margin-bottom: 5em;

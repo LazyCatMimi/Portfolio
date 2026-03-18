@@ -27,8 +27,8 @@ export default function Thesuitespot() {
     <>
       <div className="proj-more-info h-content">
 
-        <article className="proj-info pi-after">
-          <h2 id="acknowledgements">Acknowledgments</h2>
+        <article className="proj-info mt-0">
+          <h2 id="acknowledgements" >Acknowledgments</h2>
           <p>
             I’d like to give a special shoutout to my incredible team members–
             Lilian Allgood, Brianna Lattimore, Callie Vaughn, Lindsey Wolbrink—

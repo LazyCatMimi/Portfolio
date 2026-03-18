@@ -169,8 +169,8 @@
 }
 .max-width {
   max-width: var(--max-width);
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
 
   margin: auto;
 }
@@ -179,14 +179,15 @@
 .pad{
   padding: var(--padding);
 }
-.pad-v {
-  padding: var(--padding-V) 0;
-}
+
 .pad-h {
   padding: 0 var(--padding-H);
 }
 }
-
+.pad{
+  padding-bottom: var(--padding-V);
+  padding-top: var(--padding-V);
+}
 
 
 /* General */
@@ -227,7 +228,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -483,7 +484,7 @@ ul {
   margin: auto;
   display: flex;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-color: var(--token-primary-surface-default); */
   /* transition: all 0.3s ease-in-out; */
 }
