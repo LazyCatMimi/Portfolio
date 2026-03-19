@@ -127,7 +127,7 @@ export default function Home() {
   const HeaderContent = () => (
     <div className="max-width">
       <div>
-        <h1 className="title-sub-1">Hello, I am</h1>
+        <h1 className="title-sub-1 m-0">Hello, I am</h1>
         <h1 className="title-name">
           <StaggeredText text="Quynh Vo" staggerDelay={0.15} />
         </h1>
