@@ -46,7 +46,7 @@ grid-row: auto;
 .toc-container {
   position:static ;
 
- width: 75ch;
+ width: 100%;
   margin: 0 auto 4em auto;
   max-height: none;
 
