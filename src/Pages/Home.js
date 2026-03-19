@@ -5,8 +5,6 @@ import PATHS from "../Data/Pages.json";
 import starIcon from "../Assets/Icons/star-bullet.svg";
 import arrRightIcon from "../Assets/Icons/arrow-right.svg";
 // animations
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import StaggeredText from "./Components/Animation/StaggeredText";
 import { AnimatedBackground } from "./Components/Animation/Animated";
 import { FromBottom } from "./Components/Animation/Animated";
