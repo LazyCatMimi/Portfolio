@@ -1,4 +1,4 @@
-import "../Styles/Project.css";
+import "../Styles/ProjectArticle.css";
 import plImg from "../Assets/test.png";
 import StaggeredText from "./Components/Animation/StaggeredText";
 import PROJECTS from "../Data/Projects.json";
@@ -6,11 +6,37 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BackButton from "./Components/BackButton";
 import Footer from "./Components/Footer";
+import tocbot from "tocbot";
 
 export default function ProjectArticle() {
+  useEffect(() => {
+    // Initialize tocbot after component mounts
+    tocbot.init({
+      tocSelector: ".toc", // Selector for the TOC container
+      contentSelector: ".h-content", // Selector for the content container
+      headingSelector: "h2, h3, h4", // Heading tags to include
+      scrollSmooth: true,
+    });
+
+    // Clean up tocbot on unmount
+    return () => tocbot.destroy();
+  }, []);
   const { id } = useParams();
   const [project, setProject] = useState(null);
-
+  const determineTag = (tag) => {
+    switch (tag) {
+      case "case-study":
+        return "UX Case Study";
+      case "design":
+        return "Web Design";
+      case "development":
+        return "Web Development";
+      case "art":
+        return "Art & Design";
+      default:
+        return "Web Design & Development";
+    }
+  };
   useEffect(() => {
     // Function to find project by id
 
@@ -29,9 +55,14 @@ export default function ProjectArticle() {
     imgFill,
     imgThumb,
     tools,
+    roles,
+    designTools,
+    devTools,
     summary,
     tasks,
     actions,
+    tags,
+    toc,
     i,
   }) => {
     const projectHeaderStyle = {
@@ -43,25 +74,65 @@ export default function ProjectArticle() {
 
     return (
       <>
-        <div style={projectHeaderStyle} className="proj-header">
-          <div></div>
-        </div>
-        
-        <div  style={{ overflow: "hidden" }}>
-          <div className="max-width">
-            <div id="project-content">
-            <article className="proj-info main">
-            <BackButton />
-            <h1 className="center-text">
-              <StaggeredText text={name} staggerDelay={0.05} />
-            </h1>
-            <div>
-              <img
-                src={imgThumb ? require(`${"../"}${imgThumb}`) : plImg}
-                alt=""
-                className="proj-thumb"
-              />
-              <article>
+        <div style={projectHeaderStyle} className="proj-header ">
+          <div className="gra">
+            <section className="w-full pad">
+              <div className="max-width">
+                <BackButton />
+                <h1>
+                  <StaggeredText text={name} staggerDelay={0.05} />
+                </h1>
+                {/* <img
+                  src={imgThumb ? require(`${"../"}${imgThumb}`) : plImg}
+                  alt=""
+                  className="proj-thumb"
+                /> */}
+                <div className="proj-tags">
+                  {tags.map((tag, index) => (
+                    <p key={index} className="proj-tag">
+                      {determineTag(tag)}{" "}
+                    </p>
+                  ))}
+                </div>
+                <div className="my-10 max-w-[75ch]">
+                  <p>
+                    <strong className="text-[var(--token-primary-surface-default)]">
+                      Roles:
+                    </strong>{" "}
+                    {roles}
+                  </p>
+                  {designTools && (
+                    <p>
+                      <strong className="text-[var(--token-primary-surface-default)]">
+                        Design Tools:
+                      </strong>{" "}
+                      {designTools}
+                    </p>
+                  )}
+                  {devTools && (
+                    <p>
+                      <strong className="text-[var(--token-primary-surface-default)]">
+                        Development Tools:
+                      </strong>{" "}
+                      {devTools}
+                    </p>
+                  )}
+                  <p>
+                    <strong className="text-[var(--token-primary-surface-default)]">
+                      Project Overview:
+                    </strong>{" "}
+                    {summary}
+                  </p>
+                </div>
+
+                {/* <p>
+                  <strong>Tasks Accomplished:</strong>
+                </p>
+                <ul>
+                  {tasks.map((task, index) => (
+                    <li key={index}>{task}</li>
+                  ))}
+                </ul> */}
                 <div className="btn-group">
                   {actions.map((action, index) => (
                     <a
@@ -76,44 +147,40 @@ export default function ProjectArticle() {
                           src={require(`../Assets/Icons/${action.icon}.svg`)}
                           alt=""
                           className="proj-icon"
-                          
                         ></img>
                       )}
                       <span>{action.name}</span>
                     </a>
                   ))}
                 </div>
-                <p>
-                  <strong>Tools:</strong> {tools}
-                </p>
-                <p>
-                  <strong>Project Overview:</strong> {summary}
-                </p>
-                <p>
-                  <strong>Tasks Accomplished:</strong>
-                </p>
-                <ul>
-                  {tasks.map((task, index) => (
-                    <li key={index}>{task}</li>
-                  ))}
-                </ul>
-              </article>
-            </div>
-          </article>
-          {component && <Component />}
-            </div>
+              </div>
+            </section>
           </div>
-          
         </div>
-        <div className="footer-space"></div>
+
+        <div  className="background2">
+          <div className={`max-width pad-h proj-content-container  ${toc ? "grid" : ""}`}>
+            
+
+            <div className={`toc-container  ${!toc ? "hidden" : ""}`}>
+              <h4 className="m-0 ">Table of Content</h4>
+              <div className="toc"></div>{" "}
+              {/* TOC will be generated here by tocbot */}
+           
+            </div>
+
+            <div id="project-content">{component && <Component />}</div>
+          </div>
+          <div className="footer-space"></div>
+          <Footer />
+        </div>
       </>
     );
   };
 
   return (
-    <main id="projectidv" className="background2">
+    <main id="projectidv" className="">
       <Project {...project} />
-      <Footer />
     </main>
   );
 }

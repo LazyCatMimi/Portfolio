@@ -169,11 +169,27 @@
 }
 .max-width {
   max-width: var(--max-width);
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
 
   margin: auto;
 }
+@media screen and (max-width: 1920px) {
+
+.pad{
+  padding: var(--padding);
+}
+
+
+}
+.pad-h {
+  padding: 0 var(--padding-H);
+}
+.pad{
+ padding: var(--padding-V) var(--padding-H);
+}
+
+
 /* General */
 .App {
   display: flex;
@@ -394,7 +410,7 @@ a {
 }
 section {
   /* padding: clamp(200px, 3em, 400px) clamp(300px, 4em, 500px); */
-  padding: var(--padding);
+  /* padding: var(--padding); */
   /* max-width: 1080px; */
 }
 .img-text {
@@ -430,22 +446,31 @@ ul {
 /* ------------components---------------- */
 .back-button {
   display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 10px 30px;
-  /* border: 1px solid; */
+  border-radius: 20px;
+  border: 2px solid var(--token-secondary-border-lighter);
   cursor: pointer;
   width: fit-content;
   margin-bottom: 1em;
-  border-radius: 20px;
-  align-items: center;
-  gap: 2px;
+
+  color: white;
+  background-color: transparent;
+
+  transition: color 0.2s, background-color 0.2s;
 }
-.back-button,
-.back-button img {
-  color: #8d8d8d;
+
+.arrow-icon {
+  /* width: 1rem;
+  height: 1rem; */
+
+  stroke: currentColor; 
+  fill: none; 
 }
 
 .back-button:hover {
-  background-color: var(--token-secondary-surface-lighter);
+  background-color: var(--token-secondary-surface-default);
   color: white;
 }
 
@@ -459,10 +484,12 @@ ul {
   margin: auto;
   display: flex;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-color: var(--token-primary-surface-default); */
   /* transition: all 0.3s ease-in-out; */
 }
+
+
 @media screen and (max-width: 1000px) {
   .iframe-yt {
     width: 100%;

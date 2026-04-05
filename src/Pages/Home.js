@@ -5,8 +5,6 @@ import PATHS from "../Data/Pages.json";
 import starIcon from "../Assets/Icons/star-bullet.svg";
 import arrRightIcon from "../Assets/Icons/arrow-right.svg";
 // animations
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import StaggeredText from "./Components/Animation/StaggeredText";
 import { AnimatedBackground } from "./Components/Animation/Animated";
 import { FromBottom } from "./Components/Animation/Animated";
@@ -127,7 +125,7 @@ export default function Home() {
   const HeaderContent = () => (
     <div className="max-width">
       <div>
-        <h1 className="title-sub-1">Hello, I am</h1>
+        <h1 className="title-sub-1 m-0">Hello, I am</h1>
         <h1 className="title-name">
           <StaggeredText text="Quynh Vo" staggerDelay={0.15} />
         </h1>
@@ -160,14 +158,14 @@ export default function Home() {
       <AnimatedBackground toColor="toBlack">
         <section id="about">
           {/* <FocusBanner />  */}
-          <div className=" about-container max-width">
+          <div className=" about-container max-width pad">
             <img
               src={require("../Assets/me.jpg")}
               alt=""
               className="me-pic glow"
             ></img>
             <article>
-              <h2>
+              <h2 >
                 <StaggeredText text="About Me" staggerDelay={0.1} />
               </h2>
               <hr className="line w-full" />
@@ -197,12 +195,12 @@ export default function Home() {
         id="selected-projects"
         style={{ background: "var(--token-secondary-surface-darker)" }}
       >
-        <div className="max-width">
+        <div className="max-width pad">
           <h2 className="text-center m-0">
             <StaggeredText text="Selected Projects" staggerDelay={0.05} />
           </h2>
           <hr className="line" />
-          <div className="projects-grid" id="latest-projects">
+          <div className="projects-grid-3" id="latest-projects">
             {PROJECTS.slice(0, 3).map((project, index) => (
               <FromBottom>
                 <ProjectCard key={index} {...project} i={index} />
@@ -263,10 +261,10 @@ export default function Home() {
           title="My Design & Development Philosophies"
         />
       </section> */}
-      <div className="background1">
+      <div className="background1 pad-v">
         
         <section id="career-journey" >
-          <div className=" max-width">
+          <div className=" max-width pad">
           <h2 className="text-center m-0">
             <StaggeredText text="My Career Journey" staggerDelay={0.05} />
           </h2>
@@ -300,7 +298,7 @@ export default function Home() {
         </section>
        
         <section id="contact-me">
-          <div className=" max-width">
+          <div className=" max-width pad">
           <h2>
             <StaggeredText text="Let's Connect!" staggerDelay={0.1} />
           </h2>

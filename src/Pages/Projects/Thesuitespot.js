@@ -1,4 +1,4 @@
-import "../../Styles/Project.css";
+import "../../Styles/ProjectArticle.css";
 
 import {
   ImageWithCaption,
@@ -26,12 +26,9 @@ export default function Thesuitespot() {
   return (
     <>
       <div className="proj-more-info h-content">
-        <article className="proj-info pi-after">
-          <h2>Table of Content</h2>
-          <div className="toc"></div> {/* TOC will be rendered here */}
-        </article>
-        <article className="proj-info pi-after">
-          <h2 id="acknowledgements">Acknowledgments</h2>
+
+        <article className="proj-info mt-0">
+          <h2 id="acknowledgements" >Acknowledgments</h2>
           <p>
             I’d like to give a special shoutout to my incredible team members–
             Lilian Allgood, Brianna Lattimore, Callie Vaughn, Lindsey Wolbrink—
@@ -48,7 +45,7 @@ export default function Thesuitespot() {
           />
         </article>
         <div className="center-div">
-          <article className="proj-info pi-after special-heading">
+          <article className="proj-info  special-heading">
           <h2 className="center-text" style={{ margin: 0 }} id="design-phase">
             Design Phase
           </h2>

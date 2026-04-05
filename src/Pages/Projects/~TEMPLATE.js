@@ -1,7 +1,7 @@
 export default function TEMPLATE() {
   return (
     <div className="proj-more-info">
-      <article className="proj-info pi-after">
+      <article className="proj-info ">
         <p>TEMPLATE</p>
       </article>
     </div>
@@ -30,7 +30,7 @@ export const ExternalLinkButton = ({ href, text }) => (
 );
 
 export const Section = ({ title, children, line=true }) => (
-  <article className="proj-info pi-after">
+  <article className="proj-info ">
     <h3 className="center-text" id={generateIdFromText(title)}>
       {title}
     </h3>
@@ -40,7 +40,7 @@ export const Section = ({ title, children, line=true }) => (
 );
 
 export const SubSection = ({ title, children }) => (
-  <article className="proj-info pi-after">
+  <article className="proj-info ">
     <h3 className="center-text">{title}</h3>
     {children}
   </article>

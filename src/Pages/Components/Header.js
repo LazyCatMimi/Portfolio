@@ -9,7 +9,7 @@ export default function Header({ HeaderContent, toColor }) {
       >
         <header className="header">
           <div className="background-container">
-            <div className="content ">
+            <div className="content">
               <HeaderContent />
             </div>
           </div>

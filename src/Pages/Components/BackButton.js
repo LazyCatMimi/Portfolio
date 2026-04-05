@@ -1,16 +1,12 @@
-import Arrow from "../../Assets/Icons/arrow-left.svg";
+import { ReactComponent as Arrow } from "../../Assets/Icons/arrow-left.svg";
 import { useNavigate } from "react-router-dom";
 
 function BackButton() {
-  let navigate = useNavigate();
-
-  function handleBack() {
-    navigate(-1);
-  }
+  const navigate = useNavigate();
 
   return (
-    <button className="back-button" href="#" onClick={handleBack}>
-      <img src={Arrow} alt=""></img>
+    <button className="back-button" onClick={() => navigate(-1)}>
+      <Arrow className="arrow-icon" />
       Back
     </button>
   );
