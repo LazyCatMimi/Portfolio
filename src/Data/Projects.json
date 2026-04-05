@@ -4,7 +4,7 @@
     "tags": ["design", "development", "case-study"],
     "id": "thesuitespot",
     "component": "/Projects/Thesuitespot.js",
-
+    "toc": true,  
     "imgFill": "Assets/projects/TSS-fill.jpg",
     "imgThumb": "Assets/projects/TSS-thumb.png",
     "designTools": "Figma, Xmind, Google Forms",

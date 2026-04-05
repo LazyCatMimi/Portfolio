@@ -62,6 +62,7 @@ export default function ProjectArticle() {
     tasks,
     actions,
     tags,
+    toc,
     i,
   }) => {
     const projectHeaderStyle = {
@@ -158,10 +159,10 @@ export default function ProjectArticle() {
         </div>
 
         <div  className="background2">
-          <div className="max-width pad-h proj-content-container">
+          <div className={`max-width pad-h proj-content-container  ${toc ? "grid" : ""}`}>
             
 
-            <div className="toc-container  ">
+            <div className={`toc-container  ${!toc ? "hidden" : ""}`}>
               <h4 className="m-0 ">Table of Content</h4>
               <div className="toc"></div>{" "}
               {/* TOC will be generated here by tocbot */}
