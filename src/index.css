@@ -180,13 +180,13 @@
   padding: var(--padding);
 }
 
+
+}
 .pad-h {
   padding: 0 var(--padding-H);
 }
-}
 .pad{
-  padding-bottom: var(--padding-V);
-  padding-top: var(--padding-V);
+ padding: var(--padding-V) var(--padding-H);
 }
 
 

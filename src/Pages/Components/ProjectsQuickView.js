@@ -123,7 +123,7 @@ export function ProjectsQuickView() {
   };
 
   return (
-    <section>
+    <section className="pad-h">
       <div className="max-width">
         <div id="latest-projects">
           {/* <h2>

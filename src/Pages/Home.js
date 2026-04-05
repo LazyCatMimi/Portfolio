@@ -200,7 +200,7 @@ export default function Home() {
             <StaggeredText text="Selected Projects" staggerDelay={0.05} />
           </h2>
           <hr className="line" />
-          <div className="projects-grid" id="latest-projects">
+          <div className="projects-grid-3" id="latest-projects">
             {PROJECTS.slice(0, 3).map((project, index) => (
               <FromBottom>
                 <ProjectCard key={index} {...project} i={index} />

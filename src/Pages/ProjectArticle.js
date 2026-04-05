@@ -76,8 +76,8 @@ export default function ProjectArticle() {
       <>
         <div style={projectHeaderStyle} className="proj-header ">
           <div className="gra">
-            <section className="max-width pad">
-              <div>
+            <section className="w-full pad">
+              <div className="max-width">
                 <BackButton />
                 <h1>
                   <StaggeredText text={name} staggerDelay={0.05} />
